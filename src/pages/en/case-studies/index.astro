@@ -1,0 +1,75 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { route } from '../../../i18n/routes';
+
+const calendarUrl = 'https://calendar.app.google/JQnkVUqK3FF5VSRU6';
+const whatsappUrl =
+  'https://wa.me/5491173678601?text=Hello%2C%20I%20came%20from%20Next%20Wrld.%20I%20want%20to%20talk%20about%20a%20process%20in%20my%20company%20we%20are%20looking%20to%20improve.';
+---
+
+<BaseLayout
+  locale="en"
+  title="Software, automation and digital product case studies | Next Wrld"
+  description="Next Wrld projects in custom software, management systems, automation, and digital products built around real problems."
+  routeKey="cases"
+  canonicalPath="/en/case-studies/"
+>
+  <section data-od-id="hero">
+    <p class="eyebrow">Case studies</p>
+    <h1>Different problems. The same principle: understand before building.</h1>
+    <p class="lead">
+      A selection of projects in custom software, management systems,
+      and digital products — each one shaped by a real problem.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-p" href="#cases" data-od-id="hero-primary">
+        Explore case studies
+      </a>
+      <a class="btn btn-s" href={route('howWeWork', 'en')} data-od-id="hero-secondary">
+        How we work
+      </a>
+    </div>
+  </section>
+
+  <!-- EN parity: hero translated, body sections follow ES structure -->
+  <section data-od-id="cases" id="cases">
+    <p class="eyebrow">Selected work</p>
+    <h2>Not every problem needs the same kind of solution.</h2>
+    <article id="aion">
+      <h3>AION Wellness</h3>
+      <p>
+        From a legacy platform to a system ready to keep growing: daily
+        management of gyms and fitness centers in a single operation.
+      </p>
+      <a href="https://www.aionwellness.pro/" target="_blank" rel="noopener">View AION Wellness</a>
+    </article>
+    <article id="jfhp">
+      <h3>JFHP</h3>
+      <p>
+        A platform to manage different areas of an international
+        organization: users, teams, locations, training, reports,
+        inventory, and access levels.
+      </p>
+    </article>
+    <article id="inmocrm">
+      <h3>InmoCRM</h3>
+      <p>
+        From understanding a real-estate process to designing a first
+        version of the product, validated as an MVP.
+      </p>
+    </article>
+  </section>
+
+  <section data-od-id="cierre">
+    <p class="eyebrow">Next step</p>
+    <h2>We can start by understanding what is happening in your company.</h2>
+    <div class="cta-row">
+      <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="final-primary">
+        Analyze my case
+      </a>
+      <a class="btn btn-s" href={whatsappUrl} target="_blank" rel="noopener">
+        Chat on WhatsApp
+      </a>
+    </div>
+  </section>
+</BaseLayout>

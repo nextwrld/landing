@@ -1,0 +1,35 @@
+---
+import type { Locale } from '../../i18n/config';
+
+interface Props {
+  locale: Locale;
+  alternatePath: string;
+}
+
+const { locale, alternatePath } = Astro.props;
+const other: Locale = locale === 'es' ? 'en' : 'es';
+---
+
+<a
+  class="lang-switch"
+  href={alternatePath}
+  hreflang={other}
+  aria-label={locale === 'es' ? 'Switch to English' : 'Cambiar a español'}
+>
+  <span aria-current={locale === 'es' ? undefined : 'false'} class={locale === 'es' ? 'active' : ''}>ES</span>
+  <span aria-hidden="true"> / </span>
+  <span class={locale === 'en' ? 'active' : ''}>EN</span>
+</a>
+
+<style>
+  .lang-switch {
+    font-family: var(--mono);
+    font-size: 12px;
+    color: var(--muted);
+    text-decoration: none;
+  }
+  .lang-switch .active {
+    color: var(--fg);
+    font-weight: 700;
+  }
+</style>

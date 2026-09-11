@@ -1,0 +1,22 @@
+:root {
+  --bg: #fcfcfb;
+  --surface: #ffffff;
+  --surface-gray: #f7f8fa;
+  --surface-blue: #f2f5fb;
+  --fg: #111318;
+  --muted: #667085;
+  --border: #e3e7ed;
+  --accent: #2758d9;
+  --accent-soft: #dce6ff;
+  --navy: #102654;
+  --ink-soft: #3e4655;
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --shadow-soft: 0 12px 30px rgba(16, 38, 84, 0.08);
+  --sans: 'Inter', system-ui, sans-serif;
+  --disp: 'Space Grotesk', sans-serif;
+  --serif: 'Newsreader', Georgia, serif;
+  --mono: 'IBM Plex Mono', monospace;
+  --max: 1240px;
+}

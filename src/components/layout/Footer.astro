@@ -1,0 +1,85 @@
+---
+import { route } from '../../i18n/routes';
+import type { Locale } from '../../i18n/config';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const isEs = locale === 'es';
+---
+
+<footer data-od-id="footer">
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="logo" href={isEs ? '/' : '/en/'}>
+          <img src="/assets/brand/logo.svg" alt="" width="34" height="34" />
+          Next Wrld<span>.</span>
+        </a>
+        <p>
+          {
+            isEs
+              ? 'Software a medida para empresas que necesitan operar con más claridad y menos trabajo manual.'
+              : 'Custom software for companies that need clearer operations and less manual work.'
+          }
+        </p>
+      </div>
+      <div>
+        <h5>{isEs ? 'SERVICIOS' : 'SERVICES'}</h5>
+        <a href={route('services', locale)}>{isEs ? 'Software a medida' : 'Custom software'}</a>
+        <a href={route('services', locale)}>{isEs ? 'Sistemas de gestión' : 'Management systems'}</a>
+        <a href={route('services', locale)}>{isEs ? 'Automatización' : 'Automation'}</a>
+      </div>
+      <div>
+        <h5>{isEs ? 'EMPRESA' : 'COMPANY'}</h5>
+        <a href={route('howWeWork', locale)}>{isEs ? 'Cómo trabajamos' : 'How we work'}</a>
+        <a href={route('cases', locale)}>{isEs ? 'Casos' : 'Case studies'}</a>
+        <a href={route('insights', locale)}>Insights</a>
+        <a href={route('about', locale)}>{isEs ? 'Nosotros' : 'About'}</a>
+      </div>
+      <div>
+        <h5>{isEs ? 'CONTACTO' : 'CONTACT'}</h5>
+        <a
+          href="https://calendar.app.google/JQnkVUqK3FF5VSRU6"
+          target="_blank"
+          rel="noopener"
+        >
+          {isEs ? 'Diagnóstico operativo' : 'Operational diagnostic'}
+        </a>
+        <a
+          href="https://wa.me/5491173678601?text=Hola%2C%20llegu%C3%A9%20desde%20Next%20Wrld."
+          target="_blank"
+          rel="noopener"
+        >
+          WhatsApp
+        </a>
+        <a href="mailto:hola@nextwrld.com?subject=Diagn%C3%B3stico%20operativo">Email</a>
+        <a href="https://linkedin.com/company/next-wrld" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://instagram.com/nextwrld.tech" target="_blank" rel="noopener">Instagram</a>
+      </div>
+    </div>
+    <div class="legal">
+      <span>© 2026 Next Wrld · ES / EN</span>
+      <span>{isEs ? 'Privacidad · Términos · Aviso legal' : 'Privacy · Terms · Legal notice'}</span>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 56px 0 32px;
+  }
+  .fgrid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr 1fr 1fr;
+    gap: 32px;
+  }
+  @media (max-width: 960px) {
+    .fgrid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { route } from '../../../i18n/routes';
+
+const calendarUrl = 'https://calendar.app.google/JQnkVUqK3FF5VSRU6';
+---
+
+<BaseLayout
+  locale="en"
+  title="Insights on software, processes and automation | Next Wrld"
+  description="Ideas and guides on custom software, automation, processes, and systems for companies that want to work with less complexity."
+  routeKey="insights"
+  canonicalPath="/en/insights/"
+>
+  <section data-od-id="hero">
+    <p class="eyebrow">Insights</p>
+    <h1>Ideas for making better decisions before building software.</h1>
+    <p class="lead">
+      Guides on custom software, automation, and processes for companies
+      that want to work with less complexity.
+    </p>
+  </section>
+
+  <!-- EN parity: hero translated, body sections follow ES structure -->
+  <section data-od-id="preguntas">
+    <p class="eyebrow">Before building</p>
+    <h2>Three questions that come up before building.</h2>
+    <ol>
+      <li>
+        <h3>What problem are we actually solving?</h3>
+        <p>Start from the problem, not the technology.</p>
+      </li>
+      <li>
+        <h3>What should happen without human intervention?</h3>
+        <p>Repetitive work is usually the best place to start.</p>
+      </li>
+      <li>
+        <h3>How will we know it worked?</h3>
+        <p>Define the expected outcome before writing any code.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section data-od-id="criterio">
+    <p class="eyebrow">Our editorial line</p>
+    <h2>We don&rsquo;t publish for the sake of publishing.</h2>
+    <p class="lead">
+      Reading helps frame the problem. Then it needs to be seen in
+      context — inside your operation.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="final-primary">
+        Analyze my case
+      </a>
+      <a class="btn btn-s" href={route('services', 'en')}>
+        Explore our services
+      </a>
+    </div>
+  </section>
+</BaseLayout>

@@ -1,0 +1,240 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  locale="es"
+  routeKey="insights"
+  canonicalPath="/insights/"
+  title="Insights sobre software, procesos y automatización | Next Wrld"
+  description="Ideas y guías sobre software a medida, automatización, procesos y sistemas para empresas que quieren trabajar con menos complejidad."
+>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">Insights</p>
+      <h1>Ideas para tomar mejores decisiones antes de construir software.</h1>
+      <p class="lead">Escribimos sobre procesos, automatización, producto y tecnología para empresas que quieren simplificar cómo trabajan sin sumar complejidad innecesaria.</p>
+      <p class="support">Menos tendencias. Más contexto para decidir qué vale la pena cambiar, conectar o construir.</p>
+      <div class="search"><input id="search" type="search" placeholder="Buscar en Insights" aria-label="Buscar en Insights" /></div>
+    </div>
+  </section>
+  <section class="band" data-od-id="temas" style="padding:72px 0">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">Explorar por tema</p>
+      <div class="topics">
+        <div class="topic"><b>PROCESOS</b><p>Trabajo manual, procesos del negocio, Excel, información fragmentada y complejidad operativa.</p></div>
+        <div class="topic"><b>SOFTWARE A MEDIDA</b><p>Cuándo tiene sentido, cuándo no, requerimientos, costos, alcance y sistemas legacy.</p></div>
+        <div class="topic"><b>AUTOMATIZACIÓN E INTEGRACIONES</b><p>Tareas repetitivas, conexión de herramientas, integraciones y qué automatizar.</p></div>
+        <div class="topic"><b>PRODUCTO Y SISTEMAS</b><p>Definir qué construir, MVPs, prioridades, decisiones de producto y evolución.</p></div>
+        <div class="topic"><b>IA APLICADA</b><p>Casos prácticos, cuándo aporta valor y cuándo alcanza con automatización tradicional.</p></div>
+      </div>
+    </div>
+  </section>
+  <section data-od-id="destacado" style="padding-bottom:40px">
+    <div class="wrap">
+      <div data-reveal><p class="eyebrow">Destacado</p></div>
+      <article class="feat" data-reveal>
+        <div>
+          <span class="cat">PROCESOS</span>
+          <h3><a href="/insights/cuando-excel-deja-de-ser-suficiente">Cuando Excel deja de ser suficiente para gestionar un proceso.</a></h3>
+          <p>Excel puede ser una excelente herramienta durante mucho tiempo. El problema aparece cuando empieza a concentrar reglas, información crítica, tareas manuales y conocimiento que solo algunas personas entienden.</p>
+          <p style="margin-top:12px">En esta guía analizamos las señales que indican que un proceso está empezando a necesitar algo diferente.</p>
+          <a class="read" href="/insights/cuando-excel-deja-de-ser-suficiente">Leer insight →</a>
+        </div>
+        <div class="meta"><span>8 min de lectura</span></div>
+      </article>
+    </div>
+  </section>
+  <section data-od-id="empezar" style="padding-top:40px">
+    <div class="wrap">
+      <div data-reveal>
+        <p class="eyebrow">Si estás evaluando qué hacer</p>
+        <h2>Tres preguntas que aparecen antes de construir.</h2>
+      </div>
+      <div class="guides" data-reveal>
+        <div class="guide"><span class="n">01</span><span class="cat">SOFTWARE A MEDIDA</span><h3><a href="/insights/software-a-medida-cuando-tiene-sentido">¿Cómo saber si tu empresa necesita software a medida?</a></h3><p>Qué señales indican que las herramientas existentes ya no se adaptan bien a cómo trabaja tu empresa y cuándo construir algo propio puede tener sentido.</p><a class="read" href="/insights/software-a-medida-cuando-tiene-sentido">Leer guía →</a></div>
+        <div class="guide"><span class="n">02</span><span class="cat">AUTOMATIZACIÓN</span><h3><a href="/insights/automatizar-integrar-o-construir">Automatizar, integrar o construir: ¿cómo decidir?</a></h3><p>No todo proceso manual necesita software nuevo. Revisamos cuándo conviene automatizar una tarea, conectar herramientas existentes o construir un sistema.</p><a class="read" href="/insights/automatizar-integrar-o-construir">Leer guía →</a></div>
+        <div class="guide"><span class="n">03</span><span class="cat">PROCESOS</span><h3><a href="/insights/procesos-que-conviene-automatizar">¿Qué procesos conviene automatizar primero?</a></h3><p>Una forma práctica de identificar tareas repetitivas, estimar su impacto y decidir dónde una automatización puede generar más valor.</p><a class="read" href="/insights/procesos-que-conviene-automatizar">Leer guía →</a></div>
+      </div>
+    </div>
+  </section>
+  <section id="ultimos" data-od-id="ultimos" style="padding-top:40px">
+    <div class="wrap">
+      <div data-reveal>
+        <p class="eyebrow">Últimos insights</p>
+        <h2>Ideas para entender mejor antes de decidir.</h2>
+      </div>
+      <div class="pills" data-reveal id="pills">
+        <button class="on" data-cat="todos">Todos</button><button data-cat="procesos">Procesos</button><button data-cat="software">Software a medida</button><button data-cat="automatizacion">Automatización</button><button data-cat="producto">Producto y sistemas</button><button data-cat="ia">IA aplicada</button>
+      </div>
+      <div class="grid" data-reveal id="grid">
+        <div class="card" data-cat="procesos"><span class="cat">PROCESOS</span><h3><a href="/insights/centralizar-informacion-dispersa">Cómo centralizar información que hoy vive entre Excel, chats y otras herramientas.</a></h3><p>De la información repartida a un lugar común: por dónde empezar sin intentar cambiar todo de una vez.</p><div class="meta"><span>6 min de lectura</span></div><a class="read" href="/insights/centralizar-informacion-dispersa">Leer insight →</a></div>
+        <div class="card" data-cat="software"><span class="cat">SOFTWARE A MEDIDA</span><h3><a href="/insights/comprar-software-o-construirlo">Comprar software o construirlo: qué deberías evaluar antes de decidir.</a></h3><p>Costo, alcance, adaptación y mantenimiento: las preguntas que conviene responder antes de elegir un camino.</p><div class="meta"><span>7 min de lectura</span></div><a class="read" href="/insights/comprar-software-o-construirlo">Leer insight →</a></div>
+        <div class="card" data-cat="procesos"><span class="cat">PROCESOS</span><h3><a href="/insights/senales-proceso-manual-limite">Cinco señales de que un proceso manual está empezando a limitar a tu empresa.</a></h3><p>Dependencia de personas, errores repetidos y reportes que cuestan horas: cómo reconocerlas a tiempo.</p><div class="meta"><span>5 min de lectura</span></div><a class="read" href="/insights/senales-proceso-manual-limite">Leer insight →</a></div>
+        <div class="card" data-cat="producto"><span class="cat">PRODUCTO Y SISTEMAS</span><h3><a href="/insights/que-hace-un-sistema-de-gestion">Qué hace realmente un sistema de gestión y cuándo necesitas uno.</a></h3><p>Más allá del nombre: qué centraliza, qué ordena y en qué momento justifica la inversión.</p><div class="meta"><span>6 min de lectura</span></div><a class="read" href="/insights/que-hace-un-sistema-de-gestion">Leer insight →</a></div>
+        <div class="card" data-cat="automatizacion"><span class="cat">AUTOMATIZACIÓN E INTEGRACIONES</span><h3><a href="/insights/detectar-tareas-automatizar">Cómo detectar tareas que tu equipo no debería seguir haciendo manualmente.</a></h3><p>Una recorrida práctica por el día a día para encontrar trabajo repetitivo con retorno claro.</p><div class="meta"><span>5 min de lectura</span></div><a class="read" href="/insights/detectar-tareas-automatizar">Leer insight →</a></div>
+        <div class="card" data-cat="automatizacion"><span class="cat">AUTOMATIZACIÓN E INTEGRACIONES</span><h3><a href="/insights/integrar-herramientas-antes-de-reemplazar">Integrar herramientas existentes antes de reemplazarlas: cuándo tiene sentido.</a></h3><p>Reemplazar no siempre es el mejor primer paso. A veces alcanza con hacer que lo actual trabaje junto.</p><div class="meta"><span>6 min de lectura</span></div><a class="read" href="/insights/integrar-herramientas-antes-de-reemplazar">Leer insight →</a></div>
+        <div class="card" data-cat="producto"><span class="cat">PRODUCTO Y SISTEMAS</span><h3><a href="/insights/primera-version-sistema-interno">Qué debería incluir una primera versión de un sistema interno.</a></h3><p>Empezar por lo importante: cómo recortar alcance sin perder lo que hace útil al sistema.</p><div class="meta"><span>7 min de lectura</span></div><a class="read" href="/insights/primera-version-sistema-interno">Leer insight →</a></div>
+        <div class="card" data-cat="producto"><span class="cat">PRODUCTO Y SISTEMAS</span><h3><a href="/insights/mas-funcionalidades-no-mejoran-producto">Por qué agregar más funcionalidades no siempre mejora un producto.</a></h3><p>Cantidad no es calidad: decidir qué no construir también forma parte del trabajo.</p><div class="meta"><span>5 min de lectura</span></div><a class="read" href="/insights/mas-funcionalidades-no-mejoran-producto">Leer insight →</a></div>
+        <div class="card" data-cat="software"><span class="cat">SOFTWARE A MEDIDA</span><h3><a href="/insights/modernizar-sistema-vs-reemplazar">Cuándo modernizar un sistema existente en lugar de reemplazarlo.</a></h3><p>Evolucionar lo que funciona contra empezar de cero: criterios para comparar ambas opciones.</p><div class="meta"><span>6 min de lectura</span></div><a class="read" href="/insights/modernizar-sistema-vs-reemplazar">Leer insight →</a></div>
+        <div class="card" data-cat="ia"><span class="cat">IA APLICADA</span><h3><a href="/insights/ia-dentro-de-un-proceso">Dónde tiene sentido utilizar inteligencia artificial dentro de un proceso.</a></h3><p>Casos concretos donde la IA aporta valor y situaciones donde alcanza con automatización simple.</p><div class="meta"><span>6 min de lectura</span></div><a class="read" href="/insights/ia-dentro-de-un-proceso">Leer insight →</a></div>
+        <div class="card" data-cat="software"><span class="cat">SOFTWARE A MEDIDA</span><h3><a href="/insights/que-preparar-antes-de-hablar-software">Qué información deberías preparar antes de hablar con una empresa de software.</a></h3><p>Procesos, herramientas, objetivos y prioridades: llegar con contexto acelera todo lo demás.</p><div class="meta"><span>5 min de lectura</span></div><a class="read" href="/insights/que-preparar-antes-de-hablar-software">Leer insight →</a></div>
+        <div class="card" data-cat="producto"><span class="cat">PRODUCTO Y SISTEMAS</span><h3><a href="/insights/de-sistema-a-problema-definido">Cómo pasar de “necesitamos un sistema” a un problema bien definido.</a></h3><p>Del pedido genérico a una necesidad concreta que se pueda evaluar, priorizar y construir.</p><div class="meta"><span>6 min de lectura</span></div><a class="read" href="/insights/de-sistema-a-problema-definido">Leer insight →</a></div>
+      </div>
+      <p class="empty" id="empty">No hay insights que coincidan con esa búsqueda todavía. Probá con otras palabras o explorá todos los temas.</p>
+    </div>
+  </section>
+  <section class="band" data-od-id="problemas">
+    <div class="wrap">
+      <div data-reveal>
+        <p class="eyebrow">¿Qué estás intentando resolver?</p>
+        <h2>Empieza por el problema, no por la tecnología.</h2>
+      </div>
+      <div class="scenarios" data-reveal>
+        <button class="sc" data-filter="procesos"><blockquote>“Tenemos demasiados Excel.”</blockquote><i>→</i><p>Ver contenidos sobre procesos y sistemas de gestión.</p></button>
+        <button class="sc" data-filter="automatizacion"><blockquote>“Copiamos información entre varias herramientas.”</blockquote><i>→</i><p>Ver automatización e integraciones.</p></button>
+        <button class="sc" data-filter="software"><blockquote>“Necesitamos un sistema, pero no sabemos por dónde empezar.”</blockquote><i>→</i><p>Ver software a medida y definición de producto.</p></button>
+        <button class="sc" data-filter="producto"><blockquote>“Nuestro software actual se quedó corto.”</blockquote><i>→</i><p>Ver modernización y evolución de sistemas.</p></button>
+        <button class="sc" data-filter="ia"><blockquote>“Queremos usar IA, pero no sabemos dónde tiene sentido.”</blockquote><i>→</i><p>Ver IA aplicada.</p></button>
+      </div>
+    </div>
+  </section>
+  <section data-od-id="como-escribimos">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Cómo escribimos</p>
+      <h2>No publicamos por publicar.</h2>
+      <p class="lead">Insights existe para responder preguntas que aparecen cuando una empresa intenta mejorar cómo trabaja con tecnología.</p>
+      <p class="lead" style="margin-top:12px">Buscamos explicar problemas complejos de forma clara, comparar alternativas y compartir el criterio que usamos cuando tenemos que decidir qué simplificar, qué conectar y qué construir.</p>
+      <p class="pov-close">Si una idea no ayuda a tomar una mejor decisión, probablemente no necesitemos convertirla en un artículo.</p>
+    </div>
+  </section>
+  <section class="final" data-od-id="puente-comercial">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">Llevarlo a tu caso</p>
+      <h2>Leer ayuda a entender el problema. Después hay que verlo en contexto.</h2>
+      <p>Cada empresa trabaja de una manera diferente.</p>
+      <p style="margin-top:12px">Si reconoces alguno de estos problemas en tu negocio, podemos revisar un proceso concreto contigo y ayudarte a entender qué caminos podrían tener sentido.</p>
+      <div class="cta-row"><a class="btn btn-w" href="https://calendar.app.google/JQnkVUqK3FF5VSRU6" target="_blank" rel="noopener" data-od-id="final-primary">Analizar mi caso</a><a class="btn btn-g" href="/servicios/">Conocer nuestros servicios</a></div>
+      <p class="micro">Diagnóstico inicial gratuito · 30–45 minutos</p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  h1 { font-size: clamp(38px, 5.4vw, 68px); margin: 22px 0 20px; }
+  h2 { font-size: clamp(28px, 3.4vw, 46px); margin: 18px 0; }
+  section { padding: 88px 0; scroll-margin-top: 80px; }
+  .hero { padding: 84px 0 72px; }
+  .hero .support { margin-top: 18px; font-family: var(--serif); font-style: italic; font-size: 21px; max-width: 52ch; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  .btn-w { background: #fff; color: var(--accent); }
+  .btn-w:hover { background: #dce6ff; }
+  .btn-g { border-color: rgba(255, 255, 255, 0.45); color: #fff; }
+  .btn-g:hover { border-color: #fff; background: rgba(255, 255, 255, 0.08); }
+  .search { margin-top: 28px; max-width: 560px; display: flex; gap: 10px; }
+  .search input { flex: 1; font-family: var(--sans); font-size: 15px; color: var(--fg); background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 14px 22px; min-height: 52px; outline: none; }
+  .search input:focus { border-color: var(--accent); }
+  .search input::placeholder { color: var(--muted); }
+  .band { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  .topics { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 40px; }
+  .topic { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 22px 20px; }
+  .topic b { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; color: var(--accent); display: block; margin-bottom: 10px; }
+  .topic p { font-size: 13.5px; color: var(--muted); }
+  .feat { margin-top: 48px; border-top: 2px solid var(--fg); padding-top: 36px; display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 48px; align-items: start; }
+  .feat .cat { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); }
+  .feat h3 { font-family: var(--disp); font-size: clamp(30px, 4vw, 54px); letter-spacing: -0.03em; line-height: 1.05; margin: 14px 0 16px; }
+  .feat h3 a { text-decoration: none; }
+  .feat h3 a:hover { color: var(--accent); }
+  .feat p { color: var(--muted); font-size: 17px; max-width: 56ch; }
+  .feat .meta { display: flex; gap: 16px; margin-top: 18px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .feat .read { display: inline-block; margin-top: 20px; font-weight: 600; font-size: 16px; color: var(--fg); text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .guides { display: grid; grid-template-columns: repeat(3, 1fr); gap: 56px; margin-top: 56px; }
+  .guide { border-top: 2px solid var(--accent); padding-top: 24px; display: flex; flex-direction: column; }
+  .guide .n { font-family: var(--disp); font-weight: 600; font-size: 44px; line-height: 1; letter-spacing: -0.02em; color: var(--accent); }
+  .guide .cat { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); margin-top: 14px; display: block; }
+  .guide h3 { font-family: var(--disp); font-size: 24px; margin: 10px 0; letter-spacing: -0.02em; line-height: 1.2; }
+  .guide h3 a { text-decoration: none; }
+  .guide h3 a:hover { color: var(--accent); }
+  .guide p { color: var(--muted); font-size: 15px; flex: 1; }
+  .guide .read { margin-top: 16px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); align-self: flex-start; }
+  .pills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+  .pills button { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; border: 1px solid var(--border); background: var(--surface); color: var(--muted); border-radius: 999px; padding: 10px 18px; cursor: pointer; min-height: 44px; transition: border-color 0.15s ease, color 0.15s ease; }
+  .pills button:hover { border-color: var(--accent); color: var(--accent); }
+  .pills button.on { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 48px; margin-top: 40px; }
+  .card { border-top: 1px solid var(--border); padding: 24px 0; display: flex; flex-direction: column; }
+  .card .cat { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); }
+  .card h3 { font-family: var(--disp); font-size: 21px; margin: 10px 0 8px; letter-spacing: -0.02em; line-height: 1.25; }
+  .card h3 a { text-decoration: none; }
+  .card h3 a:hover { color: var(--accent); }
+  .card p { color: var(--muted); font-size: 14.5px; flex: 1; }
+  .card .meta { margin-top: 14px; font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
+  .card .read { margin-top: 10px; font-weight: 600; font-size: 14px; text-decoration: none; border-bottom: 2px solid var(--accent); align-self: flex-start; }
+  .empty { display: none; margin-top: 32px; color: var(--muted); font-size: 16px; }
+  .scenarios { margin-top: 36px; border-top: 1px solid var(--fg); }
+  .sc { display: grid; grid-template-columns: 1fr auto 1fr; gap: 20px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--border); background: none; border-left: 0; border-right: 0; border-top: 0; width: 100%; text-align: left; cursor: pointer; font-family: inherit; color: inherit; }
+  .sc blockquote { font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--fg); }
+  .sc i { font-style: normal; color: var(--accent); font-weight: 700; font-size: 20px; }
+  .sc p { font-size: 15.5px; color: var(--muted); }
+  .sc:hover blockquote { color: var(--accent); }
+  .pov-close { margin-top: 32px; font-family: var(--serif); font-style: italic; font-size: 22px; max-width: 44ch; }
+  .final { background: var(--navy); color: #fff; text-align: center; padding: 130px 0; border-top: 4px solid #5e85e3; }
+  .final .eyebrow { color: rgba(255, 255, 255, 0.78); justify-content: center; }
+  .final .eyebrow::before { background: #fff; }
+  .final h2 { font-size: clamp(34px, 4.4vw, 60px); max-width: 20ch; margin: 0 auto 18px; }
+  .final p { color: rgba(255, 255, 255, 0.85); max-width: 52ch; margin: 0 auto; }
+  .final .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; justify-content: center; }
+  .final .micro { font-family: var(--mono); font-size: 12.5px; color: rgba(255, 255, 255, 0.7); margin-top: 16px; }
+  @media (max-width: 960px) {
+    section { padding: 72px 0; }
+    .topics { grid-template-columns: 1fr 1fr; }
+    .feat { grid-template-columns: 1fr; gap: 20px; }
+    .guides { grid-template-columns: 1fr; gap: 0; }
+    .guide { padding: 26px 0; }
+    .grid { grid-template-columns: 1fr; }
+    .sc { grid-template-columns: 1fr; gap: 6px; }
+    .sc i { transform: rotate(90deg); justify-self: start; }
+  }
+</style>
+
+<script>
+  // insights: filter by category + search
+  var pills = document.querySelectorAll('#pills button');
+  var cards = document.querySelectorAll('#grid .card');
+  var search = document.getElementById('search');
+  var empty = document.getElementById('empty');
+  var activeCat = 'todos';
+  function applyFilter() {
+    var q = search.value.trim().toLowerCase();
+    var shown = 0;
+    cards.forEach(function (c) {
+      var okCat = activeCat === 'todos' || c.dataset.cat === activeCat;
+      var txt = (c.querySelector('h3').textContent + ' ' + c.querySelector('p').textContent).toLowerCase();
+      var okQ = q === '' || txt.indexOf(q) > -1;
+      var show = okCat && okQ;
+      c.style.display = show ? '' : 'none';
+      if (show) shown++;
+    });
+    empty.style.display = shown ? 'none' : 'block';
+  }
+  pills.forEach(function (b) {
+    b.addEventListener('click', function () {
+      pills.forEach(function (x) { x.classList.remove('on'); });
+      b.classList.add('on');
+      activeCat = b.dataset.cat;
+      applyFilter();
+    });
+  });
+  search.addEventListener('input', applyFilter);
+  document.querySelectorAll('.sc').forEach(function (s) {
+    s.addEventListener('click', function () {
+      var cat = s.dataset.filter;
+      pills.forEach(function (x) { x.classList.toggle('on', x.dataset.cat === cat); });
+      activeCat = cat;
+      search.value = '';
+      applyFilter();
+      document.getElementById('ultimos').scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>

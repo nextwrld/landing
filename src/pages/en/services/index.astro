@@ -1,0 +1,83 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { route } from '../../../i18n/routes';
+
+const calendarUrl = 'https://calendar.app.google/JQnkVUqK3FF5VSRU6';
+const whatsappUrl =
+  'https://wa.me/5491173678601?text=Hello%2C%20I%20came%20from%20Next%20Wrld.%20I%20want%20to%20talk%20about%20a%20process%20in%20my%20company%20we%20are%20looking%20to%20improve.';
+---
+
+<BaseLayout
+  locale="en"
+  title="Custom software, automation and integrations | Next Wrld"
+  description="Custom software, management systems, automations and integrations for companies that need simpler processes and less manual work."
+  routeKey="services"
+  canonicalPath="/en/services/"
+>
+  <section data-od-id="hero">
+    <p class="eyebrow">Services</p>
+    <h1>Technology that simplifies how your company works.</h1>
+    <p class="lead">
+      Custom software, management systems, and automations for companies
+      whose off-the-shelf tools no longer fit the way they work.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="hero-primary">
+        Analyze my case
+      </a>
+      <a class="btn btn-s" href={route('cases', 'en')} data-od-id="hero-secondary">
+        View case studies
+      </a>
+    </div>
+  </section>
+
+  <!-- EN parity: hero translated, body sections follow ES structure -->
+  <section data-od-id="software-a-medida">
+    <p class="eyebrow">01 — Custom software</p>
+    <h2>When off-the-shelf tools no longer fit how you work.</h2>
+    <p class="lead">
+      We design systems around your real process: clients, orders,
+      operations, and reporting in one flow your team actually uses.
+    </p>
+  </section>
+
+  <section data-od-id="sistemas-de-gestion">
+    <p class="eyebrow">02 — Management systems</p>
+    <h2>When information is scattered and running the business starts costing too much.</h2>
+    <p class="lead">
+      One source of truth for the data that matters, with the access
+      levels and reports each role needs.
+    </p>
+  </section>
+
+  <section data-od-id="automatizacion-e-integraciones">
+    <p class="eyebrow">03 — Automation and integrations</p>
+    <h2>When your team is doing tasks that could happen on their own.</h2>
+    <p class="lead">
+      We connect the tools you already use and automate repetitive work
+      so the operation moves without manual follow-up.
+    </p>
+  </section>
+
+  <section data-od-id="ia">
+    <p class="eyebrow">A note on AI</p>
+    <h2>Artificial intelligence is a tool, not the starting point.</h2>
+    <p class="lead">
+      First the problem, then the technology. We apply AI where it
+      removes real work, not where it adds complexity.
+    </p>
+  </section>
+
+  <section data-od-id="cierre">
+    <p class="eyebrow">Next step</p>
+    <h2>You don&rsquo;t need to know what to build to get started.</h2>
+    <div class="cta-row">
+      <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="final-primary">
+        Analyze my case
+      </a>
+      <a class="btn btn-s" href={whatsappUrl} target="_blank" rel="noopener">
+        Chat on WhatsApp
+      </a>
+    </div>
+  </section>
+</BaseLayout>

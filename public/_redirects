@@ -1,0 +1,7 @@
+# Legacy .html URLs to clean routes
+/index.html /
+/servicios.html /servicios/
+/como-trabajamos.html /como-trabajamos/
+/casos.html /casos/
+/insights.html /insights/
+/nosotros.html /nosotros/

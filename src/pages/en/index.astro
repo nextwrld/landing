@@ -1,0 +1,99 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { route } from '../../i18n/routes';
+
+const calendarUrl = 'https://calendar.app.google/JQnkVUqK3FF5VSRU6';
+const whatsappUrl =
+  'https://wa.me/5491173678601?text=Hello%2C%20I%20came%20from%20Next%20Wrld.%20I%20want%20to%20talk%20about%20a%20process%20in%20my%20company%20we%20are%20looking%20to%20improve.';
+---
+
+<BaseLayout
+  locale="en"
+  title="Custom software for companies | Next Wrld"
+  description="We design custom software for companies that need fewer manual processes, connected tools, and more operational control."
+  routeKey="home"
+  canonicalPath="/en/"
+>
+  <section data-od-id="hero">
+    <p class="eyebrow">Custom software for companies</p>
+    <h1>Your company shouldn&rsquo;t grow by multiplying manual work.</h1>
+    <p class="lead">
+      We design custom software for companies that need fewer manual
+      processes, connected tools, and more control over their operation.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="hero-primary">
+        Analyze my operation
+      </a>
+      <a class="btn btn-s" href={route('cases', 'en')} data-od-id="hero-secondary">
+        View case studies
+      </a>
+    </div>
+  </section>
+
+  <!-- EN parity: hero translated, body sections follow ES structure -->
+  <section data-od-id="problema">
+    <p class="eyebrow">The problem</p>
+    <h2>Your company may have outgrown the way it operates.</h2>
+    <p class="lead">
+      Growth adds clients, orders, and exceptions. When the operation still
+      runs on spreadsheets and disconnected tools, keeping everything
+      working costs more every month.
+    </p>
+  </section>
+
+  <section data-od-id="capacidades">
+    <p class="eyebrow">What we do</p>
+    <h2>Technology designed around how your company works.</h2>
+    <ul>
+      <li>
+        <h3>Custom software</h3>
+        <p>Systems built around your process, not the other way around.</p>
+        <a href={route('services', 'en')}>Explore services</a>
+      </li>
+      <li>
+        <h3>Management systems</h3>
+        <p>One place for the information that runs the business.</p>
+        <a href={route('services', 'en')}>Explore services</a>
+      </li>
+      <li>
+        <h3>Automation and integrations</h3>
+        <p>Repetitive tasks that start happening on their own.</p>
+        <a href={route('services', 'en')}>Explore services</a>
+      </li>
+    </ul>
+  </section>
+
+  <section data-od-id="proceso">
+    <p class="eyebrow">How we work</p>
+    <h2>From understanding the problem to building something that actually works.</h2>
+    <p class="lead">
+      We start with what the business needs to achieve, then decide what
+      is worth building.
+    </p>
+    <a href={route('howWeWork', 'en')}>How we work</a>
+  </section>
+
+  <section data-od-id="casos">
+    <p class="eyebrow">Case studies</p>
+    <h2>We understand before we build, whatever the business.</h2>
+    <p class="lead">
+      Real projects in gyms, international organizations, and real estate:
+      different problems, the same principle.
+    </p>
+    <a href={route('cases', 'en')}>View case studies</a>
+  </section>
+
+  <section data-od-id="diagnostico">
+    <p class="eyebrow">First step</p>
+    <h2>Before deciding what to build, let&rsquo;s understand what is slowing down your operation.</h2>
+    <div class="cta-row">
+      <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="diag-primary">
+        Book an operational diagnostic
+      </a>
+      <a class="btn btn-s" href={whatsappUrl} target="_blank" rel="noopener" data-od-id="diag-whatsapp">
+        Chat on WhatsApp
+      </a>
+    </div>
+  </section>
+</BaseLayout>

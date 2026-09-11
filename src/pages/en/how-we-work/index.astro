@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { route } from '../../../i18n/routes';
+
+const calendarUrl = 'https://calendar.app.google/JQnkVUqK3FF5VSRU6';
+const whatsappUrl =
+  'https://wa.me/5491173678601?text=Hello%2C%20I%20came%20from%20Next%20Wrld.%20I%20want%20to%20talk%20about%20a%20process%20in%20my%20company%20we%20are%20looking%20to%20improve.';
+---
+
+<BaseLayout
+  locale="en"
+  title="How we work | Software development | Next Wrld"
+  description="How we work at Next Wrld: we understand the problem, define the solution, build, implement, and evolve software for companies."
+  routeKey="howWeWork"
+  canonicalPath="/en/how-we-work/"
+>
+  <section data-od-id="hero">
+    <p class="eyebrow">How we work</p>
+    <h1>First we understand the problem. Then we decide what is worth building.</h1>
+    <p class="lead">
+      A process that goes from a concrete need to a solution that works
+      day to day — without asking you to become a software expert.
+    </p>
+    <div class="cta-row">
+      <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="hero-primary">
+        Start with a diagnostic
+      </a>
+      <a class="btn btn-s" href={route('cases', 'en')} data-od-id="hero-secondary">
+        View case studies
+      </a>
+    </div>
+  </section>
+
+  <!-- EN parity: hero translated, body sections follow ES structure -->
+  <section data-od-id="pasos">
+    <p class="eyebrow">The process</p>
+    <h2>From a concrete need to a solution that works day to day.</h2>
+    <ol>
+      <li>
+        <h3>Understand</h3>
+        <p>We learn how the business really operates before proposing anything.</p>
+      </li>
+      <li>
+        <h3>Define</h3>
+        <p>We agree on what success looks like and what is worth building first.</p>
+      </li>
+      <li>
+        <h3>Build</h3>
+        <p>We develop in short cycles you can see and validate.</p>
+      </li>
+      <li>
+        <h3>Implement</h3>
+        <p>We put the system into real use with your team, not just into production.</p>
+      </li>
+      <li>
+        <h3>Evolve</h3>
+        <p>We measure, adjust, and keep improving after launch.</p>
+      </li>
+    </ol>
+  </section>
+
+  <section data-od-id="principios">
+    <p class="eyebrow">Principles</p>
+    <h2>The process matters because decisions matter.</h2>
+    <p class="lead">
+      Not every project needs to walk the same path in the same way. The
+      method adapts; the principle holds: understand first.
+    </p>
+    <a href={route('services', 'en')}>Explore services</a>
+  </section>
+
+  <section data-od-id="cierre">
+    <p class="eyebrow">Next step</p>
+    <h2>We don&rsquo;t need to start by talking about software.</h2>
+    <div class="cta-row">
+      <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="final-primary">
+        Book a diagnostic
+      </a>
+      <a class="btn btn-s" href={whatsappUrl} target="_blank" rel="noopener">
+        Chat on WhatsApp
+      </a>
+    </div>
+  </section>
+</BaseLayout>

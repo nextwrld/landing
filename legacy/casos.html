@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casos de software, automatización y productos digitales | Next Wrld</title>
+<meta name="description" content="Conoce proyectos de Next Wrld en software a medida, sistemas de gestión, automatización y productos digitales desarrollados alrededor de problemas reales.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FCFCFB; --surface:#FFFFFF; --surface-gray:#F7F8FA; --surface-blue:#F2F5FB;
+  --fg:#111318; --muted:#667085; --border:#E3E7ED;
+  --accent:#2758D9; --accent-soft:#DCE6FF; --navy:#102654;
+  --sans:'Inter',system-ui,sans-serif; --disp:'Space Grotesk',sans-serif; --serif:'Newsreader',Georgia,serif; --mono:'IBM Plex Mono',monospace;
+  --max:1240px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent);color:#fff}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+.wrap-narrow{max-width:880px;margin:0 auto;padding:0 32px}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:24px;height:1px;background:var(--accent)}
+h1{font-family:var(--disp);letter-spacing:-.03em;line-height:1.05;font-weight:600;font-size:clamp(36px,5vw,64px);margin:22px 0 20px;text-wrap:balance}
+h2{font-family:var(--disp);letter-spacing:-.03em;line-height:1.1;font-weight:600;font-size:clamp(28px,3.4vw,46px);margin:18px 0;text-wrap:balance}
+.lead{font-size:clamp(16px,1.5vw,19px);color:var(--muted);max-width:62ch}
+header{position:sticky;top:0;z-index:50;background:rgba(252,252,251,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.hbar{display:flex;align-items:center;justify-content:space-between;height:68px;max-width:var(--max);margin:0 auto;padding:0 32px}
+.logo{font-family:var(--disp);font-weight:700;font-size:19px;letter-spacing:-.02em;text-decoration:none;display:inline-flex;align-items:center;gap:9px}
+.logo span{color:var(--accent)}
+.logo img{width:26px;height:26px;display:block;flex:none}
+nav.desk{display:flex;gap:30px;font-size:14.5px;font-weight:500}
+nav.desk a{text-decoration:none;opacity:.75}nav.desk a:hover{opacity:1}nav.desk a[aria-current]{opacity:1;font-weight:700}
+.hright{display:flex;align-items:center;gap:16px}
+.lang{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;text-decoration:none;border-radius:999px;padding:15px 28px;min-height:52px;transition:transform .18s ease,background .18s ease,box-shadow .18s ease;border:1px solid transparent;cursor:pointer}
+.btn-p{background:var(--accent);color:#fff}.btn-p:hover{background:#1F49B4;transform:translateY(-1px);box-shadow:0 12px 28px rgba(10,78,220,.35)}
+.btn-s{background:transparent;border-color:#C2D1EB;color:var(--accent)}.btn-s:hover{border-color:var(--accent);background:#DCE6FF}
+.btn-w{background:#fff;color:var(--accent)}.btn-w:hover{background:#DCE6FF}
+.btn-g{border-color:rgba(255,255,255,.45);color:#fff}.btn-g:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-sm{padding:11px 20px;min-height:44px;font-size:14px}
+.burger{display:none;background:none;border:0;font-size:24px;cursor:pointer;color:var(--fg)}
+.mmenu{display:none;border-top:1px solid var(--border);padding:20px 32px 28px;background:var(--bg)}
+.mmenu.open{display:block}
+.mmenu a:not(.btn){display:block;padding:12px 0;text-decoration:none;font-weight:600;font-size:18px;border-bottom:1px solid var(--border)}
+.mmenu .btn{width:100%;margin-top:16px;border-bottom:0}
+.mmenu p{margin:14px 0;font-family:var(--mono);font-size:12px;color:var(--muted)}
+section{padding:96px 0;scroll-margin-top:80px}
+.hero{padding:84px 0 88px}
+.cta-row{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.hero .support{margin-top:18px;font-family:var(--serif);font-style:italic;font-size:21px;max-width:52ch}
+.band{background:var(--surface-gray);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.principle{margin-top:24px;font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--fg)}
+.principle span{display:block;font-family:var(--disp);font-size:19px;letter-spacing:0;color:var(--fg);margin-top:6px}
+.case{padding:40px 0;border-top:1px solid var(--fg);margin-top:64px;scroll-margin-top:90px}
+.case:first-of-type{margin-top:56px}
+.case .k{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--accent);display:block;margin:14px 0 20px}
+.case h3{font-family:var(--disp);font-size:clamp(26px,3.2vw,42px);letter-spacing:-.02em;line-height:1.1;text-wrap:balance}
+.case .context{font-size:17px;color:var(--muted);max-width:64ch;margin-top:14px}
+.case-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;margin-top:32px;align-items:start}
+.case-grid h4{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--accent);margin:22px 0 8px}
+.case-grid h4:first-child{margin-top:0}
+.case-grid p{font-size:15.5px;color:var(--muted);max-width:56ch}
+.case-grid p b{color:var(--fg)}
+.built{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:24px 26px}
+.built b{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--accent);display:block;margin-bottom:10px}
+.built ul{list-style:none}
+.built li{position:relative;font-size:15px;padding:6px 0 6px 26px}
+.built li::before{content:"·";position:absolute;left:4px;color:var(--accent);font-weight:700;font-size:20px;line-height:1.4}
+.scale{font-size:13.5px;border-left:2px solid var(--accent);padding-left:14px;max-width:56ch;margin-top:16px;color:var(--muted)}
+.closing{margin-top:24px;font-family:var(--serif);font-style:italic;font-size:21px;max-width:56ch}
+.case-cta{display:flex;gap:28px;flex-wrap:wrap;margin-top:22px;align-items:center}
+.case-cta a.main{font-weight:600;font-size:16px;text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:2px}
+.case-cta span.rel{font-size:13.5px;color:var(--muted)}
+.case-cta span.rel a{color:var(--accent);font-weight:600;text-decoration:none}
+.tag-mvp{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:6px 14px;margin-top:16px}
+.aion{background:var(--navy);color:#fff;border-radius:22px;padding:clamp(30px,4.5vw,64px)}
+.aion .eyebrow{color:#9DBCFB}.aion .eyebrow::before{background:#9DBCFB}
+.aion .label{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:#9DBCFB;display:block;margin-top:12px}
+.aion h3{font-family:var(--disp);font-size:clamp(30px,3.8vw,50px);letter-spacing:-.02em;margin:10px 0 4px}
+.aion .headline{font-family:var(--serif);font-style:italic;font-size:clamp(20px,2.4vw,28px);color:#fff}
+.aion p{color:#C9D4E8;max-width:64ch;margin-top:14px;font-size:16px}
+.aion .built{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.2)}
+.aion .built li{color:#E4E9F0}
+.aion .closing{color:#fff}
+.aion .tech{margin-top:18px;font-family:var(--mono);font-size:11.5px;color:#9DBCFB}
+.cmp{margin-top:40px;border-top:1px solid var(--fg)}
+.cmp-row{display:grid;grid-template-columns:200px 1fr 1fr 1fr;gap:24px;padding:24px 0;border-bottom:1px solid var(--border);align-items:start}
+.cmp-row .who{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--accent)}
+.cmp-row h4{font-family:var(--disp);font-size:19px;margin-bottom:6px}
+.cmp-row p{font-size:14.5px;color:var(--muted)}
+.cmp-close{margin-top:28px;font-family:var(--serif);font-style:italic;font-size:22px;text-align:center;max-width:40ch;margin-left:auto;margin-right:auto}
+.link-arrow{display:inline-block;margin-top:24px;font-weight:600;font-size:16px;color:var(--fg);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:2px}
+.final{background:var(--navy);color:#fff;text-align:center;padding:130px 0;border-top:4px solid #5E85E3}
+.final .eyebrow{color:rgba(255,255,255,.78);justify-content:center}
+.final .eyebrow::before{background:#fff}
+.final h2{font-size:clamp(34px,4.4vw,60px);max-width:20ch;margin:0 auto 18px}
+.final p{color:rgba(255,255,255,.85);max-width:52ch;margin:0 auto}
+.final .cta-row{justify-content:center}
+.final .micro{font-family:var(--mono);font-size:12.5px;color:rgba(255,255,255,.7);margin-top:16px}
+footer{border-top:1px solid var(--border);padding:56px 0 32px;background:var(--bg)}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
+.fgrid h5{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--muted);margin-bottom:14px}
+.fgrid a{display:block;text-decoration:none;font-size:14.5px;padding:5px 0;opacity:.92}.fgrid a:hover{opacity:1}
+footer .logo{font-size:22px}footer .logo img{width:34px;height:34px}
+.legal{display:flex;justify-content:space-between;gap:16px;margin-top:32px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px;color:var(--muted);flex-wrap:wrap}
+[data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+[data-reveal].in{opacity:1;transform:none}
+.wa-float{position:fixed;right:22px;bottom:calc(22px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;background:#FFFFFF;border:1px solid #DDE2EA;color:#111318;display:grid;place-items:center;box-shadow:0 14px 34px rgba(17,19,24,.18);z-index:60;transition:transform .18s ease,background .18s ease,border-color .18s ease;text-decoration:none}
+.wa-float:hover{background:#25D366;border-color:#25D366;color:#fff;transform:translateY(-2px)}
+.wa-float svg{width:28px;height:28px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media (max-width:960px){
+  nav.desk,.hright .btn-sm,.hright .lang{display:none}.burger{display:block}
+  section{padding:72px 0}
+  .case-grid{grid-template-columns:1fr;gap:24px}
+  .cmp-row{grid-template-columns:1fr;gap:8px}
+  .fgrid{grid-template-columns:1fr 1fr;gap:28px 20px}
+  footer{padding:48px 0 28px}
+  .legal{flex-direction:column;gap:8px;margin-top:28px}
+  .wa-float{width:56px;height:56px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom))}
+  .btn{min-height:52px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}[data-reveal]{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<header data-od-id="site-header">
+  <div class="hbar">
+    <a class="logo" href="index.html"><img src="logo.svg" alt="" width="26" height="26">Next Wrld<span>.</span></a>
+    <nav class="desk" aria-label="Principal">
+      <a href="servicios.html">Servicios</a><a href="como-trabajamos.html">Cómo trabajamos</a><a href="casos.html" aria-current="page">Casos</a><a href="insights.html">Insights</a><a href="nosotros.html">Nosotros</a>
+    </nav>
+    <div class="hright">
+      <span class="lang">ES / EN</span>
+      <a class="btn btn-p btn-sm" href="https://calendar.app.google/JQnkVUqK3FF5VSRU6" target="_blank" rel="noopener" data-od-id="nav-cta">Diagnóstico operativo</a>
+      <button class="burger" id="burger" aria-label="Abrir menú">☰</button>
+    </div>
+  </div>
+  <div class="mmenu" id="mmenu">
+    <a href="servicios.html">Servicios</a><a href="como-trabajamos.html">Cómo trabajamos</a><a href="casos.html">Casos</a><a href="insights.html">Insights</a><a href="nosotros.html">Nosotros</a>
+    <p>ES / EN</p>
+    <a class="btn btn-p" href="https://calendar.app.google/JQnkVUqK3FF5VSRU6" target="_blank" rel="noopener">Agendar diagnóstico</a>
+  </div>
+</header>
+<main>
+<section class="hero" data-od-id="hero">
+  <div class="wrap" data-reveal>
+    <p class="eyebrow">Casos</p>
+    <h1>Problemas distintos. El mismo principio: entender antes de construir.</h1>
+    <p class="lead">Productos, plataformas y automatizaciones creadas alrededor de necesidades reales.</p>
+    <p class="lead" style="margin-top:12px">En cada caso mostramos qué estaba pasando, qué había que resolver y cómo convertimos ese contexto en una solución concreta.</p>
+    <p class="support">Sin métricas inventadas. Sin resultados inflados. Trabajo real.</p>
+    <div class="cta-row">
+      <a class="btn btn-p" href="#casos" data-od-id="hero-primary">Explorar casos</a>
+      <a class="btn btn-s" href="como-trabajamos.html" data-od-id="hero-secondary">Cómo trabajamos</a>
+    </div>
+  </div>
+</section>
+<section class="band" data-od-id="introduccion">
+  <div class="wrap" data-reveal>
+    <p class="eyebrow">Trabajo real</p>
+    <h2>No todos los problemas necesitan el mismo tipo de solución.</h2>
+    <p class="lead">Algunas empresas necesitan centralizar información. Otras modernizar un sistema existente. Otras conectar herramientas o construir un producto desde cero.</p>
+    <p class="lead" style="margin-top:12px">Nuestro trabajo cambia según el contexto.</p>
+    <p class="lead" style="margin-top:12px">Cuando tenemos datos verificables, los mostramos. Cuando no, explicamos con claridad el problema, las decisiones y lo que construimos.</p>
+    <div class="principle">El principio no:<span>entender qué está pasando, decidir qué vale la pena resolver y construir alrededor de eso.</span></div>
+  </div>
+</section>
+<section id="casos" data-od-id="casos" style="padding-top:48px">
+  <div class="wrap">
+    <div class="aion" id="aion" data-reveal>
+      <p class="eyebrow">Caso destacado</p>
+      <span class="label">A PRODUCT BY NEXT WRLD</span>
+      <h3>AION Wellness</h3>
+      <p class="headline">Un sistema diseñado alrededor de cómo funciona un negocio fitness.</p>
+      <div class="case-grid">
+        <div>
+          <h4 style="color:#9DBCFB">CONTEXTO</h4>
+          <p style="color:#C9D4E8">En centros deportivos, membresías, planes, pagos, socios y cierres de caja forman parte del mismo día a día, pero muchas veces se gestionan desde herramientas y procesos diferentes.</p>
+          <h4 style="color:#9DBCFB">PROBLEMA</h4>
+          <p style="color:#C9D4E8">Cuando esa información está separada, gestionar clientes, pagos y administración requiere más trabajo manual y menos visibilidad sobre lo que ocurre.</p>
+          <h4 style="color:#9DBCFB">QUÉ HICIMOS</h4>
+          <p style="color:#C9D4E8">Diseñamos AION Wellness como un producto específico para centralizar esos procesos dentro de una misma experiencia.</p>
+          <p style="color:#C9D4E8;margin-top:12px">AION no es solamente un proyecto desarrollado por Next Wrld. También somos responsables de tomar decisiones sobre qué construir, qué dejar fuera y cómo evolucionar el producto.</p>
+          <p class="closing">Construir un producto propio nos obliga a aplicar sobre nosotros mismos el mismo criterio que proponemos a nuestros clientes.</p>
+          <div class="case-cta"><a class="main" style="color:#fff" href="/casos/aion-wellness">Ver caso completo →</a><a class="main" style="color:#fff" href="https://www.aionwellness.pro/" target="_blank" rel="noopener">Conocer AION Wellness →</a></div>
+        </div>
+        <div>
+          <div class="built"><b>QUÉ SE CONSTRUYÓ</b><ul><li>gestión de socios;</li><li>membresías;</li><li>planes;</li><li>pagos;</li><li>cierres de caja;</li><li>información administrativa;</li><li>control de acceso según necesidades del producto;</li><li>evolución continua de la plataforma.</li></ul></div>
+          <p class="tech">Producto · Frontend · Backend · Datos · Infraestructura</p>
+        </div>
+      </div>
+    </div>
+    <div class="case" id="jfhp" data-reveal>
+      <p class="eyebrow">Plataforma en evolución</p>
+      <span class="k">JFHP</span>
+      <h3>De una plataforma legacy a un sistema preparado para seguir creciendo.</h3>
+      <p class="context">JFHP utiliza una plataforma para gestionar diferentes áreas de una organización internacional, incluyendo usuarios, equipos, ubicaciones, formación, reportes, inventario y distintos niveles de acceso.</p>
+      <div class="case-grid">
+        <div>
+          <h4>PROBLEMA</h4>
+          <p>El sistema necesitaba evolucionar mientras continuaba siendo utilizado.</p>
+          <p>Parte de la plataforma dependía de tecnologías y estructuras legacy que hacían más difícil incorporar nuevas necesidades y mantener una base consistente para el futuro.</p>
+          <h4>QUÉ HICIMOS</h4>
+          <p>Durante varios años hemos participado en la modernización y evolución progresiva del producto.</p>
+          <h4>RELACIÓN DE PRODUCTO</h4>
+          <p>El trabajo se realiza en contacto directo con la persona responsable del producto, combinando decisiones de negocio con decisiones técnicas.</p>
+          <p class="closing">No siempre construir significa empezar de cero. A veces el reto es evolucionar un sistema real sin detener lo que ya funciona.</p>
+          <div class="case-cta"><a class="main" href="/casos/jfhp">Ver caso completo →</a><span class="rel">Relacionado: <a href="servicios.html#software-a-medida">Software a medida</a></span></div>
+        </div>
+        <div>
+          <div class="built"><b>ALCANCE DEL TRABAJO</b><ul><li>modernización del backend;</li><li>evolución del modelo de datos;</li><li>nuevas funcionalidades;</li><li>sistemas de permisos;</li><li>reporting;</li><li>gestión de equipos y ubicaciones;</li><li>inventario;</li><li>formación;</li><li>evolución del frontend;</li><li>despliegue e infraestructura;</li><li>mantenimiento y mejora continua.</li></ul></div>
+          <p class="scale">La plataforma cuenta con alrededor de 14.000 cuentas registradas, como contexto de la escala que el sistema sostiene.</p>
+          <p class="tech" style="margin-top:16px;font-family:var(--mono);font-size:11.5px;color:var(--muted)">Backend · Frontend · Datos · Infraestructura</p>
+        </div>
+      </div>
+    </div>
+    <div class="case" id="inmocrm" data-reveal>
+      <p class="eyebrow">Producto desde cero</p>
+      <span class="k">INMOCRM</span>
+      <h3>De entender un proceso inmobiliario a diseñar una primera versión del producto.</h3>
+      <p class="context">Los procesos inmobiliarios pueden distribuir información entre contactos, propiedades, conversaciones, seguimiento y diferentes herramientas.</p>
+      <div class="case-grid">
+        <div>
+          <h4>PROBLEMA</h4>
+          <p>Antes de construir, era necesario entender qué partes del proceso realmente necesitaban centralizarse y qué debía incluir una primera versión.</p>
+          <h4>QUÉ HICIMOS</h4>
+          <p>Investigamos el proceso, definimos el producto y diseñamos un MVP enfocado en centralizar las tareas principales dentro de una experiencia más clara.</p>
+          <span class="tag-mvp">MVP DESARROLLADO</span>
+          <p style="margin-top:12px">InmoCRM se presenta como un producto desarrollado y validado a nivel de MVP, no como una implementación productiva en una empresa real.</p>
+          <p class="closing">Construir menos también puede ser una buena decisión cuando todavía estamos aprendiendo qué necesita el producto.</p>
+          <div class="case-cta"><a class="main" href="/casos/inmocrm">Ver caso completo →</a><span class="rel">Relacionado: <a href="servicios.html#software-a-medida">Software a medida</a></span></div>
+        </div>
+        <div>
+          <div class="built"><b>EL TRABAJO INCLUYÓ</b><ul><li>investigación;</li><li>definición de producto;</li><li>modelado de dominio;</li><li>arquitectura;</li><li>diseño de flujos;</li><li>frontend;</li><li>backend;</li><li>definición de una primera versión funcional.</li></ul></div>
+          <p class="tech" style="margin-top:16px;font-family:var(--mono);font-size:11.5px;color:var(--muted)">Producto · Frontend · Backend</p>
+        </div>
+      </div>
+    </div>
+    <div class="case" id="automatizaciones" data-reveal>
+      <p class="eyebrow">Automatización e integraciones</p>
+      <span class="k">CAPACIDAD APLICADA</span>
+      <h3>Procesos repetitivos convertidos en tareas que ocurren automáticamente.</h3>
+      <p class="context">Muchas empresas ya tienen las herramientas que necesitan.</p>
+      <p class="context">El problema aparece cuando alguien tiene que mover información entre ellas, repetir acciones o verificar manualmente que cada parte del proceso ocurrió correctamente.</p>
+      <div class="case-grid">
+        <div>
+          <h4>QUÉ HACEMOS</h4>
+          <p>Conectamos sistemas y automatizamos pasos que siguen reglas claras.</p>
+          <p class="closing">No siempre necesitas reemplazar tus herramientas. A veces necesitas hacer que trabajen mejor juntas.</p>
+          <div class="case-cta"><a class="main" href="servicios.html#automatizacion-e-integraciones">Explorar automatización e integraciones →</a></div>
+        </div>
+        <div>
+          <div class="built"><b>EJEMPLOS</b><ul><li>sincronizar información;</li><li>generar documentos;</li><li>validar datos;</li><li>enviar notificaciones;</li><li>conectar servicios externos.</li></ul></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="band" data-od-id="comparacion">
+  <div class="wrap">
+    <div data-reveal>
+      <p class="eyebrow">Mismo principio, distintos resultados</p>
+      <h2>La solución cambia según el problema.</h2>
+    </div>
+    <div class="cmp" data-reveal>
+      <div class="cmp-row"><span class="who">AION WELLNESS</span><div><h4>Producto propio</h4><p>Producto propio para centros deportivos.</p></div><div><p>Centralizar procesos relacionados con socios, membresías y pagos.</p></div><div><p>Plataforma de gestión específica para fitness.</p></div></div>
+      <div class="cmp-row"><span class="who">JFHP</span><div><h4>Sistema existente</h4><p>Sistema existente utilizado por una organización internacional.</p></div><div><p>Modernizar y evolucionar sin detener el producto.</p></div><div><p>Evolución progresiva de una plataforma de largo plazo.</p></div></div>
+      <div class="cmp-row"><span class="who">INMOCRM</span><div><h4>Idea de producto</h4><p>Idea de producto dentro del sector inmobiliario.</p></div><div><p>Entender qué debía incluir una primera versión.</p></div><div><p>MVP diseñado alrededor del proceso principal.</p></div></div>
+      <div class="cmp-row"><span class="who">AUTOMATIZACIÓN</span><div><h4>Herramientas actuales</h4><p>Herramientas existentes que no trabajan juntas.</p></div><div><p>Reducir tareas manuales entre sistemas.</p></div><div><p>Integraciones y procesos automáticos.</p></div></div>
+    </div>
+    <p class="cmp-close" data-reveal>No empezamos intentando aplicar la misma solución a todos. Primero entendemos qué escenario tenemos delante.</p>
+  </div>
+</section>
+<section class="band" data-od-id="detras">
+  <div class="wrap">
+    <div data-reveal>
+      <p class="eyebrow">Detrás de cada caso</p>
+      <h2>El resultado cambia. La forma de llegar cambia menos.</h2>
+      <p class="lead">Cada proyecto tiene un contexto diferente, pero nuestra forma de pensar mantiene una estructura común.</p>
+    </div>
+    <p class="lead" data-reveal style="margin-top:24px">Trabajamos con un proceso simple: entender, decidir, construir, poner en uso y mejorar.</p>
+    <a class="link-arrow" href="como-trabajamos.html" data-reveal>Conocer cómo trabajamos →</a>
+  </div>
+</section>
+<section class="final" data-od-id="cta-final">
+  <div class="wrap" data-reveal>
+    <p class="eyebrow">Tu caso no tiene que parecerse a estos</p>
+    <h2>Podemos empezar por entender qué está pasando en tu empresa.</h2>
+    <p>No necesitas saber si lo que necesitas es una automatización, un sistema de gestión o software a medida.</p>
+    <p style="margin-top:12px">Cuéntanos qué proceso se está volviendo difícil de gestionar y evaluemos qué caminos podrían tener sentido.</p>
+    <div class="cta-row"><a class="btn btn-w" href="https://calendar.app.google/JQnkVUqK3FF5VSRU6" target="_blank" rel="noopener" data-od-id="final-primary">Analizar mi caso</a><a class="btn btn-g" href="https://wa.me/5491173678601?text=Hola%2C%20llegu%C3%A9%20desde%20Next%20Wrld.%20Quiero%20conversar%20sobre%20un%20proceso%20de%20mi%20empresa%20que%20estamos%20buscando%20mejorar.">Hablar por WhatsApp</a></div>
+    <p class="micro">Diagnóstico inicial gratuito · 30–45 minutos</p>
+  </div>
+</section>
+</main>
+<footer data-od-id="footer">
+  <div class="wrap">
+    <div class="fgrid">
+      <div><a class="logo" href="index.html"><img src="logo.svg" alt="" width="34" height="34">Next Wrld<span>.</span></a><p style="color:var(--muted);font-size:14.5px;margin-top:12px;max-width:32ch">Software a medida para empresas que necesitan operar con más claridad y menos trabajo manual.</p></div>
+      <div><h5>SERVICIOS</h5><a href="servicios.html#software-a-medida">Software a medida</a><a href="servicios.html#sistemas-de-gestion">Sistemas de gestión</a><a href="servicios.html#automatizacion-e-integraciones">Automatización</a></div>
+      <div><h5>EMPRESA</h5><a href="como-trabajamos.html">Cómo trabajamos</a><a href="casos.html">Casos</a><a href="insights.html">Insights</a><a href="nosotros.html">Nosotros</a></div>
+      <div><h5>CONTACTO</h5><a href="https://calendar.app.google/JQnkVUqK3FF5VSRU6" target="_blank" rel="noopener">Diagnóstico operativo</a><a href="https://wa.me/5491173678601?text=Hola%2C%20llegu%C3%A9%20desde%20Next%20Wrld.%20Quiero%20conversar%20sobre%20un%20proceso%20de%20mi%20empresa%20que%20estamos%20buscando%20mejorar.">WhatsApp</a><a href="mailto:hola@nextwrld.com?subject=Diagn%C3%B3stico%20operativo">Email</a><a href="https://linkedin.com/company/next-wrld" target="_blank" rel="noopener">LinkedIn</a><a href="https://instagram.com/nextwrld.tech" target="_blank" rel="noopener">Instagram</a></div>
+    </div>
+    <div class="legal"><span>© 2026 Next Wrld · ES / EN</span><span>Privacidad · Términos · Aviso legal</span></div>
+  </div>
+</footer>
+<script>
+document.getElementById('burger').addEventListener('click',function(){document.getElementById('mmenu').classList.toggle('open')});
+document.querySelectorAll('#mmenu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mmenu').classList.remove('open')})});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('[data-reveal]:not(.in)').forEach(function(el){io.observe(el)});
+</script>
+<a class="wa-float" href="https://wa.me/5491173678601?text=Hola%2C%20llegu%C3%A9%20desde%20Next%20Wrld.%20Quiero%20conversar%20sobre%20un%20proceso%20de%20mi%20empresa%20que%20estamos%20buscando%20mejorar." target="_blank" rel="noopener" aria-label="Hablar por WhatsApp" title="Hablar por WhatsApp" data-od-id="whatsapp-float"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></a>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Servicios de software a medida y automatización | Next Wrld</title>
+<meta name="description" content="Diseñamos software a medida, sistemas de gestión, automatizaciones e integraciones para empresas que necesitan simplificar procesos y reducir trabajo manual.">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#FCFCFB; --surface:#FFFFFF; --surface-gray:#F7F8FA; --surface-blue:#F2F5FB;
+  --fg:#111318; --muted:#667085; --border:#E3E7ED;
+  --accent:#2758D9; --accent-soft:#DCE6FF; --navy:#102654;
+  --sans:'Inter',system-ui,sans-serif; --disp:'Space Grotesk',sans-serif; --serif:'Newsreader',Georgia,serif; --mono:'IBM Plex Mono',monospace;
+  --max:1240px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);background:var(--bg);color:var(--fg);line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:var(--accent);color:#fff}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 32px}
+.eyebrow{font-family:var(--mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:24px;height:1px;background:var(--accent)}
+h1{font-family:var(--disp);letter-spacing:-.03em;line-height:1.05;font-weight:600;font-size:clamp(36px,5vw,64px);margin:22px 0 20px;text-wrap:balance}
+h2{font-family:var(--disp);letter-spacing:-.03em;line-height:1.1;font-weight:600;font-size:clamp(28px,3.4vw,46px);margin:18px 0;text-wrap:balance}
+.lead{font-size:clamp(16px,1.5vw,19px);color:var(--muted);max-width:62ch}
+header{position:sticky;top:0;z-index:50;background:rgba(252,252,251,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.hbar{display:flex;align-items:center;justify-content:space-between;height:68px;max-width:var(--max);margin:0 auto;padding:0 32px}
+.logo{font-family:var(--disp);font-weight:700;font-size:19px;letter-spacing:-.02em;text-decoration:none;display:inline-flex;align-items:center;gap:9px}
+.logo span{color:var(--accent)}
+.logo img{width:26px;height:26px;display:block;flex:none}
+nav.desk{display:flex;gap:30px;font-size:14.5px;font-weight:500}
+nav.desk a{text-decoration:none;opacity:.75}nav.desk a:hover{opacity:1}nav.desk a[aria-current]{opacity:1;font-weight:700}
+.hright{display:flex;align-items:center;gap:16px}
+.lang{font-family:var(--mono);font-size:12px;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:600;font-size:15px;text-decoration:none;border-radius:999px;padding:15px 28px;min-height:52px;transition:transform .18s ease,background .18s ease,box-shadow .18s ease;border:1px solid transparent;cursor:pointer}
+.btn-p{background:var(--accent);color:#fff}.btn-p:hover{background:#1F49B4;transform:translateY(-1px);box-shadow:0 12px 28px rgba(10,78,220,.35)}
+.btn-s{background:transparent;border-color:#C2D1EB;color:var(--accent)}.btn-s:hover{border-color:var(--accent);background:#DCE6FF}
+.btn-w{background:#fff;color:var(--accent)}.btn-w:hover{background:#DCE6FF}
+.btn-g{border-color:rgba(255,255,255,.45);color:#fff}.btn-g:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-sm{padding:11px 20px;min-height:44px;font-size:14px}
+.burger{display:none;background:none;border:0;font-size:24px;cursor:pointer;color:var(--fg)}
+.mmenu{display:none;border-top:1px solid var(--border);padding:20px 32px 28px;background:var(--bg)}
+.mmenu.open{display:block}
+.mmenu a:not(.btn){display:block;padding:12px 0;text-decoration:none;font-weight:600;font-size:18px;border-bottom:1px solid var(--border)}
+.mmenu .btn{width:100%;margin-top:16px;border-bottom:0}
+.mmenu p{margin:14px 0;font-family:var(--mono);font-size:12px;color:var(--muted)}
+section{padding:96px 0;scroll-margin-top:80px}
+.hero{padding:84px 0 88px}
+.cta-row{display:flex;gap:14px;margin-top:30px;flex-wrap:wrap}
+.band{background:var(--surface-gray);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.band-blue{background:var(--surface-blue)}
+.svc{padding:28px 0;border-top:1px solid var(--fg);margin-top:56px}
+.svc:first-of-type{margin-top:48px}
+.svc .body{font-size:17px;color:var(--muted);max-width:64ch;margin-top:6px}
+.svc .body + .body{margin-top:12px}
+.ideal{margin-top:28px;background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:26px 28px}
+.ideal b{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--accent);display:block;margin-bottom:12px}
+.ideal ul{list-style:none}
+.ideal li{position:relative;font-size:15.5px;padding:7px 0 7px 26px;color:var(--fg)}
+.ideal li::before{content:"→";position:absolute;left:0;color:var(--accent);font-weight:700}
+.closing{margin-top:22px;font-family:var(--serif);font-style:italic;font-size:21px;max-width:56ch}
+.svc-cta{display:inline-block;margin-top:20px;font-weight:600;font-size:16px;color:var(--fg);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:2px}
+.ai-strip{margin-top:24px;border:1px dashed #C2D1EB;border-radius:16px;padding:22px 26px;background:#F7F8FA;font-size:15.5px;color:var(--muted)}
+.examples{margin-top:36px;border-top:1px solid var(--fg)}
+.ex{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:center;padding:22px 0;border-bottom:1px solid var(--border)}
+.ex blockquote{font-family:var(--serif);font-style:italic;font-size:20px}
+.ex i{font-style:normal;color:var(--accent);font-weight:700;font-size:20px}
+.ex p{font-size:15.5px;color:var(--muted)}
+.decide-close{margin-top:28px;font-size:17px;font-weight:600}
+.link-arrow{display:inline-block;margin-top:16px;font-weight:600;font-size:16px;color:var(--fg);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:2px}
+.final{background:var(--navy);color:#fff;text-align:center;padding:130px 0;border-top:4px solid #5E85E3}
+.final .eyebrow{color:rgba(255,255,255,.78);justify-content:center}
+.final .eyebrow::before{background:#fff}
+.final h2{font-size:clamp(34px,4.4vw,60px);max-width:20ch;margin:0 auto 18px}
+.final p{color:rgba(255,255,255,.85);max-width:52ch;margin:0 auto}
+.final .cta-row{justify-content:center}
+.final .micro{font-family:var(--mono);font-size:12.5px;color:rgba(255,255,255,.7);margin-top:16px}
+footer{border-top:1px solid var(--border);padding:56px 0 32px;background:var(--bg)}
+.fgrid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
+.fgrid h5{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--muted);margin-bottom:14px}
+.fgrid a{display:block;text-decoration:none;font-size:14.5px;padding:5px 0;opacity:.92}.fgrid a:hover{opacity:1}
+footer .logo{font-size:22px}footer .logo img{width:34px;height:34px}
+.legal{display:flex;justify-content:space-between;gap:16px;margin-top:32px;padding-top:22px;border-top:1px solid var(--border);font-size:12.5px;color:var(--muted);flex-wrap:wrap}
+[data-reveal]{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
+[data-reveal].in{opacity:1;transform:none}
+.wa-float{position:fixed;right:22px;bottom:calc(22px + env(safe-area-inset-bottom));width:60px;height:60px;border-radius:50%;background:#FFFFFF;border:1px solid #DDE2EA;color:#111318;display:grid;place-items:center;box-shadow:0 14px 34px rgba(17,19,24,.18);z-index:60;transition:transform .18s ease,background .18s ease,border-color .18s ease;text-decoration:none}
+.wa-float:hover{background:#25D366;border-color:#25D366;color:#fff;transform:translateY(-2px)}
+.wa-float svg{width:28px;height:28px}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+@media (max-width:960px){
+  nav.desk,.hright .btn-sm,.hright .lang{display:none}.burger{display:block}
+  section{padding:72px 0}
+  .hero .cta-row{flex-direction:column;align-items:stretch}.hero .cta-row .btn{width:100%}
+  .ex{grid-template-columns:1fr;gap:6px}.ex i{transform:rotate(90deg);justify-self:start}
+  .fgrid{grid-template-columns:1fr 1fr;gap:28px 20px}
+  footer{padding:48px 0 28px}
+  .legal{flex-direction:column;gap:8px;margin-top:28px}
+  .wa-float{width:56px;height:56px;right:16px;bottom:calc(16px + env(safe-area-inset-bottom))}
+  .btn{min-height:52px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}[data-reveal]{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<header data-od-id="site-header">
+  <div class="hbar">
+    <a class="logo" href="index.html"><img src="logo.svg" alt="" width="26" height="26">Next Wrld<span>.</span></a>
+    <nav class="desk" aria-label="Principal">
+      <a href="servicios.html" aria-current="page">Servicios</a><a href="como-trabajamos.html">Cómo trabajamos</a><a href="casos.html">Casos</a><a href="insights.html">Insights</a><a href="nosotros.html">Nosotros</a>
+    </nav>
+    <div class="hright">
+      <span class="lang">ES / EN</span>
+      <a class="btn btn-p btn-sm" href="https://calendar.app.google/JQnkVUqK3FF5VSRU6" target="_blank" rel="noopener" data-od-id="nav-cta">Diagnóstico operativo</a>
+      <button class="burger" id="burger" aria-label="Abrir menú">☰</button>
+    </div>
+  </div>
+  <div class="mmenu" id="mmenu">
+    <a href="servicios.html">Servicios</a><a href="como-trabajamos.html">Cómo trabajamos</a><a href="casos.html">Casos</a><a href="insights.html">Insights</a><a href="nosotros.html">Nosotros</a>
+    <p>ES / EN</p>
+    <a class="btn btn-p" href="https://calendar.app.google/JQnkVUqK3FF5VSRU6" target="_blank" rel="noopener">Agendar diagnóstico</a>
+  </div>
+</header>
+<main>
+<section class="hero" data-od-id="hero">
+  <div class="wrap" data-reveal>
+    <p class="eyebrow">Servicios</p>
+    <h1>Tecnología para simplificar cómo trabaja tu empresa.</h1>
+    <p class="lead">A veces necesitas mejorar un proceso. Otras, conectar las herramientas que ya usas. Y otras, construir un sistema completo. Diseñamos la solución según el problema, no al revés.</p>
+    <p class="lead" style="margin-top:12px">Nuestro trabajo es entender qué está generando fricción y elegir el camino que tenga más sentido.</p>
+    <div class="cta-row">
+      <a class="btn btn-p" href="https://calendar.app.google/JQnkVUqK3FF5VSRU6" target="_blank" rel="noopener" data-od-id="hero-primary">Analizar mi caso</a>
+      <a class="btn btn-s" href="casos.html" data-od-id="hero-secondary">Ver casos</a>
+    </div>
+  </div>
+</section>
+<section data-od-id="servicios">
+  <div class="wrap">
+    <div class="svc" id="software-a-medida" data-reveal>
+      <p class="eyebrow">01 / Software a medida</p>
+      <h2>Cuando las herramientas existentes ya no se adaptan a cómo trabajas.</h2>
+      <p class="body">Creamos software para empresas cuando los procesos no encajan bien en soluciones genéricas o necesitan reglas, flujos e información propios del negocio.</p>
+      <p class="body">Puede ser una plataforma interna, un portal para clientes, un backoffice o un producto digital completo.</p>
+      <div class="ideal"><b>CUÁNDO TIENE SENTIDO</b><ul><li>dependes demasiado de Excel o procesos manuales;</li><li>necesitas adaptar el sistema a una forma específica de trabajar;</li><li>varias áreas necesitan usar la misma información;</li><li>las herramientas existentes te obligan a cambiar procesos importantes;</li><li>necesitas construir un producto digital propio.</li></ul></div>
+      <p class="closing">El software a medida tiene sentido cuando resuelve un problema que las herramientas existentes no pueden resolver bien.</p>
+      <a class="svc-cta" href="index.html#diagnostico">Quiero evaluar una solución a medida →</a>
+    </div>
+    <div class="svc" id="sistemas-de-gestion" data-reveal>
+      <p class="eyebrow">02 / Sistemas de gestión</p>
+      <h2>Cuando la información está repartida y gestionar el negocio empieza a costar demasiado.</h2>
+      <p class="body">Centralizamos procesos, datos y tareas para que tu equipo pueda trabajar desde un lugar más claro.</p>
+      <p class="body">Clientes, pagos, inventario, solicitudes, documentos, reportes o cualquier otra parte importante del negocio pueden formar parte de un mismo sistema de gestión.</p>
+      <div class="ideal"><b>CUÁNDO TIENE SENTIDO</b><ul><li>la información está distribuida entre varias herramientas;</li><li>diferentes personas manejan versiones distintas de los mismos datos;</li><li>obtener un reporte requiere juntar información manualmente;</li><li>existen procesos que dependen demasiado de una persona;</li><li>necesitas más control sobre lo que ocurre en el día a día.</li></ul></div>
+      <p class="closing">El objetivo no es tener más software. Es tener menos lugares donde buscar, copiar y coordinar información.</p>
+      <a class="svc-cta" href="index.html#diagnostico">Explorar sistemas de gestión →</a>
+    </div>
+    <div class="svc" id="automatizacion-e-integraciones" data-reveal>
+      <p class="eyebrow">03 / Automatización e integraciones</p>
+      <h2>Cuando tu equipo está haciendo tareas que podrían ocurrir solas.</h2>
+      <p class="body">Conectamos las herramientas que ya utilizas y hacemos automáticas las tareas repetitivas que hoy requieren intervención manual.</p>
+      <p class="body">Mover información, validar datos, generar documentos, enviar notificaciones o sincronizar sistemas mediante integraciones no siempre debería depender de una persona.</p>
+      <div class="ideal"><b>CUÁNDO TIENE SENTIDO</b><ul><li>alguien copia información de un sistema a otro;</li><li>realizas las mismas tareas administrativas una y otra vez;</li><li>diferentes herramientas necesitan compartir datos;</li><li>quieres reducir errores en procesos repetitivos;</li><li>necesitas que ciertas acciones ocurran automáticamente.</li></ul></div>
+      <p class="closing">Muchas veces no necesitas reemplazar tus herramientas. Necesitas hacer que trabajen mejor juntas.</p>
+      <a class="svc-cta" href="index.html#diagnostico">Explorar automatizaciones →</a>
+    </div>
+  </div>
+</section>
+<section class="band-blue" data-od-id="ia" style="border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="wrap" data-reveal>
+    <p class="eyebrow">IA cuando tiene sentido</p>
+    <h2>La inteligencia artificial es una herramienta, no el punto de partida.</h2>
+    <p class="lead">Usamos IA solo cuando puede mejorar una tarea concreta: analizar información, clasificar datos, encontrar respuestas, asistir a tu equipo o automatizar decisiones bajo reglas claras.</p>
+    <div class="ai-strip">Si una solución más simple resuelve mejor el problema, usamos la solución más simple.</div>
+  </div>
+</section>
+<section data-od-id="por-donde-empezar">
+  <div class="wrap">
+    <div data-reveal>
+      <p class="eyebrow">Por dónde empezar</p>
+      <h2>No necesitas saber qué tecnología necesitas.</h2>
+      <p class="lead">Puedes llegar con un problema, un proceso que tarda demasiado o simplemente una forma de trabajar que ya no está funcionando tan bien como antes.</p>
+      <p class="lead" style="margin-top:12px">Nosotros te ayudamos a entender qué conviene hacer.</p>
+    </div>
+    <div class="examples" data-reveal>
+      <div class="ex"><blockquote>“Tenemos demasiados Excel.”</blockquote><i>→</i><p>Puede necesitar un sistema de gestión.</p></div>
+      <div class="ex"><blockquote>“Copiamos información entre varias herramientas.”</blockquote><i>→</i><p>Puede resolverse con integraciones o automatización.</p></div>
+      <div class="ex"><blockquote>“Ningún software se adapta a nuestro proceso.”</blockquote><i>→</i><p>Puede tener sentido construir software a medida.</p></div>
+      <div class="ex"><blockquote>“No sabemos por dónde empezar.”</blockquote><i>→</i><p>Empezamos con un diagnóstico.</p></div>
+    </div>
+    <p class="decide-close" data-reveal>No tienes que elegir un servicio antes de hablar con nosotros.</p>
+  </div>
+</section>
+<section class="band" data-od-id="como-decidimos">
+  <div class="wrap" data-reveal>
+    <p class="eyebrow">Cómo decidimos</p>
+    <h2>Primero el problema. Después la tecnología.</h2>
+    <p class="lead">Antes de recomendar una solución entendemos cómo trabajan hoy y qué está generando trabajo innecesario.</p>
+    <a class="link-arrow" href="como-trabajamos.html">Conocer cómo trabajamos →</a>
+  </div>
+</section>
+<section class="final" data-od-id="cta-final">
+  <div class="wrap" data-reveal>
+    <p class="eyebrow">Diagnóstico operativo</p>
+    <h2>No tienes que saber qué construir para empezar.</h2>
+    <p>Cuéntanos qué proceso te está generando trabajo, demoras o dependencia. Lo analizamos contigo y evaluamos qué tipo de solución podría tener sentido.</p>
+    <div class="cta-row"><a class="btn btn-w" href="https://calendar.app.google/JQnkVUqK3FF5VSRU6" target="_blank" rel="noopener" data-od-id="final-primary">Analizar mi caso</a><a class="btn btn-g" href="https://wa.me/5491173678601?text=Hola%2C%20llegu%C3%A9%20desde%20Next%20Wrld.%20Quiero%20conversar%20sobre%20un%20proceso%20de%20mi%20empresa%20que%20estamos%20buscando%20mejorar.">Hablar por WhatsApp</a></div>
+    <p class="micro">Diagnóstico inicial gratuito · 30–45 minutos</p>
+  </div>
+</section>
+</main>
+<footer data-od-id="footer">
+  <div class="wrap">
+    <div class="fgrid">
+      <div><a class="logo" href="index.html"><img src="logo.svg" alt="" width="34" height="34">Next Wrld<span>.</span></a><p style="color:var(--muted);font-size:14.5px;margin-top:12px;max-width:32ch">Software a medida para empresas que necesitan operar con más claridad y menos trabajo manual.</p></div>
+      <div><h5>SERVICIOS</h5><a href="servicios.html#software-a-medida">Software a medida</a><a href="servicios.html#sistemas-de-gestion">Sistemas de gestión</a><a href="servicios.html#automatizacion-e-integraciones">Automatización</a></div>
+      <div><h5>EMPRESA</h5><a href="como-trabajamos.html">Cómo trabajamos</a><a href="casos.html">Casos</a><a href="insights.html">Insights</a><a href="nosotros.html">Nosotros</a></div>
+      <div><h5>CONTACTO</h5><a href="https://calendar.app.google/JQnkVUqK3FF5VSRU6" target="_blank" rel="noopener">Diagnóstico operativo</a><a href="https://wa.me/5491173678601?text=Hola%2C%20llegu%C3%A9%20desde%20Next%20Wrld.%20Quiero%20conversar%20sobre%20un%20proceso%20de%20mi%20empresa%20que%20estamos%20buscando%20mejorar.">WhatsApp</a><a href="mailto:hola@nextwrld.com?subject=Diagn%C3%B3stico%20operativo">Email</a><a href="https://linkedin.com/company/next-wrld" target="_blank" rel="noopener">LinkedIn</a><a href="https://instagram.com/nextwrld.tech" target="_blank" rel="noopener">Instagram</a></div>
+    </div>
+    <div class="legal"><span>© 2026 Next Wrld · ES / EN</span><span>Privacidad · Términos · Aviso legal</span></div>
+  </div>
+</footer>
+<script>
+document.getElementById('burger').addEventListener('click',function(){document.getElementById('mmenu').classList.toggle('open')});
+document.querySelectorAll('#mmenu a').forEach(function(a){a.addEventListener('click',function(){document.getElementById('mmenu').classList.remove('open')})});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+document.querySelectorAll('[data-reveal]:not(.in)').forEach(function(el){io.observe(el)});
+</script>
+<a class="wa-float" href="https://wa.me/5491173678601?text=Hola%2C%20llegu%C3%A9%20desde%20Next%20Wrld.%20Quiero%20conversar%20sobre%20un%20proceso%20de%20mi%20empresa%20que%20estamos%20buscando%20mejorar." target="_blank" rel="noopener" aria-label="Hablar por WhatsApp" title="Hablar por WhatsApp" data-od-id="whatsapp-float"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></a>
+</body>
+</html>
