@@ -195,6 +195,12 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
     .grid { grid-template-columns: 1fr; }
     .sc { grid-template-columns: 1fr; gap: 6px; }
     .sc i { transform: rotate(90deg); justify-self: start; }
+    .final { padding: 88px 0; }
+    .final .cta-row { flex-direction: column; align-items: stretch; }
+    .final .cta-row .btn { width: 100%; }
+  }
+  @media (max-width: 600px) {
+    .topics { grid-template-columns: 1fr; }
   }
 </style>
 

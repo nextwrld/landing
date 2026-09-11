@@ -11,10 +11,21 @@ function initNavigation(): void {
     burger.setAttribute('aria-expanded', String(open));
   });
 
+  const close = () => {
+    menu.classList.remove('open');
+    burger.setAttribute('aria-expanded', 'false');
+  };
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') close();
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 960) close();
+  });
+
   menu.querySelectorAll('a').forEach((link) => {
-    link.addEventListener('click', () => {
-      menu.classList.remove('open');
-    });
+    link.addEventListener('click', close);
   });
 }
 

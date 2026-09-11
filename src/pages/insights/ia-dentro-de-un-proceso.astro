@@ -122,7 +122,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
   .hero { padding: 84px 0 40px; }
   h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
-  .meta { display: flex; gap: 16px; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
   .back { display: inline-block; margin-top: 22px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
   .article { padding: 24px 0 72px; }
   .article p { margin: 18px 0; font-size: 17px; line-height: 1.75; color: var(--fg); max-width: 68ch; }
@@ -137,6 +137,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
   .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
   @media (max-width: 720px) {
+    .wrap-narrow { padding: 0 20px; }
     .hero { padding: 64px 0 32px; }
     .article p { font-size: 16px; }
     .cta { padding: 64px 0; margin-bottom: 64px; }

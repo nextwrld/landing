@@ -276,7 +276,7 @@ import AionProductUI from '../components/cases/AionProductUI.astro';
   .chip i { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; font-style: normal; font-size: 15px; background: var(--bg); border: 1px solid var(--border); flex: none; }
   .chip small { display: block; font-weight: 400; color: var(--muted); font-size: 12px; }
   .links { height: 64px; display: block; width: 100%; }
-  .core { border: 1px solid var(--border); border-left: 3px solid var(--accent); background: #fff; color: var(--fg); border-radius: 12px; padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .core { border: 1px solid var(--border); border-left: 3px solid var(--accent); background: #fff; color: var(--fg); border-radius: 12px; padding: 14px 16px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
   .core b { font-family: var(--disp); font-size: 15px; }
   .core span { font-family: var(--mono); font-size: 11px; opacity: 0.7; display: block; letter-spacing: 0.1em; }
   .out { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px; }
@@ -455,6 +455,7 @@ import AionProductUI from '../components/cases/AionProductUI.astro';
     .prow { grid-template-columns: 44px 1fr; row-gap: 6px; }
     .prow p { grid-column: 2; }
     .prow .tag { display: none; }
+    .out { grid-template-columns: 1fr; }
     .cf-row { grid-template-columns: 1fr; gap: 8px; padding: 24px 0; }
     .cf-row i { transform: rotate(90deg); justify-self: start; }
     .ba { grid-template-columns: 1fr; }
