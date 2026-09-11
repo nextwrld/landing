@@ -1,102 +1,147 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { route } from '../../../i18n/routes';
-
-const calendarUrl = 'https://calendar.app.google/JQnkVUqK3FF5VSRU6';
-const whatsappUrl =
-  'https://wa.me/5491173678601?text=Hello%2C%20I%20came%20from%20Next%20Wrld.%20I%20want%20to%20talk%20about%20a%20process%20in%20my%20company%20we%20are%20looking%20to%20improve.';
+import { calendarUrl, whatsappUrl } from '../../../i18n/contact';
 ---
 
 <BaseLayout
   locale="en"
-  title="Custom software, automation and integrations | Next Wrld"
-  description="Custom software, management systems, automations and integrations for companies that need simpler processes and less manual work."
   routeKey="services"
   canonicalPath="/en/services/"
+  title="Custom software and automation services | Next Wrld"
+  description="We design custom software, management systems, automations and integrations for companies that need simpler processes and less manual work."
 >
-  <section data-od-id="hero">
-    <p class="eyebrow">Services</p>
-    <h1>Technology that simplifies how your company works.</h1>
-    <p class="lead">
-      Custom software, management systems, and automations for companies
-      whose off-the-shelf tools no longer fit the way they work.
-    </p>
-    <div class="cta-row">
-      <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="hero-primary">
-        Analyze my case
-      </a>
-      <a class="btn btn-s" href={route('cases', 'en')} data-od-id="hero-secondary">
-        View case studies
-      </a>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">Services</p>
+      <h1>Technology that simplifies how your company works.</h1>
+      <p class="lead">Sometimes you need to improve a process. Other times, connect the tools you already use. And other times, build a complete system. We design the solution around the problem.</p>
+      <p class="lead" style="margin-top:12px">Our job is to understand what is creating friction and choose the path that makes the most sense.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="hero-primary">Analyze my case</a>
+        <a class="btn btn-s" href="/en/case-studies/" data-od-id="hero-secondary">View case studies</a>
+      </div>
     </div>
   </section>
-
-  <!-- EN parity: hero translated, body sections follow ES structure -->
-  <section data-od-id="software-a-medida">
-    <p class="eyebrow">01 — Custom software</p>
-    <h2>When off-the-shelf tools no longer fit how you work.</h2>
-    <p class="lead">
-      We design systems around your real process: clients, orders,
-      operations, and reporting in one flow your team actually uses.
-    </p>
+  <section data-od-id="servicios">
+    <div class="wrap">
+      <div class="svc" id="software-a-medida" data-reveal>
+        <p class="eyebrow">01 / Custom software</p>
+        <h2>When existing tools no longer fit the way you work.</h2>
+        <p class="body">We build software for companies when processes do not fit well into generic solutions or need business-specific rules, flows and information.</p>
+        <p class="body">It can be an internal platform, a client portal, a backoffice or a complete digital product.</p>
+        <div class="ideal"><b>WHEN IT MAKES SENSE</b><ul><li>you depend too much on Excel or manual processes;</li><li>you need to adapt the system to a specific way of working;</li><li>several teams need to use the same information;</li><li>existing tools force you to change important processes;</li><li>you need to build your own digital product.</li></ul></div>
+        <p class="closing">Custom software solves problems that existing tools solve poorly.</p>
+        <a class="svc-cta" href="/en/#diagnostico">Evaluate a custom solution →</a>
+      </div>
+      <div class="svc" id="sistemas-de-gestion" data-reveal>
+        <p class="eyebrow">02 / Management systems</p>
+        <h2>When information is scattered and running the business starts costing too much.</h2>
+        <p class="body">We centralize processes, data and tasks so your team can work from a clearer place.</p>
+        <p class="body">Clients, payments, inventory, requests, documents, reports or any other important part of the business can live in the same management system.</p>
+        <div class="ideal"><b>WHEN IT MAKES SENSE</b><ul><li>information is spread across several tools;</li><li>different people handle different versions of the same data;</li><li>getting a report requires joining information manually;</li><li>processes depend too much on one person;</li><li>you need more control over day-to-day work.</li></ul></div>
+        <p class="closing">The goal is fewer places to search, copy and coordinate information.</p>
+        <a class="svc-cta" href="/en/#diagnostico">Explore management systems →</a>
+      </div>
+      <div class="svc" id="automatizacion-e-integraciones" data-reveal>
+        <p class="eyebrow">03 / Automation and integrations</p>
+        <h2>When your team is doing tasks that could happen on their own.</h2>
+        <p class="body">We connect the tools you already use and automate the repetitive tasks that today require manual work.</p>
+        <p class="body">Moving information, validating data, generating documents, sending notifications or syncing systems can happen without manual intervention.</p>
+        <div class="ideal"><b>WHEN IT MAKES SENSE</b><ul><li>someone copies information from one system to another;</li><li>you perform the same admin tasks over and over;</li><li>different tools need to share data;</li><li>you want fewer errors in repetitive processes;</li><li>you need certain actions to happen automatically.</li></ul></div>
+        <p class="closing">Your tools can work better together without replacing them.</p>
+        <a class="svc-cta" href="/en/#diagnostico">Explore automations →</a>
+      </div>
+    </div>
   </section>
-
-  <section data-od-id="sistemas-de-gestion">
-    <p class="eyebrow">02 — Management systems</p>
-    <h2>When information is scattered and running the business starts costing too much.</h2>
-    <p class="lead">
-      One source of truth for the data that matters, with the access
-      levels and reports each role needs.
-    </p>
+  <section class="band-blue" data-od-id="ia" style="border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">AI when it makes sense</p>
+      <h2>We use artificial intelligence only for concrete tasks.</h2>
+      <p class="lead">We use AI only when it can improve a concrete task: analyzing information, classifying data, finding answers, assisting your team or automating decisions under clear rules.</p>
+      <div class="ai-strip">If the simple option solves it better, we use the simple option.</div>
+    </div>
   </section>
-
-  <section data-od-id="automatizacion-e-integraciones">
-    <p class="eyebrow">03 — Automation and integrations</p>
-    <h2>When your team is doing tasks that could happen on their own.</h2>
-    <p class="lead">
-      We connect the tools you already use and automate repetitive work
-      so the operation moves without manual follow-up.
-    </p>
+  <section data-od-id="por-donde-empezar">
+    <div class="wrap">
+      <div data-reveal>
+        <p class="eyebrow">Where to start</p>
+        <h2>We start from your problem.</h2>
+        <p class="lead">You can arrive with a problem, a process that takes too long or a way of working that no longer works as well as it used to.</p>
+        <p class="lead" style="margin-top:12px">We help you understand what is worth doing.</p>
+      </div>
+      <div class="examples" data-reveal>
+        <div class="ex"><blockquote>“We have too many spreadsheets.”</blockquote><i>→</i><p>It needs a management system.</p></div>
+        <div class="ex"><blockquote>“We copy information between tools.”</blockquote><i>→</i><p>It is solved with integrations or automation.</p></div>
+        <div class="ex"><blockquote>“No software fits our process.”</blockquote><i>→</i><p>Building custom software makes sense.</p></div>
+        <div class="ex"><blockquote>“We don’t know where to start.”</blockquote><i>→</i><p>We start with a diagnostic.</p></div>
+      </div>
+    </div>
   </section>
-
-  <section data-od-id="ia">
-    <p class="eyebrow">A note on AI</p>
-    <h2>We use artificial intelligence only for concrete tasks.</h2>
-    <p class="lead">
-      First the problem, then the technology. We apply AI where it
-      removes real work, not where it adds complexity.
-    </p>
+  <section class="band" data-od-id="como-decidimos">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">How we decide</p>
+      <h2>First the problem, then the technology.</h2>
+      <p class="lead">Before recommending a solution we understand how you work today and what is generating unnecessary work.</p>
+      <a class="link-arrow" href="/en/how-we-work/">See how we work →</a>
+    </div>
   </section>
-
-  <section data-od-id="cierre">
-    <p class="eyebrow">Next step</p>
-    <h2>You don&rsquo;t need to know what to build to get started.</h2>
-    <div class="cta-row">
-      <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="final-primary">
-        Analyze my case
-      </a>
-      <a class="btn btn-s" href={whatsappUrl} target="_blank" rel="noopener">
-        Chat on WhatsApp
-      </a>
+  <section class="final" data-od-id="cta-final">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">Operational diagnostic</p>
+      <h2>Let’s start with what is giving you extra work.</h2>
+      <p>Tell us which process is generating work, delays or dependency. We analyze it with you and define which solution makes sense.</p>
+      <div class="cta-row"><a class="btn btn-w" href={calendarUrl} target="_blank" rel="noopener" data-od-id="final-primary">Analyze my case</a><a class="btn btn-g" href={whatsappUrl('en', 'full')} target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      <p class="micro">Free initial diagnostic · 30–45 minutes</p>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  section { max-width: var(--max); margin: 0 auto; padding: 88px 32px; scroll-margin-top: 80px; }
-  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
-  h2 { font-size: clamp(28px, 3.4vw, 44px); margin: 18px 0; letter-spacing: -0.02em; line-height: 1.1; }
-  h3 { font-family: var(--disp); font-size: 22px; margin: 18px 0 8px; letter-spacing: -0.02em; }
-  .lead { margin-top: 16px; }
+  h1 { font-size: clamp(36px, 5vw, 64px); margin: 22px 0 20px; }
+  h2 { font-size: clamp(28px, 3.4vw, 46px); margin: 18px 0; }
+  section { padding: 96px 0; scroll-margin-top: 80px; }
+  .hero { padding: 84px 0 88px; }
   .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
-  ol { margin: 28px 0 0; padding-left: 22px; display: grid; gap: 18px; }
-  li p { margin-top: 6px; color: var(--muted); }
-  article { border-top: 1px solid var(--border); padding: 28px 0; }
-  article p { margin-top: 10px; color: var(--muted); max-width: 64ch; }
-  article a { display: inline-block; margin: 12px 16px 0 0; font-weight: 600; }
-  @media (max-width: 720px) {
-    section { padding: 72px 20px; }
-    .cta-row { flex-direction: column; }
-    .cta-row .btn { width: 100%; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  .btn-s:hover { border-color: var(--accent); background: #dce6ff; }
+  .btn-w { background: #fff; color: var(--accent); }
+  .btn-w:hover { background: #dce6ff; }
+  .btn-g { border-color: rgba(255, 255, 255, 0.45); color: #fff; }
+  .btn-g:hover { border-color: #fff; background: rgba(255, 255, 255, 0.08); }
+  .band { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .band-blue { background: var(--surface-blue); }
+  .svc { padding: 28px 0; border-top: 1px solid var(--fg); margin-top: 56px; scroll-margin-top: 90px; }
+  .svc:first-of-type { margin-top: 48px; }
+  .svc .body { font-size: 17px; color: var(--muted); max-width: 64ch; margin-top: 6px; }
+  .svc .body + .body { margin-top: 12px; }
+  .ideal { margin-top: 28px; background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 26px 28px; }
+  .ideal b { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); display: block; margin-bottom: 12px; }
+  .ideal ul { list-style: none; }
+  .ideal li { position: relative; font-size: 15.5px; padding: 7px 0 7px 26px; color: var(--fg); }
+  .ideal li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  .closing { margin-top: 22px; font-family: var(--serif); font-style: italic; font-size: 21px; max-width: 56ch; }
+  .svc-cta { display: inline-block; margin-top: 20px; font-weight: 600; font-size: 16px; color: var(--fg); text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .ai-strip { margin-top: 24px; border: 1px dashed #c2d1eb; border-radius: 16px; padding: 22px 26px; background: #f7f8fa; font-size: 15.5px; color: var(--muted); }
+  .examples { margin-top: 36px; border-top: 1px solid var(--fg); }
+  .ex { display: grid; grid-template-columns: 1fr auto 1fr; gap: 20px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--border); }
+  .ex blockquote { font-family: var(--serif); font-style: italic; font-size: 20px; }
+  .ex i { font-style: normal; color: var(--accent); font-weight: 700; font-size: 20px; }
+  .ex p { font-size: 15.5px; color: var(--muted); }
+  .decide-close { margin-top: 28px; font-size: 17px; font-weight: 600; }
+  .link-arrow { display: inline-block; margin-top: 16px; font-weight: 600; font-size: 16px; color: var(--fg); text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .final { background: var(--navy); color: #fff; text-align: center; padding: 130px 0; border-top: 4px solid #5e85e3; }
+  .final .eyebrow { color: rgba(255, 255, 255, 0.78); justify-content: center; }
+  .final .eyebrow::before { background: #fff; }
+  .final h2 { font-size: clamp(34px, 4.4vw, 60px); max-width: 20ch; margin: 0 auto 18px; }
+  .final p { color: rgba(255, 255, 255, 0.85); max-width: 52ch; margin: 0 auto; }
+  .final .cta-row { justify-content: center; }
+  .final .micro { font-family: var(--mono); font-size: 12.5px; color: rgba(255, 255, 255, 0.7); margin-top: 16px; }
+  @media (max-width: 960px) {
+    section { padding: 72px 0; }
+    .hero .cta-row { flex-direction: column; align-items: stretch; }
+    .hero .cta-row .btn { width: 100%; }
+    .ex { grid-template-columns: 1fr; gap: 6px; }
+    .ex i { transform: rotate(90deg); justify-self: start; }
+    .final { padding: 88px 0; }
   }
 </style>

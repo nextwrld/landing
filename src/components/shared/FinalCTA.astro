@@ -1,6 +1,7 @@
 ---
 import type { Locale } from '../../i18n/config';
 import { getChrome } from '../../i18n/ui';
+import { whatsappUrl } from '../../i18n/contact';
 
 interface Props {
   locale?: Locale;
@@ -28,7 +29,7 @@ const chrome = getChrome(locale);
       </a>
       <a
         class="btn btn-s"
-        href="https://wa.me/5491173678601?text=Hola%2C%20llegu%C3%A9%20desde%20Next%20Wrld."
+        href={whatsappUrl(locale, 'short')}
         target="_blank"
         rel="noopener"
       >

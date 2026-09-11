@@ -1,0 +1,167 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { calendarUrl } from '../../../i18n/contact';
+---
+
+<BaseLayout
+  locale="en"
+  routeKey="insights"
+  canonicalPath="/en/insights/custom-software-when-it-makes-sense/"
+  alternatePaths={{ es: '/insights/software-a-medida-cuando-tiene-sentido/', en: '/en/insights/custom-software-when-it-makes-sense/' }}
+  title="How to know if your company needs custom software? | Next Wrld"
+  description="Not every frustration with a tool justifies building your own software. These signs help distinguish when it makes sense to consider it and when it doesn’t."
+>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Custom software</p>
+      <h1>How to know if your company needs custom software?</h1>
+      <p class="lead">Most operational problems are solved without building anything new. This article helps recognize the cases where developing your own software starts making sense, and the cases where it doesn’t.</p>
+      <div class="meta"><span>8 min read</span><span>Custom software · Operations</span></div>
+      <a class="back" href="/en/insights/">← Back to Insights</a>
+    </div>
+  </section>
+
+  <article class="article" data-od-id="articulo">
+    <div class="wrap-narrow">
+      <div data-reveal>
+        <h2>Most companies shouldn’t build software for everything</h2>
+        <p>When a tool is uncomfortable, the idea of building something of your own appears quickly. A system made exactly for us, without limitations or forced adaptations. It sounds reasonable.</p>
+        <p>But most needs already have an available answer. A CRM organizes client relationships. An ERP organizes billing, stock and accounting. Spreadsheets solve one-off calculations. SaaS platforms cover support, marketing and HR. And when two tools don’t talk to each other, often a simple automation or integration is enough to join them.</p>
+        <p>Building for every discomfort would be expensive and hard to maintain. Each new system asks for attention: fixing it, updating it, caring for it. If the problem is solved by better configuring what already exists, that is almost always the most sensible path.</p>
+        <p class="strong">Growing, or feeling uncomfortable with a tool, is not by itself a reason to build.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>The right question is not “can we build it?”</h2>
+        <p>Almost anything can be built. With time and budget, any flow can become a system. That is not the hard part.</p>
+        <p>The question that matters is another: is there enough business reason to build it? That is, is there a process important, particular and recurrent enough to justify its own investment, when proven tools maintained by others already exist?</p>
+        <p>Below, eight signs that help answer it. None decides on its own. But when several appear together, it is worth paying attention.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Signs it can make sense to consider your own software</h2>
+        <h3>1. The company adapts its processes to the tool’s limitations</h3>
+        <p>The team stops working as would feel natural and starts working as the tool allows. The process needs three approval types, but the tool only supports one, so approval happens by message and then something approximate is recorded. Operations use intermediate states that don’t exist in the system, so everyone agrees on invented codes in a free-text field.</p>
+        <p>At first these adjustments seem minor. Over time they become the official way of working, although nobody decided it. When operations adapt to software instead of software supporting operations, something inverted.</p>
+      </div>
+
+      <div data-reveal>
+        <h3>2. Too many workarounds and parallel solutions</h3>
+        <p>An extra spreadsheet completing what the system doesn’t record. A document with exceptions. Fields used for something different than designed, because there is nowhere else to put that information. Each workaround is born to quickly solve an unplanned case, and separately they seem harmless.</p>
+        <p>The problem is they accumulate. A point arrives where executing a process requires knowing five places: the main system, two spreadsheets, a chat and a document with clarifications.</p>
+        <p class="strong">When the real process lives outside the system, the system stopped representing the process.</p>
+      </div>
+
+      <div data-reveal>
+        <h3>3. The same data constantly moves between systems</h3>
+        <p>The client is loaded in the CRM, loaded again in billing, copied to a tracking spreadsheet and forwarded by WhatsApp to whoever coordinates delivery. Each move is manual loading, an error chance and one more version of the same data.</p>
+        <p>Using several tools is inevitable. The problem appears when that movement is constant and manual over central data: clients, orders, prices, stock, progress states. Beyond time, confidence is lost: which is the right data, was it updated everywhere, who changed what?</p>
+      </div>
+
+      <div data-reveal>
+        <h3>4. Business rules are too particular</h3>
+        <p>Some processes look simple from outside but have their own rules accumulated over years: validations before approving an operation, calculations with exceptions per client type, different permissions by role and amount, intermediate states that only make sense in that business.</p>
+        <p>Generic tools cover the common case and allow configuration up to a point. But when rules are very specific, configuration starts forcing the tool, and the team sustains those rules with manual work and memory. If those rules sustain quality, margins or compliance, the system should represent them correctly.</p>
+      </div>
+
+      <div data-reveal>
+        <h3>5. The process is important enough inside the business</h3>
+        <p>Not every problem deserves its own software, even if annoying. An internal record consulted rarely or a monthly report tolerate an occasional workaround well.</p>
+        <p>The bar changes when the process touches sales, operations, clients, costs or growth capacity: whether an order is delivered on time, whether billing goes out without errors, whether the team can serve more demand without adding the same number of people.</p>
+        <p class="strong">Process importance turns an annoyance into a justifiable investment.</p>
+        <p>A small problem in a central process, repeated hundreds of times, weighs more than a large problem in a marginal one. That is why it is worth asking where the problem happens before asking how to solve it.</p>
+      </div>
+
+      <div data-reveal>
+        <h3>6. Volume turns small inefficiencies into large problems</h3>
+        <p>With twenty operations per month, reviewing each case by hand is viable and coordinating by message works. But volume multiplies everything: what was a detail with twenty operations becomes structural with two thousand. Daily hours of manual loading, accumulated delays, errors that were exceptional and now appear every week.</p>
+        <p>The process didn’t change, quantity changed. When each point of growth requires adding manual coordination in the same proportion, the process stopped scaling.</p>
+      </div>
+
+      <div data-reveal>
+        <h3>7. The company loses visibility over what happens</h3>
+        <p>There is a simple test: trying to answer basic questions without prior work. What state is each operation in? Who is responsible for each case? Where do cases get stuck? If answering requires joining information from several places, cleaning duplicates and building a special table, the company has no visibility: it has scattered data someone must consolidate each time a decision is needed.</p>
+        <p>That consolidation is paid twice. It consumes time before each decision and arrives late: when the summary is ready, the situation already changed.</p>
+      </div>
+
+      <div data-reveal>
+        <h3>8. Knowledge is concentrated in certain people</h3>
+        <p>Some processes work because certain people know them by heart: which cases are exceptions, who to warn, which field not to touch, in which order to do things so nothing breaks. That knowledge is valuable but fragile. When someone goes on vacation, changes roles or leaves the company, the process suffers.</p>
+        <p>A well-designed system doesn’t replace people. It stores rules consistently so the team doesn’t depend on the memory of a few.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>When not to build custom software</h2>
+        <p>Recognizing the signs above shouldn’t automatically lead to building. There are situations where developing your own software is a bad decision, even if the problem is real.</p>
+        <p>When the problem is not yet understood well enough, building only freezes confusion into code. If the team can’t describe how it works today, first understand, then decide. And when the process changes every week, it needs to stabilize before systematizing: over something constantly redefined, the system is outdated before finishing.</p>
+        <p>It also isn’t worth building when a standard tool correctly covers the need. If an existing solution solves eighty or ninety percent of the problem well, forcing development to cover the rest rarely pays off. The same applies when the problem happens rarely and has little impact: systematizing an occasional friction is disproportionate.</p>
+        <p>Two cases deserve honesty. If you want to develop software to avoid changing a deficient internal process, the first step is simplifying the process, not digitizing it: a bad systematized process only produces errors faster. And if you try to fully replicate a mature SaaS product without a clear strategic reason, the result is usually a more limited, more expensive version of the same.</p>
+        <p class="strong">Not building is also a decision. And often the right one.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Before building there are several solution levels</h2>
+        <p>Custom development is the last step of a ladder, not the first. The first level is the process itself: removing unnecessary steps, clarifying responsibilities. Many problems that look like software are really process problems.</p>
+        <p>Then comes better configuring current tools, which often have unused features or automations nobody enabled. Then automating specific tasks, integrating tools so they share information without manual loading, and adding a new platform when none of the current ones covers the need.</p>
+        <p>Only when those levels aren’t enough, because the process is too particular, central and recurrent, does building something of your own start making sense. The right solution can be on any of those steps. Skipping them out of haste usually costs dearly.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>How to evaluate the decision from the business</h2>
+        <p>There is no mathematical formula to decide. But there are questions that help think with judgment. How much time the problem consumes today, how many people it involves, how much rework it generates and what happens when an error occurs: an error fixed in minutes doesn’t weigh the same as one delaying a delivery or affecting a client.</p>
+        <p>Trajectory also matters: if the problem grows with the company, solving it today is cheaper than in a year. And particularity: if the process truly differentiates the business, a generic tool will hardly support it; if instead an existing solution covers eighty or ninety percent, ask whether the rest justifies development.</p>
+        <p>The last question is value: what would change if the problem were solved, in freed time, avoided errors, faster decisions or capacity to serve more demand. That answer, compared with build and maintenance cost, is the real decision frame.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>An everyday example: when the CRM is no longer enough</h2>
+        <p>A company runs operations with a standard CRM. At first it works well: clients are registered, opportunities advance by stages, the team knows where each case stands.</p>
+        <p>With growth, own processes appear: different client types with different conditions, commercial rules before approving operations, coordination with operations, hand-generated documents, information in parallel spreadsheets, follow-up by WhatsApp. The team responds with ingenuity: custom fields, support spreadsheets, parallel processes for what the system doesn’t cover.</p>
+        <p>With volume, patches weigh. The same data is loaded in three places. Nobody knows the real state without asking by chat. Validations depend on someone remembering to apply them. Knowledge is split across the CRM, spreadsheets and some people’s memory.</p>
+        <p>The problem isn’t that the CRM is bad. It is that the process evolved beyond what that tool was designed to represent. The business developed its own way of operating, and that way no longer fits a generic structure.</p>
+        <p>Possible exits vary: integrating the CRM with other tools, automating documents and notices, changing platforms or developing your own layer for those particular rules. None is right by definition. The decision should emerge after understanding the process: which part is generic and can stay in standard tools, and which part is own, central and recurrent enough to justify something custom.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>The decision starts from the problem</h2>
+        <p>Building custom software makes sense when there is an operational need important, particular and recurrent enough that existing tools can no longer solve reasonably.</p>
+        <p class="strong">The decision shouldn’t start by asking which technology to build. It should start by understanding which problem deserves solving.</p>
+      </div>
+    </div>
+  </article>
+
+  <section class="cta" data-od-id="cta-articulo">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Next step</p>
+      <h2>Do your tools no longer support how your company works?</h2>
+      <p>We can analyze your operation and help identify whether you need to automate, integrate tools or build something of your own.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="cta-primary">Analyze my operation →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  .hero { padding: 84px 0 40px; }
+  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
+  .meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .back { display: inline-block; margin-top: 22px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .article { padding: 24px 0 72px; }
+  .article p { margin: 18px 0; font-size: 17px; line-height: 1.75; color: var(--fg); max-width: 68ch; }
+  .article h2 { font-size: clamp(26px, 3vw, 36px); margin: 56px 0 8px; letter-spacing: -0.02em; line-height: 1.15; }
+  .article h3 { font-size: 21px; margin: 36px 0 4px; letter-spacing: -0.01em; line-height: 1.3; }
+  .article .strong { font-family: var(--disp); font-weight: 600; font-size: 22px; letter-spacing: -0.01em; margin: 32px 0; }
+  .cta { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 0; margin-bottom: 88px; }
+  .cta h2 { font-size: clamp(30px, 4vw, 50px); margin: 18px 0; letter-spacing: -0.03em; line-height: 1.05; }
+  .cta p { color: var(--muted); font-size: 17px; max-width: 56ch; }
+  .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  @media (max-width: 720px) {
+    .wrap-narrow { padding: 0 20px; }
+    .hero { padding: 64px 0 32px; }
+    .article p { font-size: 16px; }
+    .cta { padding: 64px 0; margin-bottom: 64px; }
+  }
+</style>

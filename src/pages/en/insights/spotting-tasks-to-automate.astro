@@ -1,0 +1,127 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { calendarUrl } from '../../../i18n/contact';
+---
+
+<BaseLayout
+  locale="en"
+  routeKey="insights"
+  canonicalPath="/en/insights/spotting-tasks-to-automate/"
+  alternatePaths={{ es: '/insights/detectar-tareas-automatizar/', en: '/en/insights/spotting-tasks-to-automate/' }}
+  title="How to spot tasks your team shouldn’t keep doing manually | Next Wrld"
+  description="A practical walk through day-to-day work to find repetitive work with clear return."
+>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Automation and integrations</p>
+      <h1>How to spot tasks your team shouldn’t keep doing manually.</h1>
+      <p class="lead">The day goes into sustaining the circuit, not controlling it. A careful walk through what already happens every day shows where to start without mistakes.</p>
+      <div class="meta"><span>5 min read</span><span>Automation & integrations · Operations</span></div>
+      <a class="back" href="/en/insights/">← Back to Insights</a>
+    </div>
+  </section>
+
+  <article class="article" data-od-id="articulo">
+    <div class="wrap-narrow">
+      <div data-reveal>
+        <p>It is 9:14 on an ordinary Tuesday. Admin already has three emails with attached receipts, a sales message warning that a client paid but didn’t send the receipt, and a spreadsheet open since yesterday nobody finished reconciling.</p>
+        <p>Nobody is doing anything wrong. Each person solves as they can, with goodwill and memory. The problem is another: the day goes into sustaining the circuit, not controlling it.</p>
+        <p>If you wondered where to start without mistakes, this is the starting point. Not with tools. With a careful walk through what already happens every day.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Look at the day as if seeing it first time</h2>
+        <p>For a week, observe admin and commercial work without judging it.</p>
+        <p>What repeats every day at the same time? Which task interrupts another? Where do “can you send me...?”, “did you see if it arrived...?”, “did you load it...?” messages appear?</p>
+        <p>Those coordination micro-cuts are clues. They don’t signal lack of commitment. They signal information isn’t flowing on its own and someone has to push it by hand.</p>
+        <p>A good exercise is shadowing an admin person for two hours. Noting how many times they copy data from one place to another, how many times they ask for chat confirmation, how many times they stop for missing data sales already had.</p>
+        <p>Where does the day hurt most? There is usually the initial candidate list.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Three filters to separate the automatable from the rest</h2>
+        <p>Not everything repetitive should be automated. To avoid mistakes, pass each task through three simple filters.</p>
+        <p>First, repetition. Does it happen many times a week, in similar shape? Loading receipts, reconciling payments, claiming balances, warning sales that an invoice is pending. If it happens two or three times a month, it probably doesn’t justify effort.</p>
+        <p>Second, stable rules. Is the task done almost always the same? Can it be explained in clear steps? When rules change per client, the week’s exception or an unrecorded verbal agreement, there is nothing to order yet.</p>
+        <p>Third, cost of doing it wrong. What happens with an error or delay? A misapplied payment generates an unfair claim. Forgotten follow-up leaves debt rotating for weeks. The more rework and friction generated, the more sense removing it from manual effort makes.</p>
+        <p>If a task meets all three — it repeats, has clear rules and mistakes are costly — it is a good candidate. If it fails any, leave it waiting.</p>
+        <p>This also clarifies when not to automate. Don’t automate a negotiation with criteria changing weekly. Don’t automate a report almost nobody reads. And don’t automate a messy process, because you will only accelerate disorder.</p>
+        <p>Our guiding rule is using the least complexity needed to correctly solve the problem.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>How much that manual work costs, plainly</h2>
+        <p>Sometimes manual work seems free because we already have people. But it occupies hours that could control, collect better or handle real exceptions.</p>
+        <p>Do a hypothetical calculation, just to think. Suppose someone spends 45 minutes a day moving receipts from emails to a spreadsheet, finding which invoice they match and warning sales.</p>
+        <p>That is about 15 hours a month. Without counting fixing errors, answering “did my payment arrive?” and redoing reconciliations when something doesn’t close.</p>
+        <p>Now add the invisible: collection delayed three days because nobody warned, wrongly applied discount because information arrived late, sales-admin argument because each has their version.</p>
+        <p>No number in this example pretends exactness. It serves to change the question to “how much does it cost us, per month, to keep doing it this way?”.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>A typical circuit: from receipt to collection</h2>
+        <p>See a complete example, very common in admin and sales, with hypothetical numbers.</p>
+        <p>Initial situation: clients send receipts by email and WhatsApp. Admin downloads them, records them in a spreadsheet, finds the matching invoice, applies payment and warns sales. Sales claims on their own, not always knowing what already arrived.</p>
+        <p>Each step depends on someone remembering, asking or forwarding something. It works, but by permanent attention force.</p>
+        <p>Walk it through the three filters.</p>
+        <p>Receipt loading repeats daily, almost always the same: a file arrives, it must be tied to a client and invoice. Rules are stable. And error cost is high: if a receipt is lost, an already-made payment is claimed.</p>
+        <p>Reconciliation also repeats and has fairly clear rules: comparing billed versus collected, detecting differences, marking pending. When done by hand in parallel spreadsheets, it takes long and quickly outdated.</p>
+        <p>Payment follow-up is the third link. Remembering due dates, warning, prioritizing who to call. The base is stable — date, amount, state — although tone with each client asks for human judgment. That isn’t automated. What can be ordered is the list: who owes, how much, since when.</p>
+        <p>Suppose this circuit moves 120 invoices a month and half requires two 10-minute manual interventions each to locate receipts or confirm payment. That is about 20 monthly hours just in back-and-forth.</p>
+        <p>What would change if the circuit were better solved? Receipts would enter through an ordered channel, stay tied to the client from the start, reconciliation would show up-to-date balances and sales would see the same as admin. Nobody would have to ask “did it arrive?”.</p>
+        <p>Human work doesn’t disappear. It moves: instead of copying and chasing data, the team controls exceptions, decides on rare cases and talks with clients needing particular treatment.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Before automating, simplify</h2>
+        <p>The most frequent mistake is wanting to automate a process not yet well understood.</p>
+        <p>If each salesperson agrees on different payment terms without recording them, if receipts arrive through five channels, if nobody knows which is the valid spreadsheet, no improvement will work.</p>
+        <p>Simplifying is agreeing on little and clear. A single receipt reception channel. A single criterion to apply partial payments. A shared definition of what “paid”, “pending” and “in claim” mean. A single balance list everyone watches.</p>
+        <p>Only when the task is already well understood does automating pay off. Before, it only adds complexity.</p>
+        <p>The second mistake is starting with the flashy instead of the repetitive. A striking dashboard impresses, but doesn’t relieve anyone’s morning. What relieves most is usually boring: receipts not getting lost, balances visible.</p>
+        <p>Ask: if this went well, what would my team stop doing every day? If the answer isn’t concrete, it isn’t priority yet.</p>
+        <p>Some tasks are worth leaving manual for a good while. Delicate exceptions, clients with special agreements, decisions where context changes. There human judgment isn’t a cost. It is control.</p>
+        <p>Priority is automating little, where most repetition, clearest rules and highest error cost exist, with the simplest solution correctly solving the problem.</p>
+        <p>Start with a small, visible circuit, like invoices and payments. Observe a week, apply the three filters, estimate the cost of staying the same, order rules and only afterwards solve the repetitive. When that circuit calms down, the team will notice: fewer urgent messages, fewer parallel spreadsheets, fewer arguments about who is right.</p>
+        <p>That operational calm is the best sign you chose well where to start.</p>
+      </div>
+    </div>
+  </article>
+
+  <section class="cta" data-od-id="cta-articulo">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Next step</p>
+      <h2>Does your team lose hours on invoices, payments and follow-ups?</h2>
+      <p>Next Wrld can help analyze your operation and decide what to order first.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="cta-primary">Analyze my operation →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  .hero { padding: 84px 0 40px; }
+  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
+  .meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .back { display: inline-block; margin-top: 22px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .article { padding: 24px 0 72px; }
+  .article p { margin: 18px 0; font-size: 17px; line-height: 1.75; color: var(--fg); max-width: 68ch; }
+  .article h2 { font-size: clamp(26px, 3vw, 36px); margin: 56px 0 8px; letter-spacing: -0.02em; line-height: 1.15; }
+  .article .strong { font-family: var(--disp); font-weight: 600; font-size: 22px; letter-spacing: -0.01em; margin: 32px 0; }
+  .checklist { margin: 24px 0; list-style: none; border-top: 1px solid var(--border); }
+  .checklist li { padding: 14px 0 14px 28px; border-bottom: 1px solid var(--border); position: relative; font-size: 16px; }
+  .checklist li::before { content: '→'; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
+  .cta { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 0; margin-bottom: 88px; }
+  .cta h2 { font-size: clamp(30px, 4vw, 50px); margin: 18px 0; letter-spacing: -0.03em; line-height: 1.05; }
+  .cta p { color: var(--muted); font-size: 17px; max-width: 56ch; }
+  .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  @media (max-width: 720px) {
+    .wrap-narrow { padding: 0 20px; }
+    .hero { padding: 64px 0 32px; }
+    .article p { font-size: 16px; }
+    .cta { padding: 64px 0; margin-bottom: 64px; }
+  }
+</style>

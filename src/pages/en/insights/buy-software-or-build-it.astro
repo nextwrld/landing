@@ -1,0 +1,131 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { calendarUrl } from '../../../i18n/contact';
+---
+
+<BaseLayout
+  locale="en"
+  routeKey="insights"
+  canonicalPath="/en/insights/buy-software-or-build-it/"
+  alternatePaths={{ es: '/insights/comprar-software-o-construirlo/', en: '/en/insights/buy-software-or-build-it/' }}
+  title="Buy software or build it: what to evaluate before deciding | Next Wrld"
+  description="Cost, scope, fit and maintenance: the questions worth answering before choosing a path."
+>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Custom software</p>
+      <h1>Buy software or build it: what to evaluate before deciding.</h1>
+      <p class="lead">Buying is fast and predictable. Building gives control over what is particular. The right decision depends on total cost, real scope, required fit and future maintenance.</p>
+      <div class="meta"><span>7 min read</span><span>Custom software · Operations</span></div>
+      <a class="back" href="/en/insights/">← Back to Insights</a>
+    </div>
+  </section>
+
+  <article class="article" data-od-id="articulo">
+    <div class="wrap-narrow">
+      <div data-reveal>
+        <p>Almost every company reaches the same point. The current tool falls short, the team improvises outside it and someone raises the question: do we buy something that exists or build something of our own?</p>
+        <p>Both paths can work. The problem isn’t choosing the wrong technology, but deciding without looking at full cost, real scope and what each option demands afterwards.</p>
+        <p class="strong">It isn’t about which option is better. It is about which fits your process better.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Buying: fast, proven and with limits</h2>
+        <p>Buying software means adopting a solution that already exists and many companies use. A CRM, an ERP, a billing, support or management platform. It arrives with defined features, external support and included updates.</p>
+        <p>Its advantage is predictability. It is implemented in weeks, monthly cost is known and the team probably already knows similar tools. For standard processes — selling, billing, serving clients — it is usually the most sensible path.</p>
+        <p>Its limit appears when the process isn’t standard. The tool allows a single approval way, but the company needs three. It forces generic states when operations handle own states. Then the team starts adapting work to the tool, not the other way around.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Building: total control with total responsibility</h2>
+        <p>Building means creating a solution designed around the company’s process. It reflects its rules, states, exceptions and way of working. Nothing is extra and nothing is missing because it was designed for that case.</p>
+        <p>Its advantage is fit. When the process is particular and central to the business, your own system removes workarounds, parallel spreadsheets and fields used for something else.</p>
+        <p>Its cost is responsibility. It must be developed, maintained, updated and evolved. Your own system is an asset asking for permanent attention. If the process it sustains isn’t important enough, that attention isn’t justified.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Cost: looking beyond initial price</h2>
+        <p>Comparing only licenses against development misleads. Buying has subscription, implementation, configuration, training and often per-user costs growing with the team. It also has hidden costs: adaptations, integrations and hours spent working around its limits.</p>
+        <p>Building has initial development, infrastructure, maintenance, support and future evolution. No system is finished the day it is delivered: rules change, volume grows and new needs appear.</p>
+        <p>The useful question isn’t how much starting costs, but how much operating with each option costs over two or three years, including team time.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Scope: which problem each option solves</h2>
+        <p>Before comparing prices, delimit scope. Which part of the process works well and which generates friction? Often only a fragment needs something of its own, while the rest works well with existing tools.</p>
+        <p>If the problem is concentrated — a particular approval, your own calculation, a flow with specific states — building a bounded piece can solve it without replacing everything. If the problem is general — disorder, missing loads, low adoption — no new tool solves it alone.</p>
+        <p class="strong">Delimiting scope avoids buying too much or building too much.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Fit: who adapts to whom</h2>
+        <p>Every tool demands some adaptation. The question is how much and at what cost. Commercial software asks the company to adjust part of its process to its way of working. When that adjustment is minor, no problem: ordering the process a little is often even healthy.</p>
+        <p>When the adjustment is large, cost appears in workarounds. Fields used for something else, parallel spreadsheets, chat approvals later recorded approximately. The team works twice: operating in reality and then translating it into the system.</p>
+        <p>If workarounds become the official way of working, the tool stopped representing the process. There building starts making sense, because the adaptation cost is already paid every day.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Maintenance: who cares for the system afterwards</h2>
+        <p>Buying moves much maintenance to the vendor: updates, security, infrastructure. The company keeps configuration, data and internal adoption, but not the product itself.</p>
+        <p>Building inverts that relationship. The company gains total control but assumes evolution: fixing, updating, adding features and responding when something fails. That requires a long-term bond with whoever develops it or an internal team able to sustain it.</p>
+        <p>That is why before building ask who will care for the system in two years, with what budget and priority. If that answer doesn’t exist, buying is usually more prudent.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Time and risk</h2>
+        <p>Buying is faster and more predictable. In weeks the team is operating, with bounded risk: if it doesn’t work, it can be changed at limited cost.</p>
+        <p>Building takes longer and has more initial uncertainty: discovery, design, development, testing, launch. Risk is compensated when the result removes frictions no standard tool removes.</p>
+        <p>A common strategy combines both times: buying to solve the urgent and standard, while calmly designing the own piece that merits it.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Decision frame</h2>
+        <p>As a practical summary:</p>
+        <ul class="checklist">
+          <li><b>Buy when:</b> the process is standard, required adaptation is minor, you need to solve fast and monthly cost is predictable.</li>
+          <li><b>Build when:</b> the process is particular and central, tools force too many workarounds, own rules or states exist and there is capacity to maintain the solution.</li>
+          <li><b>Combine when:</b> only part of the process is particular. Standard tools for the generic, integrations to move information and an own piece for the differential.</li>
+        </ul>
+        <p>No option is better by definition. The right solution is the one solving the operational problem with the least necessary complexity.</p>
+        <p class="strong">First operations. Then the tool.</p>
+      </div>
+    </div>
+  </article>
+
+  <section class="cta" data-od-id="cta-articulo">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Next step</p>
+      <h2>Are you evaluating buying or building?</h2>
+      <p>We can review your process and help compare options by cost, scope and maintenance, before committing to a path.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="cta-primary">Analyze my operation →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  .hero { padding: 84px 0 40px; }
+  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
+  .meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .back { display: inline-block; margin-top: 22px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .article { padding: 24px 0 72px; }
+  .article p { margin: 18px 0; font-size: 17px; line-height: 1.75; color: var(--fg); max-width: 68ch; }
+  .article h2 { font-size: clamp(26px, 3vw, 36px); margin: 56px 0 8px; letter-spacing: -0.02em; line-height: 1.15; }
+  .article .strong { font-family: var(--disp); font-weight: 600; font-size: 22px; letter-spacing: -0.01em; margin: 32px 0; }
+  .checklist { margin: 24px 0; list-style: none; border-top: 1px solid var(--border); }
+  .checklist li { padding: 14px 0 14px 28px; border-bottom: 1px solid var(--border); position: relative; font-size: 16px; line-height: 1.6; }
+  .checklist li::before { content: '→'; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
+  .cta { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 0; margin-bottom: 88px; }
+  .cta h2 { font-size: clamp(30px, 4vw, 50px); margin: 18px 0; letter-spacing: -0.03em; line-height: 1.05; }
+  .cta p { color: var(--muted); font-size: 17px; max-width: 56ch; }
+  .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  @media (max-width: 720px) {
+    .wrap-narrow { padding: 0 20px; }
+    .hero { padding: 64px 0 32px; }
+    .article p { font-size: 16px; }
+    .cta { padding: 64px 0; margin-bottom: 64px; }
+  }
+</style>

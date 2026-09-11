@@ -1,0 +1,145 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { calendarUrl } from '../../../i18n/contact';
+---
+
+<BaseLayout
+  locale="en"
+  routeKey="insights"
+  canonicalPath="/en/insights/signs-manual-process-reaching-limit/"
+  alternatePaths={{ es: '/insights/senales-proceso-manual-limite/', en: '/en/insights/signs-manual-process-reaching-limit/' }}
+  title="Five signs a manual process is starting to limit your company | Next Wrld"
+  description="People dependency, repeated errors and reports costing hours: how to recognize them in time."
+>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Processes</p>
+      <h1>Five signs a manual process is starting to limit your company.</h1>
+      <p class="lead">A manual process isn’t a bad process. But when volume grows and rules get complicated, what used to work can start slowing operations.</p>
+      <div class="meta"><span>5 min read</span><span>Processes · Operations</span></div>
+      <a class="back" href="/en/insights/">← Back to Insights</a>
+    </div>
+  </section>
+
+  <article class="article" data-od-id="articulo">
+    <div class="wrap-narrow">
+      <div data-reveal>
+        <p>Many companies operate for years with manual processes without problems. One person receives requests, records them, follows them and closes them. It works because volume is manageable and rules are simple.</p>
+        <p>Difficulty appears when the business grows. More operations, more people involved, more exceptions. The same process, unchanged, starts generating errors, delays and dependency on certain people.</p>
+        <p class="strong">The key is detecting those signs before the problem becomes structural.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>1. The process depends too much on certain people</h2>
+        <p>Only one person really knows how it works. They remember what to do in each case, know undocumented exceptions and know who to call when something gets stuck.</p>
+        <p>When that person is missing, the process slows or stops. Training someone new takes weeks, because much knowledge is informal and lives in conversations, not in a clear procedure.</p>
+        <p>The problem isn’t having experienced people. The problem appears when the process works because certain people mentally sustain it.</p>
+        <p class="strong">If the process stops working when someone isn’t available, part of the system lives in their head.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>2. The same errors start repeating</h2>
+        <p>Incorrectly loaded data, incomplete fields, duplicated information, forgotten requests, wrong documents, outdated states, skipped steps or information sent to the wrong person.</p>
+        <p>An isolated error is normal. The important sign appears when the same error type recurs because the process allows it. Nothing prevents it, warns about it or validates it.</p>
+        <p>There is a difference between someone making a mistake and the process depending on nobody making mistakes. In the second case, error isn’t an exception: it is an expected consequence.</p>
+        <p>When the same error forces rework, apologies or correcting information in front of the client, cost stops being the minute it took to err. Real cost is in correction, follow-up and lost data confidence.</p>
+        <p>Clear rules, validations or focused automations can reduce that dependency without redesigning everything.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>3. Knowing what is happening requires asking or rebuilding information</h2>
+        <p>Answering simple questions takes disproportionate effort. How many requests are pending, who owns each case, which operations are delayed, what happened with a client, how long the process normally takes.</p>
+        <p>Answering requires asking several people, reviewing chats, searching emails or consolidating spreadsheets. Each answer is a small investigation.</p>
+        <p class="strong">An operation loses visibility when knowing its state requires manually rebuilding it.</p>
+        <p>A healthy process generates information while running. State is recorded as it advances; you don’t have to go find it afterwards.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>4. Reports take too much time</h2>
+        <p>Exporting data, copying information, combining spreadsheets, fixing formats, removing duplicates, finding missing data, preparing the weekly or monthly report. Each close consumes unplanned hours.</p>
+        <p>Preparing an occasional manual report isn’t a problem. The sign appears when every week information the company already generated during operations must be rebuilt.</p>
+        <p class="strong">If the team has to prepare data before analyzing it, the problem is in how information is captured.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>5. Growth directly increases admin work</h2>
+        <p>This is the most important sign. With 100 operations a month, admin work takes 10 hours. With 200, it takes 20. With 500, more people must be hired just to move information, verify states or copy data.</p>
+        <p>Growing means increasing operational effort in almost the same proportion. Each new sale brings a fixed load of manual work adding no client value.</p>
+        <p>It doesn’t mean every company must automate. But it signals the process may be limiting scaling capacity. Growth stops being good news for operations, because each new client adds work in the same measure as revenue.</p>
+        <p>At that point, hiring more people eases the symptom but doesn’t solve the cause. The process still asks the same effort per operation, just split among more people.</p>
+        <p class="strong">A process becomes a limitation when more volume forces proportionally more effort.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>An isolated sign doesn’t mean you need software</h2>
+        <p>Small errors are normal. Certain processes will always need human intervention. Some tasks happen so rarely that automating them makes no sense. And a specialized person can be perfectly adequate for certain processes.</p>
+        <p>The problem appears when several signs happen together and start affecting time, quality, response capacity or growth. Then it is no longer a detail: the process as a whole asks for attention.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Before automating, review the process</h2>
+        <p>Detecting these signs doesn’t mean building software immediately. First understand which steps exist, which add value, which are repetitive, where errors appear, where information duplicates and which decisions need human judgment.</p>
+        <p>Observing the process as it happens in practice, not as documented, usually reveals steps nobody questions anymore but nobody needs either. That prior review is what lets you decide with judgment what to simplify, standardize and only afterwards automate.</p>
+        <p>Also ask which tasks could be removed and which parts could be standardized. Sometimes the largest advance is simply removing steps, defining responsibilities or better structuring information.</p>
+        <p class="strong">Not every manual process must be automated.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>An example where all five signs appear</h2>
+        <p>A company receives client requests. At first 30 a month and one person handles them easily. With growth they reach 300.</p>
+        <p>Now several people receive requests by email and WhatsApp, there is a shared spreadsheet someone must update, owners constantly ask what is pending and every Friday a manual report is prepared.</p>
+        <p>All five signs are there: only one person understands real state, incomplete data repeats, nobody knows what is pending without asking, the Friday report takes hours and each volume increase demands more admin hours. None seems critical separately. Together they show the process stopped scaling.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Questions for a quick diagnostic</h2>
+        <ul class="checklist">
+          <li>What happens if the person knowing the process is absent for a week?</li>
+          <li>Which errors happen more than once?</li>
+          <li>Can you know operations state without asking anyone?</li>
+          <li>How much time does preparing reports take?</li>
+          <li>What happens to admin work if volume doubles?</li>
+        </ul>
+        <p>These questions quickly evaluate whether a process needs attention. If several answers are uncomfortable, review the process before it limits consistency and growth.</p>
+        <p>A manual process starts limiting a company when it depends too much on people, repeats errors, loses visibility, forces rebuilding information and increases effort at the same pace as business growth.</p>
+      </div>
+    </div>
+  </article>
+
+  <section class="cta" data-od-id="cta-articulo">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Next step</p>
+      <h2>Do any of these problems appear in your operation?</h2>
+      <p>We can help identify where friction is and what would make sense to improve first.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="cta-primary">Analyze my operation →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  .hero { padding: 84px 0 40px; }
+  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
+  .meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .back { display: inline-block; margin-top: 22px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .article { padding: 24px 0 72px; }
+  .article p { margin: 18px 0; font-size: 17px; line-height: 1.75; color: var(--fg); max-width: 68ch; }
+  .article h2 { font-size: clamp(26px, 3vw, 36px); margin: 56px 0 8px; letter-spacing: -0.02em; line-height: 1.15; }
+  .article .strong { font-family: var(--disp); font-weight: 600; font-size: 22px; letter-spacing: -0.01em; margin: 32px 0; }
+  .checklist { margin: 24px 0; list-style: none; border-top: 1px solid var(--border); }
+  .checklist li { padding: 14px 0 14px 28px; border-bottom: 1px solid var(--border); position: relative; font-size: 16px; line-height: 1.6; }
+  .checklist li::before { content: '→'; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
+  .cta { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 0; margin-bottom: 88px; }
+  .cta h2 { font-size: clamp(30px, 4vw, 50px); margin: 18px 0; letter-spacing: -0.03em; line-height: 1.05; }
+  .cta p { color: var(--muted); font-size: 17px; max-width: 56ch; }
+  .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  @media (max-width: 720px) {
+    .wrap-narrow { padding: 0 20px; }
+    .hero { padding: 64px 0 32px; }
+    .article p { font-size: 16px; }
+    .cta { padding: 64px 0; margin-bottom: 64px; }
+  }
+</style>

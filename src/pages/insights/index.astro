@@ -206,41 +206,48 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 
 <script>
   // insights: filter by category + search
-  var pills = document.querySelectorAll('#pills button');
-  var cards = document.querySelectorAll('#grid .card');
-  var search = document.getElementById('search');
-  var empty = document.getElementById('empty');
+  var pills = document.querySelectorAll<HTMLButtonElement>('#pills button');
+  var cards = document.querySelectorAll<HTMLElement>('#grid .card');
+  var searchBox = document.getElementById('search');
+  var emptyBox = document.getElementById('empty');
   var activeCat = 'todos';
-  function applyFilter() {
-    var q = search.value.trim().toLowerCase();
+  function readQuery(): string {
+    if (searchBox instanceof HTMLInputElement) return searchBox.value.trim().toLowerCase();
+    return '';
+  }
+  function applyFilter(): void {
+    var q = readQuery();
     var shown = 0;
-    cards.forEach(function (c) {
+    cards.forEach(function (c: HTMLElement) {
       var okCat = activeCat === 'todos' || c.dataset.cat === activeCat;
-      var txt = (c.querySelector('h3').textContent + ' ' + c.querySelector('p').textContent).toLowerCase();
+      var h = c.querySelector('h3');
+      var p = c.querySelector('p');
+      var txt = ((h && h.textContent ? h.textContent : '') + ' ' + (p && p.textContent ? p.textContent : '')).toLowerCase();
       var okQ = q === '' || txt.indexOf(q) > -1;
       var show = okCat && okQ;
       c.style.display = show ? '' : 'none';
       if (show) shown++;
     });
-    empty.style.display = shown ? 'none' : 'block';
+    if (emptyBox) emptyBox.style.display = shown ? 'none' : 'block';
   }
-  pills.forEach(function (b) {
+  pills.forEach(function (b: HTMLButtonElement) {
     b.addEventListener('click', function () {
-      pills.forEach(function (x) { x.classList.remove('on'); });
+      pills.forEach(function (x: HTMLButtonElement) { x.classList.remove('on'); });
       b.classList.add('on');
-      activeCat = b.dataset.cat;
+      activeCat = b.dataset.cat ?? 'todos';
       applyFilter();
     });
   });
-  search.addEventListener('input', applyFilter);
-  document.querySelectorAll('.sc').forEach(function (s) {
+  if (searchBox) searchBox.addEventListener('input', applyFilter);
+  document.querySelectorAll<HTMLElement>('.sc').forEach(function (s: HTMLElement) {
     s.addEventListener('click', function () {
-      var cat = s.dataset.filter;
-      pills.forEach(function (x) { x.classList.toggle('on', x.dataset.cat === cat); });
+      var cat = s.dataset.filter ?? 'todos';
+      pills.forEach(function (x: HTMLButtonElement) { x.classList.toggle('on', x.dataset.cat === cat); });
       activeCat = cat;
-      search.value = '';
+      if (searchBox instanceof HTMLInputElement) searchBox.value = '';
       applyFilter();
-      document.getElementById('ultimos').scrollIntoView({ behavior: 'smooth', block: 'start' });
+      var latest = document.getElementById('ultimos');
+      if (latest) latest.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
   });
 </script>

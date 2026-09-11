@@ -1,0 +1,146 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { calendarUrl } from '../../../i18n/contact';
+---
+
+<BaseLayout
+  locale="en"
+  routeKey="insights"
+  canonicalPath="/en/insights/integrate-tools-before-replacing/"
+  alternatePaths={{ es: '/insights/integrar-herramientas-antes-de-reemplazar/', en: '/en/insights/integrate-tools-before-replacing/' }}
+  title="Integrating existing tools before replacing them: when it makes sense | Next Wrld"
+  description="Replacing isn’t always the best first step. Sometimes it is enough to make what exists work together."
+>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Automation and integrations</p>
+      <h1>Integrating existing tools before replacing them: when it makes sense.</h1>
+      <p class="lead">No tool is broken, but information doesn’t travel alone. It travels by hand, held by the memory of whoever copies and pastes. Before changing systems, ask whether making what exists talk to each other suffices.</p>
+      <div class="meta"><span>6 min read</span><span>Automation & integrations · Tools</span></div>
+      <a class="back" href="/en/insights/">← Back to Insights</a>
+    </div>
+  </section>
+
+  <article class="article" data-od-id="articulo">
+    <div class="wrap-narrow">
+      <div data-reveal>
+        <p>It is nine in the morning. Three inquiries arrived through the form. One person copies name, phone and order to the CRM. Then opens Excel and writes the same again. Days later, if an inquiry advances, someone loads everything again into admin for contract and invoice.</p>
+        <p>No tool is broken. The form receives, the CRM stores, Excel orders, the internal system bills. The problem is in between. Information doesn’t travel alone. It travels by hand, held by the memory of whoever copies and pastes.</p>
+        <p>When that repeats daily, the question appears: “Do we change systems or make what we have talk to each other?” Changing seems fast, and sometimes it is, but often it isn’t.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>The tool doesn’t always fail. Sometimes the connection fails.</h2>
+        <p>Separate two problems asking for different solutions.</p>
+        <p>A tool fails when it prevents working well even used well. It won’t export information, it jams with normal volume or costs much more than it contributes. There the limit is in the tool.</p>
+        <p>A connection problem is another. Each tool works, but the process lives split across several and nobody defined how information passes from one to another. Symptoms look alike: duplicated data, two different states for the same case, nobody knows the valid data. If the problem is connection, changing tools doesn’t solve it. It only moves disorder to a new screen.</p>
+        <p>Look where rework appears. If the team spends hours moving data, reconciling spreadsheets and fixing loads, you have a coordination problem between them.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Integrating is agreeing how information travels</h2>
+        <p>The word integrate sounds technical. In operations it means something simple: defining which information travels from one tool to another, when it travels and who answers for it.</p>
+        <p>What travels: only what the next step needs to work without asking. When it travels: when the fact occurs. Who answers: one owner per leg.</p>
+        <p>Technology comes afterwards, as consequence. It can be an automatic connection or a clear loading and review rule. Central is the process stopping depending on memory. If two people write the same thing twice, there is a pending connection.</p>
+        <p>Using several tools isn’t a problem itself. Nor does ordering mean putting everything in one platform. The useful question isn’t how many tools you have, but how much information is lost between them.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Three paths: integrate, replace or coexist</h2>
+        <p>None is good or bad alone. They differ in cost, time and risk.</p>
+        <p>Integrating what exists keeps tools and connects steps. It wins in speed: no large migration nor training from scratch, and operations keep running. Its risk is masking a structural limit: if a tool is very closed, integration helps a while but isn’t enough.</p>
+        <p>Replacing changes one or several pieces for a new one. It wins when the limit is already proven and structural. But it costs more: licenses, migration, training and weeks of low productivity. Its risk is the most expensive: replicating disorder in a new system and discovering months later errors continue, with a higher fee.</p>
+        <p>Coexisting is staying as-is, but with explicit rules. It works when volume is low: shared criteria, one owner and weekly review suffice. It wins in simplicity. It loses as volume grows, because what today sustains with discipline tomorrow asks for overtime.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>When integrating can work</h2>
+        <p>Without these four conditions, any connection will be fragile.</p>
+        <p>First, the process is repeatable. Not perfect, but stable. If each case is handled differently depending on who serves it, first agree the process. Connecting disorder only accelerates it.</p>
+        <p>Second, each tool lets information enter and exit orderly. Exporting, importing or receiving a notice suffices. Data just must not stay locked in.</p>
+        <p>Third, there is data identifying each case everywhere: an inquiry code, an email, a property code. Without that common point, reconciling becomes impossible.</p>
+        <p>Fourth, there are owners. Someone defines valid data and someone cares for each piece. Integration doesn’t replace those people. It needs them.</p>
+        <p>If that exists, integrating is usually the least complexity needed to solve the problem.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>When replacing is the answer</h2>
+        <p>Integrating first doesn’t mean integrating always. Three situations where replacing is right.</p>
+        <p>When the tool won’t let data out, or delivers it incomplete. Locked information condemns the team to manual work. There no connection suffices.</p>
+        <p>When cost is disproportionate. Suppose a high license for something rarely used, plus support each time something changes. The problem isn’t connection. It is the equation.</p>
+        <p>When the tool prevents the process the business needs. If it won’t allow correcting without erasing history or forces steps no longer sensible that nobody can change. When the team adapts work to system limits, replacement stops being whim.</p>
+        <p>If you first ordered and connected the connectable, you know what is still missing. Replacement stops being a bet.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Example: from form to collection without changing systems</h2>
+        <p>A real estate services company manages rentals. It uses four pieces: web form, CRM, tracking Excel and internal system.</p>
+        <p>The circuit is manual. Each inquiry arrives by email. Someone loads it in the CRM. Another notes it in Excel with state, visits and priority. If closed, admin asks for data by chat and loads it into the internal system. Three loads for the same case. Errors repeat: a mis-copied phone, two different states, an invoice stopped for missing data left in an email.</p>
+        <p>The team asks to change the CRM and remove Excel. Before, they try integrating.</p>
+        <p>First they agree the process. They define six states and nothing more: new, in follow-up, with visit, with proposal, closed and discarded. Each state has an owner.</p>
+        <p>Then they pick shared data: inquirer email plus property code. That pair appears in all three tools and lets them know they talk about the same thing.</p>
+        <p>Then they connect the first leg: each inquiry creates the CRM contact with all fields. The first load is removed. The CRM notifies sales.</p>
+        <p>Excel isn’t removed yet. It is ordered: it stops being parallel loading and reflects the CRM, with closed state list and daily review. Rework drops without abrupt change.</p>
+        <p>The last leg is admin. When an operation is marked closed, admin receives a notice with all data to bill. If mandatory data is missing, the case can’t close. Chat back-and-forth ends.</p>
+        <p>In weeks, without replacing anything, errors fall because everything is written once. And evidence appears of how operations work. The CRM suffices, Excel serves as weekly board, and the real bottleneck is in admin. The future decision is born from process knowledge.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>How to decide without guessing</h2>
+        <p>Time to improvement: integrating relieves in weeks. Replacing takes months across selection, migration and adaptation.</p>
+        <p>Total cost: integrating costs ordering and connecting. Replacing adds licenses, migration, training and operations slowdown. Suppose the team loses several hours weekly copying data. That cost already exists. The question is which path removes it sooner with less risk.</p>
+        <p>Risk: integrating lets you correct by parts without stopping. Replacing concentrates risk in one large change.</p>
+        <p>As a practical rule, if you can’t describe on one page how information travels from first contact to collection, first order and integrate before replacing.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Two expensive mistakes</h2>
+        <p>First is replacing out of frustration. Frustration is real but bad advisor. It points at the most visible tool, not always the cause. The new system excites for a month. Without rules, vices return with other colors.</p>
+        <p>Second is adding tools without owners. Each piece needs someone defining what enters, what exits and what each piece of data means. Without owners, each addition is another place where information outdated. If nobody can care for a tool, the problem isn’t technological.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Integrate to learn, replace with evidence</h2>
+        <p>Most problems attributed to tools are connection problems. They ask for a clear information journey, sustained rules and visible owners.</p>
+        <p>Integrating first is cheaper, faster and teaches you how your operation works. If replacement is needed afterwards, it is done with evidence and without breaking what works.</p>
+      </div>
+    </div>
+  </article>
+
+  <section class="cta" data-od-id="cta-articulo">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Next step</p>
+      <h2>Do your tools not talk to each other?</h2>
+      <p>Next Wrld can help analyze your operation and decide whether to integrate what you have or replace with evidence.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="cta-primary">Analyze my operation →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  .hero { padding: 84px 0 40px; }
+  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
+  .meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .back { display: inline-block; margin-top: 22px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .article { padding: 24px 0 72px; }
+  .article p { margin: 18px 0; font-size: 17px; line-height: 1.75; color: var(--fg); max-width: 68ch; }
+  .article h2 { font-size: clamp(26px, 3vw, 36px); margin: 56px 0 8px; letter-spacing: -0.02em; line-height: 1.15; }
+  .article .strong { font-family: var(--disp); font-weight: 600; font-size: 22px; letter-spacing: -0.01em; margin: 32px 0; }
+  .checklist { margin: 24px 0; list-style: none; border-top: 1px solid var(--border); }
+  .checklist li { padding: 14px 0 14px 28px; border-bottom: 1px solid var(--border); position: relative; font-size: 16px; }
+  .checklist li::before { content: '→'; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
+  .cta { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 0; margin-bottom: 88px; }
+  .cta h2 { font-size: clamp(30px, 4vw, 50px); margin: 18px 0; letter-spacing: -0.03em; line-height: 1.05; }
+  .cta p { color: var(--muted); font-size: 17px; max-width: 56ch; }
+  .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  @media (max-width: 720px) {
+    .wrap-narrow { padding: 0 20px; }
+    .hero { padding: 64px 0 32px; }
+    .article p { font-size: 16px; }
+    .cta { padding: 64px 0; margin-bottom: 64px; }
+  }
+</style>

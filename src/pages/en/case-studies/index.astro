@@ -1,101 +1,230 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { route } from '../../../i18n/routes';
-
-const calendarUrl = 'https://calendar.app.google/JQnkVUqK3FF5VSRU6';
-const whatsappUrl =
-  'https://wa.me/5491173678601?text=Hello%2C%20I%20came%20from%20Next%20Wrld.%20I%20want%20to%20talk%20about%20a%20process%20in%20my%20company%20we%20are%20looking%20to%20improve.';
+import { calendarUrl, whatsappUrl } from '../../../i18n/contact';
 ---
 
 <BaseLayout
   locale="en"
-  title="Software, automation and digital product case studies | Next Wrld"
-  description="Next Wrld projects in custom software, management systems, automation, and digital products built around real problems."
   routeKey="cases"
   canonicalPath="/en/case-studies/"
+  title="Software, automation and digital product case studies | Next Wrld"
+  description="Explore Next Wrld projects in custom software, management systems, automation and digital products built around real problems."
 >
-  <section data-od-id="hero">
-    <p class="eyebrow">Case studies</p>
-    <h1>Different problems. The same principle: understand before building.</h1>
-    <p class="lead">
-      A selection of projects in custom software, management systems,
-      and digital products — each one shaped by a real problem.
-    </p>
-    <div class="cta-row">
-      <a class="btn btn-p" href="#cases" data-od-id="hero-primary">
-        Explore case studies
-      </a>
-      <a class="btn btn-s" href={route('howWeWork', 'en')} data-od-id="hero-secondary">
-        How we work
-      </a>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">Case studies</p>
+      <h1>We understand before building, whatever the problem.</h1>
+      <p class="lead">Products, platforms and automations created around real needs.</p>
+      <p class="lead" style="margin-top:12px">In each case we show what was happening, what had to be solved and how we turned that context into a concrete solution.</p>
+      <p class="support">Real work, without invented metrics or inflated results.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href="#casos" data-od-id="hero-primary">Explore case studies</a>
+        <a class="btn btn-s" href="/en/how-we-work/" data-od-id="hero-secondary">How we work</a>
+      </div>
     </div>
   </section>
-
-  <!-- EN parity: hero translated, body sections follow ES structure -->
-  <section data-od-id="cases" id="cases">
-    <p class="eyebrow">Selected work</p>
-    <h2>Not every problem needs the same kind of solution.</h2>
-    <article id="aion">
-      <p class="eyebrow">Featured case · Next Wrld product</p>
-      <h3>AION Wellness</h3>
-      <p>
-        A gym’s daily operation connected in one multi-tenant product:
-        members, plans and memberships, payments, access decisions,
-        check-ins, operational indicators and daily cash close.
-      </p>
-      <a href="/en/case-studies/aion-wellness/">Explore the full case study</a>
-      <a href="https://www.aionwellness.pro/" target="_blank" rel="noopener">Visit AION Wellness ↗</a>
-    </article>
-    <article id="jfhp">
-      <p class="eyebrow">Platform modernization · Three-year evolution</p>
-      <h3>JFHP</h3>
-      <p>
-        Backend, data, web and mobile evolved in controlled layers for an
-        active global platform with 14K+ registered accounts, eight
-        languages, regional contexts and permission-sensitive workflows.
-      </p>
-      <a href="/en/case-studies/jfhp/">Explore the full case study</a>
-    </article>
-    <article id="inmocrm">
-      <h3>InmoCRM</h3>
-      <p>
-        From fragmented real estate operations to one connected system: a
-        PropTech platform designed and built by Next Wrld to centralize
-        properties, leads, visits, tasks and commercial activity.
-      </p>
-      <a href="/en/case-studies/inmocrm/">View full case study</a>
-    </article>
+  <section class="band" data-od-id="introduccion">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">Real work</p>
+      <h2>Each problem asks for a different kind of solution.</h2>
+      <p class="lead">Some companies need to centralize information. Others need to modernize an existing system. Others need to connect tools or build a product from scratch.</p>
+      <p class="lead" style="margin-top:12px">When we have verifiable data, we show it. When we don’t, we clearly explain the problem, the decisions and what we built.</p>
+      <div class="principle">The principle:<span>understand what is happening, decide what is worth solving and build around it.</span></div>
+    </div>
   </section>
-
-  <section data-od-id="cierre">
-    <p class="eyebrow">Next step</p>
-    <h2>We can start by understanding what is happening in your company.</h2>
-    <div class="cta-row">
-      <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="final-primary">
-        Analyze my case
-      </a>
-      <a class="btn btn-s" href={whatsappUrl} target="_blank" rel="noopener">
-        Chat on WhatsApp
-      </a>
+  <section id="casos" data-od-id="casos" style="padding-top:48px">
+    <div class="wrap">
+      <div class="aion" id="aion" data-reveal>
+        <p class="eyebrow">Featured case</p>
+        <span class="label">A PRODUCT BY NEXT WRLD</span>
+        <h3>AION Wellness</h3>
+        <p class="headline">A gym’s daily operation, connected in a single system.</p>
+        <div class="case-grid">
+          <div>
+            <h4 style="color:#9DBCFB">CONTEXT</h4>
+            <p style="color:#C9D4E8">In a gym, front-desk service connects the member record, their membership, payments, access and daily close.</p>
+            <h4 style="color:#9DBCFB">PROBLEM</h4>
+            <p style="color:#C9D4E8">When that information is separated, each inquiry requires searches and checks across records.</p>
+            <h4 style="color:#9DBCFB">WHAT WE DID</h4>
+            <p style="color:#C9D4E8">We modeled that journey and built a multi-tenant platform for members, time- or usage-based plans, memberships, payments, recorded access, indicators and cash.</p>
+            <p class="closing">The product preserves the link between the decisions that sustain the day.</p>
+            <div class="case-cta"><a class="main" style="color:#fff" href="/en/case-studies/aion-wellness/">Explore the full case study →</a><a class="main" style="color:#fff" href="https://www.aionwellness.pro/" target="_blank" rel="noopener">Visit AION Wellness ↗</a></div>
+          </div>
+          <div>
+            <div class="built"><b>CONNECTED OPERATION</b><ul><li>member management;</li><li>plans and memberships;</li><li>simple, split and multi-currency payments;</li><li>front desk and access decisions;</li><li>recorded check-ins;</li><li>operational summary;</li><li>daily cash report and close.</li></ul></div>
+            <p class="tech">Product · Frontend · Backend · Data · Infrastructure</p>
+          </div>
+        </div>
+      </div>
+      <div class="case" id="jfhp" data-reveal>
+        <p class="eyebrow">Platform modernization · Three years</p>
+        <span class="k">JFHP · ACTIVE GLOBAL SYSTEM</span>
+        <h3>Evolving the architecture without stopping operations.</h3>
+        <p class="context">Layered modernization of an international platform with 14K+ registered accounts, regional contexts, eight languages and permission-sensitive processes.</p>
+        <div class="case-grid">
+          <div>
+            <h4>PROBLEM</h4>
+            <p>The system had to take on new needs while continuing to support daily work.</p>
+            <p>The existing base contained rules, data and operational knowledge that had to be preserved.</p>
+            <h4>WHAT WE DID</h4>
+            <p>We evolved backend, data, web, mobile and infrastructure through controlled transitions, without proposing a total rewrite.</p>
+            <h4>PRODUCT RELATIONSHIP</h4>
+            <p>We work directly with the person responsible for the product, combining business decisions with technical decisions.</p>
+            <p class="closing">The future was built inside the system already in use.</p>
+            <div class="case-cta"><a class="main" href="/en/case-studies/jfhp/">Explore the full case study →</a><span class="rel">Related: <a href="/en/services/#software-a-medida">Custom software</a></span></div>
+          </div>
+          <div>
+            <div class="built"><b>CONNECTED EVOLUTION</b><ul><li>PHP toward Python and FastAPI;</li><li>Vue 2 toward Vue 3 and PrimeVue;</li><li>Cordova toward Flutter;</li><li>data and permissions model;</li><li>regional structure, teams and locations;</li><li>training, inventory and reporting;</li><li>dockerized services and infrastructure.</li></ul></div>
+            <p class="scale">14K+ registered accounts on the platform.</p>
+            <p class="tech" style="margin-top:16px;font-family:var(--mono);font-size:11.5px;color:var(--muted)">Product · Backend · Data · Web · Mobile · Infrastructure</p>
+          </div>
+        </div>
+      </div>
+      <div class="case" id="inmocrm" data-reveal>
+        <p class="eyebrow">PropTech product</p>
+        <span class="k">INMOCRM · A PRODUCT BY NEXT WRLD</span>
+        <h3>From fragmented real estate operations to a connected system.</h3>
+        <p class="context">InmoCRM is a PropTech platform designed and built by Next Wrld to centralize properties, leads, visits, tasks and commercial activity in a single system.</p>
+        <div class="case-grid">
+          <div>
+            <h4>PROBLEM</h4>
+            <p>Real estate teams manage properties, contacts, visits and commercial follow-up across disconnected tools and manual processes.</p>
+            <h4>WHAT WE DID</h4>
+            <p>We designed and built InmoCRM as a multi-organization product: each agency operates with isolated data, users, permissions and operations, with practical AI for commercial content under human control.</p>
+            <p class="closing">Fewer isolated processes. More system.</p>
+            <div class="case-cta"><a class="main" href="/en/case-studies/inmocrm/">View full case study →</a><span class="rel">Related: <a href="/en/services/#sistemas-de-gestion">Management systems</a></span></div>
+          </div>
+          <div>
+            <div class="built"><b>THE PRODUCT CENTRALIZES</b><ul><li>properties;</li><li>leads and contacts;</li><li>tasks and notes;</li><li>appointments and visits;</li><li>commercial activity;</li><li>operational dashboards;</li><li>public property pages.</li></ul></div>
+            <p class="tech" style="margin-top:16px;font-family:var(--mono);font-size:11.5px;color:var(--muted)">Product · PropTech · Multi-organization · Applied AI</p>
+          </div>
+        </div>
+      </div>
+      <div class="case" id="automatizaciones" data-reveal>
+        <p class="eyebrow">Automation and integrations</p>
+        <span class="k">APPLIED CAPABILITY</span>
+        <h3>Repetitive processes turned into tasks that happen automatically.</h3>
+        <p class="context">Many companies already have the tools they need. Manual work lives in moving information between them, repeating actions or verifying that each step happened.</p>
+        <div class="case-grid">
+          <div>
+            <h4>WHAT WE DO</h4>
+            <p>We connect systems and automate steps that follow clear rules.</p>
+            <p class="closing">Your tools can work better together without replacing them.</p>
+            <div class="case-cta"><a class="main" href="/en/services/#automatizacion-e-integraciones">Explore automation and integrations →</a></div>
+          </div>
+          <div>
+            <div class="built"><b>EXAMPLES</b><ul><li>syncing information;</li><li>generating documents;</li><li>validating data;</li><li>sending notifications;</li><li>connecting external services.</li></ul></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="band" data-od-id="comparacion">
+    <div class="wrap">
+      <div data-reveal>
+        <p class="eyebrow">Same principle, different outcomes</p>
+        <h2>The solution changes with the problem.</h2>
+      </div>
+      <div class="cmp" data-reveal>
+        <div class="cmp-row"><span class="who">AION WELLNESS</span><div><h4>Own product</h4><p>For fitness centers.</p></div><div><p>Centralize member, membership and payment processes.</p></div><div><p>Management platform specific to fitness.</p></div></div>
+        <div class="cmp-row"><span class="who">JFHP</span><div><h4>Existing system</h4><p>Used by an international organization.</p></div><div><p>Modernize and evolve without stopping the product.</p></div><div><p>Progressive evolution of a long-term platform.</p></div></div>
+        <div class="cmp-row"><span class="who">INMOCRM</span><div><h4>PropTech product</h4><p>Designed and built by Next Wrld.</p></div><div><p>Centralize real estate operations in a single system.</p></div><div><p>Multi-organization platform with applied AI.</p></div></div>
+        <div class="cmp-row"><span class="who">AUTOMATION</span><div><h4>Current tools</h4><p>They exist, but they don’t work together.</p></div><div><p>Reduce manual tasks between systems.</p></div><div><p>Integrations and automatic processes.</p></div></div>
+      </div>
+      <p class="cmp-close" data-reveal>First we understand which scenario is in front of us.</p>
+    </div>
+  </section>
+  <section class="band" data-od-id="detras">
+    <div class="wrap">
+      <div data-reveal>
+        <p class="eyebrow">Behind each case</p>
+        <h2>The method holds even when the outcome changes.</h2>
+        <p class="lead">Each project has a different context, but we think with the same structure.</p>
+      </div>
+      <p class="lead" data-reveal style="margin-top:24px">We work with a simple process: understand, decide, build, put into use and improve.</p>
+      <a class="link-arrow" href="/en/how-we-work/" data-reveal>See how we work →</a>
+    </div>
+  </section>
+  <section class="final" data-od-id="cta-final">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">Your case doesn’t have to look like these</p>
+      <h2>We can start by understanding what is happening in your company.</h2>
+      <p style="margin-top:12px">Tell us which process is becoming hard to manage and let’s define the path together.</p>
+      <div class="cta-row"><a class="btn btn-w" href={calendarUrl} target="_blank" rel="noopener" data-od-id="final-primary">Analyze my case</a><a class="btn btn-g" href={whatsappUrl('en', 'full')} target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      <p class="micro">Free initial diagnostic · 30–45 minutes</p>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  section { max-width: var(--max); margin: 0 auto; padding: 88px 32px; scroll-margin-top: 80px; }
-  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
-  h2 { font-size: clamp(28px, 3.4vw, 44px); margin: 18px 0; letter-spacing: -0.02em; line-height: 1.1; }
-  h3 { font-family: var(--disp); font-size: 22px; margin: 18px 0 8px; letter-spacing: -0.02em; }
-  .lead { margin-top: 16px; }
+  h1 { font-size: clamp(36px, 5vw, 64px); margin: 22px 0 20px; }
+  h2 { font-size: clamp(28px, 3.4vw, 46px); margin: 18px 0; }
+  section { padding: 96px 0; scroll-margin-top: 80px; }
+  .hero { padding: 84px 0 88px; }
   .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
-  ol { margin: 28px 0 0; padding-left: 22px; display: grid; gap: 18px; }
-  li p { margin-top: 6px; color: var(--muted); }
-  article { border-top: 1px solid var(--border); padding: 28px 0; }
-  article p { margin-top: 10px; color: var(--muted); max-width: 64ch; }
-  article a { display: inline-block; margin: 12px 16px 0 0; font-weight: 600; }
-  @media (max-width: 720px) {
-    section { padding: 72px 20px; }
-    .cta-row { flex-direction: column; }
-    .cta-row .btn { width: 100%; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  .btn-s:hover { border-color: var(--accent); background: #dce6ff; }
+  .btn-w { background: #fff; color: var(--accent); }
+  .btn-w:hover { background: #dce6ff; }
+  .btn-g { border-color: rgba(255, 255, 255, 0.45); color: #fff; }
+  .btn-g:hover { border-color: #fff; background: rgba(255, 255, 255, 0.08); }
+  .hero .support { margin-top: 18px; font-family: var(--serif); font-style: italic; font-size: 21px; max-width: 52ch; }
+  .band { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .principle { margin-top: 24px; font-family: var(--mono); font-size: 12px; letter-spacing: 0.1em; color: var(--fg); }
+  .principle span { display: block; font-family: var(--disp); font-size: 19px; letter-spacing: 0; color: var(--fg); margin-top: 6px; }
+  .case { padding: 40px 0; border-top: 1px solid var(--fg); margin-top: 64px; scroll-margin-top: 90px; }
+  .case:first-of-type { margin-top: 56px; }
+  .case .k { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); display: block; margin: 14px 0 20px; }
+  .case h3 { font-family: var(--disp); font-size: clamp(26px, 3.2vw, 42px); letter-spacing: -0.02em; line-height: 1.1; }
+  .case .context { font-size: 17px; color: var(--muted); max-width: 64ch; margin-top: 14px; }
+  .case-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; margin-top: 32px; align-items: start; }
+  .case-grid h4 { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); margin: 22px 0 8px; }
+  .case-grid h4:first-child { margin-top: 0; }
+  .case-grid p { font-size: 15.5px; color: var(--muted); max-width: 56ch; }
+  .case-grid p b { color: var(--fg); }
+  .built { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px 26px; }
+  .built b { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); display: block; margin-bottom: 10px; }
+  .built ul { list-style: none; }
+  .built li { position: relative; font-size: 15px; padding: 6px 0 6px 26px; }
+  .built li::before { content: '·'; position: absolute; left: 4px; color: var(--accent); font-weight: 700; font-size: 20px; line-height: 1.4; }
+  .scale { font-size: 13.5px; border-left: 2px solid var(--accent); padding-left: 14px; max-width: 56ch; margin-top: 16px; color: var(--muted); }
+  .closing { margin-top: 24px; font-family: var(--serif); font-style: italic; font-size: 21px; max-width: 56ch; }
+  .case-cta { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 22px; align-items: center; }
+  .case-cta a.main { font-weight: 600; font-size: 16px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .case-cta span.rel { font-size: 13.5px; color: var(--muted); }
+  .case-cta span.rel a { color: var(--accent); font-weight: 600; text-decoration: none; }
+  .tag-mvp { display: inline-block; font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 6px 14px; margin-top: 16px; }
+  .aion { background: var(--navy); color: #fff; border-radius: 22px; padding: clamp(30px, 4.5vw, 64px); }
+  .aion .eyebrow { color: #9dbcfb; }
+  .aion .eyebrow::before { background: #9dbcfb; }
+  .aion .label { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: #9dbcfb; display: block; margin-top: 12px; }
+  .aion h3 { font-family: var(--disp); font-size: clamp(30px, 3.8vw, 50px); letter-spacing: -0.02em; margin: 10px 0 4px; }
+  .aion .headline { font-family: var(--serif); font-style: italic; font-size: clamp(20px, 2.4vw, 28px); color: #fff; }
+  .aion p { color: #c9d4e8; max-width: 64ch; margin-top: 14px; font-size: 16px; }
+  .aion .built { background: rgba(255, 255, 255, 0.06); border-color: rgba(255, 255, 255, 0.2); }
+  .aion .built li { color: #e4e9f0; }
+  .aion .closing { color: #fff; }
+  .aion .tech { margin-top: 18px; font-family: var(--mono); font-size: 11.5px; color: #9dbcfb; }
+  .cmp { margin-top: 40px; border-top: 1px solid var(--fg); }
+  .cmp-row { display: grid; grid-template-columns: 200px 1fr 1fr 1fr; gap: 24px; padding: 24px 0; border-bottom: 1px solid var(--border); align-items: start; }
+  .cmp-row .who { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); }
+  .cmp-row h4 { font-family: var(--disp); font-size: 19px; margin-bottom: 6px; }
+  .cmp-row p { font-size: 14.5px; color: var(--muted); }
+  .cmp-close { margin-top: 28px; font-family: var(--serif); font-style: italic; font-size: 22px; text-align: center; max-width: 40ch; margin-left: auto; margin-right: auto; }
+  .link-arrow { display: inline-block; margin-top: 24px; font-weight: 600; font-size: 16px; color: var(--fg); text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .final { background: var(--navy); color: #fff; text-align: center; padding: 130px 0; border-top: 4px solid #5e85e3; }
+  .final .eyebrow { color: rgba(255, 255, 255, 0.78); justify-content: center; }
+  .final .eyebrow::before { background: #fff; }
+  .final h2 { font-size: clamp(34px, 4.4vw, 60px); max-width: 20ch; margin: 0 auto 18px; }
+  .final p { color: rgba(255, 255, 255, 0.85); max-width: 52ch; margin: 0 auto; }
+  .final .cta-row { justify-content: center; }
+  .final .micro { font-family: var(--mono); font-size: 12.5px; color: rgba(255, 255, 255, 0.7); margin-top: 16px; }
+  @media (max-width: 960px) {
+    section { padding: 72px 0; }
+    .hero .cta-row { flex-direction: column; align-items: stretch; }
+    .hero .cta-row .btn { width: 100%; }
+    .case-grid { grid-template-columns: 1fr; gap: 24px; }
+    .cmp-row { grid-template-columns: 1fr; gap: 8px; }
+    .final { padding: 88px 0; }
   }
 </style>

@@ -1,79 +1,254 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { route } from '../../../i18n/routes';
-
-const calendarUrl = 'https://calendar.app.google/JQnkVUqK3FF5VSRU6';
+import { calendarUrl } from '../../../i18n/contact';
 ---
 
 <BaseLayout
   locale="en"
-  title="Insights on software, processes and automation | Next Wrld"
-  description="Ideas and guides on custom software, automation, processes, and systems for companies that want to work with less complexity."
   routeKey="insights"
   canonicalPath="/en/insights/"
+  title="Insights on software, processes and automation | Next Wrld"
+  description="Ideas and guides on custom software, automation, processes and systems for companies that want to work with less complexity."
 >
-  <section data-od-id="hero">
-    <p class="eyebrow">Insights</p>
-    <h1>Ideas for making better decisions before building software.</h1>
-    <p class="lead">
-      Guides on custom software, automation, and processes for companies
-      that want to work with less complexity.
-    </p>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">Insights</p>
+      <h1>Ideas for making better decisions before building software.</h1>
+      <p class="lead">We write about processes, automation, product and technology for companies that want to simplify how they work without adding unnecessary complexity.</p>
+      <p class="support">Fewer trends. More context to decide what is worth changing, connecting or building.</p>
+      <div class="search"><input id="search" type="search" placeholder="Search Insights" aria-label="Search Insights" /></div>
+    </div>
   </section>
-
-  <!-- EN parity: hero translated, body sections follow ES structure -->
-  <section data-od-id="preguntas">
-    <p class="eyebrow">Before building</p>
-    <h2>Three questions that come up before building.</h2>
-    <ol>
-      <li>
-        <h3>What problem are we actually solving?</h3>
-        <p>Start from the problem, not the technology.</p>
-      </li>
-      <li>
-        <h3>What should happen without human intervention?</h3>
-        <p>Repetitive work is usually the best place to start.</p>
-      </li>
-      <li>
-        <h3>How will we know it worked?</h3>
-        <p>Define the expected outcome before writing any code.</p>
-      </li>
-    </ol>
+  <section class="band" data-od-id="temas" style="padding:72px 0">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">Browse by topic</p>
+      <div class="topics">
+        <div class="topic"><b>PROCESSES</b><p>Manual work, business processes, Excel, fragmented information and operational complexity.</p></div>
+        <div class="topic"><b>CUSTOM SOFTWARE</b><p>When it makes sense, when it doesn’t, requirements, costs, scope and legacy systems.</p></div>
+        <div class="topic"><b>AUTOMATION & INTEGRATIONS</b><p>Repetitive tasks, connecting tools, integrations and what to automate.</p></div>
+        <div class="topic"><b>PRODUCT & SYSTEMS</b><p>Defining what to build, MVPs, priorities, product decisions and evolution.</p></div>
+        <div class="topic"><b>APPLIED AI</b><p>Practical cases, when it adds value and when traditional automation is enough.</p></div>
+      </div>
+    </div>
   </section>
-
-  <section data-od-id="criterio">
-    <p class="eyebrow">Our editorial line</p>
-    <h2>We don&rsquo;t publish for the sake of publishing.</h2>
-    <p class="lead">
-      Reading helps frame the problem. Then it needs to be seen in
-      context — inside your operation.
-    </p>
-    <div class="cta-row">
-      <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="final-primary">
-        Analyze my case
-      </a>
-      <a class="btn btn-s" href={route('services', 'en')}>
-        Explore our services
-      </a>
+  <section data-od-id="destacado" style="padding-bottom:40px">
+    <div class="wrap">
+      <div data-reveal><p class="eyebrow">Featured</p></div>
+      <article class="feat" data-reveal>
+        <div>
+          <span class="cat">PROCESSES</span>
+          <h3><a href="/en/insights/when-excel-is-no-longer-enough/">When Excel is no longer enough to run a process.</a></h3>
+          <p>Excel can be an excellent tool for a long time. The problem appears when it starts concentrating rules, critical information, manual tasks and knowledge that only some people understand.</p>
+          <p style="margin-top:12px">In this guide we analyze the signs that a process is starting to need something different.</p>
+          <a class="read" href="/en/insights/when-excel-is-no-longer-enough/">Read insight →</a>
+        </div>
+        <div class="meta"><span>8 min read</span></div>
+      </article>
+    </div>
+  </section>
+  <section data-od-id="empezar" style="padding-top:40px">
+    <div class="wrap">
+      <div data-reveal>
+        <p class="eyebrow">If you are evaluating what to do</p>
+        <h2>Three questions that come up before building.</h2>
+      </div>
+      <div class="guides" data-reveal>
+        <div class="guide"><span class="n">01</span><span class="cat">CUSTOM SOFTWARE</span><h3><a href="/en/insights/custom-software-when-it-makes-sense/">How to know if your company needs custom software?</a></h3><p>Which signs show that existing tools no longer fit how your company works, and when building something of your own can make sense.</p><a class="read" href="/en/insights/custom-software-when-it-makes-sense/">Read guide →</a></div>
+        <div class="guide"><span class="n">02</span><span class="cat">AUTOMATION</span><h3><a href="/en/insights/automate-integrate-or-build/">Automate, integrate or build: how to decide?</a></h3><p>Not every manual process needs new software. We review when to automate a task, connect existing tools or build a system.</p><a class="read" href="/en/insights/automate-integrate-or-build/">Read guide →</a></div>
+        <div class="guide"><span class="n">03</span><span class="cat">PROCESSES</span><h3><a href="/en/insights/which-processes-to-automate-first/">Which processes should you automate first?</a></h3><p>A practical way to spot repetitive tasks, estimate their impact and decide where automation can generate the most value.</p><a class="read" href="/en/insights/which-processes-to-automate-first/">Read guide →</a></div>
+      </div>
+    </div>
+  </section>
+  <section id="ultimos" data-od-id="ultimos" style="padding-top:40px">
+    <div class="wrap">
+      <div data-reveal>
+        <p class="eyebrow">Latest insights</p>
+        <h2>Ideas to understand better before deciding.</h2>
+      </div>
+      <div class="pills" data-reveal id="pills">
+        <button class="on" data-cat="todos">All</button><button data-cat="procesos">Processes</button><button data-cat="software">Custom software</button><button data-cat="automatizacion">Automation</button><button data-cat="producto">Product & systems</button><button data-cat="ia">Applied AI</button>
+      </div>
+      <div class="grid" data-reveal id="grid">
+        <div class="card" data-cat="procesos"><span class="cat">PROCESSES</span><h3><a href="/en/insights/centralizing-scattered-information/">How to centralize information living across Excel, chats and other tools.</a></h3><p>From scattered information to a shared place: where to start without trying to change everything at once.</p><div class="meta"><span>6 min read</span></div><a class="read" href="/en/insights/centralizing-scattered-information/">Read insight →</a></div>
+        <div class="card" data-cat="software"><span class="cat">CUSTOM SOFTWARE</span><h3><a href="/en/insights/buy-software-or-build-it/">Buy software or build it: what to evaluate before deciding.</a></h3><p>Cost, scope, fit and maintenance: the questions worth answering before choosing a path.</p><div class="meta"><span>7 min read</span></div><a class="read" href="/en/insights/buy-software-or-build-it/">Read insight →</a></div>
+        <div class="card" data-cat="procesos"><span class="cat">PROCESSES</span><h3><a href="/en/insights/signs-manual-process-reaching-limit/">Five signs a manual process is starting to limit your company.</a></h3><p>People dependency, repeated errors and reports that cost hours: how to spot them in time.</p><div class="meta"><span>5 min read</span></div><a class="read" href="/en/insights/signs-manual-process-reaching-limit/">Read insight →</a></div>
+        <div class="card" data-cat="producto"><span class="cat">PRODUCT & SYSTEMS</span><h3><a href="/en/insights/what-management-system-does/">What a management system does and when you need one.</a></h3><p>Beyond the name: what it centralizes, what it organizes and when it justifies the investment.</p><div class="meta"><span>6 min read</span></div><a class="read" href="/en/insights/what-management-system-does/">Read insight →</a></div>
+        <div class="card" data-cat="automatizacion"><span class="cat">AUTOMATION & INTEGRATIONS</span><h3><a href="/en/insights/spotting-tasks-to-automate/">How to spot tasks your team shouldn’t keep doing manually.</a></h3><p>A practical walk through day-to-day work to find repetitive work with clear return.</p><div class="meta"><span>5 min read</span></div><a class="read" href="/en/insights/spotting-tasks-to-automate/">Read insight →</a></div>
+        <div class="card" data-cat="automatizacion"><span class="cat">AUTOMATION & INTEGRATIONS</span><h3><a href="/en/insights/integrate-tools-before-replacing/">Integrating existing tools before replacing them: when it makes sense.</a></h3><p>Replacing is not always the best first step. Sometimes it is enough to make what exists work together.</p><div class="meta"><span>6 min read</span></div><a class="read" href="/en/insights/integrate-tools-before-replacing/">Read insight →</a></div>
+        <div class="card" data-cat="producto"><span class="cat">PRODUCT & SYSTEMS</span><h3><a href="/en/insights/first-version-internal-system/">What a first version of an internal system should include.</a></h3><p>Start with what matters: how to cut scope without losing what makes the system useful.</p><div class="meta"><span>7 min read</span></div><a class="read" href="/en/insights/first-version-internal-system/">Read insight →</a></div>
+        <div class="card" data-cat="producto"><span class="cat">PRODUCT & SYSTEMS</span><h3><a href="/en/insights/more-features-dont-improve-product/">Why adding more features doesn’t always improve a product.</a></h3><p>Quantity is not quality: deciding what not to build is also part of the work.</p><div class="meta"><span>5 min read</span></div><a class="read" href="/en/insights/more-features-dont-improve-product/">Read insight →</a></div>
+        <div class="card" data-cat="software"><span class="cat">CUSTOM SOFTWARE</span><h3><a href="/en/insights/modernize-system-vs-replace/">When to modernize an existing system instead of replacing it.</a></h3><p>Evolving what works versus starting from scratch: criteria to compare both options.</p><div class="meta"><span>6 min read</span></div><a class="read" href="/en/insights/modernize-system-vs-replace/">Read insight →</a></div>
+        <div class="card" data-cat="ia"><span class="cat">APPLIED AI</span><h3><a href="/en/insights/ai-inside-a-process/">Where it makes sense to use AI inside a process.</a></h3><p>Concrete cases where AI adds value and situations where simple automation is enough.</p><div class="meta"><span>6 min read</span></div><a class="read" href="/en/insights/ai-inside-a-process/">Read insight →</a></div>
+        <div class="card" data-cat="software"><span class="cat">CUSTOM SOFTWARE</span><h3><a href="/en/insights/what-to-prepare-before-talking-software/">What information to prepare before talking to a software company.</a></h3><p>Processes, tools, goals and priorities: arriving with context speeds everything else up.</p><div class="meta"><span>5 min read</span></div><a class="read" href="/en/insights/what-to-prepare-before-talking-software/">Read insight →</a></div>
+        <div class="card" data-cat="producto"><span class="cat">PRODUCT & SYSTEMS</span><h3><a href="/en/insights/from-system-request-to-defined-problem/">How to go from “we need a system” to a well-defined problem.</a></h3><p>From a generic request to a concrete need that can be evaluated, prioritized and built.</p><div class="meta"><span>6 min read</span></div><a class="read" href="/en/insights/from-system-request-to-defined-problem/">Read insight →</a></div>
+      </div>
+      <p class="empty" id="empty">No insights match that search yet. Try other words or browse all topics.</p>
+    </div>
+  </section>
+  <section class="band" data-od-id="problemas">
+    <div class="wrap">
+      <div data-reveal>
+        <p class="eyebrow">What are you trying to solve?</p>
+        <h2>Start from the problem, not the technology.</h2>
+      </div>
+      <div class="scenarios" data-reveal>
+        <button class="sc" data-filter="procesos"><blockquote>“We have too many spreadsheets.”</blockquote><i>→</i><p>See content on processes and management systems.</p></button>
+        <button class="sc" data-filter="automatizacion"><blockquote>“We copy information between tools.”</blockquote><i>→</i><p>See automation and integrations.</p></button>
+        <button class="sc" data-filter="software"><blockquote>“We need a system, but we don’t know where to start.”</blockquote><i>→</i><p>See custom software and product definition.</p></button>
+        <button class="sc" data-filter="producto"><blockquote>“Our current software fell short.”</blockquote><i>→</i><p>See system modernization and evolution.</p></button>
+        <button class="sc" data-filter="ia"><blockquote>“We want to use AI, but we don’t know where it makes sense.”</blockquote><i>→</i><p>See applied AI.</p></button>
+      </div>
+    </div>
+  </section>
+  <section data-od-id="como-escribimos">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">How we write</p>
+      <h2>We don’t publish for the sake of publishing.</h2>
+      <p class="lead">Insights exists to answer questions that come up when a company tries to improve how it works with technology.</p>
+      <p class="lead" style="margin-top:12px">We explain complex problems clearly, compare alternatives and share the judgment we use when deciding what to simplify, what to connect and what to build.</p>
+      <p class="pov-close">If an idea doesn’t help make a better decision, we probably don’t need to turn it into an article.</p>
+    </div>
+  </section>
+  <section class="final" data-od-id="puente-comercial">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">Bring it to your case</p>
+      <h2>Reading helps understand the problem. Then you need to see it in context.</h2>
+      <p>Each company works in a different way.</p>
+      <p style="margin-top:12px">If you recognize any of these problems in your business, we can review a concrete process with you and help you understand which paths could make sense.</p>
+      <div class="cta-row"><a class="btn btn-w" href={calendarUrl} target="_blank" rel="noopener" data-od-id="final-primary">Analyze my case</a><a class="btn btn-g" href="/en/services/">Explore our services</a></div>
+      <p class="micro">Free initial diagnostic · 30–45 minutes</p>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  section { max-width: var(--max); margin: 0 auto; padding: 88px 32px; scroll-margin-top: 80px; }
-  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
-  h2 { font-size: clamp(28px, 3.4vw, 44px); margin: 18px 0; letter-spacing: -0.02em; line-height: 1.1; }
-  h3 { font-family: var(--disp); font-size: 22px; margin: 18px 0 8px; letter-spacing: -0.02em; }
-  .lead { margin-top: 16px; }
-  .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
-  ol { margin: 28px 0 0; padding-left: 22px; display: grid; gap: 18px; }
-  li p { margin-top: 6px; color: var(--muted); }
-  article { border-top: 1px solid var(--border); padding: 28px 0; }
-  article p { margin-top: 10px; color: var(--muted); max-width: 64ch; }
-  article a { display: inline-block; margin: 12px 16px 0 0; font-weight: 600; }
-  @media (max-width: 720px) {
-    section { padding: 72px 20px; }
-    .cta-row { flex-direction: column; }
-    .cta-row .btn { width: 100%; }
+  h1 { font-size: clamp(38px, 5.4vw, 68px); margin: 22px 0 20px; }
+  h2 { font-size: clamp(28px, 3.4vw, 46px); margin: 18px 0; }
+  section { padding: 88px 0; scroll-margin-top: 80px; }
+  .hero { padding: 84px 0 72px; }
+  .hero .support { margin-top: 18px; font-family: var(--serif); font-style: italic; font-size: 21px; max-width: 52ch; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  .btn-w { background: #fff; color: var(--accent); }
+  .btn-w:hover { background: #dce6ff; }
+  .btn-g { border-color: rgba(255, 255, 255, 0.45); color: #fff; }
+  .btn-g:hover { border-color: #fff; background: rgba(255, 255, 255, 0.08); }
+  .search { margin-top: 28px; max-width: 560px; display: flex; gap: 10px; }
+  .search input { flex: 1; font-family: var(--sans); font-size: 15px; color: var(--fg); background: var(--surface); border: 1px solid var(--border); border-radius: 999px; padding: 14px 22px; min-height: 52px; outline: none; }
+  .search input:focus { border-color: var(--accent); }
+  .search input::placeholder { color: var(--muted); }
+  .band { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  .topics { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 40px; }
+  .topic { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 22px 20px; }
+  .topic b { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; color: var(--accent); display: block; margin-bottom: 10px; }
+  .topic p { font-size: 13.5px; color: var(--muted); }
+  .feat { margin-top: 48px; border-top: 2px solid var(--fg); padding-top: 36px; display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 48px; align-items: start; }
+  .feat .cat { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); }
+  .feat h3 { font-family: var(--disp); font-size: clamp(30px, 4vw, 54px); letter-spacing: -0.03em; line-height: 1.05; margin: 14px 0 16px; }
+  .feat h3 a { text-decoration: none; }
+  .feat h3 a:hover { color: var(--accent); }
+  .feat p { color: var(--muted); font-size: 17px; max-width: 56ch; }
+  .feat .meta { display: flex; gap: 16px; margin-top: 18px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .feat .read { display: inline-block; margin-top: 20px; font-weight: 600; font-size: 16px; color: var(--fg); text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .guides { display: grid; grid-template-columns: repeat(3, 1fr); gap: 56px; margin-top: 56px; }
+  .guide { border-top: 2px solid var(--accent); padding-top: 24px; display: flex; flex-direction: column; }
+  .guide .n { font-family: var(--disp); font-weight: 600; font-size: 44px; line-height: 1; letter-spacing: -0.02em; color: var(--accent); }
+  .guide .cat { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); margin-top: 14px; display: block; }
+  .guide h3 { font-family: var(--disp); font-size: 24px; margin: 10px 0; letter-spacing: -0.02em; line-height: 1.2; }
+  .guide h3 a { text-decoration: none; }
+  .guide h3 a:hover { color: var(--accent); }
+  .guide p { color: var(--muted); font-size: 15px; flex: 1; }
+  .guide .read { margin-top: 16px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); align-self: flex-start; }
+  .pills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 32px; }
+  .pills button { font-family: var(--mono); font-size: 12px; letter-spacing: 0.06em; border: 1px solid var(--border); background: var(--surface); color: var(--muted); border-radius: 999px; padding: 10px 18px; cursor: pointer; min-height: 44px; transition: border-color 0.15s ease, color 0.15s ease; }
+  .pills button:hover { border-color: var(--accent); color: var(--accent); }
+  .pills button.on { border-color: var(--accent); background: var(--accent-soft); color: var(--accent); font-weight: 700; }
+  .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0 48px; margin-top: 40px; }
+  .card { border-top: 1px solid var(--border); padding: 24px 0; display: flex; flex-direction: column; }
+  .card .cat { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); }
+  .card h3 { font-family: var(--disp); font-size: 21px; margin: 10px 0 8px; letter-spacing: -0.02em; line-height: 1.25; }
+  .card h3 a { text-decoration: none; }
+  .card h3 a:hover { color: var(--accent); }
+  .card p { color: var(--muted); font-size: 14.5px; flex: 1; }
+  .card .meta { margin-top: 14px; font-family: var(--mono); font-size: 11.5px; color: var(--muted); }
+  .card .read { margin-top: 10px; font-weight: 600; font-size: 14px; text-decoration: none; border-bottom: 2px solid var(--accent); align-self: flex-start; }
+  .empty { display: none; margin-top: 32px; color: var(--muted); font-size: 16px; }
+  .scenarios { margin-top: 36px; border-top: 1px solid var(--fg); }
+  .sc { display: grid; grid-template-columns: 1fr auto 1fr; gap: 20px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--border); background: none; border-left: 0; border-right: 0; border-top: 0; width: 100%; text-align: left; cursor: pointer; font-family: inherit; color: inherit; }
+  .sc blockquote { font-family: var(--serif); font-style: italic; font-size: 20px; color: var(--fg); }
+  .sc i { font-style: normal; color: var(--accent); font-weight: 700; font-size: 20px; }
+  .sc p { font-size: 15.5px; color: var(--muted); }
+  .sc:hover blockquote { color: var(--accent); }
+  .pov-close { margin-top: 32px; font-family: var(--serif); font-style: italic; font-size: 22px; max-width: 44ch; }
+  .final { background: var(--navy); color: #fff; text-align: center; padding: 130px 0; border-top: 4px solid #5e85e3; }
+  .final .eyebrow { color: rgba(255, 255, 255, 0.78); justify-content: center; }
+  .final .eyebrow::before { background: #fff; }
+  .final h2 { font-size: clamp(34px, 4.4vw, 60px); max-width: 20ch; margin: 0 auto 18px; }
+  .final p { color: rgba(255, 255, 255, 0.85); max-width: 52ch; margin: 0 auto; }
+  .final .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; justify-content: center; }
+  .final .micro { font-family: var(--mono); font-size: 12.5px; color: rgba(255, 255, 255, 0.7); margin-top: 16px; }
+  @media (max-width: 960px) {
+    section { padding: 72px 0; }
+    .topics { grid-template-columns: 1fr 1fr; }
+    .feat { grid-template-columns: 1fr; gap: 20px; }
+    .guides { grid-template-columns: 1fr; gap: 0; }
+    .guide { padding: 26px 0; }
+    .grid { grid-template-columns: 1fr; }
+    .sc { grid-template-columns: 1fr; gap: 6px; }
+    .sc i { transform: rotate(90deg); justify-self: start; }
+    .final { padding: 88px 0; }
+    .final .cta-row { flex-direction: column; align-items: stretch; }
+    .final .cta-row .btn { width: 100%; }
+  }
+  @media (max-width: 600px) {
+    .topics { grid-template-columns: 1fr; }
   }
 </style>
+
+<script>
+  // insights: filter by category + search
+  var pills = document.querySelectorAll<HTMLButtonElement>('#pills button');
+  var cards = document.querySelectorAll<HTMLElement>('#grid .card');
+  var searchBox = document.getElementById('search');
+  var emptyBox = document.getElementById('empty');
+  var activeCat = 'todos';
+  function readQuery(): string {
+    if (searchBox instanceof HTMLInputElement) return searchBox.value.trim().toLowerCase();
+    return '';
+  }
+  function applyFilter(): void {
+    var q = readQuery();
+    var shown = 0;
+    cards.forEach(function (c: HTMLElement) {
+      var okCat = activeCat === 'todos' || c.dataset.cat === activeCat;
+      var h = c.querySelector('h3');
+      var p = c.querySelector('p');
+      var txt = ((h && h.textContent ? h.textContent : '') + ' ' + (p && p.textContent ? p.textContent : '')).toLowerCase();
+      var okQ = q === '' || txt.indexOf(q) > -1;
+      var show = okCat && okQ;
+      c.style.display = show ? '' : 'none';
+      if (show) shown++;
+    });
+    if (emptyBox) emptyBox.style.display = shown ? 'none' : 'block';
+  }
+  pills.forEach(function (b: HTMLButtonElement) {
+    b.addEventListener('click', function () {
+      pills.forEach(function (x: HTMLButtonElement) { x.classList.remove('on'); });
+      b.classList.add('on');
+      activeCat = b.dataset.cat ?? 'todos';
+      applyFilter();
+    });
+  });
+  if (searchBox) searchBox.addEventListener('input', applyFilter);
+  document.querySelectorAll<HTMLElement>('.sc').forEach(function (s: HTMLElement) {
+    s.addEventListener('click', function () {
+      var cat = s.dataset.filter ?? 'todos';
+      pills.forEach(function (x: HTMLButtonElement) { x.classList.toggle('on', x.dataset.cat === cat); });
+      activeCat = cat;
+      if (searchBox instanceof HTMLInputElement) searchBox.value = '';
+      applyFilter();
+      var latest = document.getElementById('ultimos');
+      if (latest) latest.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+</script>

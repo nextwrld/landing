@@ -498,9 +498,13 @@ import AionProductUI from '../components/cases/AionProductUI.astro';
     { q: 'El software empieza a convivir con el negocio.', c: 'Implementamos, conectamos datos y herramientas, acompañamos usuarios y llevamos la solución a la operación real.', r: 'Sistema en uso.' },
     { q: 'Lo que funciona hoy puede necesitar cambiar mañana.', c: 'Medimos, aprendemos y evolucionamos el sistema a medida que cambian usuarios, procesos y necesidades del negocio.', r: 'Una solución que puede crecer con la operación.' }
   ];
-  var nodes = document.querySelectorAll('.tnode');
+  var nodes = document.querySelectorAll<HTMLButtonElement>('.tnode');
   var prog = document.getElementById('tprog');
   var paneEl = document.getElementById('pane');
+  function setPaneText(id: string, value: string): void {
+    var el = document.getElementById(id);
+    if (el) el.textContent = value;
+  }
   var stageNames = ['DISCOVER', 'SHAPE', 'BUILD', 'LAUNCH', 'EVOLVE'];
   var mSteps = document.getElementById('mSteps');
   if (mSteps) {
@@ -514,28 +518,32 @@ import AionProductUI from '../components/cases/AionProductUI.astro';
     n.addEventListener('click', function () {
       nodes.forEach(function (x) { x.classList.remove('active'); });
       n.classList.add('active');
-      var i = +n.dataset.i;
+      var i = Number(n.dataset.i ?? 0);
       if (prog) prog.style.width = (i / (nodes.length - 1)) * 100 + '%';
-      if (!paneEl) return;
-      paneEl.style.opacity = 0;
+      const panel = paneEl;
+      if (!panel) return;
+      const stage = data[i];
+      if (!stage) return;
+      panel.style.opacity = '0';
       setTimeout(function () {
-        document.getElementById('pq').textContent = data[i].q;
-        document.getElementById('pc').textContent = data[i].c;
-        document.getElementById('pr').textContent = data[i].r;
-        document.getElementById('pk').textContent = '0' + (i + 1) + ' / ' + stageNames[i];
-        document.getElementById('plabel').textContent = 'Resultado 0' + (i + 1);
-        paneEl.style.opacity = 1;
+        setPaneText('pq', stage.q);
+        setPaneText('pc', stage.c);
+        setPaneText('pr', stage.r);
+        setPaneText('pk', '0' + (i + 1) + ' / ' + stageNames[i]);
+        setPaneText('plabel', 'Resultado 0' + (i + 1));
+        panel.style.opacity = '1';
       }, 160);
     });
   });
-  var autoTimer = null;
+  var autoTimer: ReturnType<typeof setInterval> | null = null;
   function autoAdvance() {
     if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || window.matchMedia('(max-width: 960px)').matches || autoTimer) return;
     autoTimer = setInterval(function () {
       if (document.hidden) return;
       var cur = 0;
       nodes.forEach(function (x, j) { if (x.classList.contains('active')) cur = j; });
-      nodes[(cur + 1) % nodes.length].click();
+      var next = nodes[(cur + 1) % nodes.length];
+      if (next) next.click();
     }, 6000);
   }
   function resetAuto() { if (autoTimer) { clearInterval(autoTimer); autoTimer = null; } autoAdvance(); }
@@ -548,9 +556,9 @@ import AionProductUI from '../components/cases/AionProductUI.astro';
   autoAdvance();
   if (prog) prog.style.width = '0%';
   // faq: single-open accordion
-  document.querySelectorAll('.faq details').forEach(function (d) {
+  document.querySelectorAll<HTMLDetailsElement>('.faq details').forEach(function (d) {
     d.addEventListener('toggle', function () {
-      if (d.open) document.querySelectorAll('.faq details').forEach(function (o) { if (o !== d) o.open = false; });
+      if (d.open) document.querySelectorAll<HTMLDetailsElement>('.faq details').forEach(function (o) { if (o !== d) o.open = false; });
     });
   });
 </script>

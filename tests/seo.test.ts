@@ -3,6 +3,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { insightKeys, insightPath } from '../src/i18n/insights.ts';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 
@@ -15,7 +16,7 @@ const pages = [
   { file: 'src/pages/en/about/index.astro', routeKey: 'about', canonicalPath: '/en/about/' },
 ];
 
-function attr(content, name) {
+function attr(content: string, name: string): string {
   const match = content.match(new RegExp(`${name}="([^"]+)"`));
   assert.ok(match, `page must define ${name}`);
   return match[1];
@@ -52,6 +53,24 @@ describe('EN pages SEO', () => {
   it('titles and descriptions are unique per page', () => {
     assert.equal(titles.size, pages.length, 'titles must be unique');
     assert.equal(descriptions.size, pages.length, 'descriptions must be unique');
+  });
+
+  it('insight detail pages declare page-specific bilingual alternates', () => {
+    for (const key of insightKeys) {
+      const esFile = `src/pages/insights/${key}.astro`;
+      const enFile = `src/pages/${insightPath(key, 'en').replace(/^\//, '').replace(/\/$/, '')}.astro`;
+      for (const file of [esFile, enFile]) {
+        const content = readFileSync(join(root, file), 'utf8');
+        assert.ok(content.includes(`es: '${insightPath(key, 'es')}'`), `${file} must declare ES alternate`);
+        assert.ok(content.includes(`en: '${insightPath(key, 'en')}'`), `${file} must declare EN alternate`);
+      }
+      const enContent = readFileSync(join(root, enFile), 'utf8');
+      assert.ok(enContent.includes('locale="en"'), `${enFile} must set locale="en"`);
+      assert.ok(
+        enContent.includes(`canonicalPath="${insightPath(key, 'en')}"`),
+        `${enFile} must set canonicalPath="${insightPath(key, 'en')}"`,
+      );
+    }
   });
 
   it('case detail pages declare page-specific bilingual alternates', () => {

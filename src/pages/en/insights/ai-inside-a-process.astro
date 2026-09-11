@@ -1,0 +1,147 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { calendarUrl } from '../../../i18n/contact';
+---
+
+<BaseLayout
+  locale="en"
+  routeKey="insights"
+  canonicalPath="/en/insights/ai-inside-a-process/"
+  alternatePaths={{ es: '/insights/ia-dentro-de-un-proceso/', en: '/en/insights/ai-inside-a-process/' }}
+  title="Where it makes sense to use AI inside a process | Next Wrld"
+  description="Concrete cases where AI adds value and situations where simple automation suffices."
+>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Applied AI</p>
+      <h1>Where it makes sense to use AI inside a process.</h1>
+      <p class="lead">AI pays where messy information must be interpreted. Where clear rules exist, rules win on cost, control and predictability.</p>
+      <div class="meta"><span>6 min read</span><span>Applied AI · Processes</span></div>
+      <a class="back" href="/en/insights/">← Back to Insights</a>
+    </div>
+  </section>
+
+  <article class="article" data-od-id="articulo">
+    <div class="wrap-narrow">
+      <div data-reveal>
+        <p>Monday, 8:47. You open email and there are 34 unread messages.</p>
+        <p>Three are inquiries asking for quotations. One brings an attached plan and four text lines. Another says “I need the same as last time, but for the other branch”. The third forwards six chained emails, a sideways scanned PDF and a final question that isn’t understood.</p>
+        <p>None of that is strange. It is normal operations.</p>
+        <p>The problem starts afterwards: reading everything, understanding what each asks, building the answer and remembering follow-up. And doing it equally well with three inquiries as with thirty.</p>
+        <p>The question we hear is always the same: “Everyone talks about AI, where do we use it without wasting money?”</p>
+        <p>The answer is simple. AI pays where messy information must be interpreted. Where clear rules exist, rules win on cost, control and predictability.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>The map before the tool</h2>
+        <p>The quotation circuit is almost always the same.</p>
+        <p>An inquiry arrives. Someone reads and classifies it. An answer or quotation is built. Follow-up happens.</p>
+        <p>Looked at calmly, that circuit mixes two different task types.</p>
+        <p>There are interpretation points. Reading a long email, understanding what the client wants although poorly explained, pulling data from a sloppy PDF. There you need understanding context and tolerating errors.</p>
+        <p>And there are rule points. Recording with date and owner. Asking for missing data. Sending to approval if amount exceeds a limit. Remembering follow-up if three days passed. That doesn’t need interpretation. It needs consistency.</p>
+        <p>The common mistake is treating everything alike. Putting rigid rules where judgment is needed, or putting AI where a simple rule sufficed.</p>
+        <p>Before talking technology, draw the circuit and mark it with two colors: here interpret, here just comply. That map is worth more than any tool.</p>
+        <p>The philosophy is this. Use the least complexity needed to correctly solve the problem. If a rule solves well, use the rule.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>What AI does well, in operations language</h2>
+        <p>Think of concrete tasks, without jargon.</p>
+        <p>In operations, AI serves four things.</p>
+        <p>First, reading. It can read an email or attachment and summarize in clear language what the client asks. It saves the first pass, the most time-consuming.</p>
+        <p>Second, classifying. It can separate the urgent from what can wait, the new from the repeated, the complete from the incomplete. It doesn’t decide for you. It orders so you decide faster.</p>
+        <p>Third, extracting data. It can take free text and return what your process needs: quantity, measures, deadline, delivery place. It avoids hand-copying from a badly written email.</p>
+        <p>Fourth, drafting. It can prepare a first answer version with data you already have. A person reviews before sending.</p>
+        <p>None of those tasks decides alone. They read, order, extract, propose. Decisions remain with people.</p>
+        <p>And there is an honest limit: if something is solved with a rule, say so. AI is for points where text arrives messy and a rule would break with the first exception.</p>
+        <p>Nor is it right where error tolerance is low and no review is possible, where volume is so small a rule suffices, or where sensitive data exists without clear access criteria.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Rules or AI: comparison over the same circuit</h2>
+        <p>Compare over the same process, step by step.</p>
+        <p>Incoming inquiry. A rule suffices: if the sender is already a client, assign to their salesperson; if new, to whoever handles new inquiries. It is cheap, predictable and needs no interpretation.</p>
+        <p>Reading and classifying. Here things change. A client writes: “I need the same as in March but delivered to the new warehouse”. No rule understands “the same as in March”. There AI contributes: it summarizes, suggests which past case it resembles and proposes classification. A person confirms in one click.</p>
+        <p>Validations. Rules return. If quantity, address or deadline are missing, the system detects it through mandatory fields. If the attachment doesn’t meet format, warn with a fixed message. Putting AI here only adds cost where unneeded.</p>
+        <p>Quotation building. It is mixed. Calculation is rule: quantities times price, taxes, discounts. With the same data, it must always match. Accompanying text — clarifying assumptions, asking for missing data — is a good draft place. Rules calculate, AI drafts, a person reviews.</p>
+        <p>Follow-up. Almost all rules. If three days passed without answer, remind. If the client accepted, move to “approved” and trigger next step. They are states, dates and data moves. Predictable and easy to control.</p>
+        <p>The idea is direct. Where certainties exist, rules work; where free text exists, AI helps. When mixed, you spend more and control less.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>How it works when each part does its own</h2>
+        <p>See a morning with well-distributed work.</p>
+        <p>9:05. Eleven emails arrive. A rule records them, dates them, assigns by sender and marks which bring attachments. Nothing intelligent. Just order.</p>
+        <p>9:12. AI reads each and leaves a one-line summary. It extracts found data and marks what is missing. The owner understands in five minutes what took half an hour before.</p>
+        <p>9:30. Three clear cases advance with rules: the record is created, missing data is asked, follow-up is scheduled. Two stay for review. One says “quote urgently what we discussed yesterday”, without written background. AI doesn’t invent: it marks it as “requires human confirmation”.</p>
+        <p>10:15. Two cases already have data. Rules calculate amounts. AI prepares the draft with assumptions and leaves price visible. Sales corrects an address and sends. Savings are in not starting from zero.</p>
+        <p>Thursday. Three quotations remain unanswered. Nobody has to remember: rules warn which stayed still for three days. Sales decides who to call first because the summary is at hand.</p>
+        <p>What isn’t done also matters. Final quotations aren’t sent alone. Prices don’t go out without review. Sensitive data isn’t left to automatic interpretation. That is cared with permissions and states.</p>
+        <p>Rules sustain the process. AI eases reading and writing. People decide.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Four questions to avoid wasting money</h2>
+        <p>Before putting AI at a point, ask four questions with the team.</p>
+        <p>Must free text be interpreted? If input always arrives alike — a form with mandatory fields — rules suffice. If it arrives by free email, with different ways of asking the same, AI can help.</p>
+        <p>What happens if it errs? Wrongly ordering internal priority, fixed in one click, isn’t the same as sending a wrong price. In the second case, only advance with mandatory human review. If no review is possible, don’t use AI.</p>
+        <p>Does volume justify cost? Eleven daily inquiries for months justify help. Three weekly don’t. Testing in small scope, with one reviewer, lets you measure without exposure.</p>
+        <p>Do data allow it? If it isn’t clear who can see costs or margins, order that first. Automating over messy data only accelerates disorder.</p>
+        <p>If any answer doesn’t close, postponing is also a right decision. It is savings.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>The two most repeated mistakes</h2>
+        <p>First is starting with AI without ordering the process. Putting an automatic reader where nobody knows who answers what nor with which minimum data. Result is predictable: neat summaries of a confusing circuit.</p>
+        <p>First define what a valid inquiry is, which data it needs, who takes it and when it closes. Those are rules and agreements between people. Only afterwards does adding reading or drafts make sense.</p>
+        <p>Second is automating the final answer without review, to “save time”. In quotations that saving is illusion. A badly expressed assumption or wrong attachment costs rework and client trust. Drafts save time. Review cares for business.</p>
+        <p>Deep down, both mistakes are the same. They ask technology to order what people haven’t yet agreed.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Keep the judgment, not the tool</h2>
+        <p>The inbox will stay varied, because clients write as they speak. You won’t change that. What you can change is how your operation receives it.</p>
+        <p>Separate interpretation points from rule points. Where free text exists, AI can save hours, always with review. Where states, validations, calculations and data moves exist, rules win.</p>
+        <p>In each part, use the simplest tool solving well, with its visible owner and corresponding control.</p>
+        <p>That is the judgment leaving you calm.</p>
+      </div>
+    </div>
+  </article>
+
+  <section class="cta" data-od-id="cta-articulo">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Next step</p>
+      <h2>Not sure where to use AI in your operation?</h2>
+      <p>Next Wrld can help analyze operations and decide what to automate and what not.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="cta-primary">Analyze my operation →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  .hero { padding: 84px 0 40px; }
+  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
+  .meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .back { display: inline-block; margin-top: 22px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .article { padding: 24px 0 72px; }
+  .article p { margin: 18px 0; font-size: 17px; line-height: 1.75; color: var(--fg); max-width: 68ch; }
+  .article h2 { font-size: clamp(26px, 3vw, 36px); margin: 56px 0 8px; letter-spacing: -0.02em; line-height: 1.15; }
+  .article .strong { font-family: var(--disp); font-weight: 600; font-size: 22px; letter-spacing: -0.01em; margin: 32px 0; }
+  .checklist { margin: 24px 0; list-style: none; border-top: 1px solid var(--border); }
+  .checklist li { padding: 14px 0 14px 28px; border-bottom: 1px solid var(--border); position: relative; font-size: 16px; }
+  .checklist li::before { content: '→'; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
+  .cta { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 0; margin-bottom: 88px; }
+  .cta h2 { font-size: clamp(30px, 4vw, 50px); margin: 18px 0; letter-spacing: -0.03em; line-height: 1.05; }
+  .cta p { color: var(--muted); font-size: 17px; max-width: 56ch; }
+  .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  @media (max-width: 720px) {
+    .wrap-narrow { padding: 0 20px; }
+    .hero { padding: 64px 0 32px; }
+    .article p { font-size: 16px; }
+    .cta { padding: 64px 0; margin-bottom: 64px; }
+  }
+</style>

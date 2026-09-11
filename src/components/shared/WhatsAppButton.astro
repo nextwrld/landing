@@ -1,6 +1,7 @@
 ---
 import type { Locale } from '../../i18n/config';
 import { getChrome } from '../../i18n/ui';
+import { whatsappUrl } from '../../i18n/contact';
 
 interface Props {
   locale?: Locale;
@@ -12,7 +13,7 @@ const chrome = getChrome(locale);
 
 <a
   class="wa-float"
-  href="https://wa.me/5491173678601?text=Hola%2C%20llegu%C3%A9%20desde%20Next%20Wrld.%20Quiero%20conversar%20sobre%20un%20proceso%20de%20mi%20empresa%20que%20estamos%20buscando%20mejorar."
+  href={whatsappUrl(locale, 'full')}
   target="_blank"
   rel="noopener"
   aria-label={chrome.whatsappLabel}

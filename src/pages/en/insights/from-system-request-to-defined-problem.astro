@@ -1,0 +1,168 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { calendarUrl } from '../../../i18n/contact';
+---
+
+<BaseLayout
+  locale="en"
+  routeKey="insights"
+  canonicalPath="/en/insights/from-system-request-to-defined-problem/"
+  alternatePaths={{ es: '/insights/de-sistema-a-problema-definido/', en: '/en/insights/from-system-request-to-defined-problem/' }}
+  title="How to go from “we need a system” to a well-defined problem | Next Wrld"
+  description="From a generic request to a concrete need that can be evaluated, prioritized and built."
+>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Product and systems</p>
+      <h1>How to go from “we need a system” to a well-defined problem.</h1>
+      <p class="lead">“We need a system” doesn’t describe a problem, it describes a feeling. This article proposes translating the symptom into an observable problem, with measurable friction and expected outcome.</p>
+      <div class="meta"><span>6 min read</span><span>Product & systems · Definition</span></div>
+      <a class="back" href="/en/insights/">← Back to Insights</a>
+    </div>
+  </section>
+
+  <article class="article" data-od-id="articulo">
+    <div class="wrap-narrow">
+      <div data-reveal>
+        <p>The phrase appears in a meeting, almost always the same.</p>
+        <p>Someone sustaining operations says: “we need a system”. Everyone nods. Nobody asks what it means. The meeting continues, but the request is already floating.</p>
+        <p>It is born from tiredness of fixing errors, chasing information, coordinating by message what should flow orderly.</p>
+        <p>The problem is “we need a system” describes a feeling, not a problem. With a feeling you can’t evaluate, prioritize nor build.</p>
+        <p>This article proposes translating the symptom into an observable problem, with measurable friction and expected outcome.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>A generic request can’t be quoted nor decided</h2>
+        <p>When someone asks for “a system”, each person imagines something different.</p>
+        <p>For one it is a more ordered spreadsheet. For another, notices going out alone. For another, controlling what today isn’t seen. Same word, different things.</p>
+        <p>That is why that request is unbuyable and unquotable. No vendor can price it without inventing assumptions. No owner can prioritize it. No team can build it without guessing.</p>
+        <p>What if it costs little and solves much? What if it costs much and solves little? Without definition, both options look alike.</p>
+        <p>A good problem, instead, allows comparing. It lets you say what it costs today in time, errors and rework. And decide whether to act now or later.</p>
+        <p>The question is which problem deserves attention.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Where it hurts, when, whom and what it costs today</h2>
+        <p>Every symptom clarifies with four simple questions.</p>
+        <p>Where does it hurt? When does it appear? Whom does it affect? What does staying like this cost today?</p>
+        <p>Where it hurts forces locating the process, not “the company”, but a concrete place like building shifts, covering absences, recording attendance or closing payroll.</p>
+        <p>When it appears forces locating the moment. Does it always hurt or in peaks? With last-minute changes? At month close, without margin to fix?</p>
+        <p>Whom it affects forces setting roles. Who builds shifts? Each site’s owners? Whoever settles payroll and must rebuild what happened?</p>
+        <p>What it costs today forces describing friction. Constant coordination, repeated errors, hand checks, decisions without information.</p>
+        <p>None asks for technology. They ask for observation, and calmly observing is usually worth more than any demo.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>The problem isn’t the requested solution</h2>
+        <p>Many requests deviate here.</p>
+        <p>Someone says “we need a shift app”. That is an assumed solution. It can be right or not, but there are still no elements to know.</p>
+        <p>Separating problem from solution requires asking what would change if that solution worked. What would stop hurting? What would look different in the week?</p>
+        <p>If the answer is “nobody would have to call three people to cover a shift”, the problem is coordinating replacements. If it is “closing payroll wouldn’t take days”, the problem is missing reliable attendance information.</p>
+        <p>The requested solution usually touches the real problem, but doesn’t name it.</p>
+        <p>A mature company first asks “what is happening and why does it cost us?”.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>A well-written problem can be evaluated</h2>
+        <p>A defined problem has a recognizable shape. It says which process, which friction, which impact and which expected outcome.</p>
+        <p>Observable process: which work part we watch, start to finish. Who participates, which information enters, which decision exits.</p>
+        <p>Measurable friction: what breaks today. Late information, rules in one person’s memory, unrecorded changes, hand controls.</p>
+        <p>Impact: what that friction costs. Coordination hours, settlement errors, badly covered shifts.</p>
+        <p>Expected outcome: how it would look if it worked, in operations language. Less improvisation, timely attendance, settlement without rebuilding history.</p>
+        <p>When that is written in simple language, anyone can evaluate it. It can be discussed, prioritized or postponed.</p>
+        <p>A problem that can’t be explained without jargon isn’t ready yet.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>The path is chosen afterwards, not before</h2>
+        <p>Only with the defined problem does choosing how to solve it make sense.</p>
+        <p>Ordering, integrating, automating, buying or building aren’t the same, and not every problem needs new software.</p>
+        <p>Ordering is agreeing rules. Who builds shifts, how in advance, how a change is communicated, who approves it, where it is recorded. Many frictions drop with just this.</p>
+        <p>Integrating is better using what already exists. Sometimes information is already there, but in separate places.</p>
+        <p>Automating is removing repetitive work where criteria are already clear. Notices, summaries, controls today manually reviewed.</p>
+        <p>Buying or building comes last. Sometimes an existing tool solves well. Sometimes something custom must be created. Building is valid, but the last option.</p>
+        <p>The rule is simple. The least complexity needed to correctly solve the problem. A good defined problem sometimes concludes “no need to build”.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Before and after: shifts, attendance and settlement in a multi-site company</h2>
+        <p>See transformation in staff control and shifts in a multi-site company.</p>
+        <p>The before sounds like this:</p>
+        <p>“We need a shift system. Each site handles differently, there are constant phone changes, nobody really knows who came and who missed, and settling at month end is chaos.”</p>
+        <p>All that can be true. But like this nothing can be decided. What hurts most: building shifts or controlling attendance? Changes or settlement?</p>
+        <p>The after demands observing the complete circuit.</p>
+        <p>The circuit is this: each week shifts are built per site. During the week changes appear from absences or peaks. Each site records attendance their way. At month end, admin rebuilds what happened to settle.</p>
+        <p>The defined problem could be written like this:</p>
+        <p>Each week, owners build shifts per site in separate spreadsheets, without common anticipation rule nor approval. Changes are coordinated by messages and calls, and often aren’t recorded. Attendance is noted on paper or from memory, differently per site. At month end, settling demands calling, comparing versions and fixing.</p>
+        <p>Friction is visible: scattered information, unrecorded changes, different criteria, manual verification at the end. Impact is operational: constant coordination and settlement errors.</p>
+        <p>Expected outcome is said in operations language: shifts published with known anticipation, changes recorded with owner and time, attendance noted the same day with equal criteria, settlement closed without rebuilding history by phone.</p>
+        <p>It doesn’t say which screens it must have, which tool to buy nor what to automate first.</p>
+        <p>With this, decisions change. Maybe ordering rules and unifying records suffices. Maybe integrating what exists suffices. Maybe automating notices suits. Maybe building something custom is right. Each option is compared against the same problem.</p>
+        <p>That is the difference between asking a symptom and defining a problem.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>How to know if it is already defined</h2>
+        <p>There is a simple test. If defined, it answers these questions without doubting.</p>
+        <p>Can it be observed in real operations? Is it known in which process it happens and when it hurts most? Is it known whom it affects? Can what staying like this costs be described? Can how it would look if it worked be described, without talking features?</p>
+        <p>If any answer is vague, definition is missing. The vague isn’t unimportant, it just signals it can’t yet be prioritized nor responsibly built.</p>
+        <p>Another test: ask two people to explain it. If they tell different stories, it is still open. If they tell the same, there is base to advance.</p>
+        <p>Defining is not moving resources until operations are understood.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Three mistakes returning everything to start</h2>
+        <p>First is defining the solution instead of the problem. “We want an app with such features” closes conversation before understanding.</p>
+        <p>Second is quoting the symptom. The vague request is sent, incomparable prices arrive, each assumes something different, and deciding becomes impossible.</p>
+        <p>Third is adding everyone’s requests when defining. Each site adds its wish and the problem grows until unmanageable. Defining is also cutting. One process, one friction, one outcome.</p>
+        <p>Avoiding these three mistakes saves months and avoids building something nobody ends up using.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>If it can’t be evaluated, prioritized and built, definition is still missing</h2>
+        <p>Back to the opening meeting.</p>
+        <p>The phrase “we need a system” was the honest warning of someone seeing operations cost. The mistake would be taking it literally and going out to buy or build.</p>
+        <p>Serious work is translating it and turning feeling into observable process, complaint into describable friction and wish into expected outcome.</p>
+        <p>If the problem can be evaluated, it can be prioritized and decided, and then it can be built (or decided not to build) calmly.</p>
+        <p>That is the bar. What doesn’t reach it is still symptom. Every symptom deserves listening, but none should be quoted.</p>
+      </div>
+    </div>
+  </article>
+
+  <section class="cta" data-od-id="cta-articulo">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Next step</p>
+      <h2>Do you know you need something, but not how to ask for it?</h2>
+      <p>Next Wrld can help analyze operations and decide the simplest path to solve it.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="cta-primary">Analyze my operation →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  .hero { padding: 84px 0 40px; }
+  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
+  .meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .back { display: inline-block; margin-top: 22px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .article { padding: 24px 0 72px; }
+  .article p { margin: 18px 0; font-size: 17px; line-height: 1.75; color: var(--fg); max-width: 68ch; }
+  .article h2 { font-size: clamp(26px, 3vw, 36px); margin: 56px 0 8px; letter-spacing: -0.02em; line-height: 1.15; }
+  .article .strong { font-family: var(--disp); font-weight: 600; font-size: 22px; letter-spacing: -0.01em; margin: 32px 0; }
+  .checklist { margin: 24px 0; list-style: none; border-top: 1px solid var(--border); }
+  .checklist li { padding: 14px 0 14px 28px; border-bottom: 1px solid var(--border); position: relative; font-size: 16px; }
+  .checklist li::before { content: '→'; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
+  .cta { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 0; margin-bottom: 88px; }
+  .cta h2 { font-size: clamp(30px, 4vw, 50px); margin: 18px 0; letter-spacing: -0.03em; line-height: 1.05; }
+  .cta p { color: var(--muted); font-size: 17px; max-width: 56ch; }
+  .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  @media (max-width: 720px) {
+    .wrap-narrow { padding: 0 20px; }
+    .hero { padding: 64px 0 32px; }
+    .article p { font-size: 16px; }
+    .cta { padding: 64px 0; margin-bottom: 64px; }
+  }
+</style>

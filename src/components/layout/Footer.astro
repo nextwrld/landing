@@ -1,5 +1,6 @@
 ---
 import { route } from '../../i18n/routes';
+import { mailtoUrl, whatsappUrl } from '../../i18n/contact';
 import type { Locale } from '../../i18n/config';
 
 interface Props {
@@ -49,13 +50,13 @@ const isEs = locale === 'es';
           {isEs ? 'Diagnóstico operativo' : 'Operational diagnostic'}
         </a>
         <a
-          href="https://wa.me/5491173678601?text=Hola%2C%20llegu%C3%A9%20desde%20Next%20Wrld.%20Quiero%20conversar%20sobre%20un%20proceso%20de%20mi%20empresa%20que%20estamos%20buscando%20mejorar."
+          href={whatsappUrl(locale, 'full')}
           target="_blank"
           rel="noopener"
         >
           WhatsApp
         </a>
-        <a href="mailto:hola@nextwrld.com?subject=Diagn%C3%B3stico%20operativo">Email</a>
+        <a href={mailtoUrl(locale)}>Email</a>
         <a href="https://linkedin.com/company/next-wrld" target="_blank" rel="noopener">LinkedIn</a>
         <a href="https://instagram.com/nextwrld.tech" target="_blank" rel="noopener">Instagram</a>
       </div>

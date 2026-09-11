@@ -1,0 +1,135 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { calendarUrl } from '../../../i18n/contact';
+---
+
+<BaseLayout
+  locale="en"
+  routeKey="insights"
+  canonicalPath="/en/insights/modernize-system-vs-replace/"
+  alternatePaths={{ es: '/insights/modernizar-sistema-vs-reemplazar/', en: '/en/insights/modernize-system-vs-replace/' }}
+  title="When to modernize an existing system instead of replacing it | Next Wrld"
+  description="Evolving what works versus starting from scratch: criteria to compare both options."
+>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Custom software</p>
+      <h1>When to modernize an existing system instead of replacing it.</h1>
+      <p class="lead">It is slow, but it sustains operations every day: annoying enough to want to change it, working enough that changing it is scary. The question isn’t technical, it is about risk and continuity.</p>
+      <div class="meta"><span>6 min read</span><span>Custom software · Systems</span></div>
+      <a class="back" href="/en/insights/">← Back to Insights</a>
+    </div>
+  </section>
+
+  <article class="article" data-od-id="articulo">
+    <div class="wrap-narrow">
+      <div data-reveal>
+        <p>It is 8:30 on a Monday. The weekend must be billed, two collections arriving Friday must be applied and a client swearing they already paid must be answered. The system is slow to open, the current-accounts screen looks from another era and for a credit note three unrecorded steps must be remembered. Someone says aloud: “we have to throw this away and redo it”.</p>
+        <p>And yet, by ten billing went out. Balances close. Collections knows who to call first. It is slow, but it sustains operations every day. Annoying enough to want to change it, working enough that changing it is scary.</p>
+        <p>The question seems technical. It is a question about risk and continuity. At stake is the sales, billing, collection and debt circuit running without cuts while we change it.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>What the old system knows, although nobody wrote it</h2>
+        <p>A billing and current-accounts system with years in production accumulated operational judgment, more valuable than code.</p>
+        <p>It knows that such client is billed at month end although delivery is partial. That another must have invoices split per branch or they reject them. That certain receipts don’t go out until warehouse confirms goods.</p>
+        <p>None of that is usually in a manual. It is in the system and in detours people invented to make it close. When replacement is proposed, those rules are assumed to pass alone to the new system. They don’t pass alone.</p>
+        <p>Rebuilding from scratch forces rediscovering that knowledge under pressure. And what isn’t rediscovered is lost. The first replacement cost is forgetting how the company works. If the system sustains operations, it is because it contains right decisions to rescue before discussing technology.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>What really hurts</h2>
+        <p>Not everything annoying weighs the same. Separate pains.</p>
+        <p>There are usage ones: uncomfortable screens, extra steps, complicated prints. They tire, but don’t prevent control. There are information ones: doubtful balances, outdated debt, reports disagreeing across teams. They confuse and generate rework. And there are risk ones: if it breaks, nobody knows how to fix it; if a fiscal rule changes, everything shakes.</p>
+        <p>Distinction matters because each pain asks for another answer. A usage problem can be solved with better reading over the same base. An information problem asks ordering data and allocation rules. Only structural risk, when the base no longer admits changes, points to replacement.</p>
+        <p>One question orders conversation: if tomorrow you had to bill double, what would break first, people, information or the program? The answer usually shows where the real limit is.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Modernize or replace, on what matters</h2>
+        <p>Modernizing is evolving by parts, without stopping operations. Replacing is building another and migrating everything at some point. Seen from business, they differ in four dimensions.</p>
+        <p>In risk, modernizing exposes gradually: each change is bounded and fixable. Replacing concentrates risk in one cut, when everything must work together. In billing, that day coincides with due dates, claims and real payments.</p>
+        <p>In cost, modernizing spreads investment and lets you stop when benefit is achieved. Replacing demands investing much before seeing results, plus invisible costs: discovery, data cleaning, training and parallel operations.</p>
+        <p>In time, modernizing delivers improvements in weeks. Replacing promises everything together, but late. Meanwhile, the old system keeps hurting.</p>
+        <p>In continuity, modernizing keeps the sales, billing, collection and debt circuit running. Replacing stresses it exactly where it hurts most: incoming money and controlled debt.</p>
+        <p>The rule is simple: replacing is justified only when the base prevents evolving or sustaining it costs more than rebuilding. Otherwise, modernizing preserves working knowledge and reduces risk.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>How this circuit is modernized by parts</h2>
+        <p>Think of a typical case. A company bills daily with an old system. Issuing works, but current accounts aren’t reliable: hand-applied payments, late-loaded credit notes and balances disputed by phone. Each team has its spreadsheet because they don’t fully trust the other.</p>
+        <p>That circuit can’t stop. It doesn’t start by rewriting. It starts by ordering.</p>
+        <p>First, visibility without touching issuance: a single query per client, with invoices, payments, credit notes and balance ordered by due date. Arguments about what each client owes drop because everyone watches the same.</p>
+        <p>Second, discipline in collections: a guided way to apply payments, proposing applying to most overdue but allowing exceptions with reason. The rule isn’t changed, it is made explicit. Month-end errors and rework fall.</p>
+        <p>Third, order in exceptions: clear circuit for credit and debit notes, with who authorizes them and how they affect balance. Many differences are born here, not in original invoices.</p>
+        <p>Fourth, only then, issuance: prior validations, templates and controls, keeping numbering and working logic. And finally, debt by age to decide who to collect first.</p>
+        <p>Each step delivers something usable and doesn’t interrupt billing. If a step fails, that step is adjusted. That is the difference between evolving and betting.</p>
+        <p>The underlying philosophy is the least complexity needed to correctly solve the problem. If with ordered visibility and allocation debt becomes controllable, rewriting billing that month isn’t needed.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>When replacing is right</h2>
+        <p>Some cases where modernizing insists on a base no longer delivering.</p>
+        <p>When no support is possible: nobody can maintain the system, there are no reliable backups or any minor change can break issuance. If touching it is lottery, evolving by parts is also risky.</p>
+        <p>When data isn’t reliable at origin: hand-rebuilt balances, duplicated receipts, inconsistent numbering. A new interface would only show the same disorder faster.</p>
+        <p>When rules are impossible to extract: interest, bonuses or taxes depend on patches nobody understands. If you can’t explain how a balance is reached, you can’t safely evolve either.</p>
+        <p>And when change cost is bounded because use is low: a barely used side module or a circuit pausable for days without affecting collections. There the cut is manageable.</p>
+        <p>You don’t replace because the system “got old” or “looks ugly”. You replace because it prevents operating with control or sustaining it costs more than redoing. Age isn’t an argument; inability to evolve is.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Expensive mistakes</h2>
+        <p>First is rewriting for aesthetics. Changing screens without ordering allocation rules leaves the same problem with better appearance. In current accounts, what orders isn’t design, it is criteria to apply payments and treat exceptions.</p>
+        <p>Second is underestimating hidden rules. The client whose credit isn’t cut although overdue, the invoice held until the remittance arrives, the partial payment purposely left unapplied. If not surveyed before, they appear as new-system failures when they were business rules nobody told.</p>
+        <p>Third is migrating everything in one weekend. Moving history, balances and open payments in two days, with the company billing Monday, usually ends in manual reconciliation for weeks. These migrations rarely fail for technology: they fail because operations can’t pause.</p>
+        <p>And a fourth, less visible mistake is not defining what a right balance means. Without agreed criteria — which reports must match, who validates — each team argues with its number. Before modernizing, agree how order is measured.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>How to decide without guessing</h2>
+        <p>Back to Monday at 8:30. Frustration is legitimate, but not a plan. Before choosing, answer three questions with facts.</p>
+        <p>Which part of the circuit today sustains money control, although uncomfortable? That is preserved and evolved, not thrown away.</p>
+        <p>Which part prevents precisely knowing who owes, how much and since when? That is ordered first, because without reliable information no new system will work.</p>
+        <p>And which part no longer admits changes without breaking everything? Only that part justifies rebuilding, and only if the operational cut is manageable.</p>
+        <p>If the base still allows ordering information and improving by stages, modernizing is the lowest-risk path. If it no longer sustains control nor evolution, replacing becomes necessity. Choosing well is choosing what lets you keep billing, collecting and controlling debt while improving.</p>
+      </div>
+    </div>
+  </article>
+
+  <section class="cta" data-od-id="cta-articulo">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Next step</p>
+      <h2>Does your system sustain operations but is hard to keep under control?</h2>
+      <p>Next Wrld can help analyze operations and decide whether to modernize by parts or replace.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="cta-primary">Analyze my operation →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  .hero { padding: 84px 0 40px; }
+  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
+  .meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .back { display: inline-block; margin-top: 22px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .article { padding: 24px 0 72px; }
+  .article p { margin: 18px 0; font-size: 17px; line-height: 1.75; color: var(--fg); max-width: 68ch; }
+  .article h2 { font-size: clamp(26px, 3vw, 36px); margin: 56px 0 8px; letter-spacing: -0.02em; line-height: 1.15; }
+  .article .strong { font-family: var(--disp); font-weight: 600; font-size: 22px; letter-spacing: -0.01em; margin: 32px 0; }
+  .checklist { margin: 24px 0; list-style: none; border-top: 1px solid var(--border); }
+  .checklist li { padding: 14px 0 14px 28px; border-bottom: 1px solid var(--border); position: relative; font-size: 16px; }
+  .checklist li::before { content: '→'; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
+  .cta { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 0; margin-bottom: 88px; }
+  .cta h2 { font-size: clamp(30px, 4vw, 50px); margin: 18px 0; letter-spacing: -0.03em; line-height: 1.05; }
+  .cta p { color: var(--muted); font-size: 17px; max-width: 56ch; }
+  .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  @media (max-width: 720px) {
+    .wrap-narrow { padding: 0 20px; }
+    .hero { padding: 64px 0 32px; }
+    .article p { font-size: 16px; }
+    .cta { padding: 64px 0; margin-bottom: 64px; }
+  }
+</style>

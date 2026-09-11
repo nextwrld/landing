@@ -1,103 +1,268 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { route } from '../../../i18n/routes';
-
-const calendarUrl = 'https://calendar.app.google/JQnkVUqK3FF5VSRU6';
-const whatsappUrl =
-  'https://wa.me/5491173678601?text=Hello%2C%20I%20came%20from%20Next%20Wrld.%20I%20want%20to%20talk%20about%20a%20process%20in%20my%20company%20we%20are%20looking%20to%20improve.';
+import { calendarUrl, whatsappUrl } from '../../../i18n/contact';
 ---
 
 <BaseLayout
   locale="en"
-  title="How we work | Software development | Next Wrld"
-  description="How we work at Next Wrld: we understand the problem, define the solution, build, implement, and evolve software for companies."
   routeKey="howWeWork"
   canonicalPath="/en/how-we-work/"
+  title="How we work | Software development | Next Wrld"
+  description="How we work at Next Wrld: we understand the problem, define the solution, build, implement, and evolve software for companies."
 >
-  <section data-od-id="hero">
-    <p class="eyebrow">How we work</p>
-    <h1>First we understand the problem. Then we decide what is worth building.</h1>
-    <p class="lead">
-      A process that goes from a concrete need to a solution that works
-      day to day — without asking you to become a software expert.
-    </p>
-    <div class="cta-row">
-      <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="hero-primary">
-        Start with a diagnostic
-      </a>
-      <a class="btn btn-s" href={route('cases', 'en')} data-od-id="hero-secondary">
-        View case studies
-      </a>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">How we work</p>
+      <h1>First we understand the problem. Then we decide what is worth building.</h1>
+      <p class="lead">First we understand how your company works, what you want to improve and what is making day-to-day work harder than necessary.</p>
+      <p class="lead" style="margin-top:12px">Then we shape a solution, build it, put it into use and keep evolving it.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="hero-primary">Start with a diagnostic</a>
+        <a class="btn btn-s" href="/en/case-studies/" data-od-id="hero-secondary">View case studies</a>
+      </div>
+      <div class="fw" data-od-id="framework">
+        <a href="#discover"><b>01 / DISCOVER</b><span>Understand</span><small>What is happening?</small></a>
+        <a href="#shape"><b>02 / SHAPE</b><span>Decide</span><small>What is worth it?</small></a>
+        <a href="#build"><b>03 / BUILD</b><span>Build</span><small>Direction → product</small></a>
+        <a href="#launch"><b>04 / LAUNCH</b><span>Integrate</span><small>Real use</small></a>
+        <a href="#evolve"><b>05 / EVOLVE</b><span>Improve</span><small>Grows with you</small></a>
+      </div>
     </div>
   </section>
-
-  <!-- EN parity: hero translated, body sections follow ES structure -->
-  <section data-od-id="pasos">
-    <p class="eyebrow">The process</p>
-    <h2>From a concrete need to a solution that works day to day.</h2>
-    <ol>
-      <li>
-        <h3>Understand</h3>
-        <p>We learn how the business really operates before proposing anything.</p>
-      </li>
-      <li>
-        <h3>Define</h3>
-        <p>We agree on what success looks like and what is worth building first.</p>
-      </li>
-      <li>
-        <h3>Build</h3>
-        <p>We develop in short cycles you can see and validate.</p>
-      </li>
-      <li>
-        <h3>Implement</h3>
-        <p>We put the system into real use with your team, not just into production.</p>
-      </li>
-      <li>
-        <h3>Evolve</h3>
-        <p>We measure, adjust, and keep improving after launch.</p>
-      </li>
-    </ol>
+  <section class="band" data-od-id="introduccion">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">Our process</p>
+      <h2>From a concrete need to a solution that works day to day.</h2>
+      <p class="lead">Building is only part of the work.</p>
+      <p class="lead" style="margin-top:12px">First we need to understand what is happening, decide what is worth solving and reduce uncertainty. Then we bring the solution into the real context and improve it with what we learn from use.</p>
+    </div>
   </section>
-
+  <section data-od-id="etapas" style="padding-top:32px">
+    <div class="wrap">
+      <div class="stage" id="discover" data-reveal>
+        <p class="eyebrow">01 / Discover</p>
+        <span class="sl">UNDERSTAND</span>
+        <h3>What is happening?</h3>
+        <p class="sbody">We understand how your team works today, what the business wants to achieve, which tools you use and where manual tasks, delays, dependencies or hard-to-find information appear.</p>
+        <div class="stage-grid">
+          <div class="checklist"><b>WE CAN REVIEW</b><ul><li>current processes;</li><li>people involved;</li><li>existing tools;</li><li>needed information;</li><li>manual tasks;</li><li>recurring problems;</li><li>business goals.</li></ul></div>
+          <div class="out"><b>OUTCOME 01</b><span>Clear problem and context.</span><p>Before thinking about solutions, we all need to understand which problem we are trying to solve.</p></div>
+        </div>
+      </div>
+      <div class="stage" id="shape" data-reveal>
+        <p class="eyebrow">02 / Shape</p>
+        <span class="sl">DECIDE</span>
+        <h3>What is worth solving?</h3>
+        <p class="sbody">We turn what we learned into priorities and define what should change.</p>
+        <p class="sbody" style="margin-top:8px">We evaluate what can be simplified, what can be connected or automated and what needs new software.</p>
+        <div class="stage-grid">
+          <div class="checklist"><b>WE DEFINE</b><ul><li>priorities;</li><li>initial scope;</li><li>proposed flow;</li><li>key decisions;</li><li>risks and uncertainties;</li><li>initial roadmap.</li></ul></div>
+          <div class="out"><b>OUTCOME 02</b><span>A clear direction before building.</span><p>We identify the most reasonable solution for each problem.</p></div>
+        </div>
+      </div>
+      <div class="stage" id="build" data-reveal>
+        <p class="eyebrow">03 / Build</p>
+        <span class="sl">BUILD</span>
+        <h3>We turn direction into product.</h3>
+        <p class="sbody">We design and develop custom software around what we defined together.</p>
+        <p class="sbody" style="margin-top:8px">It can be a complete system, an internal tool, an automation, an integration or a combination of several pieces.</p>
+        <div class="stage-grid">
+          <div class="checklist"><b>DURING THIS STAGE</b><ul><li>we design the experience;</li><li>we build the software;</li><li>we connect systems;</li><li>we automate processes;</li><li>we validate progressively;</li><li>we keep progress visible.</li></ul></div>
+          <div class="out"><b>OUTCOME 03</b><span>Software ready to enter use.</span><p>We build in stages to validate decisions before investing more time.</p></div>
+        </div>
+      </div>
+      <div class="stage" id="launch" data-reveal>
+        <p class="eyebrow">04 / Launch</p>
+        <span class="sl">INTEGRATE</span>
+        <h3>The solution starts becoming part of real work.</h3>
+        <p class="sbody">We prepare the solution so it can live with the tools, information and people that are part of the business.</p>
+        <div class="stage-grid">
+          <div class="checklist"><b>DEPENDING ON THE PROJECT, IT CAN INCLUDE</b><ul><li>configuration;</li><li>information migration;</li><li>integrations;</li><li>production release;</li><li>user support;</li><li>initial adjustments.</li></ul></div>
+          <div class="out"><b>OUTCOME 04</b><span>A solution working in the context it was created for.</span><p>The solution has to be truly usable in daily work.</p></div>
+        </div>
+      </div>
+      <div class="stage" id="evolve" data-reveal>
+        <p class="eyebrow">05 / Evolve</p>
+        <span class="sl">IMPROVE</span>
+        <h3>What works today may need to change tomorrow.</h3>
+        <p class="sbody">A company changes. Its processes, clients, team and needs change too.</p>
+        <p class="sbody" style="margin-top:8px">After launch we can measure what is working, detect new needs and keep improving the solution.</p>
+        <div class="stage-grid">
+          <div class="checklist"><b>IT CAN INCLUDE</b><ul><li>improvements;</li><li>new automations;</li><li>new processes;</li><li>additional integrations;</li><li>optimization;</li><li>product evolution.</li></ul></div>
+          <div class="out"><b>OUTCOME 05</b><span>A solution that can grow with the business.</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="band" data-od-id="proceso-flexible">
+    <div class="wrap">
+      <div data-reveal>
+        <p class="eyebrow">A flexible process</p>
+        <h2>Each project follows a different path.</h2>
+        <p class="lead">A one-off automation does not need the same level of analysis as a complete platform.</p>
+        <p class="lead" style="margin-top:12px">We adapt the depth of each stage to the size of the problem, the available information and the level of uncertainty.</p>
+      </div>
+      <div class="flex-ex" data-reveal>
+        <div class="fx"><blockquote>Clear problem + clear solution</blockquote><i>→</i><p>We can move quickly toward building.</p></div>
+        <div class="fx"><blockquote>Clear problem + uncertain solution</blockquote><i>→</i><p>It is worth working on Shape first.</p></div>
+        <div class="fx"><blockquote>Complex or poorly defined problem</blockquote><i>→</i><p>We start by going deeper in Discover.</p></div>
+        <div class="fx"><blockquote>Existing system that needs improvement</blockquote><i>→</i><p>We can start directly on a concrete part.</p></div>
+      </div>
+    </div>
+  </section>
   <section data-od-id="principios">
-    <p class="eyebrow">Principles</p>
-    <h2>The process matters because decisions matter.</h2>
-    <p class="lead">
-      Not every project needs to walk the same path in the same way. The
-      method adapts; the principle holds: understand first.
-    </p>
-    <a href={route('services', 'en')}>Explore services</a>
+    <div class="wrap">
+      <div data-reveal>
+        <p class="eyebrow">Working principles</p>
+        <h2>How we make decisions.</h2>
+      </div>
+      <div class="prin-grid" data-reveal>
+        <div class="prin"><h3>Understand before building</h3><p>We question the first idea before building.</p></div>
+        <div class="prin"><h3>Start with what matters</h3><p>We prioritize what can generate the most impact before adding complexity.</p></div>
+        <div class="prin"><h3>Make progress visible</h3><p>We work so you can understand what we are doing, what we are deciding and why.</p></div>
+        <div class="prin"><h3>Build for real use</h3><p>A solution has to work for the people and processes that will use it every day.</p></div>
+      </div>
+    </div>
   </section>
-
-  <section data-od-id="cierre">
-    <p class="eyebrow">Next step</p>
-    <h2>We don&rsquo;t need to start by talking about software.</h2>
-    <div class="cta-row">
-      <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="final-primary">
-        Book a diagnostic
-      </a>
-      <a class="btn btn-s" href={whatsappUrl} target="_blank" rel="noopener">
-        Chat on WhatsApp
-      </a>
+  <section class="band" data-od-id="colaboracion">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">We work with you</p>
+      <h2>We understand your business so you don’t have to talk about software.</h2>
+      <p class="lead">Your knowledge of the business is a fundamental part of the process.</p>
+      <p class="lead" style="margin-top:12px">We translate needs, problems and decisions into product and technology, explaining alternatives without forcing you to speak in technical terms.</p>
+      <p class="collab-close">We decide better when we combine your business knowledge with our technical judgment.</p>
+    </div>
+  </section>
+  <section data-od-id="ejemplo-real">
+    <div class="wrap">
+      <div data-reveal>
+        <p class="eyebrow">From process to product</p>
+        <h2>We adapt the method without changing the principle.</h2>
+      </div>
+      <div class="aion" data-reveal>
+        <p class="eyebrow">AION Wellness</p>
+        <h3>From process to product in fitness centers.</h3>
+        <p style="margin-top:20px;font-size:16px;color:#E4E9F0;max-width:62ch">With AION Wellness we followed the same path: understanding memberships, plans, payments, members and cash closes, defining what had to live in the same experience and turning it into a platform that keeps evolving.</p>
+        <a href="https://www.aionwellness.pro/" target="_blank" rel="noopener">View AION Wellness →</a>
+      </div>
+    </div>
+  </section>
+  <section class="band" data-od-id="primer-paso">
+    <div class="wrap">
+      <div data-reveal>
+        <p class="eyebrow">The first step</p>
+        <h2>We start from the problem.</h2>
+        <p class="lead">You can arrive with a process that takes too long, hard-to-find information, tools that don’t connect or a way of working that no longer works as well as before.</p>
+        <p class="lead" style="margin-top:12px">We start by understanding that problem.</p>
+      </div>
+      <div class="start-card" data-reveal>
+        <p class="eyebrow">Initial diagnostic</p>
+        <div class="meta"><div><b>30–45 minutes</b><span>Conversation at no cost.</span></div></div>
+        <ol>
+          <li>You tell us what you want to improve.</li>
+          <li>We understand how it works today.</li>
+          <li>We identify the main friction points.</li>
+          <li>We evaluate which paths could make sense.</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <section class="final" data-od-id="cta-final">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">Operational diagnostic</p>
+      <h2>Everything starts by understanding the problem well.</h2>
+      <p>Tell us what is making your company’s day-to-day harder and let’s see together what is worth changing.</p>
+      <div class="cta-row"><a class="btn btn-w" href={calendarUrl} target="_blank" rel="noopener" data-od-id="final-primary">Book a diagnostic</a><a class="btn btn-g" href={whatsappUrl('en', 'full')} target="_blank" rel="noopener">Chat on WhatsApp</a></div>
+      <p class="micro">Free initial diagnostic · 30–45 minutes</p>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  section { max-width: var(--max); margin: 0 auto; padding: 88px 32px; scroll-margin-top: 80px; }
-  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
-  h2 { font-size: clamp(28px, 3.4vw, 44px); margin: 18px 0; letter-spacing: -0.02em; line-height: 1.1; }
-  h3 { font-family: var(--disp); font-size: 22px; margin: 18px 0 8px; letter-spacing: -0.02em; }
-  .lead { margin-top: 16px; }
+  h1 { font-size: clamp(36px, 5vw, 64px); margin: 22px 0 20px; }
+  h2 { font-size: clamp(28px, 3.4vw, 46px); margin: 18px 0; }
+  section { padding: 96px 0; scroll-margin-top: 80px; }
+  .hero { padding: 84px 0 88px; }
   .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
-  ol { margin: 28px 0 0; padding-left: 22px; display: grid; gap: 18px; }
-  li p { margin-top: 6px; color: var(--muted); }
-  article { border-top: 1px solid var(--border); padding: 28px 0; }
-  article p { margin-top: 10px; color: var(--muted); max-width: 64ch; }
-  article a { display: inline-block; margin: 12px 16px 0 0; font-weight: 600; }
-  @media (max-width: 720px) {
-    section { padding: 72px 20px; }
-    .cta-row { flex-direction: column; }
-    .cta-row .btn { width: 100%; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  .btn-s:hover { border-color: var(--accent); background: #dce6ff; }
+  .btn-w { background: #fff; color: var(--accent); }
+  .btn-w:hover { background: #dce6ff; }
+  .btn-g { border-color: rgba(255, 255, 255, 0.45); color: #fff; }
+  .btn-g:hover { border-color: #fff; background: rgba(255, 255, 255, 0.08); }
+  .band { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+  .fw { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 48px; }
+  .fw a { text-decoration: none; background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 16px 14px; display: block; transition: border-color 0.18s ease, transform 0.18s ease; }
+  .fw a:hover { border-color: var(--accent); transform: translateY(-2px); }
+  .fw b { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); display: block; }
+  .fw span { font-family: var(--disp); font-weight: 600; font-size: 16px; display: block; margin-top: 4px; }
+  .fw small { font-size: 12.5px; color: var(--muted); display: block; }
+  .stage { padding: 32px 0; border-top: 1px solid var(--fg); margin-top: 64px; scroll-margin-top: 90px; }
+  .stage:first-of-type { margin-top: 56px; }
+  .stage .sl { font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; color: var(--accent); margin-top: 10px; display: block; }
+  .stage h3 { font-family: var(--disp); font-size: clamp(24px, 2.8vw, 36px); letter-spacing: -0.02em; margin: 10px 0 12px; }
+  .stage .sbody { font-size: 17px; color: var(--muted); max-width: 64ch; }
+  .stage-grid { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; margin-top: 28px; align-items: start; }
+  .checklist { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 24px 26px; }
+  .checklist b { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); display: block; margin-bottom: 10px; }
+  .checklist ul { list-style: none; }
+  .checklist li { position: relative; font-size: 15px; padding: 6px 0 6px 26px; color: var(--fg); }
+  .checklist li::before { content: '→'; position: absolute; left: 0; color: var(--accent); font-weight: 700; }
+  .out { border-left: 1px solid var(--border); padding-left: 32px; }
+  .out b { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); display: block; margin-bottom: 8px; }
+  .out span { font-family: var(--disp); font-size: clamp(19px, 2vw, 24px); line-height: 1.35; letter-spacing: -0.01em; display: block; }
+  .out p { color: var(--muted); font-size: 15px; margin-top: 12px; }
+  .flex-ex { margin-top: 36px; border-top: 1px solid var(--fg); }
+  .fx { display: grid; grid-template-columns: 1fr auto 1fr; gap: 20px; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--border); }
+  .fx blockquote { font-family: var(--disp); font-weight: 600; font-size: 18px; }
+  .fx i { font-style: normal; color: var(--accent); font-weight: 700; font-size: 20px; }
+  .fx p { font-size: 15.5px; color: var(--muted); }
+  .flex-close { margin-top: 28px; font-family: var(--serif); font-style: italic; font-size: 22px; text-align: center; }
+  .prin-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 48px 64px; margin-top: 56px; counter-reset: prin; }
+  .prin { border-top: 2px solid var(--fg); padding: 24px 0 0; counter-increment: prin; }
+  .prin h3::before { content: '0' counter(prin); display: block; font-family: var(--mono); font-size: 13px; font-weight: 700; letter-spacing: 0.14em; color: var(--accent); margin-bottom: 12px; }
+  .prin h3 { font-family: var(--disp); font-size: 23px; margin-bottom: 8px; letter-spacing: -0.02em; }
+  .prin p { color: var(--muted); max-width: 44ch; }
+  .collab-close { margin-top: 32px; font-family: var(--serif); font-style: italic; font-size: 22px; max-width: 40ch; }
+  .aion { background: var(--navy); color: #fff; border-radius: 22px; padding: clamp(30px, 4.5vw, 64px); margin-top: 48px; }
+  .aion .eyebrow { color: #9dbcfb; }
+  .aion .eyebrow::before { background: #9dbcfb; }
+  .aion h3 { font-family: var(--disp); font-size: clamp(24px, 3vw, 36px); margin: 14px 0 6px; letter-spacing: -0.02em; }
+  .aion .lead { color: #c9d4e8; }
+  .aion-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px 48px; margin-top: 32px; }
+  .aion-grid div b { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: #9dbcfb; display: block; margin-bottom: 8px; }
+  .aion-grid div p { font-size: 15px; color: #e4e9f0; }
+  .aion a { color: #fff; font-weight: 600; font-size: 15px; display: inline-block; margin-top: 28px; text-decoration: none; border-bottom: 2px solid #5e85e3; padding-bottom: 2px; }
+  .start-card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 28px; margin-top: 36px; }
+  .start-card .meta { display: flex; gap: 24px; flex-wrap: wrap; margin: 14px 0 6px; }
+  .start-card .meta div b { font-family: var(--disp); font-size: 19px; display: block; }
+  .start-card .meta div span { font-size: 13px; color: var(--muted); }
+  .start-card ol { list-style: none; margin-top: 18px; counter-reset: pasos; }
+  .start-card li { counter-increment: pasos; display: grid; grid-template-columns: 44px 1fr; gap: 12px; padding: 14px 0; border-top: 1px solid var(--border); font-size: 15.5px; }
+  .start-card li::before { content: '0' counter(pasos); font-family: var(--mono); font-size: 13px; color: var(--accent); padding-top: 3px; }
+  .start-close { margin-top: 24px; font-weight: 600; font-size: 17px; }
+  .final { background: var(--navy); color: #fff; text-align: center; padding: 130px 0; border-top: 4px solid #5e85e3; }
+  .final .eyebrow { color: rgba(255, 255, 255, 0.78); justify-content: center; }
+  .final .eyebrow::before { background: #fff; }
+  .final h2 { font-size: clamp(34px, 4.4vw, 60px); max-width: 20ch; margin: 0 auto 18px; }
+  .final p { color: rgba(255, 255, 255, 0.85); max-width: 52ch; margin: 0 auto; }
+  .final .cta-row { justify-content: center; }
+  .final .micro { font-family: var(--mono); font-size: 12.5px; color: rgba(255, 255, 255, 0.7); margin-top: 16px; }
+  @media (max-width: 960px) {
+    section { padding: 72px 0; }
+    .hero .cta-row { flex-direction: column; align-items: stretch; }
+    .hero .cta-row .btn { width: 100%; }
+    .fw { grid-template-columns: 1fr 1fr; gap: 8px; }
+    .stage-grid { grid-template-columns: 1fr; gap: 24px; }
+    .out { border-left: 0; border-top: 1px solid var(--border); padding: 20px 0 0; }
+    .fx { grid-template-columns: 1fr; gap: 6px; }
+    .fx i { transform: rotate(90deg); justify-self: start; }
+    .prin-grid { grid-template-columns: 1fr; gap: 0; }
+    .prin { padding-bottom: 36px; }
+    .aion-grid { grid-template-columns: 1fr; }
+    .final { padding: 88px 0; }
+  }
+  @media (max-width: 600px) {
+    .fw { grid-template-columns: 1fr; }
   }
 </style>

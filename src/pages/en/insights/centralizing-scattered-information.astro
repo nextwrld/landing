@@ -1,0 +1,178 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { calendarUrl } from '../../../i18n/contact';
+---
+
+<BaseLayout
+  locale="en"
+  routeKey="insights"
+  canonicalPath="/en/insights/centralizing-scattered-information/"
+  alternatePaths={{ es: '/insights/centralizar-informacion-dispersa/', en: '/en/insights/centralizing-scattered-information/' }}
+  title="How to centralize information living across Excel, chats and tools | Next Wrld"
+  description="Scattered information slows operations. How to define reliable sources and order the flow without replacing everything at once."
+>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Processes</p>
+      <h1>How to centralize information living across Excel, chats and other tools.</h1>
+      <p class="lead">The problem isn’t using many tools. The problem is not knowing where the right information is or how it reaches the people who need it.</p>
+      <div class="meta"><span>6 min read</span><span>Processes · Information</span></div>
+      <a class="back" href="/en/insights/">← Back to Insights</a>
+    </div>
+  </section>
+
+  <article class="article" data-od-id="articulo">
+    <div class="wrap-narrow">
+      <div data-reveal>
+        <p>Most companies don’t choose to have scattered information. It just happens. One day clients are in Excel, conversations in WhatsApp, documents in Drive, tasks by email and commercial data in a CRM.</p>
+        <p>Each tool solved a specific need well. The problem appears later, when the team has to mentally connect information living in five different places to work.</p>
+        <p>Where is the latest version? I think it is in the chat. Admin has that. Look in the new Excel. That data changed yesterday.</p>
+        <p class="strong">It isn’t just a technology problem. It is an operations problem.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>What centralizing really means</h2>
+        <p>Centralizing doesn’t mean putting all data in a single system or forcing the whole company to work on the same platform. In practice, that rarely works.</p>
+        <p>Centralizing means defining a primary source for each data type, connecting tools where it makes sense, removing unnecessary duplication and establishing where each piece of information must be updated. So nobody has to manually rebuild context every time they need data.</p>
+        <p class="strong">Centralizing isn’t having fewer tools. It is reducing the places where the same information can be “the right one”.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Detecting which information is fragmented</h2>
+        <p>The starting point is observing a process end to end, not tools separately. Pick a concrete process, for example client onboarding or order tracking, and follow the information journey.</p>
+        <p>Where does it enter? Where is it stored? Who modifies it? Where is it consulted? How many times is it reloaded? What happens when it changes? Who needs to know?</p>
+        <p>Mapping that journey usually reveals duplications and friction points unnoticed from inside day-to-day work. The map shows what no tool shows alone: how information really flows.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Defining a source of truth</h2>
+        <p>For each important piece of information there should be a recognized reference place. Simply put: a place where everyone knows the right data lives.</p>
+        <p>Commercial data lives in the CRM. Billing in the admin system. Inventory in the operations system. Documents in the document repository. A request’s state, in the system where that process lives.</p>
+        <p>The problem appears when the same data can be edited in several places. If a client address exists in five systems, the inevitable question is which is updated. And answering it takes time, messages and checks.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Separating conversation from information</h2>
+        <p>WhatsApp, Slack or email are excellent for talking, but shouldn’t become the main place where critical operational information lives.</p>
+        <p>“Client approved” shouldn’t exist only inside a message. Chat can communicate the event, but state should be recorded in the corresponding system. Otherwise, whoever didn’t read that message has no way of knowing.</p>
+        <p class="strong">Communicating information isn’t the same as storing it.</p>
+        <p>Conversations add context but are hard to search, get lost among messages and don’t always reflect current state. They serve to notify, not to operate.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>When Excel works as bridge</h2>
+        <p>There is a very common situation. Two systems aren’t connected, so someone exports data from one, modifies it in Excel and loads it into another. At first it is a reasonable temporary solution.</p>
+        <p>Over time that spreadsheet becomes a critical process piece. Nobody remembers why it exists, but if it disappears everything stops. It has its own rules, columns only some understand and versions nobody knows which is valid.</p>
+        <p>Excel can be a valid bridge for a while. If it works as bridge permanently, it probably signals an integration need between those tools.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Detecting data duplication</h2>
+        <p>Duplication is easy to recognize when looked for. A client completes a form, sales loads data into the CRM, admin copies it to a spreadsheet and operations loads it again into their system.</p>
+        <p>The company has the same information in four places and depends on each update done well in all of them. If one changes and others don’t, contradictory versions appear.</p>
+        <p class="strong">Every time someone reloads data that already exists, there is an opportunity to simplify the flow.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Not everything needs centralizing</h2>
+        <p>Centralizing for its own sake also creates complexity. Not all data needs to be available everywhere with the same detail level.</p>
+        <p>Prioritize information critical to operate, process states, client data, owners, important documents, data used by several teams, frequently changing information and what is needed to decide.</p>
+        <p>The rest can stay where it is. Ordering doesn’t mean concentrating everything, but distinguishing the important from the accessory.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Three ways to solve it</h2>
+        <p>In practice there are three paths, which can combine. First is standardizing: defining where each piece of information should live and how it should be used. Often this solves much of the problem without developing anything.</p>
+        <p>Second is integrating: connecting tools so information travels automatically between them. From CRM to operations, from operations to billing, without intermediate manual copies.</p>
+        <p>Third is building a central layer: when the process has its own rules, it can make sense to create a system concentrating states, rules and important data, while other tools keep specific functions.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Avoiding creating “yet another tool”</h2>
+        <p>Many companies try solving fragmentation by adding a new platform. The result is usually predictable: Excel plus CRM plus WhatsApp plus ERP plus the new platform. And now information is even more scattered.</p>
+        <p>Before adding anything new, ask which information will live there, which system stops serving that function, how it connects with others, who will maintain it and which problem it really removes.</p>
+        <p>If those answers aren’t clear, the new tool will probably add another place to search instead of ordering existing ones.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Thinking in flows, not just tools</h2>
+        <p>A company receives new clients through a form arriving by email, someone moves it to Excel, then to the CRM, warns by WhatsApp and finally loads it into the operations system. The usual question is which tool to replace.</p>
+        <p>The more useful question is how information should flow. The form feeds the CRM as primary source, the CRM integrates with operations, notifications arrive automatically and documents stay centralized.</p>
+        <p>Several tools can still exist, but each with a clear role. Order doesn’t come from having fewer systems, but from each piece of data having a defined path.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Fewer entry points, fewer inconsistencies</h2>
+        <p>The more places allowing creation or modification of the same information, the harder consistency is. If a client can be created from Excel, from the CRM, from a form and from the internal system, sooner or later there will be duplicates and different versions.</p>
+        <p>Define a primary entry point or establish clear sync rules. It isn’t restricting on whim, but avoiding the same data being born four times in four different ways.</p>
+        <p>And for teams only needing to see information without modifying it, integrations, dashboards or shared views give visibility without creating new data copies. Sales can see operational state, operations commercial data and management general indicators, each from their place, but over the same source.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>A practical frame to start</h2>
+        <p>To avoid trying to order everything at once, following a simple order over a concrete process is enough:</p>
+        <ul class="checklist">
+          <li>Pick a concrete process, not the whole company.</li>
+          <li>Identify all involved tools.</li>
+          <li>Map where information enters, changes and is consulted.</li>
+          <li>Detect duplicated data and steps where someone transports information.</li>
+          <li>Define a reliable source for each important piece of data.</li>
+          <li>Decide what must be standardized, integrated or centralized.</li>
+          <li>Start with part of the process before modifying all operations.</li>
+        </ul>
+        <p>This approach lets you advance by parts, validate results and extend what works to the next process.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Ordered information, better decisions</h2>
+        <p>When information is scattered, answering simple questions requires prior consolidation work. How many requests are open, how long an operation takes, which clients are waiting, where most errors occur, what volume the team can handle.</p>
+        <p>Each answer requires joining spreadsheets, cleaning duplicates and unifying criteria. Only afterwards can the decision be discussed.</p>
+        <p>Clearer information structure lets operations produce data while running. Information stops being something to prepare and becomes available when needed.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>The goal isn’t a single tool</h2>
+        <p>The goal is that anyone can know where information is, which is right, who updates it and how it reaches the people who need it.</p>
+        <p>With that clear structure, the company can even add new tools without losing control. Each new system enters with a defined role, a reference source and a known flow.</p>
+        <p>Centralizing, ultimately, is defining which information exists, where it lives, which is the reliable source, how it updates and how it reaches the people who need it.</p>
+      </div>
+    </div>
+  </article>
+
+  <section class="cta" data-od-id="cta-articulo">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Next step</p>
+      <h2>Is your information scattered across too many places?</h2>
+      <p>We can help map how information flows in your operation and identify what to order, integrate or centralize.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="cta-primary">Analyze my operation →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  .hero { padding: 84px 0 40px; }
+  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
+  .meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .back { display: inline-block; margin-top: 22px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .article { padding: 24px 0 72px; }
+  .article p { margin: 18px 0; font-size: 17px; line-height: 1.75; color: var(--fg); max-width: 68ch; }
+  .article h2 { font-size: clamp(26px, 3vw, 36px); margin: 56px 0 8px; letter-spacing: -0.02em; line-height: 1.15; }
+  .article .strong { font-family: var(--disp); font-weight: 600; font-size: 22px; letter-spacing: -0.01em; margin: 32px 0; }
+  .checklist { margin: 24px 0; list-style: none; border-top: 1px solid var(--border); }
+  .checklist li { padding: 14px 0 14px 28px; border-bottom: 1px solid var(--border); position: relative; font-size: 16px; line-height: 1.6; }
+  .checklist li::before { content: '→'; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
+  .cta { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 0; margin-bottom: 88px; }
+  .cta h2 { font-size: clamp(30px, 4vw, 50px); margin: 18px 0; letter-spacing: -0.03em; line-height: 1.05; }
+  .cta p { color: var(--muted); font-size: 17px; max-width: 56ch; }
+  .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  @media (max-width: 720px) {
+    .wrap-narrow { padding: 0 20px; }
+    .hero { padding: 64px 0 32px; }
+    .article p { font-size: 16px; }
+    .cta { padding: 64px 0; margin-bottom: 64px; }
+  }
+</style>

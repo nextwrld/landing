@@ -1,0 +1,188 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { calendarUrl } from '../../../i18n/contact';
+---
+
+<BaseLayout
+  locale="en"
+  routeKey="insights"
+  canonicalPath="/en/insights/which-processes-to-automate-first/"
+  alternatePaths={{ es: '/insights/procesos-que-conviene-automatizar/', en: '/en/insights/which-processes-to-automate-first/' }}
+  title="Which processes should you automate first? | Next Wrld"
+  description="Not every manual process deserves automation. A practical criterion to prioritize by impact, frequency, errors and scalability."
+>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Automation</p>
+      <h1>Which processes should you automate first?</h1>
+      <p class="lead">Not everything manual deserves automation. Priority isn’t what is easiest to automate, but the friction that frees the most value when it disappears.</p>
+      <div class="meta"><span>8 min read</span><span>Processes · Automation</span></div>
+      <a class="back" href="/en/insights/">← Back to Insights</a>
+    </div>
+  </section>
+
+  <article class="article" data-od-id="articulo">
+    <div class="wrap-narrow">
+      <div data-reveal>
+        <p>In almost every company there is a mental list of tasks that could be automated. Moving data from one system to another, building reports, notifying a client, updating a spreadsheet, chasing an approval.</p>
+        <p>The temptation is starting with the most visible or the easiest. But automating without clear criteria usually ends the same: several small automations that work, without real change in how the company operates.</p>
+        <p class="strong">The question isn’t what we can automate, but which friction is worth removing.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Automating more doesn’t mean operating better</h2>
+        <p>A company can have dozens of manual tasks and still have no reason to automate them all. Some happen once in a while. Others take little time and bother nobody. Others change every week, so any automation would be outdated fast.</p>
+        <p>There are also tasks requiring human judgment: negotiating with a supplier, interpreting an unusual claim, deciding an exception. And tasks that simply shouldn’t exist, so automating them would only perpetuate an unnecessary step.</p>
+        <p>Before asking what we can automate, ask which friction, if gone, would make work noticeably simpler, faster or more reliable.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Start by observing where time goes</h2>
+        <p>The first indicator is usually repetition. Not the most complex task, but the one returning every day at the same time in the same shape.</p>
+        <p>Copying information between systems. Loading the same data twice. Updating states. Generating a weekly report. Sending notifications. Creating a document from a template. Validating incomplete incoming data. Consolidating spreadsheets. Moving files between folders. Following up on something nobody confirmed.</p>
+        <p>A two-minute task seems insignificant. Repeated two hundred times a month by three people, it is twenty hours of admin work. Hours that don’t serve clients, don’t improve the product and don’t sell.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Frequency and volume must be looked at together</h2>
+        <p>Knowing how long a task takes isn’t enough. How often it happens matters.</p>
+        <p>A task taking twenty minutes once a month costs four hours a year. Another taking three minutes three hundred times a month costs fifteen hours every month. The second, although seemingly smaller, is a much larger opportunity.</p>
+        <p>A simple way to think about it is multiplying frequency by time by people involved. It isn’t a rigid financial formula, it is a conceptual tool to detect where effort accumulates unnoticed.</p>
+        <p class="strong">What costs most isn’t always what takes longest. It is usually what repeats most.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Look where errors appear</h2>
+        <p>Some processes don’t take much time but generate expensive problems when they go wrong. Loading a wrong price. Sending wrong information to a client. Forgetting to update a state so another team works on old data. Duplicating a record. Losing a request. Processing the same operation twice. Using an outdated file version.</p>
+        <p>Each error looks like individual carelessness. Together, they reveal a fragile process: depending too much on someone’s rushed attention, memory or neatness.</p>
+        <p>Automation can be very valuable even if it saves few minutes, if it avoids errors that later generate rework, claims or lost information. Savings aren’t in execution time, but in everything that stops breaking afterwards.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>When people work as bridge between systems</h2>
+        <p>There is a very recognizable pattern. A person receives a request by email, copies it to Excel, then loads it into the CRM, then warns the operations team by WhatsApp and finally updates another system for the record.</p>
+        <p>That person isn’t making important decisions. They are transporting information from one place to another.</p>
+        <p class="strong">When someone spends much of the day moving information, there is an automation opportunity.</p>
+        <p>That kind of flow is usually a good candidate for simple integration or automation. Not because the task is hard, but because a qualified person is doing messaging work between tools that could talk on their own.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>The cost of manual follow-up</h2>
+        <p>Another indicator appears in repeated questions. Was it done already? Who has it? What state is it in? Is something missing? Did anyone reply?</p>
+        <p>If a process needs a constant round of messages to know where it stands, the problem isn’t the task itself but lack of visibility. Nobody knows what happened without asking.</p>
+        <p>Automating states, owners, reminders and notifications usually impacts more than automating an isolated task. It orders complete coordination instead of accelerating a loose step. The team stops chasing information and starts working on information arriving on its own.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Think about what happens when volume grows</h2>
+        <p>A process can work well with twenty operations a month. With two hundred or two thousand, it starts generating delays, overtime and errors.</p>
+        <p>The test is simple: if doubling sales forces doubling the people manually loading information, the process isn’t scaling well. Business growth directly translates into admin work growth.</p>
+        <p>There is usually a good opportunity. Automating that bottleneck not only saves time today, but avoids each growth point arriving with more operational load.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Distinguish the predictable from what needs judgment</h2>
+        <p>The best first automations usually have clear inputs, known rules, expected results, few exceptions and repeatable decisions. If A happens, do B.</p>
+        <p>Confirming a payment and issuing a receipt. Receiving a complete form and creating a record. A deadline passing and sending a reminder. That kind of logic automates well because it varies little.</p>
+        <p>Processes requiring negotiation, interpretation or highly contextual decisions need human intervention. That doesn’t mean they can’t improve: automation can also prepare information, suggest a path and leave the final decision to a person. Assisting is also automating.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Don’t automate a process before understanding it</h2>
+        <p>This is one of the most common mistakes. If a process has unnecessary steps, approvals nobody reviews or data loaded twice, automating it as-is only consolidates its problems. Disorder starts running faster.</p>
+        <p>Before automating, ask why each step exists, who really needs that information, whether an approval is still needed, whether the same data is loaded in several places and whether some task could simply disappear.</p>
+        <p class="strong">Simplify first. Automate afterwards.</p>
+        <p>A simple, well-understood process is cheaper to automate, easier to maintain and more likely for the team to adopt.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>A simple frame to prioritize</h2>
+        <p>To order the internal conversation, evaluating each candidate process on five dimensions is enough:</p>
+        <ul class="checklist">
+          <li><b>Frequency.</b> How often does it happen? Daily weighs more than monthly.</li>
+          <li><b>Effort.</b> How much time does each occurrence take and how many people does it involve?</li>
+          <li><b>Impact.</b> What happens if it is late or goes wrong? Does it generate claims, delays or rework?</li>
+          <li><b>Predictability.</b> Are its rules clear enough to automate?</li>
+          <li><b>Scalability.</b> Does manual effort grow with the business?</li>
+        </ul>
+        <p>The best candidates usually score high on several dimensions at once. A frequent, costly, predictable process worsening with growth is almost always a good first bet.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>A simple impact-effort matrix</h2>
+        <p>Another useful way to order options is crossing impact with effort. Without methodological rigidity, just to talk better:</p>
+        <ul class="checklist">
+          <li><b>High impact, low effort.</b> Good candidates to start. Visible results without a large project.</li>
+          <li><b>High impact, high effort.</b> Important, but they need planning and should probably be split into parts.</li>
+          <li><b>Low impact, low effort.</b> They can be solved if there is a clear opportunity, but shouldn’t be the priority.</li>
+          <li><b>Low impact, high effort.</b> They should normally wait.</li>
+        </ul>
+        <p>This matrix avoids two common traps: starting with the easiest although it changes little, or starting with the largest and taking months to see a result.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>A practical example</h2>
+        <p>A company processes 800 orders a month. Sales records each order, admin verifies data, someone copies information to the operations system, a document is manually generated, operations receives an email notice and the client receives a hand-written update.</p>
+        <p>Over that flow several automations are possible. Automating the client email is easy, but its impact is moderate. Automatically generating documents saves time and reduces errors. Removing duplicated loading between sales and operations can have much larger impact, because it happens on each of the 800 orders.</p>
+        <p>Prioritizing avoids starting with the most visible but least important automation. Order changes results: first what removes most friction per operation, then the accessory.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Not everything has to be automated at once</h2>
+        <p>Start with a bounded process. A good first automation solves real friction, has measurable impact, is understandable enough for the team, lets you learn and doesn’t force redesigning all operations.</p>
+        <p>Small results serve an important function: they show the approach works, build confidence and give information to decide the next step with better judgment.</p>
+        <p class="strong">Starting small isn’t thinking small. It is validating before expanding.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>How to know if it worked</h2>
+        <p>Before automating, define what should improve. Admin hours dedicated to the process. Total time from start to finish. Error count or cases needing correction. Client response time. Manual step count. Volume the same team can handle without adding people.</p>
+        <p>With that baseline, automation can be evaluated comparing before and after. Without it, any improvement becomes a feeling hard to sustain when deciding the next investment.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Where to start</h2>
+        <p>What can be automated shouldn’t be automated first. What generates enough friction that solving it visibly impacts operations should be automated first.</p>
+        <p>The best first candidates are usually frequent, repetitive, predictable processes, costly in time, error-prone, dependent on manual coordination and whose effort grows with the business.</p>
+        <p>When a process meets several of those conditions, automating it stops being a technical improvement and becomes an operational decision with clear return.</p>
+      </div>
+    </div>
+  </article>
+
+  <section class="cta" data-od-id="cta-articulo">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Next step</p>
+      <h2>Not sure which process to automate first?</h2>
+      <p>We can analyze your operation, identify the main frictions and prioritize where automation can generate the most impact.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="cta-primary">Analyze my operation →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  .hero { padding: 84px 0 40px; }
+  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
+  .meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .back { display: inline-block; margin-top: 22px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .article { padding: 24px 0 72px; }
+  .article p { margin: 18px 0; font-size: 17px; line-height: 1.75; color: var(--fg); max-width: 68ch; }
+  .article h2 { font-size: clamp(26px, 3vw, 36px); margin: 56px 0 8px; letter-spacing: -0.02em; line-height: 1.15; }
+  .article .strong { font-family: var(--disp); font-weight: 600; font-size: 22px; letter-spacing: -0.01em; margin: 32px 0; }
+  .checklist { margin: 24px 0; list-style: none; border-top: 1px solid var(--border); }
+  .checklist li { padding: 14px 0 14px 28px; border-bottom: 1px solid var(--border); position: relative; font-size: 16px; line-height: 1.6; }
+  .checklist li::before { content: '→'; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
+  .cta { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 0; margin-bottom: 88px; }
+  .cta h2 { font-size: clamp(30px, 4vw, 50px); margin: 18px 0; letter-spacing: -0.03em; line-height: 1.05; }
+  .cta p { color: var(--muted); font-size: 17px; max-width: 56ch; }
+  .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  @media (max-width: 720px) {
+    .wrap-narrow { padding: 0 20px; }
+    .hero { padding: 64px 0 32px; }
+    .article p { font-size: 16px; }
+    .cta { padding: 64px 0; margin-bottom: 64px; }
+  }
+</style>

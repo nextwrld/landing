@@ -1,0 +1,159 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { calendarUrl } from '../../../i18n/contact';
+---
+
+<BaseLayout
+  locale="en"
+  routeKey="insights"
+  canonicalPath="/en/insights/first-version-internal-system/"
+  alternatePaths={{ es: '/insights/primera-version-sistema-interno/', en: '/en/insights/first-version-internal-system/' }}
+  title="What a first version of an internal system should include | Next Wrld"
+  description="Start with what matters: how to cut scope without losing what makes the system useful."
+>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Product and systems</p>
+      <h1>What a first version of an internal system should include.</h1>
+      <p class="lead">A useful first version covers the complete central journey even if simple, and leaves out almost everything else. Scope is cut by use, not opinions.</p>
+      <div class="meta"><span>7 min read</span><span>Product & systems · Scope</span></div>
+      <a class="back" href="/en/insights/">← Back to Insights</a>
+    </div>
+  </section>
+
+  <article class="article" data-od-id="articulo">
+    <div class="wrap-narrow">
+      <div data-reveal>
+        <p>The meeting starts with a list.</p>
+        <p>A manager brings ten requests. Admin adds eight more. The most senior technician adds five that “can’t be missing”. In an hour there are already forty ideas for the new system.</p>
+        <p>Everything seems reasonable. Everything seems urgent.</p>
+        <p>And there most internal systems stall before existing, from excess scope. Trying to cover every case and satisfy everyone from day one. The project becomes so large it takes too long.</p>
+        <p>The useful question is where to start to be useful as soon as possible, without overshooting scope.</p>
+        <p>A useful first version covers the complete central journey even if simple, and leaves out almost everything else. Scope is cut by use, not opinions.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>The central journey orders everything</h2>
+        <p>Every internal system sustains a journey. A step sequence today done through loose messages, spreadsheets and people’s memory.</p>
+        <p>If that journey isn’t clear, every request sounds equally important. A report seems as urgent as recording work. Without a central journey, there is no way to order.</p>
+        <p>That is why the first work is agreeing on a sentence describing what enters on one side, which steps it crosses and what exits on the other.</p>
+        <p>With that sentence, cutting is easier. What completes the journey enters. The rest waits.</p>
+        <p>A first version has to carry a real case from start to finish without getting lost along the way.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>The essential is recognized by use</h2>
+        <p>How to distinguish the essential from the desirable without arguing tastes? By use frequency.</p>
+        <p>For each request ask: will it be used every day or only in specific cases? Does the person doing the work need it or only someone watching occasionally? If missing, does work stop or just become less comfortable?</p>
+        <p>The essential is used every day and, if missing, stops operations. The desirable is used occasionally and, if missing, can be solved another way for a while.</p>
+        <p>A report with many filters can look attractive in a meeting. But if the team doesn’t yet record work orderly, that report has nothing to stand on. Very detailed permission can look like order. But if there are doubts about who does what, the problem is missing clear owners, not permission.</p>
+        <p>Cutting by use forces looking at what daily work needs to avoid stalling.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>What a first version must have</h2>
+        <p>A well-posed first version looks modest and is demanding on the essential. It must allow four things.</p>
+        <p>Record. That the important stays in one place, with minimum data to understand what it is about. Without extra fields nor parallel spreadsheets.</p>
+        <p>Show state. That anyone answers in a minute: where is this? Pending, in progress, delayed, finished? This avoids repeated questions and blind decisions.</p>
+        <p>Assign owners. That it is clear who does what and by when. If nobody owns the next step, work stays still.</p>
+        <p>Keep minimal history. Enough to rebuild what happened: who asked, who took it and how it ended.</p>
+        <p>If it achieves those four over the central journey, it is already useful. If not, no additional feature saves it.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>What is purposely left out</h2>
+        <p>Saying what enters is half the work. The other half is saying what doesn’t, in writing and with reasons. Four groups should stay out.</p>
+        <p>Advanced reports. Dashboards with crosses and comparisons can wait. Seeing the work list and filtering by state suffices. When records are reliable, reports will make sense. Before they only show disorder with good presentation.</p>
+        <p>Fine permissions. Except sensitive information, there is no need to define who can see each field in each case. Simple, even rules suffice. Detailed control is justified as use grows, not before.</p>
+        <p>Premature automations. Notices for each situation or rules auto-deriving cases help when the process is already stable. Automating something changing weekly only generates rework.</p>
+        <p>Edge cases. That exception happening once in a while that someone wants to cover “just in case”. Designing for exception complicates the usual path. Better solve the frequent well and treat exception outside until it repeats.</p>
+        <p>Leaving out is saying “not yet”, seeking the least complexity needed to correctly solve the problem. That idea should accompany the whole project.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>How to decide what enters</h2>
+        <p>Cutting is done with three or four people knowing operations, reviewing the list with three questions.</p>
+        <p>Does this happen every week? If not, it exits the first version.</p>
+        <p>If missing, does work stop or is important information lost? If it can continue with a simple agreement for a while, it waits.</p>
+        <p>Does it help complete the central journey or just make it more attractive? If only more attractive, it waits.</p>
+        <p>This exercise usually lowers forty ideas to eight or ten decisions. The team starts thinking in use.</p>
+        <p>Name someone to guard scope. When a new request appears mid-way, that person asks: is it part of the central journey? Is it daily use? What happens if we leave it for later? Without that function, scope grows one “while we are at it” at a time.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>How to know if it works</h2>
+        <p>A first version isn’t measured by feature count. It is measured by order and relief.</p>
+        <p>Did people stop asking by message where each thing is? Is it known who owns each task without calling? Was less information lost than before?</p>
+        <p>If they improve in the first weeks, it works even if simple. If the team keeps working outside, something failed in the essential.</p>
+        <p>Define two or three concrete signals. For example: every request is recorded the same day, every task has visible owner, every close is documented. Little, observable, reviewable in a short meeting.</p>
+        <p>The first version ends when the central journey is used every day without detours, not when a screen list is delivered.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Complete example: maintenance company</h2>
+        <p>A technical services company receives requests, builds work orders, assigns technicians, executes visits and then closes and bills.</p>
+        <p>Today it works with messages and a spreadsheet only one person understands. Requests are lost, nobody knows which technician is at each site and billing delays for missing information on what was done.</p>
+        <p>The central journey is said in one sentence: a request enters, becomes an order, is assigned to an owner, is executed and closes with enough data to bill. That is the whole first-version scope.</p>
+        <p>It would be like this. The request is recorded with minimum data: who asks, where, which reported problem and contact. Without long forms. Each accepted request generates an order with number, description, address, date and owner.</p>
+        <p>Each order has visible technician and date. The list shows pending, in progress or delayed. Technicians mark start and end and note what was done.</p>
+        <p>On closing there is record of what was done, which materials were used and whether something stayed pending. Admin sees what is ready to bill without calling to complete data. And each order keeps history: who created it, who took it and how it closed.</p>
+        <p>What stays out? Advanced reports by technician or failure type. Seeing weekly open and closed suffices. Fine permissions by client or field. Simple access suffices. Premature automations, like auto-assignment or notices on each change. Notifying on assign and close suffices. And edge cases, like special warranties or multi-visit jobs. They are solved manually while learning.</p>
+        <p>The daily entered. The occasional waited. Operations gained clear owners and less rework. And billing stopped depending on each technician’s memory.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Mistakes enlarging the first version</h2>
+        <p>Three typical mistakes. Asking for everything together: each team adds theirs and nobody wants to stay out. It is avoided returning to the central journey and asking what blocks it today. What doesn’t block it, waits.</p>
+        <p>Designing for exceptions: much time on the rare case and little on the usual path. Invert the proportion and be excellent on the frequent.</p>
+        <p>Confusing the first version with the finished product: judging it as if it already had to solve everything. But an internal system evolves with use. It is a firm starting point, not an end point.</p>
+        <p>Asking for more doesn’t accelerate, it delays. Never assume more features mean better product, nor that building is always better than buying.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>The criterion closing the discussion</h2>
+        <p>Every scope discussion ends with the same question: does this have to be in the first version?</p>
+        <p>The answer is yes only if three conditions hold. It is part of the central journey. It will be used every week. If missing, work stalls or unrecoverable information is lost.</p>
+        <p>If any fails, it goes to a visible “later” list. It is reviewed when the first version is in use. What proves frequent use, enters. The rest waits.</p>
+        <p>Starting with the important cares for resources and respects team time. A useful system clearly sustains everyday work.</p>
+        <p>When the central journey works, the rest arrives in order and with sense.</p>
+      </div>
+    </div>
+  </article>
+
+  <section class="cta" data-od-id="cta-articulo">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Next step</p>
+      <h2>Is your internal system stuck from excess scope?</h2>
+      <p>Next Wrld can help analyze operations and decide where to start without overshooting scope.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="cta-primary">Analyze my operation →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  .hero { padding: 84px 0 40px; }
+  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
+  .meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .back { display: inline-block; margin-top: 22px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .article { padding: 24px 0 72px; }
+  .article p { margin: 18px 0; font-size: 17px; line-height: 1.75; color: var(--fg); max-width: 68ch; }
+  .article h2 { font-size: clamp(26px, 3vw, 36px); margin: 56px 0 8px; letter-spacing: -0.02em; line-height: 1.15; }
+  .article .strong { font-family: var(--disp); font-weight: 600; font-size: 22px; letter-spacing: -0.01em; margin: 32px 0; }
+  .checklist { margin: 24px 0; list-style: none; border-top: 1px solid var(--border); }
+  .checklist li { padding: 14px 0 14px 28px; border-bottom: 1px solid var(--border); position: relative; font-size: 16px; }
+  .checklist li::before { content: '→'; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
+  .cta { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 0; margin-bottom: 88px; }
+  .cta h2 { font-size: clamp(30px, 4vw, 50px); margin: 18px 0; letter-spacing: -0.03em; line-height: 1.05; }
+  .cta p { color: var(--muted); font-size: 17px; max-width: 56ch; }
+  .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  @media (max-width: 720px) {
+    .wrap-narrow { padding: 0 20px; }
+    .hero { padding: 64px 0 32px; }
+    .article p { font-size: 16px; }
+    .cta { padding: 64px 0; margin-bottom: 64px; }
+  }
+</style>

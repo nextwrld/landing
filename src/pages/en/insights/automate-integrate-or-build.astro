@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { calendarUrl } from '../../../i18n/contact';
+---
+
+<BaseLayout
+  locale="en"
+  routeKey="insights"
+  canonicalPath="/en/insights/automate-integrate-or-build/"
+  alternatePaths={{ es: '/insights/automatizar-integrar-o-construir/', en: '/en/insights/automate-integrate-or-build/' }}
+  title="Automate, integrate or build: how to decide? | Next Wrld"
+  description="Not every manual process needs new software. A guide to distinguish when to automate a task, connect existing tools or build something of your own."
+>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Automation and integrations</p>
+      <h1>Automate, integrate or build: how to decide?</h1>
+      <p class="lead">Not every manual process needs new software. Often the problem is solved by automating a task or connecting tools that already exist. This article helps distinguish each path.</p>
+      <div class="meta"><span>8 min read</span><span>Automation · Operations</span></div>
+      <a class="back" href="/en/insights/">← Back to Insights</a>
+    </div>
+  </section>
+
+  <article class="article" data-od-id="articulo">
+    <div class="wrap-narrow">
+      <div data-reveal>
+        <h2>Start from the problem, not the solution</h2>
+        <p>In companies some phrases appear quickly when something is uncomfortable. “We need an app.” “We need a system.” “We need to automate this.” They are usually said before fully understanding the process.</p>
+        <p>The first question should be another: what is failing or creating friction today? Repetitive tasks consuming hours. Duplicated information in several places. Tools that don’t talk to each other. Frequent errors to fix. Lack of visibility over the state of things. Manual coordination by message. Hard-to-manage business rules.</p>
+        <p>The solution should appear after understanding those frictions, not before. Automating, integrating and building solve different problems. Choosing among them without looking at the process is like choosing a tool without knowing what needs fixing.</p>
+        <p class="strong">First understand which friction hurts. Then decide how to solve it.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>What automating means</h2>
+        <p>Automating means removing or reducing a manual task inside an existing process. The process doesn’t change shape: simply one of its steps stops requiring human intervention.</p>
+        <p>Examples are everyday. Automatically sending a notification when something changes state. Generating a document from already loaded data. Updating a state when an event occurs. Moving information from one point to another. Automatically creating a record. Running a validation. Generating a periodic report without building it by hand.</p>
+        <p>Automation is usually right when the process already works reasonably well, there is a clearly repetitive task, rules are relatively stable, the problem is concentrated in one or few steps and there is no need to redesign the whole flow.</p>
+        <p>There is an important warning. Automating a bad process doesn’t necessarily improve it. Sometimes it just lets an inefficient process run faster. If the flow has unnecessary steps, approvals nobody reviews or data copied for no reason, automating it only accelerates waste.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>What integrating means</h2>
+        <p>Integrating makes sense when the problem isn’t inside one tool but between several. Each can work correctly separately, but people have to move information between them by hand.</p>
+        <p>It is very common. The CRM holds clients. The ERP holds billing. A spreadsheet holds operations. WhatsApp is used for follow-up. None of those tools is bad. The problem is they don’t talk to each other, and the team acts as bridge: copying, forwarding, confirming, reloading.</p>
+        <p>Integration seeks systems exchanging information automatically. Syncing clients between CRM and ERP. Sending an approved sale to operations without reloading it. Updating inventory when a purchase occurs. Connecting forms with internal systems. Centralizing information living scattered today.</p>
+        <p>Integrating is usually right when current tools work well, the main problem is manual information transfer, duplicated data exists, different teams work on separate systems and there is no single reliable source.</p>
+        <p class="strong">If current tools do their job well, replacing them can be unnecessary. Sometimes the real problem is they don’t talk to each other.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>What building means</h2>
+        <p>Building your own software means creating a solution designed around the company’s process or operating model. It is not the “most advanced” option nor the best by definition. It is simply another available tool, with its own costs and use cases.</p>
+        <p>Building starts making sense when the process is particular to the business, there are rules hard to represent in generic software, current tools force too many workarounds, the process is strategically important enough, there is a strong need for control over information, permissions, states or flow, operations must scale significantly or the company gains real advantage from owning that system.</p>
+        <p>It is also worth being clear about added costs: development time, maintenance, future evolution, infrastructure, support, product decisions and coming changes. That is why you shouldn’t build what an existing tool can solve correctly. Own software is justified when existing tools no longer suffice, not when they simply annoy.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>These options are not exclusive</h2>
+        <p>This point matters. A real solution can combine all three, and usually does.</p>
+        <p>A company uses a commercial CRM and an ERP. It can integrate both systems so they share clients and sales, automate certain tasks between them, like notices and state updates, and build a small own platform to manage a specific internal process neither tool covers well.</p>
+        <p>Thinking of “automate versus integrate versus build” as fully independent decisions can be too simplistic. Many operational architectures combine all three: standard tools sustain the generic, integrations move information and an own piece represents what is particular to the business.</p>
+        <p class="strong">The question is rarely which of the three. It is usually in which proportion each.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>A practical frame to decide</h2>
+        <p>Three questions help guide the decision. They are a conceptual guide, not an absolute rule, but they order the conversation well.</p>
+        <p>First: does the process work correctly and is there only a repetitive manual task? If yes, automating probably fits. The flow is healthy; there is a specific step consuming time without adding judgment.</p>
+        <p>Second: do tools work well, but information has to move manually between them? If yes, integrating probably fits. The problem isn’t in any tool but in the space between them.</p>
+        <p>Third: is the problem that current tools can’t correctly represent how the process works? If yes, building can start making sense. When business rules, states or exceptions no longer fit generic structures, forcing the tool costs more than creating something of your own.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>A second evaluation layer</h2>
+        <p>Before deciding, look at some problem dimensions. Frequency: a daily problem deserves a different solution than a task happening twice a month. People involved and operation volume, because they multiply each inefficiency. Manual work cost and error count and severity, because they define what is lost today.</p>
+        <p>Also client impact, process strategic importance and expected growth: if the problem scales with the company, solving it today is cheaper than in a year. And finally, solution maintenance complexity, because a simple automation nobody understands can end up costing more than the original problem.</p>
+        <p>A frequent, critical problem justifies larger investment. An occasional annoyance in a secondary process doesn’t. Solution intensity should match problem intensity.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>A complete example: from request to follow-up</h2>
+        <p>A company receives commercial requests. Today the flow is: clients complete a form, sales copies information to a CRM, admin reviews data, operations receives information by email, state is kept in a spreadsheet and the client receives updates manually.</p>
+        <p>Each part of the problem asks for a different answer. Automate: automatically create the client in the CRM when the form arrives and send state notifications without manual work. The process stays the same, but repetitive steps disappear.</p>
+        <p>Integrate: connect the CRM with the operations system to avoid reloading the same information. Sales and operations stop copying data to each other and work on shared information.</p>
+        <p>Build: if the process has very specific rules, multiple approvals, particular states and needs no existing tool can represent, it could make sense to create your own layer to manage that flow, supported by standard tools still doing their part.</p>
+        <p>One operation can need a combination of solutions. What matters is assigning each friction its right answer, instead of applying a single tool to everything.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>The mistake of automating too soon</h2>
+        <p>Before automating, simplify. If a process has ten steps and four are unnecessary, automating all ten isn’t a real improvement. It is making something that should be simpler more efficient.</p>
+        <p>Ask first: should this step exist? Is this information really needed? Who needs to participate? Does this approval add value? Why are we copying this data?</p>
+        <p class="strong">Removing a task is better than automating it when the task shouldn’t exist.</p>
+        <p>Each removed step is a step you don’t have to maintain, explain or fix when something changes. Automation pays more on simple, stable processes than on flows accumulated by habit.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>The opposite mistake: building too late</h2>
+        <p>The opposite problem also exists. Continuing to add automations and integrations can, at some point, generate too much complexity: dozens of connected automations, data synced in multiple directions, rules spread across platforms, dependencies nobody fully understands.</p>
+        <p>When something fails, nobody knows where. When a rule must change, five places must be touched. The set of one-off solutions becomes more fragile than the original problem.</p>
+        <p>At that point it can be simpler to centralize a given process inside your own solution, where rules live in one place. The decision should also consider accumulated complexity: sometimes building doesn’t add complexity, it orders it.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Decision frame</h2>
+        <p>As a summary of all the above:</p>
+        <ul class="checklist">
+          <li><b>Automate when:</b> the process already works, repetitive work exists, rules are clear and scope is small.</li>
+          <li><b>Integrate when:</b> tools work well, the problem is between them, information duplication exists and people act as bridge between systems.</li>
+          <li><b>Build when:</b> the process is particular, current tools limit operations, many rules, states or exceptions exist, and the process is important enough to justify its own solution.</li>
+        </ul>
+      </div>
+
+      <div data-reveal>
+        <h2>Technology is the last decision</h2>
+        <p>Automating improves tasks. Integrating connects systems. Building lets you represent own processes. No option is better by definition. The right solution is the one solving the operational problem with the least necessary complexity.</p>
+        <p>That is why a company shouldn’t start by asking which software it needs, but which part of its operation needs to work better. After understanding that, deciding whether to automate, integrate or build becomes much simpler.</p>
+        <p class="strong">First operations. Then the tool.</p>
+      </div>
+    </div>
+  </article>
+
+  <section class="cta" data-od-id="cta-articulo">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Next step</p>
+      <h2>Not sure what your operation needs?</h2>
+      <p>We can analyze the process with you and define whether it makes more sense to automate, integrate tools or build your own solution.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href={calendarUrl} target="_blank" rel="noopener" data-od-id="cta-primary">Analyze my operation →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  .hero { padding: 84px 0 40px; }
+  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
+  .meta { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .back { display: inline-block; margin-top: 22px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .article { padding: 24px 0 72px; }
+  .article p { margin: 18px 0; font-size: 17px; line-height: 1.75; color: var(--fg); max-width: 68ch; }
+  .article h2 { font-size: clamp(26px, 3vw, 36px); margin: 56px 0 8px; letter-spacing: -0.02em; line-height: 1.15; }
+  .article .strong { font-family: var(--disp); font-weight: 600; font-size: 22px; letter-spacing: -0.01em; margin: 32px 0; }
+  .checklist { margin: 24px 0; list-style: none; border-top: 1px solid var(--border); }
+  .checklist li { padding: 14px 0 14px 28px; border-bottom: 1px solid var(--border); position: relative; font-size: 16px; line-height: 1.6; }
+  .checklist li::before { content: '→'; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
+  .cta { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 0; margin-bottom: 88px; }
+  .cta h2 { font-size: clamp(30px, 4vw, 50px); margin: 18px 0; letter-spacing: -0.03em; line-height: 1.05; }
+  .cta p { color: var(--muted); font-size: 17px; max-width: 56ch; }
+  .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  @media (max-width: 720px) {
+    .wrap-narrow { padding: 0 20px; }
+    .hero { padding: 64px 0 32px; }
+    .article p { font-size: 16px; }
+    .cta { padding: 64px 0; margin-bottom: 64px; }
+  }
+</style>
