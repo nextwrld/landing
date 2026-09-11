@@ -15,10 +15,10 @@ const isEs = locale === 'es';
     <div class="fgrid">
       <div>
         <a class="logo" href={isEs ? '/' : '/en/'}>
-          <img src="/assets/brand/logo.svg" alt="" width="34" height="34" />
+          <img src="/assets/brand/logo.svg" alt="" width="34" height="34" loading="lazy" decoding="async" />
           Next Wrld<span>.</span>
         </a>
-        <p>
+        <p class="tagline">
           {
             isEs
               ? 'Software a medida para empresas que necesitan operar con más claridad y menos trabajo manual.'
@@ -28,9 +28,9 @@ const isEs = locale === 'es';
       </div>
       <div>
         <h5>{isEs ? 'SERVICIOS' : 'SERVICES'}</h5>
-        <a href={route('services', locale)}>{isEs ? 'Software a medida' : 'Custom software'}</a>
-        <a href={route('services', locale)}>{isEs ? 'Sistemas de gestión' : 'Management systems'}</a>
-        <a href={route('services', locale)}>{isEs ? 'Automatización' : 'Automation'}</a>
+        <a href={`${route('services', locale)}#software-a-medida`}>{isEs ? 'Software a medida' : 'Custom software'}</a>
+        <a href={`${route('services', locale)}#sistemas-de-gestion`}>{isEs ? 'Sistemas de gestión' : 'Management systems'}</a>
+        <a href={`${route('services', locale)}#automatizacion-e-integraciones`}>{isEs ? 'Automatización' : 'Automation'}</a>
       </div>
       <div>
         <h5>{isEs ? 'EMPRESA' : 'COMPANY'}</h5>
@@ -49,7 +49,7 @@ const isEs = locale === 'es';
           {isEs ? 'Diagnóstico operativo' : 'Operational diagnostic'}
         </a>
         <a
-          href="https://wa.me/5491173678601?text=Hola%2C%20llegu%C3%A9%20desde%20Next%20Wrld."
+          href="https://wa.me/5491173678601?text=Hola%2C%20llegu%C3%A9%20desde%20Next%20Wrld.%20Quiero%20conversar%20sobre%20un%20proceso%20de%20mi%20empresa%20que%20estamos%20buscando%20mejorar."
           target="_blank"
           rel="noopener"
         >
@@ -71,15 +71,83 @@ const isEs = locale === 'es';
   footer {
     border-top: 1px solid var(--border);
     padding: 56px 0 32px;
+    background: var(--bg);
+  }
+  .logo {
+    font-family: var(--disp);
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: -0.02em;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+  }
+  .logo span {
+    color: var(--accent);
+  }
+  .logo img {
+    display: block;
+    flex: none;
+  }
+  footer .logo {
+    font-size: 22px;
+  }
+  footer .logo img {
+    width: 34px;
+    height: 34px;
+  }
+  .tagline {
+    color: var(--muted);
+    font-size: 14.5px;
+    margin-top: 12px;
+    max-width: 32ch;
   }
   .fgrid {
     display: grid;
     grid-template-columns: 1.4fr 1fr 1fr 1fr;
     gap: 32px;
   }
+  .fgrid h5 {
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    margin-bottom: 14px;
+  }
+  .fgrid a {
+    display: block;
+    text-decoration: none;
+    font-size: 14.5px;
+    padding: 5px 0;
+    opacity: 0.92;
+  }
+  .fgrid a:hover {
+    opacity: 1;
+  }
+  .legal {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-top: 32px;
+    padding-top: 22px;
+    border-top: 1px solid var(--border);
+    font-size: 12.5px;
+    color: var(--ink-soft);
+    flex-wrap: wrap;
+  }
   @media (max-width: 960px) {
     .fgrid {
       grid-template-columns: 1fr 1fr;
+      gap: 28px 20px;
+    }
+    footer {
+      padding: 48px 0 28px;
+    }
+    .legal {
+      flex-direction: column;
+      gap: 8px;
+      margin-top: 28px;
     }
   }
 </style>

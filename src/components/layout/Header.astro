@@ -18,7 +18,7 @@ const chrome = getChrome(locale);
 <header data-od-id="site-header">
   <div class="hbar">
     <a class="logo" href={locale === 'es' ? '/' : '/en/'}>
-      <img src="/assets/brand/logo.svg" alt="" width="26" height="26" />
+      <img src="/assets/brand/logo.svg" alt="" width="32" height="32" fetchpriority="high" decoding="async" />
       Next Wrld<span>.</span>
     </a>
     <nav class="desk" aria-label={locale === 'es' ? 'Principal' : 'Primary'}>
@@ -96,6 +96,12 @@ const chrome = getChrome(locale);
   }
   .logo span {
     color: var(--accent);
+  }
+  .logo img {
+    width: 32px;
+    height: 32px;
+    display: block;
+    flex: none;
   }
   nav.desk {
     display: flex;
