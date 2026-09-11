@@ -24,15 +24,15 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
       <div data-reveal>
         <p>Son las ocho y media de un lunes. Hay que facturar lo del fin de semana, imputar dos cobros que entraron el viernes y responder a un cliente que jura que ya pagó. El sistema tarda en abrir, la pantalla de cuentas corrientes parece de otra época y para hacer una nota de crédito hay que recordar tres pasos que nadie anotó. Alguien lo dice en voz alta: "esto hay que tirarlo y hacerlo de nuevo".</p>
         <p>Y sin embargo, a las diez la facturación salió. Los saldos cierran. Cobranzas sabe a quién llamar primero. Es lento, pero sostiene la operación todos los días. Molesta lo suficiente para querer cambiarlo, funciona lo suficiente para que cambiarlo dé miedo.</p>
-        <p>La pregunta parece técnica. Es una pregunta sobre riesgo y continuidad. Lo que está en juego no es el programa, es el circuito venta, facturación, cobranza y deuda funcionando sin cortes mientras lo cambiamos.</p>
+        <p>La pregunta parece técnica. Es una pregunta sobre riesgo y continuidad. Lo que está en juego es el circuito venta, facturación, cobranza y deuda funcionando sin cortes mientras lo cambiamos.</p>
       </div>
 
       <div data-reveal>
         <h2>Lo que el sistema viejo sabe, aunque nadie lo escribió</h2>
-        <p>Un sistema de facturación y cuentas corrientes con años en producción acumuló algo más valioso que código: criterio operativo.</p>
+        <p>Un sistema de facturación y cuentas corrientes con años en producción acumuló criterio operativo, algo más valioso que el código.</p>
         <p>Sabe que a tal cliente se le factura a fin de mes aunque la entrega sea parcial. Que a otro hay que separarle la factura por sucursal porque si no la rechaza. Que ciertos comprobantes no salen hasta que el depósito confirma la mercadería.</p>
         <p>Nada de eso suele estar en un manual. Está en el sistema y en los rodeos que la gente inventó para que cierre. Cuando se propone reemplazarlo, se supone que esas reglas van a pasar solas al sistema nuevo. No pasan solas.</p>
-        <p>Reconstruir desde cero obliga a redescubrir ese conocimiento bajo presión. Y lo que no se redescubre, se pierde. El primer costo de reemplazar no es el desarrollo: es olvidar cómo trabaja la empresa. Si el sistema sostiene la operación, es porque contiene decisiones correctas que hay que rescatar antes de discutir tecnología.</p>
+        <p>Reconstruir desde cero obliga a redescubrir ese conocimiento bajo presión. Y lo que no se redescubre, se pierde. El primer costo de reemplazar es olvidar cómo trabaja la empresa. Si el sistema sostiene la operación, es porque contiene decisiones correctas que hay que rescatar antes de discutir tecnología.</p>
       </div>
 
       <div data-reveal>
@@ -62,7 +62,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <p>Tercero, orden en las excepciones: circuito claro para notas de crédito y débito, con quién las autoriza y cómo afectan el saldo. Muchas diferencias nacen acá, no en la factura original.</p>
         <p>Cuarto, recién entonces, emisión: validaciones previas, plantillas y controles, manteniendo la numeración y la lógica que ya funciona. Y por último, deuda por antigüedad para decidir a quién cobrar primero.</p>
         <p>Cada paso entrega algo usable y no interrumpe la facturación. Si un paso falla, se ajusta ese paso. Esa es la diferencia entre evolucionar y apostar.</p>
-        <p>Vale la filosofía de fondo: la menor complejidad necesaria para resolver correctamente el problema. Si con visibilidad e imputación ordenada la deuda se vuelve controlable, no hace falta reescribir la facturación ese mes.</p>
+        <p>La filosofía de fondo es la menor complejidad necesaria para resolver correctamente el problema. Si con visibilidad e imputación ordenada la deuda se vuelve controlable, no hace falta reescribir la facturación ese mes.</p>
       </div>
 
       <div data-reveal>
@@ -72,7 +72,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <p>Cuando los datos no son confiables en su origen: saldos reconstruidos a mano, comprobantes duplicados, numeración inconsistente. Una interfaz nueva solo mostraría el mismo desorden más rápido.</p>
         <p>Cuando las reglas son imposibles de extraer: intereses, bonificaciones o impuestos dependen de parches que nadie entiende. Si no se puede explicar cómo se llega a un saldo, tampoco se puede evolucionar con seguridad.</p>
         <p>Y cuando el costo de cambio es acotado porque el uso es bajo: un módulo lateral que casi no se usa o un circuito que puede pausarse unos días sin afectar la cobranza. Ahí el corte es manejable.</p>
-        <p>Nótese el criterio: no se reemplaza porque el sistema "quedó viejo" o "está feo". Se reemplaza porque impide operar con control o porque sostenerlo cuesta más que hacerlo de nuevo. La edad no es un argumento. La imposibilidad de evolucionar, sí.</p>
+        <p>No se reemplaza porque el sistema "quedó viejo" o "está feo". Se reemplaza porque impide operar con control o porque sostenerlo cuesta más que hacerlo de nuevo. La edad no es un argumento; la imposibilidad de evolucionar sí lo es.</p>
       </div>
 
       <div data-reveal>
@@ -89,7 +89,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
         <p>¿Qué parte del circuito sostiene hoy el control del dinero, aunque sea incómoda? Eso se conserva y se evoluciona, no se tira.</p>
         <p>¿Qué parte impide saber con precisión quién debe, cuánto y desde cuándo? Eso se ordena primero, porque sin información confiable ningún sistema nuevo va a funcionar.</p>
         <p>¿Y qué parte ya no admite cambios sin romper todo? Solo esa parte justifica una reconstrucción, y solo si el corte operativo es manejable.</p>
-        <p>Si la base todavía permite ordenar la información y mejorar por etapas, modernizar es el camino de menor riesgo. Si ya no sostiene el control ni la evolución, reemplazar pasa a ser una necesidad. Elegir bien no es elegir lo más nuevo. Es elegir lo que permite seguir facturando, cobrando y controlando la deuda mientras se mejora.</p>
+        <p>Si la base todavía permite ordenar la información y mejorar por etapas, modernizar es el camino de menor riesgo. Si ya no sostiene el control ni la evolución, reemplazar pasa a ser una necesidad. Elegir bien es elegir lo que permite seguir facturando, cobrando y controlando la deuda mientras se mejora.</p>
       </div>
     </div>
   </article>
