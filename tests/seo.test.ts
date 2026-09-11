@@ -53,4 +53,22 @@ describe('EN pages SEO', () => {
     assert.equal(titles.size, pages.length, 'titles must be unique');
     assert.equal(descriptions.size, pages.length, 'descriptions must be unique');
   });
+
+  it('case detail pages declare page-specific bilingual alternates', () => {
+    const layout = readFileSync(join(root, 'src/layouts/BaseLayout.astro'), 'utf8');
+    assert.ok(layout.includes('alternatePaths?.es'));
+    assert.ok(layout.includes('alternatePaths?.en'));
+
+    for (const detail of [
+      { slug: 'aion-wellness', es: 'src/pages/casos/aion-wellness.astro', en: 'src/pages/en/case-studies/aion-wellness.astro' },
+      { slug: 'jfhp', es: 'src/pages/casos/jfhp.astro', en: 'src/pages/en/case-studies/jfhp.astro' },
+      { slug: 'inmocrm', es: 'src/pages/casos/inmocrm.astro', en: 'src/pages/en/case-studies/inmocrm.astro' },
+    ]) {
+      for (const file of [detail.es, detail.en]) {
+        const content = readFileSync(join(root, file), 'utf8');
+        assert.ok(content.includes(`es: '/casos/${detail.slug}/'`));
+        assert.ok(content.includes(`en: '/en/case-studies/${detail.slug}/'`));
+      }
+    }
+  });
 });

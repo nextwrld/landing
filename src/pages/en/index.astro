@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import AionProductUI from '../../components/cases/AionProductUI.astro';
 import { route } from '../../i18n/routes';
 
 const calendarUrl = 'https://calendar.app.google/JQnkVUqK3FF5VSRU6';
@@ -74,6 +75,31 @@ const whatsappUrl =
     <a href={route('howWeWork', 'en')}>How we work</a>
   </section>
 
+  <section class="aion-feature" data-od-id="aion">
+    <div class="aion-copy">
+      <p class="eyebrow">Featured case · Next Wrld product</p>
+      <span>AION / WELLNESS</span>
+      <h2>A gym’s daily operation, connected.</h2>
+      <p class="lead">Members, memberships, payments, access and cash close share the same operational journey. AION brings them together in a product designed for the daily work of gyms.</p>
+      <p>The case follows the path from fragmented processes to a shared model, a front-desk experience and a technical foundation ready to evolve.</p>
+      <div class="cta-row"><a class="btn btn-p" href="/en/case-studies/aion-wellness/">Explore the AION case study</a><a class="btn btn-s" href="https://www.aionwellness.pro/" target="_blank" rel="noopener">Visit the product ↗</a></div>
+    </div>
+    <div class="aion-product"><AionProductUI locale="en" view="dashboard" compact /></div>
+  </section>
+
+  <section class="jfhp-feature" data-od-id="jfhp">
+    <div>
+      <p class="eyebrow">Platform modernization · Three-year evolution</p>
+      <span>JFHP / LIVE GLOBAL SYSTEM</span>
+      <h2>Changing the foundation without stopping operations.</h2>
+    </div>
+    <div>
+      <div class="jfhp-layers" aria-label="Abstract layered modernization visualization"><div><small>EXISTING BASE</small><b>PHP · Vue 2 · Cordova</b></div><span><i></i><i></i><i></i></span><div><small>MODERN DIRECTION</small><b>FastAPI · Vue 3 · Flutter</b></div></div>
+      <p class="lead">Backend, data, web and mobile evolved in layers for a multilingual platform with 14K+ registered accounts, organizational context and permission-sensitive workflows.</p>
+      <a href="/en/case-studies/jfhp/">Explore the JFHP case study →</a>
+    </div>
+  </section>
+
   <section data-od-id="casos">
     <p class="eyebrow">Case studies</p>
     <h2>We understand before we build, whatever the business.</h2>
@@ -97,3 +123,15 @@ const whatsappUrl =
     </div>
   </section>
 </BaseLayout>
+
+<style>
+  section { max-width: var(--max); margin: 0 auto; padding: 96px 32px; }
+  h1 { margin: 20px 0; font-size: clamp(40px, 5.4vw, 72px); }
+  h2 { margin: 16px 0; font-size: clamp(30px, 4vw, 52px); }
+  .cta-row { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 28px; }
+  .aion-feature { max-width: none; padding: 110px max(32px, calc((100vw - var(--max)) / 2 + 32px)) 0; background: var(--navy); color: #fff; overflow: hidden; }
+  .aion-copy { max-width: 790px; }.aion-feature .eyebrow { color: #9dbcfb; }.aion-feature .eyebrow::before { background: #9dbcfb; }.aion-feature .aion-copy > span { display: block; margin-top: 34px; color: #9dbcfb; font: 500 11px var(--mono); letter-spacing: .2em; }.aion-feature h2 { max-width: 17ch; font-size: clamp(38px, 4.8vw, 64px); }.aion-feature .lead,.aion-feature .aion-copy > p:last-of-type { color: #c9d4e8; }.aion-feature .aion-copy > p:last-of-type { max-width: 58ch; margin-top: 14px; }.aion-feature .btn-p { background: #fff; color: var(--accent); }.aion-feature .btn-s { color: #fff; border-color: rgba(255,255,255,.4); }.aion-product { margin-top: 56px; margin-bottom: -88px; padding-bottom: 130px; }
+  .jfhp-feature { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: end; padding-top: 110px; padding-bottom: 110px; background: var(--surface-blue); border-top: 1px solid var(--border); }.jfhp-feature > div:first-child > span { display: block; margin-top: 32px; color: var(--accent); font: 500 11px var(--mono); letter-spacing: .17em; }.jfhp-feature h2 { max-width: 16ch; }.jfhp-feature > div:last-child { padding-bottom: 8px; }.jfhp-feature a { display: inline-block; margin-top: 24px; color: var(--fg); font-weight: 600; text-decoration: none; border-bottom: 2px solid var(--accent); }
+  .jfhp-layers { display: grid; grid-template-columns: 1fr 78px 1fr; gap: 14px; align-items: center; margin-bottom: 25px; padding: 20px; border: 1px solid var(--border); border-radius: var(--r-md); background: #fff; }.jfhp-layers small,.jfhp-layers b { display: block; }.jfhp-layers small { color: var(--accent); font: 9px var(--mono); letter-spacing: .1em; }.jfhp-layers b { overflow-wrap: anywhere; margin-top: 6px; font: 500 12px var(--disp); }.jfhp-layers span { display: grid; gap: 5px; }.jfhp-layers i { height: 6px; border-radius: 6px; background: #b7c9ef; }.jfhp-layers i:nth-child(2) { background: #7297e9; }.jfhp-layers i:nth-child(3) { background: var(--accent); }
+  @media (max-width: 720px) { section { padding: 72px 24px; }.aion-feature { padding: 80px 14px 0; }.aion-copy { padding: 0 10px; }.aion-product { margin-top: 42px; padding-bottom: 96px; }.jfhp-feature { grid-template-columns: 1fr; gap: 24px; padding: 72px 24px; }.jfhp-layers { grid-template-columns: 1fr; }.jfhp-layers span { width: 78px; margin: auto; }.cta-row { flex-direction: column; }.cta-row .btn { width: 100%; } }
+</style>

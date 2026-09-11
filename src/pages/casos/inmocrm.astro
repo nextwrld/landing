@@ -1,0 +1,15 @@
+---
+import InmoCrmCaseStudy from '../../components/cases/InmoCrmCaseStudy.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  locale="es"
+  routeKey="cases"
+  canonicalPath="/casos/inmocrm/"
+  alternatePaths={{ es: '/casos/inmocrm/', en: '/en/case-studies/inmocrm/' }}
+  title="InmoCRM · Sistema operativo para inmobiliarias | Next Wrld"
+  description="Cómo diseñamos InmoCRM para conectar propiedades, leads, pipeline, visitas, actividad e IA con aprobación en la operación de inmobiliarias."
+>
+  <InmoCrmCaseStudy locale="es" />
+</BaseLayout>

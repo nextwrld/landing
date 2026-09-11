@@ -1,0 +1,157 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  locale="es"
+  routeKey="insights"
+  canonicalPath="/insights/automatizar-integrar-o-construir/"
+  title="Automatizar, integrar o construir: ¿cómo decidir? | Next Wrld"
+  description="No todo proceso manual necesita software nuevo. Una guía para distinguir cuándo conviene automatizar una tarea, conectar herramientas existentes o construir algo propio."
+>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Automatización e integraciones</p>
+      <h1>Automatizar, integrar o construir: ¿cómo decidir?</h1>
+      <p class="lead">No todo proceso manual necesita software nuevo. Muchas veces el problema se resuelve automatizando una tarea o conectando herramientas que ya existen. Este artículo ayuda a distinguir cada camino.</p>
+      <div class="meta"><span>8 min de lectura</span><span>Automatización · Operación</span></div>
+      <a class="back" href="/insights/">← Volver a Insights</a>
+    </div>
+  </section>
+
+  <article class="article" data-od-id="articulo">
+    <div class="wrap-narrow">
+      <div data-reveal>
+        <h2>Empezar por el problema, no por la solución</h2>
+        <p>En las empresas hay frases que aparecen rápido cuando algo incomoda. “Necesitamos una app.” “Necesitamos un sistema.” “Necesitamos automatizar esto.” Suelen decirse antes de entender completamente el proceso.</p>
+        <p>La primera pregunta debería ser otra: ¿qué está fallando o generando fricción actualmente? Tareas repetitivas que consumen horas. Información duplicada en varios lugares. Herramientas que no conversan entre sí. Errores frecuentes que hay que corregir. Falta de visibilidad sobre en qué estado está cada cosa. Coordinación manual por mensajes. Reglas del negocio difíciles de gestionar.</p>
+        <p>La solución debería aparecer después de entender esas fricciones, no antes. Automatizar, integrar y construir resuelven problemas distintos. Elegir entre ellas sin haber mirado el proceso es como elegir una herramienta sin saber qué hay que arreglar.</p>
+        <p class="strong">Primero entender qué fricción duele. Después decidir cómo resolverla.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Qué significa automatizar</h2>
+        <p>Automatizar consiste en eliminar o reducir una tarea manual dentro de un proceso que ya existe. El proceso no cambia de forma: simplemente uno de sus pasos deja de requerir intervención humana.</p>
+        <p>Los ejemplos son cotidianos. Enviar automáticamente una notificación cuando algo cambia de estado. Generar un documento a partir de datos ya cargados. Actualizar un estado cuando ocurre un evento. Mover información de un punto a otro. Crear un registro automáticamente. Ejecutar una validación. Generar un reporte periódico sin armarlo a mano.</p>
+        <p>La automatización suele ser adecuada cuando el proceso ya funciona razonablemente bien, existe una tarea claramente repetitiva, las reglas son relativamente estables, el problema está concentrado en uno o pocos pasos y no hace falta rediseñar todo el flujo.</p>
+        <p>Hay una advertencia importante. Automatizar un proceso malo no necesariamente lo mejora. A veces simplemente permite ejecutar un proceso ineficiente más rápido. Si el flujo tiene pasos innecesarios, aprobaciones que nadie revisa o datos que se copian sin motivo, automatizarlo solo acelera el desperdicio.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Qué significa integrar</h2>
+        <p>Integrar tiene sentido cuando el problema no está dentro de una herramienta, sino entre varias. Cada una puede funcionar correctamente por separado, pero las personas tienen que mover información entre ellas a mano.</p>
+        <p>Es una situación muy común. El CRM contiene a los clientes. El ERP contiene la facturación. Una planilla contiene las operaciones. WhatsApp se usa para el seguimiento. Ninguna de esas herramientas es mala. El problema es que no hablan entre sí, y el equipo actúa como puente: copia, reenvía, confirma, vuelve a cargar.</p>
+        <p>La integración busca que los sistemas intercambien información automáticamente. Sincronizar clientes entre el CRM y el ERP. Enviar una venta aprobada hacia operaciones sin recargarla. Actualizar el inventario cuando ocurre una compra. Conectar formularios con sistemas internos. Centralizar información que hoy vive repartida.</p>
+        <p>Integrar suele ser adecuado cuando las herramientas actuales funcionan bien, el problema principal es la transferencia manual de información, existen datos duplicados, distintas áreas trabajan sobre sistemas separados y no hay una única fuente confiable.</p>
+        <p class="strong">Si las herramientas actuales hacen bien su trabajo, reemplazarlas puede ser innecesario. A veces el verdadero problema es que no hablan entre ellas.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Qué significa construir</h2>
+        <p>Construir software propio implica crear una solución diseñada alrededor del proceso o modelo operativo de la empresa. No es la opción “más avanzada” ni la mejor por definición. Es simplemente otra herramienta disponible, con sus propios costos y sus propios casos de uso.</p>
+        <p>Construir empieza a tener sentido cuando el proceso es particular del negocio, existen reglas difíciles de representar en software genérico, las herramientas actuales obligan a demasiados atajos, el proceso tiene suficiente importancia estratégica, hay una necesidad fuerte de control sobre información, permisos, estados o flujo, la operación debe escalar significativamente o la empresa obtiene una ventaja real al tener ese sistema propio.</p>
+        <p>También conviene tener claros los costos adicionales: tiempo de desarrollo, mantenimiento, evolución futura, infraestructura, soporte, decisiones de producto y cambios que vendrán. Por eso no debería construirse algo que una herramienta existente puede resolver correctamente. El software propio se justifica cuando lo existente ya no alcanza, no cuando simplemente incomoda.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Estas opciones no son excluyentes</h2>
+        <p>Este punto es importante. Una solución real puede combinar las tres, y de hecho suele hacerlo.</p>
+        <p>Una empresa utiliza un CRM comercial y un ERP. Puede integrar ambos sistemas para que compartan clientes y ventas, automatizar determinadas tareas entre ellos, como avisos y actualizaciones de estado, y construir una pequeña plataforma propia para gestionar un proceso interno específico que ninguna de las dos herramientas cubre bien.</p>
+        <p>Pensar en “automatizar versus integrar versus construir” como decisiones completamente independientes puede ser demasiado simplista. Muchas arquitecturas operativas combinan las tres: las herramientas estándar sostienen lo genérico, las integraciones mueven la información y una pieza propia representa lo particular del negocio.</p>
+        <p class="strong">La pregunta rara vez es cuál de las tres. Suele ser en qué proporción cada una.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Un marco práctico para decidir</h2>
+        <p>Tres preguntas ayudan a orientar la decisión. Son una guía conceptual, no una regla absoluta, pero ordenan bien la conversación.</p>
+        <p>La primera: ¿el proceso funciona correctamente y solo existe una tarea manual repetitiva? Si la respuesta es sí, probablemente convenga automatizar. El flujo está sano; hay un paso puntual que consume tiempo sin aportar criterio.</p>
+        <p>La segunda: ¿las herramientas funcionan bien, pero la información tiene que moverse manualmente entre ellas? Si la respuesta es sí, probablemente convenga integrar. El problema no está en ninguna herramienta, sino en el espacio entre ellas.</p>
+        <p>La tercera: ¿el problema está en que las herramientas actuales no pueden representar correctamente cómo funciona el proceso? Si la respuesta es sí, puede empezar a tener sentido construir. Cuando las reglas, los estados o las excepciones del negocio ya no entran en estructuras genéricas, forzar la herramienta sale más caro que crear algo propio.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Una segunda capa de evaluación</h2>
+        <p>Antes de decidir conviene mirar algunas dimensiones del problema. La frecuencia: un problema diario merece una solución distinta a una tarea que ocurre dos veces al mes. La cantidad de personas involucradas y el volumen de operaciones, porque multiplican cada ineficiencia. El costo del trabajo manual y la cantidad y gravedad de los errores, porque definen lo que se pierde hoy.</p>
+        <p>También el impacto sobre los clientes, la importancia estratégica del proceso y el crecimiento esperado: si el problema escala con la empresa, resolverlo hoy es más barato que en un año. Y por último, la complejidad de mantener la solución, porque una automatización simple que nadie entiende puede terminar costando más que el problema original.</p>
+        <p>Un problema frecuente y crítico justifica una inversión mayor. Una molestia ocasional en un proceso secundario, no. La intensidad de la solución debería acompañar la intensidad del problema.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Un ejemplo completo: de la solicitud al seguimiento</h2>
+        <p>Una empresa recibe solicitudes comerciales. Hoy el flujo es así: los clientes completan un formulario, ventas copia la información a un CRM, administración revisa los datos, operaciones recibe la información por correo, el estado se mantiene en una planilla y el cliente recibe actualizaciones manualmente.</p>
+        <p>Cada parte del problema pide una respuesta distinta. Automatizar: crear automáticamente el cliente en el CRM cuando llega el formulario y enviar notificaciones de estado sin intervención manual. El proceso sigue igual, pero los pasos repetitivos desaparecen.</p>
+        <p>Integrar: conectar el CRM con el sistema de operaciones para no volver a cargar la misma información. Ventas y operaciones dejan de copiarse datos entre sí y trabajan sobre información compartida.</p>
+        <p>Construir: si el proceso tiene reglas muy específicas, múltiples aprobaciones, estados particulares y necesidades que ninguna herramienta existente puede representar, podría tener sentido crear una capa propia para gestionar ese flujo, apoyada en las herramientas estándar que siguen haciendo su parte.</p>
+        <p>Una misma operación puede necesitar una combinación de soluciones. Lo importante es asignar a cada fricción su respuesta adecuada, en lugar de aplicar una sola herramienta a todo.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>El error de automatizar demasiado pronto</h2>
+        <p>Antes de automatizar hay que simplificar. Si un proceso tiene diez pasos y cuatro son innecesarios, automatizar los diez no es una mejora real. Es volver más eficiente algo que debería ser más simple.</p>
+        <p>Conviene preguntar primero: ¿este paso debería existir? ¿Esta información realmente hace falta? ¿Quién necesita participar? ¿Esta aprobación aporta valor? ¿Por qué estamos copiando este dato?</p>
+        <p class="strong">Eliminar una tarea es mejor que automatizarla cuando la tarea no debería existir.</p>
+        <p>Cada paso que se elimina es un paso que no hay que mantener, explicar ni corregir cuando algo cambia. La automatización rinde más sobre procesos simples y estables que sobre flujos acumulados por costumbre.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>El error contrario: construir demasiado tarde</h2>
+        <p>También existe el problema opuesto. Continuar agregando automatizaciones e integraciones puede, en cierto punto, generar demasiada complejidad: decenas de automatizaciones conectadas, datos sincronizados en múltiples direcciones, reglas repartidas entre varias plataformas, dependencias que nadie entiende del todo.</p>
+        <p>Cuando algo falla, nadie sabe dónde. Cuando hay que cambiar una regla, hay que tocar cinco lugares. El conjunto de soluciones puntuales se vuelve más frágil que el problema original.</p>
+        <p>En ese punto puede ser más simple centralizar determinado proceso dentro de una solución propia, donde las reglas vivan en un solo lugar. La decisión debería considerar también la complejidad acumulada: a veces construir no agrega complejidad, la ordena.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Marco de decisión</h2>
+        <p>Como resumen de todo lo anterior:</p>
+        <ul class="checklist">
+          <li><b>Automatizar cuando:</b> el proceso ya funciona, existe trabajo repetitivo, las reglas son claras y el alcance es pequeño.</li>
+          <li><b>Integrar cuando:</b> las herramientas funcionan bien, el problema está entre ellas, existe duplicación de información y las personas actúan como puente entre sistemas.</li>
+          <li><b>Construir cuando:</b> el proceso es particular, las herramientas actuales limitan la operación, existen muchas reglas, estados o excepciones, y el proceso es suficientemente importante para justificar una solución propia.</li>
+        </ul>
+      </div>
+
+      <div data-reveal>
+        <h2>La tecnología es la última decisión</h2>
+        <p>Automatizar mejora tareas. Integrar conecta sistemas. Construir permite representar procesos propios. Ninguna opción es mejor por definición. La solución correcta es la que resuelve el problema operativo con la menor complejidad necesaria.</p>
+        <p>Por eso una empresa no debería comenzar preguntando qué software necesita, sino qué parte de su operación necesita funcionar mejor. Después de entender eso, decidir si conviene automatizar, integrar o construir se vuelve mucho más sencillo.</p>
+        <p class="strong">Primero la operación. Después la herramienta.</p>
+      </div>
+    </div>
+  </article>
+
+  <section class="cta" data-od-id="cta-articulo">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Siguiente paso</p>
+      <h2>¿No tienes claro qué necesita tu operación?</h2>
+      <p>Podemos analizar el proceso contigo y definir si tiene más sentido automatizar, integrar herramientas o construir una solución propia.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href="https://calendar.app.google/JQnkVUqK3FF5VSRU6" target="_blank" rel="noopener" data-od-id="cta-primary">Analizar mi operación →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  .hero { padding: 84px 0 40px; }
+  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
+  .meta { display: flex; gap: 16px; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .back { display: inline-block; margin-top: 22px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .article { padding: 24px 0 72px; }
+  .article p { margin: 18px 0; font-size: 17px; line-height: 1.75; color: var(--fg); max-width: 68ch; }
+  .article h2 { font-size: clamp(26px, 3vw, 36px); margin: 56px 0 8px; letter-spacing: -0.02em; line-height: 1.15; }
+  .article .strong { font-family: var(--disp); font-weight: 600; font-size: 22px; letter-spacing: -0.01em; margin: 32px 0; }
+  .checklist { margin: 24px 0; list-style: none; border-top: 1px solid var(--border); }
+  .checklist li { padding: 14px 0 14px 28px; border-bottom: 1px solid var(--border); position: relative; font-size: 16px; line-height: 1.6; }
+  .checklist li::before { content: '→'; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
+  .cta { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 0; margin-bottom: 88px; }
+  .cta h2 { font-size: clamp(30px, 4vw, 50px); margin: 18px 0; letter-spacing: -0.03em; line-height: 1.05; }
+  .cta p { color: var(--muted); font-size: 17px; max-width: 56ch; }
+  .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  @media (max-width: 720px) {
+    .hero { padding: 64px 0 32px; }
+    .article p { font-size: 16px; }
+    .cta { padding: 64px 0; margin-bottom: 64px; }
+  }
+</style>

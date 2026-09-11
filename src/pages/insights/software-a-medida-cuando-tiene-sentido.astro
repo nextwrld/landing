@@ -1,0 +1,164 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  locale="es"
+  routeKey="insights"
+  canonicalPath="/insights/software-a-medida-cuando-tiene-sentido/"
+  title="¿Cómo saber si tu empresa necesita software a medida? | Next Wrld"
+  description="No toda incomodidad con una herramienta justifica construir software propio. Estas señales ayudan a distinguir cuándo tiene sentido considerarlo y cuándo no."
+>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Software a medida</p>
+      <h1>¿Cómo saber si tu empresa necesita software a medida?</h1>
+      <p class="lead">La mayoría de los problemas operativos se resuelven sin construir nada nuevo. Este artículo ayuda a reconocer los casos donde desarrollar software propio empieza a tener sentido, y los casos donde no.</p>
+      <div class="meta"><span>8 min de lectura</span><span>Software a medida · Operación</span></div>
+      <a class="back" href="/insights/">← Volver a Insights</a>
+    </div>
+  </section>
+
+  <article class="article" data-od-id="articulo">
+    <div class="wrap-narrow">
+      <div data-reveal>
+        <h2>La mayoría de las empresas no debería construir software para todo</h2>
+        <p>Cuando una herramienta incomoda, la idea de construir algo propio aparece rápido. Un sistema hecho exactamente para nosotros, sin limitaciones ni adaptaciones forzadas. Suena razonable.</p>
+        <p>Pero la mayoría de las necesidades ya tienen una respuesta disponible. Un CRM ordena la relación con los clientes. Un ERP organiza facturación, stock y contabilidad. Las planillas resuelven cálculos puntuales. Las plataformas SaaS cubren soporte, marketing y recursos humanos. Y cuando dos herramientas no conversan, muchas veces una automatización o una integración simple alcanza para unirlas.</p>
+        <p>Construir para cada incomodidad sería caro y difícil de mantener. Cada sistema nuevo pide atención: corregirlo, actualizarlo, cuidarlo. Si el problema se resuelve configurando mejor lo que ya existe, ese es casi siempre el camino más sensato.</p>
+        <p class="strong">Crecer, o sentirse incómodo con una herramienta, no es por sí solo una razón para construir.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>La pregunta correcta no es “¿podemos construirlo?”</h2>
+        <p>Casi todo se puede construir. Con tiempo y presupuesto, cualquier flujo puede convertirse en un sistema. Esa no es la parte difícil.</p>
+        <p>La pregunta que importa es otra: ¿existe una razón de negocio suficiente para construirlo? Es decir, ¿hay un proceso lo bastante importante, particular y recurrente como para justificar una inversión propia, cuando ya existen herramientas probadas y mantenidas por otros?</p>
+        <p>A continuación, ocho señales que ayudan a responderla. Ninguna decide por sí sola. Pero cuando varias aparecen juntas, vale la pena prestar atención.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Señales de que puede tener sentido considerar software propio</h2>
+        <h3>1. La empresa adapta sus procesos a las limitaciones de la herramienta</h3>
+        <p>El equipo deja de trabajar como le resultaría natural y empieza a trabajar como la herramienta le permite. El proceso contempla tres tipos de aprobación, pero la herramienta solo admite una, así que se aprueba por mensaje y después se registra algo aproximado. La operación usa estados intermedios que no existen en el sistema, así que todos acuerdan códigos inventados en un campo de texto libre.</p>
+        <p>Al principio estos ajustes parecen menores. Con el tiempo se vuelven la forma oficial de trabajar, aunque nadie los haya decidido. Cuando la operación se adapta al software en lugar de que el software acompañe la operación, algo se invirtió.</p>
+      </div>
+
+      <div data-reveal>
+        <h3>2. Existen demasiados atajos y soluciones paralelas</h3>
+        <p>Una planilla adicional que completa lo que el sistema no registra. Un documento con las excepciones. Campos usados para algo distinto de lo que fueron diseñados, porque no hay otro lugar donde poner esa información. Cada atajo nace para resolver rápido un caso no contemplado, y por separado parecen inofensivos.</p>
+        <p>El problema es que se acumulan. Llega un punto donde ejecutar un proceso exige conocer cinco lugares: el sistema principal, dos planillas, un chat y un documento con aclaraciones.</p>
+        <p class="strong">Cuando el proceso real vive fuera del sistema, el sistema dejó de representar el proceso.</p>
+      </div>
+
+      <div data-reveal>
+        <h3>3. El mismo dato se mueve constantemente entre sistemas</h3>
+        <p>El cliente se carga en el CRM, se vuelve a cargar en facturación, se copia a una planilla de seguimiento y se reenvía por WhatsApp a quien coordina la entrega. Cada movimiento es una carga manual, una posibilidad de error y una versión más del mismo dato.</p>
+        <p>Usar varias herramientas es inevitable. El problema aparece cuando ese movimiento es constante y manual sobre datos centrales: clientes, pedidos, precios, stock, estados de avance. Además del tiempo, se pierde confianza: ¿cuál es el dato correcto, se actualizó en todos lados, quién cambió qué?</p>
+      </div>
+
+      <div data-reveal>
+        <h3>4. Las reglas del negocio son demasiado particulares</h3>
+        <p>Hay procesos que parecen simples desde afuera, pero tienen reglas propias acumuladas con los años: validaciones antes de aprobar una operación, cálculos con excepciones por tipo de cliente, permisos distintos según rol y monto, estados intermedios que solo tienen sentido en ese negocio.</p>
+        <p>Las herramientas genéricas cubren el caso común y permiten configurar hasta cierto punto. Pero cuando las reglas son muy específicas, la configuración empieza a forzar la herramienta, y el equipo sostiene esas reglas con trabajo manual y memoria. Si esas reglas sostienen la calidad, los márgenes o el cumplimiento, el sistema debería poder representarlas correctamente.</p>
+      </div>
+
+      <div data-reveal>
+        <h3>5. El proceso tiene suficiente importancia dentro del negocio</h3>
+        <p>No todo problema merece software propio, aunque sea molesto. Un registro interno que se consulta pocas veces o un reporte mensual toleran bien un atajo ocasional.</p>
+        <p>La vara cambia cuando el proceso toca ventas, operación, clientes, costos o capacidad de crecer: si un pedido se entrega a tiempo, si la facturación sale sin errores, si el equipo puede atender más demanda sin sumar la misma cantidad de personas.</p>
+        <p class="strong">La importancia del proceso convierte una molestia en una inversión justificable.</p>
+        <p>Un problema pequeño en un proceso central, repetido cientos de veces, pesa más que un problema grande en uno marginal. Por eso conviene preguntar dónde ocurre el problema antes de preguntar cómo resolverlo.</p>
+      </div>
+
+      <div data-reveal>
+        <h3>6. El volumen convierte pequeñas ineficiencias en problemas importantes</h3>
+        <p>Con veinte operaciones por mes, revisar cada caso a mano es viable y coordinar por mensajes funciona. Pero el volumen multiplica todo: lo que era un detalle con veinte operaciones se vuelve estructural con dos mil. Horas diarias de carga manual, demoras acumuladas, errores que antes eran excepcionales y ahora aparecen cada semana.</p>
+        <p>El proceso no cambió, cambió la cantidad. Cuando cada punto de crecimiento exige sumar coordinación manual en la misma proporción, el proceso dejó de escalar.</p>
+      </div>
+
+      <div data-reveal>
+        <h3>7. La empresa pierde visibilidad sobre lo que ocurre</h3>
+        <p>Hay una prueba simple: intentar responder preguntas básicas sin un trabajo previo. ¿En qué estado está cada operación? ¿Quién es responsable de cada caso? ¿Dónde se traban los casos? Si responder exige juntar información de varios lugares, limpiar duplicados y armar una tabla especial, la empresa no tiene visibilidad: tiene datos repartidos que alguien debe consolidar cada vez que hay que decidir.</p>
+        <p>Esa consolidación se paga dos veces. Consume tiempo antes de cada decisión y llega tarde: cuando el resumen está listo, la situación ya cambió.</p>
+      </div>
+
+      <div data-reveal>
+        <h3>8. El conocimiento está concentrado en determinadas personas</h3>
+        <p>Hay procesos que funcionan porque ciertas personas los conocen de memoria: qué casos son excepción, a quién avisar, qué campo no tocar, en qué orden hacer las cosas para que nada se rompa. Ese conocimiento es valioso, pero frágil. Cuando alguien se va de vacaciones, cambia de rol o deja la empresa, el proceso se resiente.</p>
+        <p>Un sistema bien pensado no reemplaza a las personas. Guarda las reglas de forma consistente para que el equipo no dependa de la memoria de unos pocos.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Cuándo conviene no construir software a medida</h2>
+        <p>Reconocer las señales anteriores no debería llevar automáticamente a construir. Hay situaciones donde desarrollar software propio es una mala decisión, aunque el problema sea real.</p>
+        <p>Cuando el problema todavía no está suficientemente entendido, construir solo congela la confusión en código. Si el equipo no puede describir cómo trabaja hoy, primero hay que entender, después decidir. Y cuando el proceso cambia todas las semanas, necesita estabilizarse antes de sistematizarse: sobre algo que se redefine constantemente, el sistema queda desactualizado antes de terminarse.</p>
+        <p>Tampoco conviene construir cuando una herramienta estándar cubre correctamente la necesidad. Si una solución existente resuelve bien el ochenta o noventa por ciento del problema, forzar un desarrollo para cubrir el resto rara vez compensa. Lo mismo vale cuando el problema ocurre pocas veces y tiene poco impacto: sistematizar una fricción ocasional es desproporcionado.</p>
+        <p>Hay dos casos que merecen honestidad. Si se quiere desarrollar software para evitar cambiar un proceso interno deficiente, el primer paso es simplificar el proceso, no digitalizarlo: un mal proceso sistematizado solo produce errores más rápido. Y si se intenta replicar por completo un producto SaaS maduro sin una razón estratégica clara, el resultado suele ser una versión más limitada y más cara de lo mismo.</p>
+        <p class="strong">No construir también es una decisión. Y muchas veces es la correcta.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Antes de construir hay varios niveles de solución</h2>
+        <p>El desarrollo a medida es el último escalón de una escalera, no el primero. El primer nivel es el proceso mismo: eliminar pasos innecesarios, aclarar responsabilidades. Muchos problemas que parecen de software son en realidad de proceso.</p>
+        <p>Después viene configurar mejor las herramientas actuales, que suelen tener funciones sin usar o automatizaciones que nadie activó. Luego automatizar tareas puntuales, integrar herramientas para que compartan información sin carga manual, e incorporar una plataforma nueva cuando ninguna de las actuales cubre la necesidad.</p>
+        <p>Solo cuando esos niveles no alcanzan, porque el proceso es demasiado particular, central y recurrente, empieza a tener sentido construir algo propio. La solución correcta puede estar en cualquiera de esos escalones. Saltarlos por apuro suele salir caro.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Cómo evaluar la decisión desde el negocio</h2>
+        <p>No existe una fórmula matemática para decidir. Pero hay preguntas que ayudan a pensar con criterio. Cuánto tiempo consume hoy el problema, cuántas personas involucra, cuánto retrabajo genera y qué sucede cuando ocurre un error: no pesa igual un error que se corrige en minutos que uno que retrasa una entrega o afecta a un cliente.</p>
+        <p>También importa la trayectoria: si el problema crece junto con la empresa, resolverlo hoy es más barato que en un año. Y la particularidad: si el proceso diferencia realmente al negocio, una herramienta genérica difícilmente lo acompañe; si en cambio una solución existente cubre el ochenta o noventa por ciento, conviene preguntarse si el resto justifica un desarrollo.</p>
+        <p>La última pregunta es la del valor: qué cambiaría si el problema estuviera resuelto, en tiempo liberado, errores evitados, decisiones más rápidas o capacidad de atender más demanda. Esa respuesta, comparada con el costo de construir y mantener, es el marco real de la decisión.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>Un ejemplo cotidiano: cuando el CRM deja de alcanzar</h2>
+        <p>Una empresa gestiona sus operaciones con un CRM estándar. Al principio funciona bien: los clientes están registrados, las oportunidades avanzan por etapas, el equipo sabe en qué está cada caso.</p>
+        <p>Con el crecimiento aparecen procesos propios: distintos tipos de clientes con condiciones diferentes, reglas comerciales antes de aprobar operaciones, coordinación con el área operativa, documentos generados a mano, información en planillas paralelas, seguimiento por WhatsApp. El equipo responde con ingenio: campos personalizados, planillas de apoyo, procesos paralelos para lo que el sistema no contempla.</p>
+        <p>Con el volumen, los parches pesan. El mismo dato se carga en tres lugares. Nadie sabe el estado real sin preguntar por chat. Las validaciones dependen de que alguien recuerde aplicarlas. El conocimiento está repartido entre el CRM, las planillas y la memoria de algunas personas.</p>
+        <p>El problema no es que el CRM sea malo. Es que el proceso evolucionó más allá de lo que esa herramienta fue diseñada para representar. El negocio desarrolló una forma propia de operar, y esa forma ya no entra en una estructura genérica.</p>
+        <p>Las salidas posibles son varias: integrar el CRM con otras herramientas, automatizar documentos y avisos, cambiar de plataforma o desarrollar una capa propia para esas reglas particulares. Ninguna es correcta por definición. La decisión debería surgir después de entender el proceso: qué parte es genérica y puede seguir en herramientas estándar, y qué parte es lo bastante propia, central y recurrente como para justificar algo a medida.</p>
+      </div>
+
+      <div data-reveal>
+        <h2>La decisión empieza por el problema</h2>
+        <p>Construir software a medida tiene sentido cuando existe una necesidad operativa suficientemente importante, particular y recurrente, que las herramientas existentes ya no pueden resolver de manera razonable.</p>
+        <p class="strong">La decisión no debería empezar preguntando qué tecnología construir. Debería empezar entendiendo qué problema merece ser resuelto.</p>
+      </div>
+    </div>
+  </article>
+
+  <section class="cta" data-od-id="cta-articulo">
+    <div class="wrap-narrow" data-reveal>
+      <p class="eyebrow">Siguiente paso</p>
+      <h2>¿Tus herramientas ya no acompañan cómo trabaja tu empresa?</h2>
+      <p>Podemos analizar tu operación y ayudarte a identificar si necesitas automatizar, integrar herramientas o construir algo propio.</p>
+      <div class="cta-row">
+        <a class="btn btn-p" href="https://calendar.app.google/JQnkVUqK3FF5VSRU6" target="_blank" rel="noopener" data-od-id="cta-primary">Analizar mi operación →</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .wrap-narrow { max-width: 880px; margin: 0 auto; padding: 0 32px; }
+  .hero { padding: 84px 0 40px; }
+  h1 { font-size: clamp(36px, 5vw, 62px); margin: 22px 0 20px; line-height: 1.05; letter-spacing: -0.03em; }
+  .meta { display: flex; gap: 16px; margin-top: 20px; font-family: var(--mono); font-size: 12px; color: var(--muted); }
+  .back { display: inline-block; margin-top: 22px; font-weight: 600; font-size: 14.5px; text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
+  .article { padding: 24px 0 72px; }
+  .article p { margin: 18px 0; font-size: 17px; line-height: 1.75; color: var(--fg); max-width: 68ch; }
+  .article h2 { font-size: clamp(26px, 3vw, 36px); margin: 56px 0 8px; letter-spacing: -0.02em; line-height: 1.15; }
+  .article h3 { font-size: 21px; margin: 36px 0 4px; letter-spacing: -0.01em; line-height: 1.3; }
+  .article .strong { font-family: var(--disp); font-weight: 600; font-size: 22px; letter-spacing: -0.01em; margin: 32px 0; }
+  .cta { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 88px 0; margin-bottom: 88px; }
+  .cta h2 { font-size: clamp(30px, 4vw, 50px); margin: 18px 0; letter-spacing: -0.03em; line-height: 1.05; }
+  .cta p { color: var(--muted); font-size: 17px; max-width: 56ch; }
+  .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
+  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
+  @media (max-width: 720px) {
+    .hero { padding: 64px 0 32px; }
+    .article p { font-size: 16px; }
+    .cta { padding: 64px 0; margin-bottom: 64px; }
+  }
+</style>

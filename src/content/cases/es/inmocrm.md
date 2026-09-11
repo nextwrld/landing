@@ -2,8 +2,8 @@
 translationKey: inmocrm
 locale: es
 title: InmoCRM
-summary: Primera versión de un producto para gestión inmobiliaria, validada como MVP.
+summary: Plataforma PropTech diseñada y construida por Next Wrld para centralizar la operación inmobiliaria.
 client: InmoCRM
 ---
 
-De entender un proceso inmobiliario a diseñar una primera versión del producto.
+De operaciones inmobiliarias fragmentadas a un sistema conectado.

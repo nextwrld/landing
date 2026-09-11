@@ -13,6 +13,7 @@ interface Props {
   routeKey: RouteKey;
   canonicalPath: string;
   ogType?: string;
+  alternatePaths?: Partial<Record<Locale, string>>;
 }
 
 const {
@@ -21,16 +22,16 @@ const {
   description,
   routeKey,
   canonicalPath,
-  ogType = 'website'
+  ogType = 'website',
+  alternatePaths
 } = Astro.props;
 
 const site = Astro.site?.toString().replace(/\/$/, '') ?? 'https://nextwrld.com';
 const canonical = `${site}${canonicalPath}`;
-const esPath = route(routeKey, 'es');
-const enPath = route(routeKey, 'en');
+const esPath = alternatePaths?.es ?? route(routeKey, 'es');
+const enPath = alternatePaths?.en ?? route(routeKey, 'en');
 const alternateLocale: Locale = locale === 'es' ? 'en' : 'es';
 const alternatePath = alternateLocale === 'es' ? esPath : enPath;
-const alternateUrl = `${site}${alternatePath}`;
 ---
 
 <!doctype html>

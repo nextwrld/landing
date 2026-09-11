@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import AionProductUI from '../components/cases/AionProductUI.astro';
 ---
 
 <BaseLayout
@@ -91,7 +92,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class="ba-mid">→</div>
       <div class="ba-col ba-after"><h4>DESPUÉS · PROCESOS CONECTADOS</h4><ul><li>Procesos definidos</li><li>Información centralizada</li><li>Sistemas conectados</li><li>Automatización</li><li>Datos disponibles</li></ul></div>
     </div>
-    <p class="bridge-close">Empezamos entendiendo qué necesita cambiar.</p>
   </div></div></div>
 
   <!-- CAPABILITIES -->
@@ -113,7 +113,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="process" id="proceso" data-od-id="proceso">
     <div class="wrap">
       <div data-reveal><p class="eyebrow">Cómo trabajamos</p>
-      <h2 style="margin:18px 0;max-width:22ch">De entender el problema a construir algo que realmente funciona.</h2>
+      <h2 style="margin:18px 0;max-width:22ch">De entender el problema a construir algo que funciona en uso real.</h2>
       <p class="lead">No empezamos construyendo funcionalidades. Primero entendemos el problema y después decidimos qué vale la pena resolver.</p>
         <p class="t-hint">Explorá cada etapa</p></div>
       <div class="tline" data-reveal>
@@ -127,7 +127,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </div>
         <div class="pane" id="pane">
           <div><div class="pk" id="pk">01 / DISCOVER</div><blockquote id="pq">¿Qué está pasando?</blockquote><p id="pc">Entendemos cómo trabaja hoy tu equipo, qué quiere conseguir el negocio, qué está generando trabajo innecesario y qué depende de trabajo manual.</p></div>
-          <div class="res"><b id="plabel">OUTPUT 01</b><span id="pr">Problema y contexto claros.</span></div>
+          <div class="res"><b id="plabel">Resultado 01</b><span id="pr">Problema y contexto claros.</span></div>
         </div>
         <div class="m-steps" id="mSteps"></div>
         <p class="pnote">El proceso puede adaptarse al tamaño y complejidad de cada proyecto. No todos necesitan empezar desde cero.</p>
@@ -140,35 +140,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   <section class="aion on-dark" id="casos" data-od-id="aion">
     <div class="wrap aion-grid">
       <div data-reveal>
-        <p class="eyebrow">A product by Next Wrld</p>
-        <h2 style="margin:16px 0 6px">AION Wellness</h2>
-        <p class="serif" style="font-size:24px;color:#fff">Diseñamos un sistema alrededor de cómo opera un negocio fitness.</p>
-        <p class="lead" style="margin-top:16px">Membresías, planes, pagos, clientes y cierres de caja forman parte del mismo día a día, pero suelen administrarse desde procesos y herramientas diferentes.</p>
-        <p class="lead" style="margin-top:12px;color:#fff">Con AION centralizamos esos flujos dentro de una plataforma diseñada para la gestión diaria de centros deportivos y fitness.</p>
-        <div class="evchips"><span>membresías</span><span>pagos</span><span>socios</span><span>cierre de caja</span></div>
-        <p class="ownline">AION es un producto propio de Next Wrld. Trabajar sobre productos propios nos obliga a enfrentar las mismas decisiones que nuestros clientes: qué construir, qué dejar fuera, cómo validar una idea y cómo evolucionarla después del lanzamiento. <a href="/casos/">Conocer nuestros productos →</a></p>
-        <div class="cta-row"><a class="btn btn-a" href="https://www.aionwellness.pro/" target="_blank" rel="noopener" data-od-id="aion-primary">Ver AION Wellness</a><a class="btn btn-s" href="/casos/#aion">Leer caso de estudio</a></div>
+        <p class="eyebrow">Caso destacado · Producto propio</p>
+        <span class="aion-mark">AION / WELLNESS</span>
+        <h2>La operación diaria de un gimnasio, conectada.</h2>
+        <p class="lead">Socios, membresías, pagos, accesos y caja comparten el mismo recorrido operativo. AION los reúne en un producto diseñado para el trabajo diario de centros deportivos.</p>
+        <p class="ownline">El caso recorre cómo pasamos de procesos fragmentados a un modelo común, una experiencia de recepción y una base técnica preparada para evolucionar.</p>
+        <div class="cta-row"><a class="btn btn-a" href="/casos/aion-wellness/" data-od-id="aion-primary">Explorar el caso AION</a><a class="btn btn-s" href="https://www.aionwellness.pro/" target="_blank" rel="noopener">Visitar el producto ↗</a></div>
       </div>
-      <div class="mock" data-reveal data-od-id="aion-ui" aria-label="Vista del producto AION">
-        <div class="mock-bar"><i></i><i></i><i></i><span style="margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--muted)">AION · PANEL OPERATIVO</span></div>
-        <div class="mock-body">
-          <div class="mock-side"><div class="on">▦ Panel</div><div>◉ Socios</div><div>▤ Membresías</div><div>◎ Pagos</div><div>▦ Cierre de caja</div><div>◌ Reportes</div></div>
-          <div class="mock-main">
-            <div class="mtools"><span class="msearch">Buscar socio, plan o pago…</span><span class="mdot"></span></div>
-            <div class="kpis"><div><small>SOCIOS</small><b>Base unificada</b></div><div><small>MEMBRESÍAS</small><b>Planes y vencimientos</b></div><div><small>PAGOS</small><b>Cobros registrados</b></div></div>
-            <div class="table">
-              <div class="th"><span>SOCIO</span><span>PLAN</span><span>ESTADO</span><span>PAGO</span></div>
-              <div><span>Socio · Mensual</span><span>Plan Total</span><span><span class="pillok">al día</span></span><span>Registrado</span></div>
-              <div><span>Socia · Trimestral</span><span>Plan Sala</span><span><span class="pillok">al día</span></span><span>Registrado</span></div>
-              <div><span>Socio · Anual</span><span>Plan Full</span><span><span class="pillok">por vencer</span></span><span>Pendiente</span></div>
-              <div><span>Socia · Mensual</span><span>Plan Clases</span><span><span class="pillok">al día</span></span><span>Registrado</span></div>
-              <div><span>Socio · Anual</span><span>Plan Full</span><span><span class="pillok">al día</span></span><span>Registrado</span></div>
-            </div>
-            <div class="cash"><div><small>CIERRE DE CAJA · TURNO ACTUAL</small><b>Movimientos y conciliación en un lugar</b></div><span class="pillok">al día</span></div>
-            <p style="font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:12px">MEMBRESÍAS · PLANES · PAGOS · CIERRE — UNA MISMA OPERACIÓN</p>
-          </div>
-        </div>
-      </div>
+      <div class="aion-product" data-reveal data-od-id="aion-ui"><AionProductUI locale="es" view="dashboard" compact /></div>
     </div>
   </section>
 
@@ -177,8 +156,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     <div class="wrap">
       <div data-reveal><p class="eyebrow">Trabajo real</p><h2 style="margin:18px 0;max-width:24ch">Entendemos antes de construir, sin importar el tipo de negocio.</h2></div>
       <div class="cases" data-reveal>
-        <div class="case"><span class="who">JFHP · PLATAFORMA</span><h3>De procesos administrativos distribuidos a una plataforma centralizada.</h3><p>Sistema para gestionar operaciones, reporting, equipos, inventario, formación y diferentes niveles de acceso dentro de una organización real.</p><a href="/casos/#jfhp">Ver caso →</a></div>
-        <div class="case"><span class="who">INMOCRM · PROPTECH MVP</span><h3>De investigación operativa a un producto PropTech diseñado alrededor del proceso inmobiliario.</h3><p>Investigación, definición de producto y construcción de una primera versión funcional enfocada en centralizar procesos inmobiliarios.</p><p class="note">Primera versión funcional desarrollada; aún no implementada en una operación real.</p><a href="/casos/#inmocrm">Ver caso →</a></div>
+        <div class="case"><span class="who">JFHP · MODERNIZACIÓN DE PLATAFORMA</span><h3>Tres años evolucionando un sistema global sin detener la operación.</h3><p>Backend, datos, web y móvil modernizados por capas para una plataforma con 14K+ cuentas, múltiples idiomas, permisos y contextos regionales.</p><a href="/casos/jfhp/">Explorar el caso JFHP →</a></div>
+        <div class="case"><span class="who">INMOCRM · PROPTECH PRODUCT</span><h3>De operaciones fragmentadas a un sistema inmobiliario conectado.</h3><p>Plataforma PropTech diseñada y construida por Next Wrld para centralizar propiedades, leads, visitas, tareas y actividad comercial.</p><a href="/casos/inmocrm">Ver caso →</a></div>
         <div class="case"><span class="who">AUTOMATIZACIONES</span><h3>Tareas repetitivas convertidas en procesos automáticos.</h3><p>Conectamos herramientas y hacemos automáticas las tareas repetitivas para reducir movimientos manuales de información.</p><a href="/servicios/#automatizacion-e-integraciones">Explorar automatizaciones →</a></div>
       </div>
     </div>
@@ -388,7 +367,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   .aion-grid { display: block; }
   .aion .wrap { max-width: 1420px; }
   .aion-grid > div:first-child { max-width: 780px; }
-  .aion-grid .mock { margin-top: 56px; margin-bottom: -110px; position: relative; z-index: 2; }
+  .aion-mark { display: block; margin-top: 36px; color: #9dbcfb; font: 500 11px var(--mono); letter-spacing: .2em; }
+  .aion h2 { margin: 14px 0 18px; max-width: 18ch; font-size: clamp(36px, 4.8vw, 64px); }
+  .aion-product { margin-top: 58px; margin-bottom: -110px; position: relative; z-index: 2; }
   .aion .mock { border-top: 3px solid var(--accent); }
   .mock { background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); overflow: hidden; box-shadow: 0 80px 140px -30px rgba(39, 88, 217, 0.5), 0 30px 60px -30px rgba(4, 10, 30, 0.55); }
   .mock-bar { display: flex; gap: 7px; padding: 14px 18px; border-bottom: 1px solid var(--border); background: #f7f8fa; }
@@ -468,7 +449,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   @media (max-width: 960px) {
     section { padding: 72px 0; }
     .hero-grid, .aion-grid, .diag-grid { grid-template-columns: 1fr; }
-    .aion-grid .mock { margin: 48px 0 0; }
+    .aion-product { margin: 48px 0 0; }
     section[data-od-id='casos-mas'] { padding-top: 110px !important; padding-bottom: 60px !important; }
     .aion { padding-bottom: 110px; }
     .prow { grid-template-columns: 44px 1fr; row-gap: 6px; }
@@ -524,7 +505,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   if (mSteps) {
     var mHtml = '';
     data.forEach(function (d, i) {
-      mHtml += '<div class="m-step"><div class="pk">0' + (i + 1) + ' / ' + stageNames[i] + '</div><blockquote>' + d.q + '</blockquote><p>' + d.c + '</p><div class="m-out">OUTPUT 0' + (i + 1) + '<span>' + d.r + '</span></div></div>';
+      mHtml += '<div class="m-step"><div class="pk">0' + (i + 1) + ' / ' + stageNames[i] + '</div><blockquote>' + d.q + '</blockquote><p>' + d.c + '</p><div class="m-out">Resultado 0' + (i + 1) + '<span>' + d.r + '</span></div></div>';
     });
     mSteps.innerHTML = mHtml;
   }
@@ -541,7 +522,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         document.getElementById('pc').textContent = data[i].c;
         document.getElementById('pr').textContent = data[i].r;
         document.getElementById('pk').textContent = '0' + (i + 1) + ' / ' + stageNames[i];
-        document.getElementById('plabel').textContent = 'OUTPUT 0' + (i + 1);
+        document.getElementById('plabel').textContent = 'Resultado 0' + (i + 1);
         paneEl.style.opacity = 1;
       }, 160);
     });

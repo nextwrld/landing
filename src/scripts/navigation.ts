@@ -3,8 +3,12 @@ function initNavigation(): void {
   const menu = document.getElementById('mmenu');
   if (!burger || !menu) return;
 
+  burger.setAttribute('aria-expanded', 'false');
+  burger.setAttribute('aria-controls', 'mmenu');
+
   burger.addEventListener('click', () => {
-    menu.classList.toggle('open');
+    const open = menu.classList.toggle('open');
+    burger.setAttribute('aria-expanded', String(open));
   });
 
   menu.querySelectorAll('a').forEach((link) => {
