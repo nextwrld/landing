@@ -10,36 +10,34 @@ import AionProductUI from '../components/cases/AionProductUI.astro';
   title="Software a medida para empresas | Next Wrld"
   description="Diseñamos software a medida para empresas que necesitan reducir procesos manuales, conectar herramientas y operar con más control."
 >
-  <!-- HERO -->
+  <!-- 01 HERO -->
   <section class="hero" data-od-id="hero">
     <div class="wrap hero-grid">
-      <div data-reveal class="in">
+      <div data-reveal>
         <p class="eyebrow">Software para operaciones que están creciendo</p>
         <h1>Tu empresa no debería crecer multiplicando trabajo manual.</h1>
-        <p class="hero-sub lead">Diseñamos software para empresas que necesitan centralizar procesos, conectar herramientas y automatizar el trabajo que hoy depende de planillas, mensajes y tareas manuales.</p>
-        <p class="hero-line">Menos administración y más control sobre tu operación.</p>
+        <p class="lead hero-sub">Diseñamos software para centralizar procesos, conectar herramientas y automatizar el trabajo que hoy depende de planillas, mensajes y tareas manuales.</p>
         <div class="cta-row">
-          <a class="btn btn-p" href="https://calendar.app.google/JQnkVUqK3FF5VSRU6" target="_blank" rel="noopener" data-od-id="hero-primary">Analizar mi operación</a>
-          <a class="btn btn-s" href="/casos/" data-od-id="hero-secondary">Ver casos</a>
+          <a class="btn btn-p" href="/diagnostico/" data-od-id="hero-primary">Analizar mi operación</a>
+          <a class="btn btn-s" href="/como-trabajamos/" data-od-id="hero-secondary">Cómo trabajamos</a>
         </div>
         <p class="micro">Diagnóstico gratuito · 30–45 minutos</p>
       </div>
-      <div class="sys" data-reveal data-od-id="hero-system" aria-label="De herramientas dispersas a operación conectada">
+      <div class="sys" data-reveal aria-label="De herramientas dispersas a operación conectada">
         <div class="sys-head"><span>HERRAMIENTAS DISPERSAS</span><span class="dotlive"><span class="pulse"></span>EN VIVO</span></div>
         <div class="frag">
           <div class="chip"><i><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2.5" width="12" height="11" rx="1.5"/><path d="M2 6h12M2 9.5h12M7 2.5v11"/></svg></i><div>Excel<small>Planillas críticas</small></div></div>
           <div class="chip"><i><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5a5.5 5.5 0 0 0-5.5 5.5c0 1.2.4 2.4 1.1 3.3l-.7 2.2 2.3-.7A5.5 5.5 0 1 0 8 2.5z"/></svg></i><div>Chats<small>Pedidos y decisiones</small></div></div>
           <div class="chip"><i><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="12" height="10" rx="1.5"/><circle cx="6" cy="7" r="1.6"/><path d="M3.8 10.8c.4-1.1 1.2-1.7 2.2-1.7s1.8.6 2.2 1.7M10 6.3h2.5M10 8.8h2.5"/></svg></i><div>CRM<small>Datos de clientes</small></div></div>
           <div class="chip"><i><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3.5" width="12" height="9" rx="1.5"/><path d="M2.5 4.8 8 9l5.5-4.2"/></svg></i><div>Email<small>Seguimiento manual</small></div></div>
-          <div class="chip wide"><i><svg viewBox="0 0 16 16" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="8" cy="5" r="2.2"/><path d="M3.5 13.5c.6-2.3 2.4-3.5 4.5-3.5s3.9 1.2 4.5 3.5"/></svg></i><div>Personas<small>Dependencia de personas</small></div></div>
         </div>
         <svg class="links" viewBox="0 0 400 64" aria-hidden="true">
-          <path id="lp" d="M60,4 C60,44 200,44 200,52 M200,4 C200,40 200,44 200,52 M340,4 C340,44 200,44 200,52" fill="none" stroke="#2758D9" stroke-width="1.6" stroke-dasharray="300" stroke-dashoffset="300">
+          <path d="M60,4 C60,44 200,44 200,52 M200,4 C200,40 200,44 200,52 M340,4 C340,44 200,44 200,52" fill="none" stroke="#2758D9" stroke-width="1.6" stroke-dasharray="300" stroke-dashoffset="300">
             <animate attributeName="stroke-dashoffset" from="300" to="0" dur="2.2s" fill="freeze" begin="0.4s"/>
           </path>
           <circle cx="200" cy="54" r="4" fill="#111318"/>
         </svg>
-        <div class="core"><div><span>NEXT WRLD · SISTEMA</span><b>Tu operación, centralizada</b></div><div style="font-family:var(--mono);font-size:11px;background:#DCE6FF;color:#2758D9;padding:8px 12px;border-radius:8px">CONECTADO ✓</div></div>
+        <div class="core"><div><span>NEXT WRLD · SISTEMA</span><b>Tu operación, centralizada</b></div><div class="core-ok">CONECTADO ✓</div></div>
         <div class="out">
           <div>Procesos<span>definidos</span></div><div>Datos<span>disponibles</span></div><div>Equipo<span>coordinado</span></div>
         </div>
@@ -47,518 +45,359 @@ import AionProductUI from '../components/cases/AionProductUI.astro';
     </div>
   </section>
 
-  <!-- PROBLEM -->
-  <section data-od-id="problema" style="padding-top:40px">
+  <!-- 02 PROBLEMA + TRANSFORMACIÓN -->
+  <section data-od-id="problema" class="prob">
     <div class="wrap">
-      <div class="prob-head" data-reveal>
+      <div data-reveal class="prob-head">
         <p class="eyebrow">Cuando la operación se queda atrás</p>
         <h2>Tu empresa puede haber crecido más rápido que su forma de operar.</h2>
-        <p class="lead">Lo que funcionaba con diez clientes, un equipo pequeño o pocas operaciones puede convertirse en una limitación cuando el negocio crece.</p>
-        <p class="lead" style="margin-top:12px;max-width:68ch">El día a día de tu empresa incluye gestionar clientes, información, pagos, tareas, inventario, reportes y decisiones.</p>
+        <p class="lead">Lo que funcionaba con diez clientes o pocas operaciones puede convertirse en una limitación cuando el negocio crece.</p>
       </div>
-      <div class="plist" data-reveal>
-        <div class="prow"><span class="n">01</span><h3>Excel se convirtió en el sistema</h3><p>Información crítica vive en hojas cada vez más complejas, difíciles de mantener y dependientes de quien las creó.</p><span class="tag">PLANILLAS</span></div>
-        <div class="prow"><span class="n">02</span><h3>WhatsApp forma parte del proceso</h3><p>Pedidos, decisiones e información importante quedan repartidos entre chats y personas.</p><span class="tag">CHATS</span></div>
-        <div class="prow"><span class="n">03</span><h3>Las herramientas no están conectadas</h3><p>El equipo copia información de un sistema a otro para mantener la operación funcionando.</p><span class="tag">SISTEMAS</span></div>
-        <div class="prow"><span class="n">04</span><h3>Demasiadas tareas repetitivas</h3><p>Procesos administrativos consumen horas cada semana aunque sigan siempre las mismas reglas.</p><span class="tag">TIEMPO</span></div>
-        <div class="prow"><span class="n">05</span><h3>Hay personas que no pueden faltar</h3><p>Parte de la operación depende de conocimiento que existe únicamente en la cabeza de alguien.</p><span class="tag">RIESGO</span></div>
-        <div class="prow"><span class="n">06</span><h3>Obtener información cuesta demasiado</h3><p>Una respuesta simple requiere buscar, consolidar y validar datos desde diferentes lugares.</p><span class="tag">DATOS</span></div>
+
+      <div class="pgrid" data-reveal>
+        <div class="pcard"><svg class="pc-ic" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="7" y="7" width="18" height="18" rx="2"/><path d="M7 12h18M7 17h18M12 7v18"/></svg><span class="pc-num">01</span><h3>Planillas que se volvieron sistemas</h3><p>Información crítica depende de archivos cada vez más difíciles de mantener y de quien los creó.</p></div>
+        <div class="pcard"><svg class="pc-ic" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M16 6a9 9 0 0 0-9 9c0 2 .6 3.9 1.8 5.4l-1.1 3.6 3.7-1.1A9 9 0 1 0 16 6z"/></svg><span class="pc-num">02</span><h3>Procesos que viven en WhatsApp</h3><p>Decisiones e información importante quedan repartidas entre chats y personas, sin trazabilidad.</p></div>
+        <div class="pcard"><svg class="pc-ic" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="11" y="11" width="10" height="10" rx="2"/><circle cx="16" cy="6" r="2"/><circle cx="16" cy="26" r="2"/><circle cx="6" cy="16" r="2"/><circle cx="26" cy="16" r="2"/><path d="M16 8v3M16 21v3M8 16H11M21 16h3"/></svg><span class="pc-num">03</span><h3>Herramientas desconectadas</h3><p>El equipo mueve información manualmente entre sistemas para mantener la operación funcionando.</p></div>
+        <div class="pcard"><svg class="pc-ic" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="16" cy="11" r="3.5"/><path d="M7 24c1-3.5 4-5.5 9-5.5s8 2 9 5.5"/></svg><span class="pc-num">04</span><h3>Personas que no pueden faltar</h3><p>Parte de la operación depende de conocimiento que todavía no está dentro de un sistema o proceso.</p></div>
       </div>
+
+      <p class="prob-bridge" data-reveal>Más crecimiento no debería significar más administración.</p>
+
+      <div class="transform" data-reveal>
+        <div class="tr-row"><span>Manual</span><i>→</i><b>Automatizado</b></div>
+        <div class="tr-row"><span>Disperso</span><i>→</i><b>Centralizado</b></div>
+        <div class="tr-row"><span>Desconectado</span><i>→</i><b>Integrado</b></div>
+        <div class="tr-row"><span>Dependiente</span><i>→</i><b>Repetible</b></div>
+      </div>
+      <p class="transform-close" data-reveal>La tecnología debe reducir complejidad, no agregar otra herramienta que administrar.</p>
     </div>
   </section>
 
-  <!-- COST -->
-  <section class="dark on-dark" data-od-id="costo">
-    <div class="wrap">
-      <div data-reveal><p class="eyebrow">El costo de seguir igual</p>
-      <h2 style="margin:18px 0;max-width:20ch">Cada vez cuesta más mantener todo funcionando.</h2></div>
-      <div class="cost-flow" data-reveal>
-        <div class="cf-row"><span>Más clientes</span><i>→</i><em>más administración.</em></div>
-        <div class="cf-row"><span>Más personas</span><i>→</i><em>más coordinación.</em></div>
-        <div class="cf-row"><span>Más herramientas</span><i>→</i><em>más información dispersa.</em></div>
-        <div class="cf-row"><span>Más volumen</span><i>→</i><em>más posibilidades de error.</em></div>
-      </div>
-      <p class="cost-close" data-reveal>El crecimiento empieza a aumentar la complejidad <em>más rápido que la capacidad de gestionarla.</em></p>
-    </div>
-  </section>
-
-  <!-- BETTER WAY -->
-  <div class="bridge"><div class="wrap"><div class="bridge-inner" data-reveal data-od-id="mejor-forma">
-    <p class="eyebrow">Una forma mejor de operar</p>
-    <h2 style="margin:18px 0;max-width:20ch">Crecer no debería significar hacer más trabajo manual.</h2>
-    <p class="lead" style="max-width:68ch">Cuando tu empresa crece, las herramientas que antes funcionaban pueden empezar a quedarse cortas. No siempre necesitas reemplazarlas: a veces basta con conectar lo que ya utilizas, automatizar tareas o construir una solución para un proceso específico.</p>
-    <div class="ba">
-      <div class="ba-col ba-before"><h4>ANTES · TRABAJO MANUAL</h4><ul><li>Procesos manuales</li><li>Información dispersa</li><li>Herramientas aisladas</li><li>Dependencia de personas</li><li>Reporting manual</li></ul></div>
-      <div class="ba-mid">→</div>
-      <div class="ba-col ba-after"><h4>DESPUÉS · PROCESOS CONECTADOS</h4><ul><li>Procesos definidos</li><li>Información centralizada</li><li>Sistemas conectados</li><li>Automatización</li><li>Datos disponibles</li></ul></div>
-    </div>
-  </div></div></div>
-
-  <!-- CAPABILITIES -->
+  <!-- 03 QUÉ RESOLVEMOS -->
   <section id="capacidades" data-od-id="capacidades">
     <div class="wrap">
-      <div data-reveal><p class="eyebrow">Qué podemos construir</p>
-      <h2 style="margin:18px 0">Tecnología diseñada alrededor de cómo trabaja tu empresa.</h2>
-      <p class="lead" style="max-width:70ch">A veces necesitas mejorar un proceso. Otras, conectar las herramientas que ya usas. Y otras, construir un sistema completo. La solución depende del problema.</p></div>
-      <div class="cap-grid" data-reveal>
-        <div class="cap" id="software-a-medida"><svg class="dg" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="10" y="30" width="28" height="9" rx="2"/><rect x="10" y="19" width="28" height="9" rx="2"/><rect x="10" y="8" width="28" height="9" rx="2"/></svg><span class="num">01 / SOFTWARE</span><h3>Software a medida</h3><p>Creamos software cuando las herramientas existentes ya no se adaptan bien a cómo trabaja tu empresa.</p><ul><li>plataformas internas</li><li>portales</li><li>backoffices</li></ul><a href="/servicios/#software-a-medida">Explorar software a medida →</a></div>
-        <div class="cap" id="sistemas-de-gestion"><svg class="dg" viewBox="0 0 48 48" fill="none" stroke-width="2" aria-hidden="true"><g stroke="#C2D1EB"><path d="M24 18V8M24 40v-10M18 24H8M40 24H30"/></g><rect x="18" y="18" width="12" height="12" rx="2" stroke="currentColor"/><circle cx="24" cy="6" r="2.5" stroke="currentColor"/><circle cx="24" cy="42" r="2.5" stroke="currentColor"/><circle cx="6" cy="24" r="2.5" stroke="currentColor"/><circle cx="42" cy="24" r="2.5" stroke="currentColor"/></svg><span class="num">02 / GESTIÓN</span><h3>Sistemas de gestión</h3><p>Centralizamos procesos, información y reportes para que puedas gestionar procesos e información desde un solo lugar.</p><ul><li>operaciones</li><li>clientes</li><li>inventario</li><li>reportes</li></ul><a href="/servicios/#sistemas-de-gestion">Explorar sistemas de gestión →</a></div>
-        <div class="cap" id="automatizacion-e-integraciones"><svg class="dg" viewBox="0 0 48 48" fill="none" stroke-width="2" aria-hidden="true"><circle cx="9" cy="24" r="4" stroke="#C2D1EB"/><circle cx="39" cy="24" r="4" stroke="currentColor"/><path d="M15 24h18m0 0-4-4m4 4-4 4" stroke="currentColor"/></svg><span class="num">03 / AUTOMATIZACIÓN</span><h3>Automatización e integraciones</h3><p>Conectamos las herramientas que ya utilizas y hacemos automáticas las tareas repetitivas que hoy realiza tu equipo.</p><ul><li>sincronización</li><li>workflows</li><li>integraciones</li></ul><a href="/servicios/#automatizacion-e-integraciones">Explorar automatización →</a></div>
+      <div data-reveal>
+        <p class="eyebrow">Qué resolvemos</p>
+        <h2>Tecnología diseñada alrededor de cómo trabaja tu empresa.</h2>
+        <p class="lead" style="max-width:70ch">A veces necesitas mejorar un proceso. Otras, conectar lo que ya usas. Y otras, construir un sistema completo. La solución depende del problema.</p>
       </div>
-      <div class="ai-strip" data-reveal><span style="font-size:20px">✦</span><p><b>Usamos IA solo cuando puede mejorar una tarea concreta:</b> analizar información, clasificar datos, encontrar respuestas o asistir a tu equipo.</p></div>
+      <div class="cap-grid" data-reveal>
+        <div class="cap">
+          <svg class="cap-ic" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="10" y="30" width="28" height="9" rx="2"/><rect x="10" y="19" width="28" height="9" rx="2"/><rect x="10" y="8" width="28" height="9" rx="2"/></svg>
+          <span class="num">01 / SOFTWARE</span><h3>Software a medida</h3>
+          <p>Sistemas construidos alrededor de procesos que una herramienta genérica no resuelve bien.</p>
+          <a href="/servicios/#software-a-medida">Explorar software a medida →</a>
+        </div>
+        <div class="cap">
+          <svg class="cap-ic" viewBox="0 0 48 48" fill="none" stroke-width="1.8" aria-hidden="true"><g stroke="#C2D1EB"><path d="M24 18V8M24 40v-10M18 24H8M40 24H30"/></g><rect x="18" y="18" width="12" height="12" rx="2" stroke="currentColor"/><circle cx="24" cy="6" r="2.5" stroke="currentColor"/><circle cx="24" cy="42" r="2.5" stroke="currentColor"/><circle cx="6" cy="24" r="2.5" stroke="currentColor"/><circle cx="42" cy="24" r="2.5" stroke="currentColor"/></svg>
+          <span class="num">02 / GESTIÓN</span><h3>Sistemas de gestión</h3>
+          <p>Centralizamos información y procesos para que la operación pueda gestionarse desde un lugar más claro.</p>
+          <a href="/servicios/#sistemas-de-gestion">Explorar sistemas de gestión →</a>
+        </div>
+        <div class="cap">
+          <svg class="cap-ic" viewBox="0 0 48 48" fill="none" stroke-width="1.8" aria-hidden="true"><circle cx="9" cy="24" r="4" stroke="#C2D1EB"/><circle cx="39" cy="24" r="4" stroke="currentColor"/><path d="M15 24h18m0 0-4-4m4 4-4 4" stroke="currentColor"/></svg>
+          <span class="num">03 / AUTOMATIZACIÓN</span><h3>Automatización e integraciones</h3>
+          <p>Conectamos herramientas y eliminamos tareas que no necesitan intervención manual constante.</p>
+          <a href="/servicios/#automatizacion-e-integraciones">Explorar automatización →</a>
+        </div>
+      </div>
+      <p class="ai-note" data-reveal>La IA forma parte de la solución cuando mejora una tarea concreta, no como argumento de venta por sí solo.</p>
     </div>
   </section>
 
-  <!-- PROCESS -->
+  <!-- 04 CÓMO TRABAJAMOS — línea de tiempo -->
   <section class="process" id="proceso" data-od-id="proceso">
     <div class="wrap">
-      <div data-reveal><p class="eyebrow">Cómo trabajamos</p>
-      <h2 style="margin:18px 0;max-width:22ch">De entender el problema a construir algo que funciona en uso real.</h2>
-      <p class="lead">No empezamos construyendo funcionalidades. Primero entendemos el problema y después decidimos qué vale la pena resolver.</p>
-        <p class="t-hint">Explorá cada etapa</p></div>
+      <div data-reveal>
+        <p class="eyebrow">Cómo trabajamos</p>
+        <h2 style="max-width:22ch">De entender el problema a construir algo que funciona en uso real.</h2>
+        <p class="lead" style="max-width:62ch;margin-top:14px">No empezamos construyendo. Primero entendemos el problema y después decidimos qué vale la pena resolver. Cada etapa tiene un propósito claro y se adapta al tamaño de tu proyecto.</p>
+        <p class="t-hint">Explora cada etapa</p>
+      </div>
       <div class="tline" data-reveal>
         <div class="tbar"><div class="tprog" id="tprog"></div></div>
         <div class="tnodes" id="tnodes">
-          <button class="tnode active" data-i="0"><span class="pt"></span><span class="pn">01 · DISCOVER</span><span class="pq">¿Qué está pasando?</span></button>
-          <button class="tnode" data-i="1"><span class="pt"></span><span class="pn">02 · SHAPE</span><span class="pq">¿Qué vale la pena?</span></button>
-          <button class="tnode" data-i="2"><span class="pt"></span><span class="pn">03 · BUILD</span><span class="pq">Convertimos la dirección en producto.</span></button>
-          <button class="tnode" data-i="3"><span class="pt"></span><span class="pn">04 · LAUNCH</span><span class="pq">El software convive con el negocio.</span></button>
-          <button class="tnode" data-i="4"><span class="pt"></span><span class="pn">05 · EVOLVE</span><span class="pq">Crece con tu operación.</span></button>
+          <button class="tnode active" data-i="0"><span class="pt"></span><span class="pn">01 · DISCOVER</span><span class="pq">Cómo funciona hoy.</span></button>
+          <button class="tnode" data-i="1"><span class="pt"></span><span class="pn">02 · SHAPE</span><span class="pq">Qué vale la pena resolver.</span></button>
+          <button class="tnode" data-i="2"><span class="pt"></span><span class="pn">03 · BUILD</span><span class="pq">Convertir la dirección en producto.</span></button>
+          <button class="tnode" data-i="3"><span class="pt"></span><span class="pn">04 · LAUNCH</span><span class="pq">Llevarlo a la operación real.</span></button>
+          <button class="tnode" data-i="4"><span class="pt"></span><span class="pn">05 · EVOLVE</span><span class="pq">Adaptarlo a medida que el negocio cambia.</span></button>
         </div>
         <div class="pane" id="pane">
-          <div><div class="pk" id="pk">01 / DISCOVER</div><blockquote id="pq">¿Qué está pasando?</blockquote><p id="pc">Entendemos cómo trabaja hoy tu equipo, qué quiere conseguir el negocio, qué está generando trabajo innecesario y qué depende de trabajo manual.</p></div>
+          <div><div class="pk" id="pk">01 / DISCOVER — Entender</div><blockquote id="pq">Cómo funciona hoy.</blockquote><p id="pc">Conversamos con tu equipo, mapeamos el flujo real, las herramientas que usan y dónde el trabajo manual genera fricción, demoras o dependencia.</p></div>
           <div class="res"><b id="plabel">Resultado 01</b><span id="pr">Problema y contexto claros.</span></div>
         </div>
-        <div class="m-steps" id="mSteps"></div>
-        <p class="pnote">El proceso puede adaptarse al tamaño y complejidad de cada proyecto. No todos necesitan empezar desde cero.</p>
-        <a class="t-next" href="https://calendar.app.google/JQnkVUqK3FF5VSRU6" target="_blank" rel="noopener" data-od-id="proceso-diagnostico">¿Empezamos por un problema concreto? Agendar diagnóstico →</a>
+        <div class="m-steps" id="mSteps">
+          <div class="m-step"><div class="pk">01 / DISCOVER — Entender</div><blockquote>Cómo funciona hoy.</blockquote><p>Conversamos con tu equipo, mapeamos el flujo real, las herramientas que usan y dónde el trabajo manual genera fricción, demoras o dependencia.</p><div class="m-out">Resultado 01<span>Problema y contexto claros.</span></div></div>
+          <div class="m-step"><div class="pk">02 / SHAPE — Decidir</div><blockquote>Qué vale la pena resolver.</blockquote><p>Transformamos lo aprendido en prioridades, alcance y roadmap inicial. Elegimos qué simplificar, conectar o construir.</p><div class="m-out">Resultado 02<span>Dirección y prioridades definidas.</span></div></div>
+          <div class="m-step"><div class="pk">03 / BUILD — Construir</div><blockquote>Convertir la dirección en producto.</blockquote><p>Diseñamos y desarrollamos el sistema, sus integraciones y automatizaciones por iteraciones, validando con uso real.</p><div class="m-out">Resultado 03<span>Software listo para entrar en operación.</span></div></div>
+          <div class="m-step"><div class="pk">04 / LAUNCH — Integrar</div><blockquote>Llevarlo a la operación real.</blockquote><p>Conectamos datos y herramientas, migramos información y acompañamos al equipo para que el sistema conviva con el negocio.</p><div class="m-out">Resultado 04<span>Sistema en uso.</span></div></div>
+          <div class="m-step"><div class="pk">05 / EVOLVE — Mejorar</div><blockquote>Adaptarlo a medida que el negocio cambia.</blockquote><p>Medimos, aprendemos y evolucionamos el sistema a medida que entran más usuarios, procesos y necesidades.</p><div class="m-out">Resultado 05<span>Producto que crece con vos.</span></div></div>
+        </div>
+        <p class="pnote">El proceso se adapta al tamaño y complejidad de cada proyecto. No todos necesitan empezar desde cero.</p>
+        <a class="t-next" href="/como-trabajamos/" data-od-id="proceso-cta">Conocer nuestro proceso →</a>
       </div>
     </div>
   </section>
 
-  <!-- AION -->
+  <!-- 05 TRABAJO REAL — AION -->
   <section class="aion on-dark" id="casos" data-od-id="aion">
-    <div class="wrap aion-grid">
+    <div class="wrap">
       <div data-reveal>
-        <p class="eyebrow">Caso destacado · Producto propio</p>
-        <span class="aion-mark">AION / WELLNESS</span>
-        <h2>La operación diaria de un gimnasio, conectada.</h2>
-        <p class="lead">Socios, membresías, pagos, accesos y caja comparten el mismo recorrido operativo. AION los reúne en un producto diseñado para el trabajo diario de centros deportivos.</p>
-        <p class="ownline">El caso recorre cómo pasamos de procesos fragmentados a un modelo común, una experiencia de recepción y una base técnica preparada para evolucionar.</p>
-        <div class="cta-row"><a class="btn btn-a" href="/casos/aion-wellness/" data-od-id="aion-primary">Explorar el caso AION</a><a class="btn btn-s" href="https://www.aionwellness.pro/" target="_blank" rel="noopener">Visitar el producto ↗</a></div>
+        <p class="eyebrow">Caso destacado</p>
+        <span class="aion-mark">A PRODUCT BY NEXT WRLD</span>
+        <h2>Un producto diseñado alrededor de la operación diaria de negocios fitness.</h2>
+        <p class="lead">AION centraliza membresías, planes, pagos, socios y cierres de caja dentro de una plataforma creada para simplificar la gestión de centros deportivos y fitness.</p>
+        <div class="cta-row"><a class="btn btn-a" href="/casos/aion-wellness/" data-od-id="aion-primary">Explorar el caso AION</a><a class="btn btn-s btn-s--dark" href="https://www.aionwellness.pro/" target="_blank" rel="noopener">Visitar el producto ↗</a></div>
       </div>
-      <div class="aion-product" data-reveal data-od-id="aion-ui"><AionProductUI locale="es" view="dashboard" compact /></div>
+      <div class="aion-product" data-reveal><AionProductUI locale="es" view="dashboard" compact /></div>
     </div>
   </section>
 
-  <!-- MORE EVIDENCE -->
-  <section id="casos-mas" data-od-id="casos-mas" style="padding-top:184px;padding-bottom:56px">
+  <!-- 05b JFHP + InmoCRM -->
+  <section id="casos-mas" data-od-id="casos-mas">
     <div class="wrap">
-      <div data-reveal><p class="eyebrow">Trabajo real</p><h2 style="margin:18px 0;max-width:24ch">Entendemos antes de construir, sin importar el tipo de negocio.</h2></div>
+      <div data-reveal><p class="eyebrow">Trabajo real</p><h2 style="max-width:22ch">Entendemos antes de construir, sin importar el tipo de negocio.</h2></div>
       <div class="cases" data-reveal>
-        <div class="case"><span class="who">JFHP · MODERNIZACIÓN DE PLATAFORMA</span><h3>Tres años evolucionando un sistema global sin detener la operación.</h3><p>Backend, datos, web y móvil modernizados por capas para una plataforma con 14K+ cuentas, múltiples idiomas, permisos y contextos regionales.</p><a href="/casos/jfhp/">Explorar el caso JFHP →</a></div>
-        <div class="case"><span class="who">INMOCRM · PROPTECH PRODUCT</span><h3>De operaciones fragmentadas a un sistema inmobiliario conectado.</h3><p>Plataforma PropTech diseñada y construida por Next Wrld para centralizar propiedades, leads, visitas, tareas y actividad comercial.</p><a href="/casos/inmocrm">Ver caso →</a></div>
-        <div class="case"><span class="who">AUTOMATIZACIONES</span><h3>Tareas repetitivas convertidas en procesos automáticos.</h3><p>Conectamos herramientas y hacemos automáticas las tareas repetitivas para reducir movimientos manuales de información.</p><a href="/servicios/#automatizacion-e-integraciones">Explorar automatizaciones →</a></div>
+        <div class="case">
+          <svg class="case-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M8 12h8M12 8v8"/></svg><span class="who">JFHP · PLATAFORMA CENTRALIZADA</span>
+          <h3>De procesos administrativos distribuidos a una plataforma centralizada.</h3>
+          <p>Evolución de una plataforma real utilizada por miles de cuentas, con reporting, permisos, inventario, formación y distintos contextos regionales.</p>
+          <a href="/casos/jfhp/">Explorar el caso JFHP →</a>
+        </div>
+        <div class="case">
+          <svg class="case-ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 13l8-7 8 7v7a1 1 0 0 1-1 1h-3V14H8v7H5a1 1 0 0 1-1-1z"/></svg><span class="who">INMOCRM · PROPTECH</span>
+          <h3>De investigación operativa a un MVP PropTech.</h3>
+          <p>Investigación, definición de producto y construcción de un MVP enfocado en centralizar procesos del negocio inmobiliario.</p>
+          <a href="/casos/inmocrm/">Ver caso →</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY -->
-  <section id="nosotros" data-od-id="por-que" style="padding-top:70px;padding-bottom:70px">
+  <!-- 06 DIAGNÓSTICO -->
+  <section id="diagnostico" data-od-id="diagnostico" class="diag-sec">
     <div class="wrap">
-      <div data-reveal><p class="eyebrow">Por qué Next Wrld</p><h2 style="margin:18px 0;max-width:24ch">Empezamos por lo que necesita conseguir el negocio.</h2></div>
-      <div class="why-grid" data-reveal>
-        <div class="why"><h3>Criterio antes que código</h3><p>Decidir qué no construir es parte del trabajo.</p></div>
-        <div class="why"><h3>Negocio + tecnología</h3><p>Conectamos objetivos operativos con decisiones de producto, diseño e ingeniería.</p></div>
-        <div class="why"><h3>Calidad más allá de que “funcione”</h3><p>Producto, experiencia, arquitectura y operación se resuelven juntas.</p></div>
-        <div class="why"><h3>Pensado para evolucionar</h3><p>Construimos considerando qué ocurrirá cuando entren más usuarios, procesos y necesidades.</p></div>
+      <div data-reveal>
+        <p class="eyebrow">Diagnóstico operativo</p>
+        <h2>Antes de decidir qué construir, entendamos qué está frenando tu operación.</h2>
+        <p class="lead" style="max-width:70ch">Revisamos un proceso concreto de tu operación para identificar fricciones y oportunidades de mejora.</p>
       </div>
-      <p class="anti" data-reveal>No somos una fábrica de features.</p>
-    </div>
-  </section>
-
-  <!-- DIAGNOSIS -->
-  <section id="diagnostico" data-od-id="diagnostico">
-    <div class="wrap">
-      <div data-reveal><p class="eyebrow">Diagnóstico operativo</p><h2 style="margin:18px 0;max-width:24ch">Antes de decidir qué construir, entendamos qué está frenando tu operación.</h2>
-      <p class="lead" style="max-width:70ch">En una conversación de 30–45 minutos revisamos un proceso concreto de tu empresa, identificamos qué está generando trabajo innecesario, demoras o dependencia, y evaluamos qué oportunidades podrían resolverse con software, automatización o integraciones.</p></div>
       <div class="diag-grid">
         <div data-reveal>
           <div class="facts">
-            <div><b>30–45 min</b><span>Conversación con Next Wrld.</span></div>
-            <div><b>Sin costo</b><span>El diagnóstico inicial es gratuito.</span></div>
-            <div><b>Enfocado</b><span>No es una demo de servicios.</span></div>
+            <div><b>30–45 minutos</b><span>Gratuito</span></div>
+            <div><b>Sin obligación</b><span>de contratar</span></div>
+            <div><b>Enfocado</b><span>en un proceso concreto</span></div>
           </div>
-          <div class="diag-cta">
-            <a class="btn btn-p" href="https://calendar.app.google/JQnkVUqK3FF5VSRU6" target="_blank" rel="noopener" data-od-id="diag-primary">Agendar diagnóstico operativo</a>
-            <a class="btn btn-s" href="https://wa.me/5491173678601?text=Hola%2C%20llegu%C3%A9%20desde%20Next%20Wrld.%20Quiero%20conversar%20sobre%20un%20proceso%20de%20mi%20empresa%20que%20estamos%20buscando%20mejorar." target="_blank" rel="noopener" data-od-id="diag-whatsapp">Hablar por WhatsApp</a>
-          </div>
-          <p class="micro">Sin obligación de contratar un proyecto. · Primero: nombre, empresa, email y qué parte de tu operación quieres mejorar. Después: eliges horario.</p>
+          <a class="btn btn-p" href="/diagnostico/" data-od-id="diag-primary" style="margin-top:28px">Analizar mi operación</a>
+          <p class="micro">Diagnóstico gratuito · 30–45 minutos · Sin obligación de contratar</p>
         </div>
-        <div class="doc" data-reveal data-od-id="diagnostico-entregable">
-          <div class="doc-head"><b>Diagnóstico · entregable</b><span>PDF · 2 PÁG.</span></div>
+        <div class="doc" data-reveal>
+          <div class="doc-head"><b>Diagnóstico · entregable</b><span>PDF · 3–5 PÁG.</span></div>
           <ol>
             <li><span class="dn">01</span><div><b>Situación actual</b><p>Cómo funciona hoy el proceso.</p></div></li>
-            <li><span class="dn">02</span><div><b>Problemas y trabas</b><p>Qué está generando trabajo innecesario, demoras o dependencia.</p></div></li>
+            <li><span class="dn">02</span><div><b>Fricciones</b><p>Qué genera trabajo innecesario o demoras.</p></div></li>
             <li><span class="dn">03</span><div><b>Impacto</b><p>Cómo afecta al negocio.</p></div></li>
-            <li><span class="dn">04</span><div><b>Oportunidades</b><p>Qué podría simplificarse, conectarse o automatizarse.</p></div></li>
-            <li><span class="dn">05</span><div><b>Prioridades</b><p>Qué convendría abordar primero.</p></div></li>
+            <li><span class="dn">04</span><div><b>Oportunidades</b><p>Qué podría simplificarse o automatizarse.</p></div></li>
+            <li><span class="dn">05</span><div><b>Prioridades</b><p>Qué conviene abordar primero.</p></div></li>
             <li><span class="dn">06</span><div><b>Propuesta inicial</b><p>Qué tipo de solución podría tener sentido.</p></div></li>
             <li><span class="dn">07</span><div><b>Próximos pasos</b><p>Qué recomendamos hacer a continuación.</p></div></li>
           </ol>
-          <p style="padding:0 26px 24px;font-size:14px;color:var(--muted)">Después de la conversación recibes un diagnóstico.</p>
+          <p class="doc-foot">Mini diagnóstico de 3–5 páginas después de la conversación.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" data-od-id="faq" style="padding-top:20px">
-    <div class="wrap">
-      <div style="text-align:center" data-reveal><p class="eyebrow" style="justify-content:center">Dudas comunes</p><h2 style="margin-top:14px">Preguntas antes de empezar.</h2></div>
-      <div class="faq" data-reveal>
-        <details open><summary>¿Cómo sé si necesito software a medida? <span>+</span></summary><p>Tiene sentido evaluarlo cuando los procesos importantes de tu empresa ya no encajan bien en las herramientas disponibles, requieren demasiado trabajo manual o necesitan adaptaciones específicas para funcionar.</p></details>
-        <details><summary>¿Tengo que reemplazar las herramientas que ya utilizo? <span>+</span></summary><p>No necesariamente. Muchas veces la mejor solución es integrar o automatizar las herramientas existentes. Construir algo nuevo solo tiene sentido cuando aporta un beneficio claro.</p></details>
-        <details><summary>¿Podemos empezar por un solo proceso? <span>+</span></summary><p>Sí. De hecho, muchas veces es mejor comenzar por un problema concreto, medir el impacto y evolucionar desde allí.</p></details>
-        <details><summary>¿Cuánto tarda un proyecto? <span>+</span></summary><p>Depende del alcance. Una automatización puntual puede resolverse en semanas, mientras que un sistema completo puede requerir varios meses. El diagnóstico inicial nos permite entender qué escenario aplica.</p></details>
-        <details><summary>¿Cómo se define el precio? <span>+</span></summary><p>Según alcance, complejidad, integraciones y nivel de incertidumbre. Cuando el proyecto requiere una definición más profunda, podemos realizar una etapa de Discovery antes de presupuestar la construcción completa.</p></details>
-        <details><summary>¿El software pertenece a mi empresa? <span>+</span></summary><p>Sí. En proyectos de software a medida, el producto desarrollado para tu empresa queda bajo las condiciones de propiedad acordadas desde el inicio del proyecto.</p></details>
-        <details><summary>¿Qué ocurre después del lanzamiento? <span>+</span></summary><p>Podemos continuar trabajando en mejoras, nuevas automatizaciones, integraciones y evolución del sistema según cambie la operación.</p></details>
-        <details><summary>¿Dónde utilizan inteligencia artificial? <span>+</span></summary><p>La usamos cuando mejora una tarea concreta: analizar información, clasificar datos, asistir a usuarios, buscar conocimiento o automatizar decisiones. No incorporamos IA solo para decir que un producto tiene IA.</p></details>
-      </div>
-    </div>
-  </section>
-
-  <!-- FINAL -->
-  <section class="final on-dark" data-od-id="cta-final">
-    <div class="wrap" data-reveal>
-      <p class="eyebrow" style="justify-content:center">Diagnóstico operativo</p>
-      <h2>Tu operación ya funciona. Hagamos que sea más fácil hacerla crecer.</h2>
-      <p>Cuéntanos cómo trabajan hoy y veamos dónde tiene sentido simplificar, conectar o construir.</p>
-      <div class="cta-row" style="justify-content:center"><a class="btn btn-a" href="https://calendar.app.google/JQnkVUqK3FF5VSRU6" target="_blank" rel="noopener" data-od-id="final-primary">Analizar mi operación</a><a class="btn btn-s" style="border-color:rgba(255,255,255,.45);color:#fff" href="https://wa.me/5491173678601?text=Hola%2C%20llegu%C3%A9%20desde%20Next%20Wrld.%20Quiero%20conversar%20sobre%20un%20proceso%20de%20mi%20empresa%20que%20estamos%20buscando%20mejorar." target="_blank" rel="noopener">Hablar por WhatsApp</a></div>
     </div>
   </section>
 </BaseLayout>
 
 <style>
-  h1 { font-size: clamp(40px, 5.4vw, 76px); }
-  h2 { font-size: clamp(30px, 3.6vw, 52px); }
-  .serif { font-family: var(--serif); font-style: italic; font-weight: 400; letter-spacing: -0.01em; }
-  .on-dark .eyebrow { color: #9dbcfb; }
-  .on-dark .eyebrow::before { background: var(--accent); }
-  .on-dark .lead { color: #a8b0b8; }
-  section { scroll-margin-top: 80px; padding: 128px 0; }
-  section[data-od-id='problema'],
-  section[data-od-id='por-que'] { background: var(--surface-gray); }
-  section[data-od-id='diagnostico'] { background: var(--surface-blue); }
-  .btn-p:hover { background: #1f49b4; transform: translateY(-1px); box-shadow: 0 12px 28px rgba(10, 78, 220, 0.35); }
-  .btn-s:hover { border-color: var(--accent); background: #dce6ff; }
-  .btn-a { background: var(--accent); color: #fff; }
-  .btn-a:hover { background: #1f49b4; }
-  /* hero */
-  .hero { padding: 84px 0 90px; position: relative; overflow: hidden; }
-  .hero-grid { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 56px; align-items: center; }
-  .hero h1 { margin: 22px 0 20px; }
-  .hero-sub { font-size: 18px; max-width: 52ch; }
-  .hero-line { margin-top: 18px; font-family: var(--serif); font-style: italic; font-size: 21px; }
-  .cta-row { display: flex; gap: 14px; margin-top: 30px; flex-wrap: wrap; }
-  .hero .cta-row .btn { flex: 1 1 0; min-width: 0; }
-  .micro { font-family: var(--mono); font-size: 12.5px; color: var(--muted); margin-top: 14px; }
-  /* hero visual */
-  .sys { background: var(--surface); border: 1px solid var(--border); border-radius: var(--r-lg); padding: 22px; box-shadow: var(--shadow-soft); transform: scale(1.02); }
-  .sys-head { display: flex; justify-content: space-between; align-items: center; font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; color: var(--muted); margin-bottom: 14px; }
-  .dotlive { display: inline-flex; align-items: center; gap: 7px; }
-  .pulse { width: 8px; height: 8px; border-radius: 50%; background: #2758d9; animation: pl 1.8s infinite; }
-  @keyframes pl { 0%, 100% { box-shadow: 0 0 0 0 rgba(39, 88, 217, 0.4); } 50% { box-shadow: 0 0 0 7px rgba(39, 88, 217, 0); } }
-  .frag { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; margin-bottom: 6px; }
-  .frag .wide { grid-column: 1 / -1; }
-  .chip { border: 1px dashed #c2d1eb; border-radius: 12px; padding: 12px 14px; display: flex; align-items: center; gap: 10px; font-size: 13.5px; font-weight: 600; background: #f7f8fa; }
-  .chip i { width: 30px; height: 30px; border-radius: 9px; display: grid; place-items: center; font-style: normal; font-size: 15px; background: var(--bg); border: 1px solid var(--border); flex: none; }
-  .chip small { display: block; font-weight: 400; color: var(--muted); font-size: 12px; }
-  .links { height: 64px; display: block; width: 100%; }
-  .core { border: 1px solid var(--border); border-left: 3px solid var(--accent); background: #fff; color: var(--fg); border-radius: 12px; padding: 14px 16px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; }
-  .core b { font-family: var(--disp); font-size: 15px; }
-  .core span { font-family: var(--mono); font-size: 11px; opacity: 0.7; display: block; letter-spacing: 0.1em; }
-  .out { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px; }
-  .out div { background: #f7f8fa; border: 1px solid var(--border); border-radius: var(--r-sm); padding: 10px; font-size: 12px; font-weight: 600; text-align: center; }
-  .out div span { display: block; font-family: var(--mono); font-weight: 400; color: #2758d9; font-size: 11px; margin-top: 2px; }
-  /* problem */
-  .prob-head { max-width: 900px; }
-  .prob-head h2 { margin: 18px 0; }
-  .plist { margin-top: 56px; border-top: 1px solid var(--fg); }
-  .prow { display: grid; grid-template-columns: 72px 1fr 1.4fr 120px; gap: 24px; align-items: baseline; padding: 32px 0; border-bottom: 1px solid var(--border); }
-  .prow .n { font-family: var(--mono); font-size: 14px; font-weight: 500; color: var(--accent); }
-  .prow h3 { font-family: var(--disp); font-size: clamp(21px, 2.2vw, 27px); letter-spacing: -0.02em; line-height: 1.2; color: var(--fg); }
-  .prow p { color: var(--ink-soft); font-size: 15.5px; max-width: 52ch; }
-  .prow .tag { font-family: var(--mono); font-size: 11px; color: var(--ink-soft); text-align: right; }
-  /* dark cost */
-  .dark { background: #102654; color: #fff; }
-  .dark .lead { color: #c9d4e8; }
-  .cost-flow { margin-top: 60px; border-top: 1px solid rgba(255, 255, 255, 0.28); }
-  .cf-row { display: grid; grid-template-columns: 1fr auto 1fr; gap: 28px; align-items: baseline; padding: 30px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.28); }
-  .cf-row span { font-family: var(--disp); font-size: clamp(20px, 2.6vw, 30px); font-weight: 600; color: #fff; letter-spacing: -0.02em; }
-  .cf-row i { font-style: normal; font-family: var(--disp); font-size: 24px; font-weight: 600; color: #9dbcfb; line-height: 1; }
-  .cf-row em { font-family: var(--serif); font-style: italic; font-size: clamp(22px, 2.6vw, 32px); color: #fff; }
-  .cost-close { margin-top: 40px; font-family: var(--disp); font-size: clamp(20px, 2.4vw, 30px); max-width: 24ch; line-height: 1.25; color: #fff; }
-  .cost-close em { font-family: var(--serif); color: #9dbcfb; font-style: italic; }
-  /* better way */
-  .bridge { background: var(--surface-blue); padding: 24px 0; }
-  .bridge-inner { padding: clamp(8px, 2vw, 24px) 0; }
-  .ba { display: grid; grid-template-columns: 1fr auto 1fr; gap: 24px; align-items: stretch; margin-top: 40px; }
-  .ba-col { border-radius: var(--r-sm); padding: 28px; border: 1px solid var(--border); }
-  .ba-before { background: var(--surface-gray); }
-  .ba-after { background: #fff; color: var(--fg); border: 1px solid var(--accent); border-left: 4px solid var(--accent); }
-  .ba-after h4 { opacity: 1; }
-  .ba-col h4 { font-family: var(--mono); font-size: 11px; letter-spacing: 0.16em; margin-bottom: 16px; opacity: 0.7; }
-  .ba-col li { list-style: none; padding: 11px 0; border-top: 1px solid currentColor; font-size: 15px; font-weight: 500; border-top-color: rgba(128, 128, 128, 0.25); }
-  .ba-mid { align-self: center; width: 44px; height: 44px; border-radius: 50%; background: var(--accent); color: #fff; display: grid; place-items: center; font-weight: 700; }
-  .bridge-close { margin-top: 28px; font-size: 16px; text-align: center; color: var(--muted); }
-  /* capabilities */
-  .cap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 56px; margin-top: 60px; }
-  .cap { padding: 26px 0 0; border-top: 2px solid var(--accent); display: flex; flex-direction: column; }
-  .cap .dg { display: block; width: 44px; height: 44px; color: var(--accent); margin-bottom: 20px; }
-  .cap .num { font-family: var(--mono); font-size: 12px; color: var(--accent); letter-spacing: 0.14em; }
-  .cap h3 { font-family: var(--disp); font-size: 26px; margin: 12px 0; letter-spacing: -0.02em; }
-  .cap p { color: var(--muted); font-size: 15.5px; }
-  .cap ul { margin: 16px 0 24px; list-style: none; flex: 1 0 auto; }
-  .cap a { align-self: flex-start; }
-  .cap ul li { position: relative; font-family: var(--mono); font-size: 13px; color: var(--muted); padding: 4px 0 4px 18px; }
-  .cap ul li::before { content: '·'; position: absolute; left: 2px; color: var(--accent); font-weight: 700; }
-  .cap a { font-weight: 600; font-size: 14.5px; color: var(--fg); text-decoration: none; border-bottom: 2px solid var(--accent); }
-  .ai-strip { margin-top: 18px; border: 1px dashed #c2d1eb; border-radius: var(--r-lg); padding: 22px 26px; display: flex; gap: 18px; align-items: flex-start; background: #f7f8fa; }
-  .ai-strip b { font-family: var(--disp); }
+  h1{font-size:clamp(40px,5.4vw,76px);line-height:1.02;letter-spacing:-.03em}
+  h2{font-size:clamp(30px,3.6vw,52px);line-height:1.08;letter-spacing:-.02em}
+  section{scroll-margin-top:80px;padding:112px 0}
+  .hero{padding:92px 0 84px}
+  section.prob{background:var(--surface-gray)}
+  .diag-sec{background:var(--surface-blue)}
+  .on-dark .eyebrow{color:#9dbcfb}.on-dark .eyebrow::before{background:var(--accent)}
+  .hero{padding:84px 0 72px}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+  .hero h1{margin:22px 0 16px}
+  .hero-sub{font-size:18px;max-width:52ch}
+  .cta-row{display:flex;gap:14px;margin-top:28px;flex-wrap:wrap}
+  .micro{font-family:var(--mono);font-size:12.5px;color:var(--muted);margin-top:14px}
+  .sys{background:var(--surface);border:1px solid var(--border);border-radius:var(--r-lg);padding:22px;box-shadow:var(--shadow-soft)}
+  .sys-head{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:11px;letter-spacing:.12em;color:var(--muted);margin-bottom:14px}
+  .dotlive{display:inline-flex;align-items:center;gap:7px}
+  .pulse{width:8px;height:8px;border-radius:50%;background:#2758d9;animation:pl 1.8s infinite}
+  @keyframes pl{0%,100%{box-shadow:0 0 0 0 rgba(39,88,217,.4)}50%{box-shadow:0 0 0 7px rgba(39,88,217,0)}}
+  .frag{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:6px}
+  .chip{border:1px dashed #c2d1eb;border-radius:12px;padding:12px 14px;display:flex;align-items:center;gap:10px;font-size:13.5px;font-weight:600;background:#f7f8fa}
+  .chip i{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:var(--bg);border:1px solid var(--border);flex:none;font-style:normal;font-size:14px}
+  .chip small{display:block;font-weight:400;color:var(--muted);font-size:12px}
+  .links{height:64px;display:block;width:100%}
+  .core{border:1px solid var(--border);border-left:3px solid var(--accent);background:#fff;border-radius:12px;padding:14px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+  .core b{font-family:var(--disp);font-size:15px}
+  .core span{font-family:var(--mono);font-size:11px;opacity:.7;display:block;letter-spacing:.1em}
+  .core-ok{font-family:var(--mono);font-size:11px;background:#DCE6FF;color:#2758D9;padding:8px 12px;border-radius:8px}
+  .out{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}
+  .out div{background:#f7f8fa;border:1px solid var(--border);border-radius:var(--r-sm);padding:10px;font-size:12px;font-weight:600;text-align:center}
+  .out span{display:block;font-family:var(--mono);font-weight:400;color:#2758d9;font-size:11px;margin-top:2px}
+  /* prob */
+  .prob-head{max-width:860px}
+  .prob-head h2{margin:18px 0}
+  .pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:40px}
+  .pcard{background:#fff;border:1px solid var(--border);border-radius:16px;padding:26px}
+  .pc-ic{width:32px;height:32px;color:var(--accent);display:block;margin-bottom:14px}
+  .pc-num{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--accent);font-weight:700}
+  .pcard h3{font-family:var(--disp);font-size:21px;margin:8px 0 8px;letter-spacing:-.02em}
+  .pcard p{color:var(--muted);font-size:15px;line-height:1.5}
+  .prob-bridge{margin-top:40px;font-family:var(--disp);font-size:clamp(20px,2.4vw,28px);font-weight:600;text-align:center;letter-spacing:-.02em}
+  .transform{margin-top:28px;border-top:1px solid var(--border);max-width:720px;margin-left:auto;margin-right:auto}
+  .tr-row{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:center;padding:18px 0;border-bottom:1px solid var(--border)}
+  .tr-row span{font-family:var(--disp);font-size:18px;color:var(--muted);text-align:right}
+  .tr-row i{font-style:normal;color:var(--accent);font-weight:700}
+  .tr-row b{font-family:var(--disp);font-size:18px}
+  .transform-close{margin-top:20px;text-align:center;color:var(--muted);font-size:15px}
+  /* caps */
+  .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:48px;margin-top:48px}
+  .cap{padding-top:22px;border-top:2px solid var(--accent)}
+  .cap-ic{width:40px;height:40px;color:var(--accent);display:block;margin-bottom:14px}
+  .cap .num{font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:.14em}
+  .cap h3{font-family:var(--disp);font-size:24px;margin:10px 0}
+  .cap p{color:var(--muted);font-size:15.5px;min-height:48px}
+  .cap a{font-weight:600;font-size:14px;text-decoration:none;border-bottom:2px solid var(--accent);display:inline-block;margin-top:16px}
+  .ai-note{margin-top:32px;color:var(--muted);font-size:14px;border-left:2px solid var(--border);padding-left:16px;max-width:70ch}
   /* process */
-  .process { background: var(--surface-gray); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); padding: 84px 0; }
-  .process .lead { max-width: 56ch; }
-  .tline { position: relative; margin-top: 48px; }
-  .tbar { height: 4px; background: var(--border); position: relative; border-radius: 2px; }
-  .tprog { position: absolute; left: 0; top: 0; height: 100%; background: var(--accent); width: 0; border-radius: 2px; transition: width 0.3s; }
-  .tnodes { display: grid; grid-template-columns: repeat(5, 1fr); gap: 18px; margin-top: -5px; }
-  .tnode { cursor: pointer; text-align: left; background: none; border: 0; padding: 0; display: block; font-family: inherit; }
-  .tnode .pt { display: block; width: 14px; height: 14px; border-radius: 50%; border: 2px solid #c2d1eb; background: #fff; margin-bottom: 16px; transition: background 0.2s ease, border-color 0.2s ease, transform 0.2s ease; }
-  .tnode.active .pt { background: var(--accent); border-color: var(--accent); transform: scale(1.3); }
-  .tnode .pn { display: block; font-family: var(--mono); font-size: 12px; letter-spacing: 0.1em; color: var(--muted); }
-  .tnode.active .pn { color: var(--accent); font-weight: 700; }
-  .tnode .pq { display: block; font-family: var(--disp); font-size: 18.5px; line-height: 1.35; margin-top: 8px; min-height: 52px; color: var(--fg); }
-  .pane { margin-top: 26px; padding: 32px 0 4px; border-top: 1px solid var(--border); display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 72px; transition: opacity 0.18s ease; }
-  .pane .pk { font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; color: var(--accent); margin-bottom: 14px; }
-  .pane blockquote { font-size: clamp(22px, 2.6vw, 32px); font-family: var(--disp); letter-spacing: -0.02em; line-height: 1.2; }
-  .pane p { color: var(--muted); margin-top: 12px; }
-  .pane .res { background: none; border: 0; border-left: 1px solid var(--border); border-radius: 0; padding: 2px 0 2px 40px; }
-  .pane .res span { font-family: var(--disp); font-size: clamp(19px, 2vw, 24px); line-height: 1.35; letter-spacing: -0.01em; color: var(--fg); }
-  .pane .res b { color: var(--accent); font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; display: block; margin-bottom: 8px; }
-  .pnote { margin-top: 14px; font-size: 13px; color: var(--muted); }
-  .t-hint { font-family: var(--mono); font-size: 12px; letter-spacing: 0.04em; color: var(--muted); margin-top: 18px; }
-  .t-hint b { color: var(--accent); font-weight: 700; }
-  .tnode:hover .pt { border-color: var(--accent); }
-  .tnode:hover .pn { color: var(--accent); }
-  .t-next { display: inline-block; margin-top: 30px; font-weight: 600; font-size: 16px; color: var(--fg); text-decoration: none; border-bottom: 2px solid var(--accent); padding-bottom: 2px; }
-  .m-steps { display: none; }
+  .process{background:var(--surface-gray);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:84px 0}
+  .process .lead{max-width:56ch}
+  .tline{position:relative;margin-top:48px}
+  .tbar{height:4px;background:var(--border);position:relative;border-radius:2px}
+  .tprog{position:absolute;left:0;top:0;height:100%;background:var(--accent);width:0;border-radius:2px;transition:width .3s}
+  .tnodes{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:-5px}
+  .tnode{cursor:pointer;text-align:left;background:none;border:0;padding:0;display:block;font-family:inherit}
+  .tnode .pt{position:relative;z-index:1;display:block;width:14px;height:14px;border-radius:50%;border:2px solid #c2d1eb;background:#fff;margin-bottom:16px;transition:background .2s,border-color .2s,transform .2s}
+  .tnode.active .pt{background:var(--accent);border-color:var(--accent);transform:scale(1.3)}
+  .tnode .pn{display:block;font-family:var(--mono);font-size:12px;letter-spacing:.1em;color:var(--muted)}
+  .tnode.active .pn{color:var(--accent);font-weight:700}
+  .tnode .pq{display:block;font-family:var(--disp);font-size:17px;line-height:1.35;margin-top:8px;min-height:44px;color:var(--fg)}
+  .pane{margin-top:26px;padding:32px 0 4px;border-top:1px solid var(--border);display:grid;grid-template-columns:1.2fr .8fr;gap:72px;transition:opacity .18s}
+  .pane .pk{font-family:var(--mono);font-size:12px;letter-spacing:.14em;color:var(--accent);margin-bottom:14px}
+  .pane blockquote{font-size:clamp(22px,2.6vw,32px);font-family:var(--disp);letter-spacing:-.02em;line-height:1.2}
+  .pane p{color:var(--muted);margin-top:12px;font-size:15.5px;line-height:1.6}
+  .pane .res{background:none;border:0;border-left:1px solid var(--border);border-radius:0;padding:2px 0 2px 40px}
+  .pane .res span{font-family:var(--disp);font-size:clamp(19px,2vw,24px);line-height:1.35;letter-spacing:-.01em;color:var(--fg)}
+  .pane .res b{color:var(--accent);font-family:var(--mono);font-size:11px;letter-spacing:.14em;display:block;margin-bottom:8px}
+  .pnote{margin-top:14px;font-size:13px;color:var(--muted)}
+  .t-hint{font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--muted);margin-top:18px}
+  .t-hint b{color:var(--accent);font-weight:700}
+  .tnode:hover .pt{border-color:var(--accent)}
+  .tnode:hover .pn{color:var(--accent)}
+  .t-next{display:inline-block;margin-top:30px;font-weight:600;font-size:16px;color:var(--fg);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:2px}
+  :global(.m-steps){display:none}
   /* aion */
-  .aion { background: #102654; color: #fff; position: relative; overflow: hidden; padding-bottom: 0; }
-  .aion .eyebrow { color: #9dbcfb; }
-  .aion .eyebrow::before { background: #9dbcfb; }
-  .aion .lead { color: #c9d4e8; }
-  .aion .btn-s { border-color: rgba(255, 255, 255, 0.35); color: #fff; }
-  .aion .btn-s:hover { border-color: #fff; background: rgba(255, 255, 255, 0.08); }
-  .ownline { margin-top: 8px; color: #c9d4e8; font-size: 15px; max-width: 58ch; }
-  .ownline a { color: #fff; font-weight: 600; }
-  .aion .cta-row { margin-top: 24px; }
-  .aion-grid { display: block; }
-  .aion .wrap { max-width: 1420px; }
-  .aion-grid > div:first-child { max-width: 780px; }
-  .aion-mark { display: block; margin-top: 36px; color: #9dbcfb; font: 500 11px var(--mono); letter-spacing: .2em; }
-  .aion h2 { margin: 14px 0 18px; max-width: 18ch; font-size: clamp(36px, 4.8vw, 64px); }
-  .aion-product { margin-top: 58px; margin-bottom: -110px; position: relative; z-index: 2; }
-  .aion .mock { border-top: 3px solid var(--accent); }
-  .mock { background: #fff; border: 1px solid var(--border); border-radius: var(--r-lg); overflow: hidden; box-shadow: 0 80px 140px -30px rgba(39, 88, 217, 0.5), 0 30px 60px -30px rgba(4, 10, 30, 0.55); }
-  .mock-bar { display: flex; gap: 7px; padding: 14px 18px; border-bottom: 1px solid var(--border); background: #f7f8fa; }
-  .mock-bar i { width: 10px; height: 10px; border-radius: 50%; background: #d3dae2; display: block; }
-  .mock-body { display: grid; grid-template-columns: 190px 1fr; min-height: 380px; }
-  .mock-side { border-right: 1px solid var(--border); padding: 20px 16px; }
-  .mock-side div { font-size: 12px; padding: 9px 12px; border-radius: 8px; color: var(--muted); }
-  .mock-side div.on { background: #dce6ff; color: var(--accent); font-weight: 600; }
-  .mock-main { padding: 40px; }
-  .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-bottom: 14px; }
-  .kpis div { background: #f7f8fa; border: 1px solid var(--border); border-radius: var(--r-md); padding: 12px; }
-  .kpis small { font-family: var(--mono); font-size: 10px; color: var(--muted); letter-spacing: 0.1em; }
-  .kpis b { display: block; font-family: var(--disp); font-size: 20px; margin-top: 4px; }
-  .table { border: 1px solid var(--border); border-radius: var(--r-md); overflow: hidden; font-size: 14px; }
-  .table div { display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; padding: 10px 14px; border-bottom: 1px solid var(--border); }
-  .table div:last-child { border: 0; }
-  .table .th { background: #f7f8fa; font-family: var(--mono); font-size: 10px; color: var(--muted); letter-spacing: 0.1em; }
-  .pillok { font-family: var(--mono); font-size: 10.5px; background: #dce6ff; color: var(--accent); border-radius: 999px; padding: 3px 10px; justify-self: start; }
-  .evchips { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 4px; }
-  .evchips span { font-family: var(--mono); font-size: 12px; border: 1px solid var(--border); border-radius: 999px; padding: 7px 14px; color: var(--muted); }
-  .aion .evchips span { border-color: rgba(255, 255, 255, 0.25); color: #e4e9f0; }
-  .mtools { display: flex; gap: 10px; align-items: center; margin-bottom: 14px; }
-  .msearch { flex: 1; font-size: 12.5px; color: var(--muted); border: 1px solid var(--border); border-radius: 999px; padding: 9px 16px; background: #f7f8fa; }
-  .mdot { width: 32px; height: 32px; border-radius: 50%; background: var(--accent); flex: none; }
-  .cash { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: 14px; background: #f7f8fa; border: 1px solid var(--border); border-radius: var(--r-md); padding: 12px 14px; }
-  .cash small { font-family: var(--mono); font-size: 10px; color: var(--muted); letter-spacing: 0.1em; display: block; }
-  .cash b { font-family: var(--disp); font-size: 15px; }
+  .aion{background:#102654;color:#fff;overflow:hidden;padding-bottom:0}
+  .aion .lead{color:#c9d4e8}
+  .aion-mark{display:block;margin-top:32px;color:#9dbcfb;font:500 11px var(--mono);letter-spacing:.2em}
+  .aion h2{margin:14px 0 18px;max-width:22ch;font-size:clamp(32px,4.2vw,56px)}
+  .aion-product{margin-top:52px;margin-bottom:-80px}
+  .btn-s--dark{border-color:rgba(255,255,255,.35);color:#fff}
+  .btn-s--dark:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+  .btn-a{background:var(--accent);color:#fff}
   /* cases */
-  .cases { margin-top: 8px; counter-reset: case; }
-  .case { border: 0; border-radius: 0; background: none; padding: 36px 0; display: flex; flex-direction: column; gap: 12px; max-width: 880px; counter-increment: case; }
-  .case h3::before { content: '0' counter(case); display: block; font-family: var(--disp); font-weight: 600; font-size: 44px; line-height: 1; letter-spacing: -0.02em; color: var(--accent); margin-bottom: 14px; }
-  .case .who { font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); }
-  .case h3 { font-family: var(--disp); font-size: 24px; line-height: 1.2; letter-spacing: -0.02em; }
-  .case p { color: var(--muted); font-size: 15px; }
-  .case a { margin-top: auto; font-weight: 600; font-size: 14px; text-decoration: none; border-bottom: 2px solid var(--accent); align-self: flex-start; }
-  .note { font-size: 12.5px; color: var(--muted); font-style: italic; }
-  /* why */
-  .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 48px 64px; margin-top: 56px; counter-reset: why; }
-  .why { border-top: 2px solid var(--fg); padding: 24px 0 0; counter-increment: why; }
-  .why h3::before { content: '0' counter(why); display: block; font-family: var(--mono); font-size: 13px; font-weight: 700; letter-spacing: 0.14em; color: var(--accent); margin-bottom: 12px; }
-  .why h3 { font-family: var(--disp); font-size: 23px; margin-bottom: 8px; }
-  .why p { color: var(--muted); max-width: 44ch; }
-  .anti { margin-top: 30px; font-family: var(--serif); font-style: italic; font-size: 22px; text-align: center; }
-  /* diagnosis */
-  .diag-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-top: 48px; }
-  .facts { margin-top: 30px; border-top: 1px solid var(--border); }
-  .facts div { display: flex; gap: 20px; align-items: baseline; padding: 16px 0; border-bottom: 1px solid var(--border); }
-  .facts b { font-family: var(--disp); font-size: 19px; white-space: nowrap; min-width: 140px; }
-  .facts span { font-size: 14px; color: var(--muted); }
-  .doc { background: var(--surface); border: 1px solid #d8e0ec; border-radius: var(--r-lg); overflow: hidden; box-shadow: 0 44px 90px -30px rgba(16, 38, 84, 0.3), 0 2px 6px rgba(16, 38, 84, 0.06); }
-  .doc-head { background: var(--accent); color: #fff; padding: 24px 28px; display: flex; justify-content: space-between; align-items: center; }
-  .doc-head b { font-family: var(--disp); }
-  .doc-head span { font-family: var(--mono); font-size: 11px; opacity: 0.7; }
-  .doc ol { list-style: none; padding: 8px 26px 26px; }
-  .doc li { display: grid; grid-template-columns: 40px 1fr; gap: 14px; padding: 16px 0; border-bottom: 1px solid var(--border); }
-  .doc li:last-child { border: 0; }
-  .doc .dn { font-family: var(--mono); color: var(--accent); font-size: 12px; }
-  .doc b { font-size: 15px; }
-  .doc p { font-size: 13.5px; color: var(--muted); }
-  .diag-cta { margin-top: 26px; display: flex; gap: 12px; flex-wrap: wrap; }
-  .diag-cta .btn { flex: 1 1 0; min-width: 0; }
-  /* faq */
-  .faq { max-width: 820px; margin: 48px auto 0; }
-  .faq details { border-bottom: 1px solid var(--border); padding: 6px 0; }
-  .faq summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; gap: 20px; padding: 12px 0; font-family: var(--disp); font-size: 18px; font-weight: 600; }
-  .faq summary::-webkit-details-marker { display: none; }
-  .faq summary span { color: var(--accent); font-weight: 400; }
-  .faq details p { color: var(--muted); padding: 0 0 14px; max-width: 62ch; font-size: 15.5px; }
-  /* final */
-  .final { background: #102654; color: #fff; text-align: center; padding: 150px 0; border-top: 4px solid #5e85e3; }
-  .final .eyebrow { color: rgba(255, 255, 255, 0.78); justify-content: center; }
-  .final .eyebrow::before { background: #fff; }
-  .final .btn-a { background: #fff; color: var(--accent); }
-  .final .btn-a:hover { background: #dce6ff; }
-  .final h2 { font-size: clamp(34px, 4.6vw, 64px); max-width: 18ch; margin: 0 auto 18px; }
-  .final p { color: rgba(255, 255, 255, 0.85); max-width: 52ch; margin: 0 auto; }
-  @media (max-width: 960px) {
-    section { padding: 72px 0; }
-    .hero-grid, .aion-grid, .diag-grid { grid-template-columns: 1fr; }
-    .aion-product { margin: 48px 0 0; }
-    section[data-od-id='casos-mas'] { padding-top: 110px !important; padding-bottom: 60px !important; }
-    .aion { padding-bottom: 110px; }
-    .prow { grid-template-columns: 44px 1fr; row-gap: 6px; }
-    .prow p { grid-column: 2; }
-    .prow .tag { display: none; }
-    .out { grid-template-columns: 1fr; }
-    .cf-row { grid-template-columns: 1fr; gap: 8px; padding: 24px 0; }
-    .cf-row i { transform: rotate(90deg); justify-self: start; }
-    .ba { grid-template-columns: 1fr; }
-    .ba-mid { justify-self: center; transform: rotate(90deg); }
-    .cap-grid, .cases, .why-grid { grid-template-columns: 1fr; gap: 0; }
-    .cap { padding: 26px 0; }
-    .why { padding-bottom: 36px; }
-    .tnodes { grid-template-columns: 1fr; gap: 0; margin-top: 24px; }
-    .tnode { display: grid; grid-template-columns: 1fr; gap: 4px; padding: 14px 0 14px 22px; border-left: 2px solid var(--border); margin-left: 6px; position: relative; }
-    .tnode .pt { position: absolute; left: -8px; top: 20px; margin: 0; }
-    .tnode.active { border-left-color: var(--accent); }
-    .tnode .pq { min-height: 0; }
-    .tbar, .tnodes, .pane, .t-hint { display: none; }
-    .m-steps { display: block; margin-top: 8px; }
-    .m-step { padding: 24px 0; border-top: 1px solid var(--border); }
-    .m-step:last-child { border-bottom: 1px solid var(--border); }
-    .m-step .pk { font-family: var(--mono); font-size: 12px; letter-spacing: 0.14em; color: var(--accent); margin-bottom: 12px; }
-    .m-step blockquote { font-size: 22px; font-family: var(--disp); letter-spacing: -0.02em; line-height: 1.25; margin-bottom: 10px; }
-    .m-step p { color: var(--muted); font-size: 15px; }
-    .m-step .m-out { margin-top: 14px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.14em; color: var(--accent); }
-    .m-step .m-out span { display: block; font-family: var(--disp); font-size: 18px; letter-spacing: 0; color: var(--fg); margin-top: 6px; }
-    .pane .res { border-left: 0; border-top: 1px solid var(--border); padding: 20px 0 0; }
-    .mock-body { grid-template-columns: 1fr; }
-    .mock-side { display: none; }
-    .facts div { flex-direction: column; gap: 4px; }
-    .facts b { min-width: 0; }
-    .hero .cta-row { flex-direction: column; align-items: stretch; }
-    .hero .cta-row .btn { width: 100%; }
-    .diag-cta { flex-direction: column; align-items: stretch; }
-    .diag-cta .btn { width: 100%; }
+  #casos-mas{padding-top:120px;padding-bottom:56px}
+  .cases{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-top:32px}
+  .case{border-top:2px solid var(--accent);padding-top:24px}
+  .case-ic{width:24px;height:24px;color:var(--accent);display:block;margin-bottom:10px}
+  .case .who{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--accent)}
+  .case h3{font-family:var(--disp);font-size:22px;margin:12px 0 8px}
+  .case p{color:var(--muted);font-size:15px}
+  .case a{font-weight:600;font-size:14px;border-bottom:2px solid var(--accent);text-decoration:none;display:inline-block;margin-top:14px}
+  /* diag */
+  .diag-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:40px}
+  .facts{border-top:1px solid var(--border);margin-top:24px}
+  .facts div{display:flex;gap:20px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--border)}
+  .facts b{font-family:var(--disp);font-size:18px;min-width:140px}
+  .facts span{font-size:14px;color:var(--muted)}
+  .doc{background:var(--surface);border:1px solid #d8e0ec;border-radius:var(--r-lg);overflow:hidden;box-shadow:0 44px 90px -30px rgba(16,38,84,.3)}
+  .doc-head{background:var(--accent);color:#fff;padding:20px 24px;display:flex;justify-content:space-between;align-items:center}
+  .doc-head b{font-family:var(--disp)}
+  .doc-head span{font-family:var(--mono);font-size:11px;opacity:.7}
+  .doc ol{list-style:none;padding:8px 24px 20px}
+  .doc li{display:grid;grid-template-columns:40px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--border)}
+  .doc li:last-child{border:0}
+  .doc .dn{font-family:var(--mono);color:var(--accent);font-size:12px}
+  .doc b{font-size:14px}
+  .doc p{font-size:13.5px;color:var(--muted)}
+  .doc-foot{padding:0 24px 20px;font-size:13px;color:var(--muted)}
+  @media(max-width:960px){
+    section{padding:72px 0}
+    .hero-grid,.diag-grid{grid-template-columns:1fr}
+    .pgrid{grid-template-columns:1fr}
+    .cap-grid{grid-template-columns:1fr;gap:0}
+    .cap{padding-bottom:28px}
+    .cap p{min-height:0}
+    .tbar,.pane,.t-hint,.tnodes{display:none}
+    :global(.m-steps){display:grid;gap:14px;margin-top:24px}
+    :global(.m-step){background:#fff;border:1px solid var(--border);border-radius:14px;padding:22px 20px}
+    :global(.m-step) :global(.pk){font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:var(--accent);margin-bottom:10px;font-weight:700;display:block}
+    :global(.m-step) blockquote{font-size:20px;font-family:var(--disp);letter-spacing:-.02em;line-height:1.3;margin-bottom:10px;font-weight:600;color:var(--fg)}
+    :global(.m-step) p{color:var(--muted);font-size:14.5px;line-height:1.6}
+    :global(.m-step) :global(.m-out){margin-top:16px;padding-top:12px;border-top:1px solid var(--border);font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--accent);font-weight:700;display:block}
+    :global(.m-step) :global(.m-out) span{display:block;font-family:var(--disp);font-size:16px;letter-spacing:-.01em;color:var(--fg);margin-top:6px;font-weight:600}
+    .pane .res{border-left:0;border-top:1px solid var(--border);padding:20px 0 0}
+    .cases{grid-template-columns:1fr}
+    .aion-product{margin-bottom:0}
+    #casos-mas{padding-top:72px}
+    .tr-row span{text-align:left}
+    .facts div{flex-direction:column;gap:4px}
+    .facts b{min-width:0}
   }
 </style>
 
 <script>
-  // process tabs (desktop) + stacked steps (mobile)
+  // Mobile cards are now static HTML, so cleanup JS generation no longer overwrites them
   var data = [
-    { q: '¿Qué está pasando?', c: 'Entendemos cómo trabaja hoy tu equipo, qué quiere conseguir el negocio, qué está generando trabajo innecesario y qué depende de trabajo manual.', r: 'Problema y contexto claros.' },
-    { q: '¿Qué vale la pena resolver?', c: 'Convertimos lo aprendido en prioridades, alcance y una dirección concreta antes de invertir en desarrollo.', r: 'Solución y roadmap inicial.' },
-    { q: 'Convertimos la dirección en producto.', c: 'Diseñamos y desarrollamos el sistema, sus integraciones y automatizaciones alrededor del alcance acordado.', r: 'Software listo para entrar en operación.' },
-    { q: 'El software empieza a convivir con el negocio.', c: 'Implementamos, conectamos datos y herramientas, acompañamos usuarios y llevamos la solución a la operación real.', r: 'Sistema en uso.' },
-    { q: 'Lo que funciona hoy puede necesitar cambiar mañana.', c: 'Medimos, aprendemos y evolucionamos el sistema a medida que cambian usuarios, procesos y necesidades del negocio.', r: 'Una solución que puede crecer con la operación.' }
+    { q: 'Cómo funciona hoy.', c: 'Conversamos con tu equipo, mapeamos el flujo real, las herramientas que usan y dónde el trabajo manual genera fricción, demoras o dependencia.', r: 'Problema y contexto claros.' },
+    { q: 'Qué vale la pena resolver.', c: 'Transformamos lo aprendido en prioridades, alcance y roadmap inicial. Elegimos qué simplificar, conectar o construir.', r: 'Dirección y prioridades definidas.' },
+    { q: 'Convertir la dirección en producto.', c: 'Diseñamos y desarrollamos el sistema, sus integraciones y automatizaciones por iteraciones, validando con uso real.', r: 'Software listo para entrar en operación.' },
+    { q: 'Llevarlo a la operación real.', c: 'Conectamos datos y herramientas, migramos información y acompañamos al equipo para que el sistema conviva con el negocio.', r: 'Sistema en uso.' },
+    { q: 'Adaptarlo a medida que el negocio cambia.', c: 'Medimos, aprendemos y evolucionamos el sistema a medida que entran más usuarios, procesos y necesidades.', r: 'Producto que crece con vos.' }
   ];
-  var nodes = document.querySelectorAll<HTMLButtonElement>('.tnode');
+  // Ensure mobile cards get styled even though they are JS-generated (Astro scoped CSS doesn't hit them without :global)
+  // Inject minimal mobile card CSS as a fallback if the scoped :global didn't stick
+  if(!document.getElementById('m-steps-fallback')){ var s=document.createElement('style'); s.id='m-steps-fallback'; s.textContent='@media(max-width:960px){.m-steps{display:grid;gap:14px;margin-top:24px}.m-step{background:#fff;border:1px solid #e3e7ed;border-radius:14px;padding:22px 20px}.m-step .pk{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:#2758d9;margin-bottom:10px;font-weight:700;display:block}.m-step blockquote{font-size:20px;font-family:var(--disp);letter-spacing:-.02em;line-height:1.3;margin-bottom:10px;font-weight:600;color:#111318}.m-step p{color:#667085;font-size:14.5px;line-height:1.6}.m-step .m-out{margin-top:16px;padding-top:12px;border-top:1px solid #e3e7ed;font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:#2758d9;font-weight:700;display:block}.m-step .m-out span{display:block;font-family:var(--disp);font-size:16px;letter-spacing:-.01em;color:#111318;margin-top:6px;font-weight:600}}'; document.head.appendChild(s); }
+  var nodes = document.querySelectorAll('.tnode');
   var prog = document.getElementById('tprog');
   var paneEl = document.getElementById('pane');
-  function setPaneText(id: string, value: string): void {
-    var el = document.getElementById(id);
-    if (el) el.textContent = value;
-  }
-  var stageNames = ['DISCOVER', 'SHAPE', 'BUILD', 'LAUNCH', 'EVOLVE'];
-  var mSteps = document.getElementById('mSteps');
-  if (mSteps) {
-    var mHtml = '';
-    data.forEach(function (d, i) {
-      mHtml += '<div class="m-step"><div class="pk">0' + (i + 1) + ' / ' + stageNames[i] + '</div><blockquote>' + d.q + '</blockquote><p>' + d.c + '</p><div class="m-out">Resultado 0' + (i + 1) + '<span>' + d.r + '</span></div></div>';
-    });
-    mSteps.innerHTML = mHtml;
-  }
-  nodes.forEach(function (n) {
-    n.addEventListener('click', function () {
-      nodes.forEach(function (x) { x.classList.remove('active'); });
-      n.classList.add('active');
-      var i = Number(n.dataset.i ?? 0);
-      if (prog) prog.style.width = (i / (nodes.length - 1)) * 100 + '%';
-      const panel = paneEl;
-      if (!panel) return;
-      const stage = data[i];
-      if (!stage) return;
-      panel.style.opacity = '0';
-      setTimeout(function () {
-        setPaneText('pq', stage.q);
-        setPaneText('pc', stage.c);
-        setPaneText('pr', stage.r);
-        setPaneText('pk', '0' + (i + 1) + ' / ' + stageNames[i]);
-        setPaneText('plabel', 'Resultado 0' + (i + 1));
-        panel.style.opacity = '1';
-      }, 160);
-    });
-  });
-  var autoTimer: ReturnType<typeof setInterval> | null = null;
-  function autoAdvance() {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || window.matchMedia('(max-width: 960px)').matches || autoTimer) return;
-    autoTimer = setInterval(function () {
-      if (document.hidden) return;
-      var cur = 0;
-      nodes.forEach(function (x, j) { if (x.classList.contains('active')) cur = j; });
-      var next = nodes[(cur + 1) % nodes.length];
-      if (next) next.click();
-    }, 6000);
-  }
-  function resetAuto() { if (autoTimer) { clearInterval(autoTimer); autoTimer = null; } autoAdvance(); }
-  nodes.forEach(function (n) { n.addEventListener('click', resetAuto); });
-  var tnodesEl = document.getElementById('tnodes');
-  if (tnodesEl) {
-    tnodesEl.addEventListener('mouseenter', function () { if (autoTimer) { clearInterval(autoTimer); autoTimer = null; } });
-    tnodesEl.addEventListener('mouseleave', autoAdvance);
-  }
+  function setPaneText(id, value){ var el=document.getElementById(id); if(el) el.textContent=value; }
+  var stageNames=['DISCOVER','SHAPE','BUILD','LAUNCH','EVOLVE'];
+  var stageSubs=['Entender','Decidir','Construir','Integrar','Mejorar'];
+  var mSteps=document.getElementById('mSteps');
+  // Static HTML already present for mobile — keep it, don't overwrite (avoids losing Astro scoped attrs)
+  // Only generate if empty (fallback)
+  if(mSteps && mSteps.children.length===0){ var mHtml=''; data.forEach(function(d,i){ mHtml+='<div class="m-step"><div class="pk">0'+(i+1)+' / '+stageNames[i]+' — '+stageSubs[i]+'</div><blockquote>'+d.q+'</blockquote><p>'+d.c+'</p><div class="m-out">Resultado 0'+(i+1)+'<span>'+d.r+'</span></div></div>'; }); mSteps.innerHTML=mHtml; }
+  nodes.forEach(function(n){ n.addEventListener('click', function(){
+    nodes.forEach(function(x){ x.classList.remove('active'); });
+    n.classList.add('active');
+    var i=Number(n.dataset.i||0);
+    if(prog) prog.style.width=(i/(nodes.length-1))*100+'%';
+    if(!paneEl) return; var stage=data[i]; if(!stage) return;
+    paneEl.style.opacity='0';
+    setTimeout(function(){
+      setPaneText('pq', stage.q);
+      setPaneText('pc', stage.c);
+      setPaneText('pr', stage.r);
+      setPaneText('pk', '0'+(i+1)+' / '+stageNames[i]+' — '+stageSubs[i]);
+      setPaneText('plabel', 'Resultado 0'+(i+1));
+      paneEl.style.opacity='1';
+    },160);
+  });});
+  var autoTimer=null;
+  function autoAdvance(){ if(window.matchMedia('(prefers-reduced-motion: reduce)').matches || window.matchMedia('(max-width: 960px)').matches || autoTimer) return; autoTimer=setInterval(function(){ if(document.hidden) return; var cur=0; nodes.forEach(function(x,j){ if(x.classList.contains('active')) cur=j; }); var next=nodes[(cur+1)%nodes.length]; if(next) next.click(); },6000); }
+  function resetAuto(){ if(autoTimer){ clearInterval(autoTimer); autoTimer=null;} autoAdvance(); }
+  nodes.forEach(function(n){ n.addEventListener('click', resetAuto); });
+  var tnodesEl=document.getElementById('tnodes');
+  if(tnodesEl){ tnodesEl.addEventListener('mouseenter', function(){ if(autoTimer){ clearInterval(autoTimer); autoTimer=null; } }); tnodesEl.addEventListener('mouseleave', autoAdvance); }
   autoAdvance();
-  if (prog) prog.style.width = '0%';
-  // faq: single-open accordion
-  document.querySelectorAll<HTMLDetailsElement>('.faq details').forEach(function (d) {
-    d.addEventListener('toggle', function () {
-      if (d.open) document.querySelectorAll<HTMLDetailsElement>('.faq details').forEach(function (o) { if (o !== d) o.open = false; });
-    });
-  });
+  if(prog) prog.style.width='0%';
 </script>

@@ -1,0 +1,145 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { calendarUrl, whatsappUrl } from '../../i18n/contact';
+---
+
+<BaseLayout
+  locale="es"
+  routeKey="diagnostic"
+  canonicalPath="/diagnostico/"
+  title="Diagnóstico operativo gratuito | Next Wrld"
+  description="Revisamos un proceso concreto de tu operación para identificar fricciones y oportunidades de mejora. 30–45 minutos, gratuito y sin obligación."
+>
+  <section class="hero" data-od-id="hero">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow">Diagnóstico operativo</p>
+      <h1>Antes de decidir qué construir, entendamos qué está frenando tu operación.</h1>
+      <p class="lead">Revisamos un proceso concreto de tu operación para identificar fricciones y oportunidades de mejora. En 30–45 minutos evaluamos qué tiene sentido simplificar, conectar o automatizar.</p>
+      <div class="hero-facts">
+        <span><b>30–45 min</b> Conversación</span>
+        <span><b>Gratuito</b> Sin costo</span>
+        <span><b>Sin obligación</b> de contratar</span>
+      </div>
+    </div>
+  </section>
+
+  <section data-od-id="como-funciona">
+    <div class="wrap">
+      <div class="grid">
+        <div data-reveal>
+          <p class="eyebrow">Cómo funciona</p>
+          <h2>Un proceso simple.</h2>
+          <ol class="steps">
+            <li><b>01 — Contexto</b><p>Nos cuentas qué parte de la operación quieres mejorar: nombre, empresa, email y una breve descripción del proceso.</p></li>
+            <li><b>02 — Conversación</b><p>30–45 minutos con Next Wrld para entender cómo funciona hoy, qué genera trabajo innecesario y qué impacto tiene.</p></li>
+            <li><b>03 — Entregable</b><p>Recibes un mini diagnóstico de 3–5 páginas con situación, fricciones, impacto, oportunidades, prioridades, propuesta inicial y próximos pasos.</p></li>
+            <li><b>04 — Decisión</b><p>Decides si quieres avanzar. Sin presión.</p></li>
+          </ol>
+        </div>
+        <div data-reveal class="form-card">
+          <h3>Agendar diagnóstico</h3>
+          <p>Elige un horario o escríbenos por WhatsApp. Primero pedimos contexto breve, después ves el calendario.</p>
+          <a class="btn btn-p full" href={calendarUrl} target="_blank" rel="noopener">Abrir calendario</a>
+          <a class="btn btn-s full" href={whatsappUrl('es','full')} target="_blank" rel="noopener">Hablar por WhatsApp</a>
+          <p class="micro">Al continuar aceptas que usemos tu información solo para coordinar el diagnóstico.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="band" data-od-id="entregable">
+    <div class="wrap">
+      <div data-reveal>
+        <p class="eyebrow">Entregable</p>
+        <h2>Mini diagnóstico de 3–5 páginas.</h2>
+        <p class="lead">Un documento claro que puedes compartir con tu equipo.</p>
+      </div>
+      <div class="doc-grid" data-reveal>
+        <div class="doc-item"><span>01</span><b>Situación actual</b><p>Cómo funciona hoy el proceso.</p></div>
+        <div class="doc-item"><span>02</span><b>Fricciones</b><p>Qué genera trabajo innecesario o demoras.</p></div>
+        <div class="doc-item"><span>03</span><b>Impacto</b><p>Cómo afecta al negocio.</p></div>
+        <div class="doc-item"><span>04</span><b>Oportunidades</b><p>Qué podría simplificarse o automatizarse.</p></div>
+        <div class="doc-item"><span>05</span><b>Prioridades</b><p>Qué conviene abordar primero.</p></div>
+        <div class="doc-item"><span>06</span><b>Propuesta inicial</b><p>Qué tipo de solución podría tener sentido.</p></div>
+        <div class="doc-item"><span>07</span><b>Próximos pasos</b><p>Qué recomendamos hacer a continuación.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section data-od-id="faq">
+    <div class="wrap">
+      <div style="text-align:center" data-reveal><p class="eyebrow" style="justify-content:center">Preguntas frecuentes</p><h2>Antes de agendar.</h2></div>
+      <div class="faq" data-reveal>
+        <details open><summary>¿Cómo sé si necesito software a medida? <span>+</span></summary><p>Tiene sentido evaluarlo cuando los procesos importantes ya no encajan bien en herramientas disponibles, requieren demasiado trabajo manual o necesitan adaptaciones específicas.</p></details>
+        <details><summary>¿Tengo que reemplazar las herramientas que ya utilizo? <span>+</span></summary><p>No necesariamente. Muchas veces conviene integrar o automatizar lo existente. Construir algo nuevo solo tiene sentido cuando aporta beneficio claro.</p></details>
+        <details><summary>¿Podemos empezar por un solo proceso? <span>+</span></summary><p>Sí. Es la forma recomendada: empezar por un problema concreto, medir impacto y evolucionar.</p></details>
+        <details><summary>¿Cuánto tarda un proyecto? <span>+</span></summary><p>Una automatización puntual puede resolverse en semanas; un sistema completo, en meses. El diagnóstico nos permite entender qué escenario aplica.</p></details>
+        <details><summary>¿Cómo se define el precio? <span>+</span></summary><p>Según alcance, complejidad, integraciones e incertidumbre. Si hace falta, proponemos una etapa de Discovery antes de presupuestar la construcción.</p></details>
+        <details><summary>¿El software pertenece a mi empresa? <span>+</span></summary><p>Sí, bajo las condiciones de propiedad acordadas desde el inicio.</p></details>
+        <details><summary>¿Qué ocurre después del lanzamiento? <span>+</span></summary><p>Podemos seguir mejorando: nuevas automatizaciones, integraciones y evolución del sistema.</p></details>
+        <details><summary>¿Dónde usan IA? <span>+</span></summary><p>Solo cuando mejora una tarea concreta: analizar información, clasificar datos o asistir al equipo. No la incorporamos por sumar la etiqueta.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="final" data-od-id="cta-final">
+    <div class="wrap" data-reveal>
+      <p class="eyebrow" style="justify-content:center">Diagnóstico operativo</p>
+      <h2>Cuéntanos cómo trabajas hoy.</h2>
+      <p style="color:rgba(255,255,255,.85);max-width:52ch;margin:0 auto">Veamos dónde tiene sentido simplificar, conectar o construir.</p>
+      <div class="cta-row" style="justify-content:center"><a class="btn btn-w" href={calendarUrl} target="_blank" rel="noopener">Abrir calendario</a><a class="btn btn-g" href={whatsappUrl('es','full')} target="_blank" rel="noopener">Hablar por WhatsApp</a></div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  h1{font-size:clamp(36px,5vw,58px);margin:18px 0 16px;max-width:20ch}
+  h2{font-size:clamp(28px,3.4vw,44px);margin:18px 0}
+  section{padding:84px 0;scroll-margin-top:80px}
+  .hero{padding:72px 0 64px}
+  .hero-facts{display:flex;gap:24px;flex-wrap:wrap;margin-top:28px;font-family:var(--mono);font-size:13px;color:var(--muted)}
+  .hero-facts b{color:var(--fg);font-family:var(--disp);font-size:15px;margin-right:6px}
+  .grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:start}
+  .steps{list-style:none;margin-top:24px;counter-reset:s}
+  .steps li{counter-increment:s;padding:18px 0;border-bottom:1px solid var(--border)}
+  .steps b{font-family:var(--disp);font-size:16px;display:block}
+  .steps b::before{content:'0' counter(s) ' · ';font-family:var(--mono);color:var(--accent);font-size:12px;letter-spacing:.1em}
+  .steps p{color:var(--muted);font-size:15px;margin-top:6px}
+  .form-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:28px;position:sticky;top:88px}
+  .form-card h3{font-family:var(--disp);font-size:22px}
+  .form-card p{color:var(--muted);font-size:14px;margin:10px 0 18px}
+  .form-card .full{width:100%;margin-top:10px}
+  .micro{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-top:12px}
+  .band{background:var(--surface-gray);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+  .doc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:32px}
+  .doc-item{background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:20px}
+  .doc-item span{font-family:var(--mono);font-size:12px;color:var(--accent);font-weight:700}
+  .doc-item b{display:block;margin:6px 0;font-family:var(--disp)}
+  .doc-item p{color:var(--muted);font-size:14px}
+  .faq{max-width:820px;margin:40px auto 0}
+  .faq details{border-bottom:1px solid var(--border);padding:6px 0}
+  .faq summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;padding:12px 0;font-family:var(--disp);font-size:17px;font-weight:600}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary span{color:var(--accent);font-weight:400}
+  .faq p{color:var(--muted);padding:0 0 14px;max-width:62ch;font-size:15px}
+  .final{background:var(--navy);color:#fff;text-align:center;padding:110px 0;border-top:4px solid #5e85e3}
+  .final .eyebrow{color:rgba(255,255,255,.78);justify-content:center}
+  .final .eyebrow::before{background:#fff}
+  .final h2{color:#fff}
+  .btn-w{background:#fff;color:var(--accent)}
+  .btn-g{border-color:rgba(255,255,255,.45);color:#fff}
+  .cta-row{display:flex;gap:14px;margin-top:24px;flex-wrap:wrap}
+  @media(max-width:960px){
+    .grid{grid-template-columns:1fr}
+    .form-card{position:static}
+    .doc-grid{grid-template-columns:1fr}
+  }
+</style>
+
+<script>
+  document.querySelectorAll<HTMLDetailsElement>('.faq details').forEach(d=>{
+    d.addEventListener('toggle',()=>{
+      if(d.open) document.querySelectorAll<HTMLDetailsElement>('.faq details').forEach(o=>{if(o!==d) o.open=false})
+    })
+  })
+</script>

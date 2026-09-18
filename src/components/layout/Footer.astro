@@ -42,13 +42,7 @@ const isEs = locale === 'es';
       </div>
       <div>
         <h5>{isEs ? 'CONTACTO' : 'CONTACT'}</h5>
-        <a
-          href="https://calendar.app.google/JQnkVUqK3FF5VSRU6"
-          target="_blank"
-          rel="noopener"
-        >
-          {isEs ? 'Diagnóstico operativo' : 'Operational diagnostic'}
-        </a>
+        <a href={route('diagnostic', locale)}>{isEs ? 'Diagnóstico operativo' : 'Operational diagnostic'}</a>
         <a
           href={whatsappUrl(locale, 'full')}
           target="_blank"

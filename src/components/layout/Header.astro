@@ -1,6 +1,7 @@
 ---
 import { getNav, getChrome } from '../../i18n/ui';
 import type { Locale } from '../../i18n/config';
+import { route } from '../../i18n/routes';
 import type { RouteKey } from '../../i18n/routes';
 import LanguageSwitcher from './LanguageSwitcher.astro';
 
@@ -32,13 +33,7 @@ const chrome = getChrome(locale);
     </nav>
     <div class="hright">
       <LanguageSwitcher locale={locale} alternatePath={alternatePath} />
-      <a
-        class="btn btn-p btn-sm"
-        href="https://calendar.app.google/JQnkVUqK3FF5VSRU6"
-        target="_blank"
-        rel="noopener"
-        data-od-id="nav-cta"
-      >
+      <a class="btn btn-p btn-sm" href={route('diagnostic', locale)} data-od-id="nav-cta">
         {chrome.diagnosticCta}
       </a>
       <button class="burger" id="burger" aria-label={chrome.openMenu}>☰</button>
@@ -55,12 +50,7 @@ const chrome = getChrome(locale);
     <p>
       <LanguageSwitcher locale={locale} alternatePath={alternatePath} />
     </p>
-    <a
-      class="btn btn-p"
-      href="https://calendar.app.google/JQnkVUqK3FF5VSRU6"
-      target="_blank"
-      rel="noopener"
-    >
+    <a class="btn btn-p" href={route('diagnostic', locale)}>
       {chrome.scheduleDiagnostic}
     </a>
   </div>
